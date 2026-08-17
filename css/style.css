@@ -68,7 +68,8 @@
   --color-bg-subtle: #F1F5F9;
   --color-bg-gray: #E2E8F0;
   
-  --color-text-heading: #111112;   /* Match exact #111112 */
+  --color-text-heading: #111112;
+  --color-text-card-title: #2D3748; /* Softened dark heading color for cards */
   --color-text-main: #111112;
   --color-text-muted: #64748B;
   --color-text-light: #94A3B8;
@@ -119,12 +120,11 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* ANTI-ORPHAN TYPOGRAPHY RULES (CHỐNG RỚT CHỮ CÔ ĐỘN) */
+/* ANTI-ORPHAN TYPOGRAPHY RULES */
 h1, h2, h3, h4, h5, h6,
-.section-title, .slide-title, .page-title, .logo-name,
-.about-title, .cat-title, .prod-title, .proj-title, .news-title, .footer-heading {
+.section-title, .slide-title, .page-title, .logo-name, .about-title, .footer-heading {
   font-family: var(--font-heading);
-  text-wrap: balance; /* Prevents trailing single-word text dropping */
+  text-wrap: balance;
 }
 
 a {
@@ -157,7 +157,7 @@ button {
 /* Text Highlight Utility */
 .text-orange {
   color: var(--color-brand-orange);
-  white-space: nowrap; /* Keep multi-word keyword phrases together */
+  white-space: nowrap;
 }
 
 /* Container Utility (Max Width 1440px) */
@@ -187,7 +187,7 @@ button {
   height: 54px;
 }
 
-/* Section Header Utility - Expanded Max Width to Prevent Text Dropping */
+/* Section Header Utility */
 .section-header {
   text-align: center;
   max-width: 960px;
@@ -214,7 +214,7 @@ button {
   text-wrap: balance;
 }
 
-/* Buttons - Prevent Text Wrapping Inside Buttons */
+/* Buttons */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -366,7 +366,6 @@ button {
   gap: 24px;
 }
 
-/* Brand Logo Image Styling */
 .brand-logo {
   display: flex;
   align-items: center;
@@ -513,7 +512,7 @@ button {
   font-weight: 500;
   position: relative;
   letter-spacing: 0.2px;
-  white-space: nowrap; /* Prevent main nav text dropping */
+  white-space: nowrap;
   transition: background-color var(--transition-fast), font-weight var(--transition-fast);
 }
 
@@ -734,7 +733,7 @@ button {
 }
 
 /* ==========================================================================
-   3. ABOUT US SECTION (ABOUT TITLE FONT-SIZE 48PX / 3REM, FW 600)
+   3. ABOUT US SECTION
    ========================================================================== */
 .about-section {
   padding: 80px 0 96px 0;
@@ -860,7 +859,7 @@ button {
 }
 
 /* ==========================================================================
-   4. PRODUCT CATEGORIES
+   4. PRODUCT CATEGORIES (SOFTENED TITLE COLOR & 1-LINE ELLIPSIS TRUNCATION)
    ========================================================================== */
 .categories-section {
   padding: 80px 0 96px 0;
@@ -928,13 +927,17 @@ button {
   flex-direction: column;
 }
 
+/* Category Card Title: Softened Dark Color & 1-Line Ellipsis Truncation */
 .cat-title {
   font-family: var(--font-heading);
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--color-text-heading);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-text-card-title); /* Softened dark color #2D3748 */
   margin-bottom: 10px;
-  text-wrap: balance;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 
 .cat-desc {
@@ -959,7 +962,7 @@ button {
 }
 
 /* ==========================================================================
-   5. FEATURED MACHINES
+   5. FEATURED MACHINES (SOFTENED TITLE COLOR & 1-LINE ELLIPSIS TRUNCATION)
    ========================================================================== */
 .featured-section {
   padding: 80px 0 96px 0;
@@ -1034,14 +1037,18 @@ button {
   white-space: nowrap;
 }
 
+/* Product Card Title: Softened Dark Color & 1-Line Ellipsis Truncation (...) */
 .prod-title {
   font-family: var(--font-heading);
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: var(--color-text-heading);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-text-card-title); /* Softened dark color #2D3748 */
   margin-bottom: 12px;
   line-height: 1.35;
-  text-wrap: balance;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 
 .prod-specs {
@@ -1078,7 +1085,7 @@ button {
 }
 
 /* ==========================================================================
-   6. FEATURED PROJECTS CAROUSEL
+   6. FEATURED PROJECTS CAROUSEL (SOFTENED TITLE COLOR & 1-LINE ELLIPSIS TRUNCATION)
    ========================================================================== */
 .projects-section {
   padding: 80px 0 96px 0;
@@ -1159,14 +1166,18 @@ button {
   white-space: nowrap;
 }
 
+/* Project Card Title: Softened Dark Color & 1-Line Ellipsis Truncation (...) */
 .proj-title {
   font-family: var(--font-heading);
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: var(--color-text-heading);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-text-card-title); /* Softened dark color #2D3748 */
   margin-bottom: 12px;
   line-height: 1.35;
-  text-wrap: balance;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 
 .proj-desc {
@@ -1250,7 +1261,7 @@ button {
 }
 
 /* ==========================================================================
-   8. NEWS SECTION
+   8. NEWS SECTION (SOFTENED TITLE COLOR & 1-LINE ELLIPSIS TRUNCATION)
    ========================================================================== */
 .news-section {
   padding: 80px 0 96px 0;
@@ -1306,14 +1317,18 @@ button {
   white-space: nowrap;
 }
 
+/* News Card Title: Softened Dark Color & 1-Line Ellipsis Truncation (...) */
 .news-title {
   font-family: var(--font-heading);
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: var(--color-text-heading);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-text-card-title); /* Softened dark color #2D3748 */
   margin-bottom: 12px;
   line-height: 1.4;
-  text-wrap: balance;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 
 .news-excerpt {
