@@ -934,8 +934,9 @@ button {
   background: var(--color-bg-white);
   padding: 32px 28px;
   border-radius: var(--radius-md);
-  border: 1px solid var(--color-border);
-  transition: transform var(--transition-fast);
+  border: none; /* Removed border as requested by user */
+  box-shadow: 0 0 126px -92px rgba(0, 0, 0, 0.25); /* Custom box-shadow added as requested */
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -943,22 +944,22 @@ button {
 
 .pillar-card:hover {
   transform: translateY(-2px);
-  box-shadow: none;
-  border-color: var(--color-border);
+  border: none;
+  box-shadow: 0 0 126px -80px rgba(0, 0, 0, 0.35);
 }
 
 .pillar-icon-box {
   width: 56px;
   height: 56px;
   background: var(--color-orange-subtle); /* #FFF5EE - Nền màu nhạt */
-  border-radius: 4px; /* Radius 4px */
+  border-radius: 5px; /* Radius 5px as requested by user */
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--color-brand-orange);
   font-size: 1.5rem;
   margin-bottom: 18px;
-  border: 1px solid var(--color-border-orange);
+  border: none; /* Removed orange border as requested by user */
 }
 
 .pillar-card-title {
