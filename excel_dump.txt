@@ -1,0 +1,129 @@
+
+==========================================
+SHEET 1: Cấu trúc trang chủ (Desktop)
+==========================================
+Row   1: A1: STT | B1: CẤU TRÚC TRANG CHỦ | C1: THÔNG TIN GIAO DIỆN HIỂN THỊ | D1: MÔ TẢ HIỆU ỨNG BỔ SUNG | E1: NỘI DUNG | F1: HÌNH ẢNH THAM KHẢO | G1: ĐƯỜNG DẪN THAM KHẢO | H1: TÀI NGUYÊN | I1: LƯU Ý NỘI BỘ
+Row   2: A2: 1.0 | B2: Menu Stickybar | C2: I. Trang chủ
+II. Về chúng tôi
+III. Sản phẩm
+3.1. Dây chuyền kết cấu thép
+3.2. Robot công nghiệp
+IV. Giải pháp
+4.1. Giải pháp gia công kết cấu thép
+4.2. Giải pháp tự động hoá
+4.3. Giải pháp công nghiệp xây dựng
+V. Dịch vụ
+5.1. Sửa chữa thiết bị
+5.2. Bảo dưỡng định kỳ
+5.3. Cung cấp vật tư tiêu hao
+5.4. Cung cấp phụ tùng thay thế
+VI. Dự án 
+VII. Tin tức
+7.1. Tin tức doanh nghiệp
+7.2. Tin tức ngành
+7.3. Thông cáo báo chí
+VIII. Liên hệ | D2: - Ghim ở đầu trang, chạy lăn theo con trỏ chuột | E2: Hiển thị 7 danh mục chính chứa các danh mục con đã liệt kê ở cột "thông tin hiển thị" | I2: - Cần bổ sung thông tin các giải pháp
+- Cần bổ sung thông tin các dịch vụ
+Row   3: A3: 2.0 | B3: Slide ảnh banner | C3: Hiển thị ảnh banner dưới dạng ảnh trượt | D3: Thời gian tự động thay đổi các ảnh trong Slide vào khoảng 8 giây. Kích thước tham khảo nguồn: https://automech.vn/ | G3: https://automech.vn/
+Row   4: A4: 3.0 | B4: Về chúng tôi | C4: - Hiển thị 1 phần nội dung SAPO trong danh mục {{về chúng tôi}} kèm nút xem thêm ở bên dưới. Toàn bộ nộpi dung này hiển thị ở phía tay trái
+- Hiển thị hình ảnh doanh nghiệp ở phía bên tay phải img (Sau này có thê thay thế bằng video TVC quảng cáo). | D4: - | E4: - | G4: https://automech.vn/
+Row   5: A5: 4.0 | B5: Danh mục sản phẩm | C5: - Hiển thị các danh mục sản phẩm và các sản phẩm chi tiết có trong danh mục. Bên trên sẽ có ảnh hiển thị mô tả cho danh mục tương ứng. Check cấu trúc ở cột {{Hình ảnh tham khảo, nguồn tham khảo}}. Link danh sách sản phẩm:  | D5: - | E5: - | G5: https://automech.vn/ | I5: - Cần bổ sung tất cả thông tin sản phẩm để chia danh mục phù hợp
+Row   6: A6: 5.0 | B6: Dòng máy nổi bật | C6: - Hiển thị các dòng má cập nhật mới nhất trên danh sách {{danh mục sản phẩm}}, có nủt xem tất cả mặc định nhảy vào danh mục {Sản phẩm cấp 1}. Link danh sách sản phẩm:  | D6: - | E6: - | G6: https://automech.vn/ | I6: - Cần bổ sung tất cả thông tin sản phẩm để chia danh mục phù hợp
+Row   7: A7: 6.0 | B7: Dự án nổi bật | C7: - Hiển thị toàn bộ các bài viết trong mục {dự án} dưới dạng tin tức bài viết, hiển thị tối đa 3.5 nội dung cho khách hàng hiểu là có tính năng trượt để xem dự án, có nút xem tất cả trỏ vào trang {Dự án cấp 1}. Link danh sách dự án: | D7: - | E7: - | G7: https://weldcom.vn/ | I7: - Cần bổ sung thông tin các dự án đã triển khai
+Row   8: A8: 7.0 | B8: Nhà cung cấp chiến lược | C8: - Hiển thị Logo của tất cả các nhà cung cấp chiến lược dưới dạng băng truyền tự động chạy xoay vòng. Link danh sách các nhà cung cấp:  | D8: - | E8: - | G8: https://weldcom.vn/ | I8: - Cần bổ sung thông tin danh sách các nhà cung cấp
+Row   9: A9: 8.0 | B9: Tin tức | C9: - Hiển thị toàn bộ bài viết trong danh mục {Tin tức}
+- Bổ sung nút xem tất cả, đẩy vào trang danh mục {Tin tức cấp 1}. | D9: - | E9: - | G9: https://automech.vn/
+Row  10: A10: 9.0 | B10: Footer | C10: - Logo thương hiệu
+- Form thu thập Email khách hàng
+- Tên công ty: CÔNG TY TNHH DỊCH VỤ KỸ THUẬT VÀ GIẢI PHÁP CƠ KHÍ CTWELD
+- MST công ty: 0111059841
+- Địa chỉ công ty: 6.10, Khai Sơn Town, Phường Thượng Thanh, Quận Long Biên, TP. Hà Nội
+- SĐT liên hệ: 0866060894
+- Email liên hệ: minhtuan@ctweld.vn
+- Chính sách: Điều khoản sử dụng, Chính sách bảo mật thông tin, Chính sách vận chuyển giao nhận, Chính sách bảo hành
+- Kênh liên kết:
+1. Facebook: https://www.facebook.com/ctweld.SME/
+2. Youtube: https://www.youtube.com/@ctweld_SME
+3. Pinterest: https://www.pinterest.com/ctweld_SME/
+4. Zalo OA:
+5. Linkedin: 
+6. Instagram:
+7. Tiktok: https://www.tiktok.com/@ctweld_sme | D10: - | E10: - | I10: - Bổ sung file logo thương hiệu
+Row  11: A11: 10.0 | B11: Tính năng bổ sung | C11: - Thêm nút liên hệ nhanh bao gồm danh sách:
+1. Mess: https://m.me/ctweld.SME/
+2. Zalo OA: Cần bổ sung
+3. Hotline: 0866060894
+4. Email: minhtuan@ctweld.vn
+- Thêm tính năng ngôn ngữ: Song ngữ Việt/Anh | D11: - | E11: -
+
+==========================================
+SHEET 2: Cấu trúc trang chủ (Mobile)
+==========================================
+Row   1: A1: STT | B1: CẤU TRÚC TRANG CHỦ | C1: THÔNG TIN GIAO DIỆN HIỂN THỊ | D1: MÔ TẢ HIỆU ỨNG BỔ SUNG | E1: NỘI DUNG | F1: HÌNH ẢNH THAM KHẢO | G1: ĐƯỜNG DẪN THAM KHẢO | H1: TÀI NGUYÊN
+Row   2: A2: 1.0 | B2: Menu Stickybar | C2: - Chỉ hiện thị Logo và nút danh sách hiển thị toàn bộ nội dung bao gồm {
+I. Trang chủ
+II. Về chúng tôi
+III. Sản phẩm
+3.1. Dây chuyền kết cấu thép
+3.2. Robot công nghiệp
+IV. Giải pháp
+4.1. Giải pháp gia công kết cấu thép
+4.2. Giải pháp tự động hoá
+4.3. Giải pháp công nghiệp xây dựng
+...
+V. Dịch vụ
+5.1. Sửa chữa thiết bị
+5.2. Bảo dưỡng định kỳ
+5.3. Cung cấp vật tư tiêu hao
+5.4. Cung cấp phụ tùng thay thế
+VI. Dự án 
+VII. Tin tức
+7.1. Tin tức doanh nghiệp
+7.2. Tin tức ngành
+7.3. Thông cáo báo chí
+VIII. Liên hệ} | D2: - Ghim ở đầu trang, chạy lăn theo con trỏ chuột | E2: Hiển thị 7 danh mục chính chứa các danh mục con đã liệt kê ở cột "thông tin hiển thị" | G2: https://automech.vn/
+Row   3: A3: 2.0 | B3: Slide ảnh banner | C3: Hiển thị ảnh banner dưới dạng ảnh trượt | D3: Thời gian tự động thay đổi các ảnh trong Slide vào khoảng 8 giây. Kích thước tham khảo nguồn: https://automech.vn/
+Row   4: A4: 3.0 | B4: Về chúng tôi | C4: - Hiển thị 1 phần nội dung SAPO trong danh mục {{về chúng tôi}} kèm nút xem thêm ở bên dưới. Toàn bộ nộpi dung này hiển thị ở phía tay trái
+- Hiển thị hình ảnh doanh nghiệp ở phía bên tay phải img (Sau này có thê thay thế bằng video TVC quảng cáo) | D4: - | E4: - | G4: https://automech.vn/
+Row   5: A5: 4.0 | B5: Danh mục sản phẩm | C5: - Hiển thị các danh mục sản phẩm và các sản phẩm chi tiết có trong danh mục. Bên trên sẽ có ảnh hiển thị mô tả cho danh mục tương ứng. Check cấu trúc ở cột {{Hình ảnh tham khảo, nguồn tham khảo}} | D5: - | E5: - | G5: https://automech.vn/
+Row   6: A6: 5.0 | B6: Dòng máy nổi bật | C6: - Hiển thị các dòng má cập nhật mới nhất trên danh sách {{danh mục sản phẩm}}, có nủt xem tất cả mặc định nhảy vào danh mục {Sản phẩm cấp 1} | D6: - | E6: - | G6: https://automech.vn/
+Row   7: A7: 6.0 | B7: Dự án nổi bật | C7: - Hiển thị toàn bộ các bài viết trong mục {dự án} dưới dạng tin tức bài viết, hiển thị tối đa 3.5 nội dung cho khách hàng hiểu là có tính năng trượt để xem dự án | D7: - | E7: - | G7: https://weldcom.vn/
+Row   8: A8: 7.0 | B8: Nhà cung cấp chiến lược | C8: - Hiển thị Logo của tất cả các nhà cung cấp chiến lược dưới dạng băng truyền tự động chạy xoay vòng | D8: - | E8: - | G8: https://weldcom.vn/
+Row   9: A9: 8.0 | B9: Tin tức | C9: - Hiển thị toàn bộ bài viết trong danh mục {Tin tức}
+- Bổ sung nút xem tất cả, đẩy vào trang danh mục {Tin tức cấp 1} | D9: - | E9: - | G9: https://automech.vn/
+Row  10: A10: 9.0 | B10: Footer | C10: - Logo thương hiệu
+- Form thu thập Email khách hàng
+- Tên công ty: CÔNG TY TNHH DỊCH VỤ KỸ THUẬT VÀ GIẢI PHÁP CƠ KHÍ CTWELD
+- MST công ty: 0111059841
+- Địa chỉ công ty: 6.10, Khai Sơn Town, Phường Thượng Thanh, Quận Long Biên, TP. Hà Nội
+- SĐT liên hệ: 0866060894
+- Email liên hệ: minhtuan@ctweld.vn
+- Chính sách: Điều khoản sử dụng, Chính sách bảo mật thông tin, Chính sách vận chuyển giao nhận, Chính sách bảo hành
+- Kênh liên kết:
+1. Facebook: https://www.facebook.com/ctweld.SME/
+2. Youtube: https://www.youtube.com/@ctweld_SME
+3. Pinterest:
+4. Zalo OA:
+5. Linkedin:
+6. Instagram: | D10: - | E10: -
+
+==========================================
+SHEET 3: Cấu trúc trang danh mục
+==========================================
+Row   1: A1: STT | B1: TÊN DANH MỤC | C1: THÔNG TIN GIAO DIỆN HIỂN THỊ | D1: MÔ TẢ HIỆU ỨNG | E1: NỘI DUNG CHI TIẾT | F1: TÀI NGUYÊN SỬ DỤNG | G1: GIAO DIỆN DESKTOP | H1: GIAO DIỆN MOBILE | I1: LINK THAM KHẢO | J1: LƯU Ý
+Row   2: A2: 1.0 | B2: Về chúng tôi | C2: Hiển thị bài viết trong danh mục về cúng tôi dưới dạng bài viết thông tin | E2: https://docs.google.com/document/d/1JKgajDPU4MGS6AJQ2uh0kzHDqn5YLH5ryfNAkFCplvk/edit?tab=t.0#heading=h.3prulaazym1k | F2: https://drive.google.com/drive/folders/1ToiKa8gyeelpC1-7tMlCZ4V_xWNKn860?usp=sharing
+Row   3: A3: 2.0 | B3: Trang sản phẩm cấp 1 | C3: Hiển thị thoàn bộ sản phẩm theo từng danh mục nhỏ, có nút lọc theo danh mục sản phẩm và theo thương hiệu. Bổ sung thêm tiêu đề "Sản phẩm" và phần "Sapo" ngay bên dưới tiêu đề | E3: https://docs.google.com/document/d/1gALivFvqUF1bB5vcd-Xa4U2YwSKkWQjWlqdygNcFoa4/edit?usp=sharing | F3: https://drive.google.com/drive/folders/1G2tBupVgQcZuZW3eS7ylmInO7MfUg6zT?usp=sharing | I3: https://automech.vn/san-pham/
+Row   4: A4: 3.0 | B4: Trang sản phẩm cấp 2 | C4: - Hiển thị thông tin chi tiết sản phẩm dưới dạng bài viết SEO. 
+- Bổ sung thêm 1 form đăng ký nhận tư vấn dưới cuối mỗi trang sản phẩm cấp 2 này | E4: https://drive.google.com/drive/folders/1zNcBZ6ODdEpfyw5EmD6j0-mXYilPyejs?usp=sharing | I4: https://automech.vn/cobot-estun-co-arc-350/
+Row   5: A5: 5.0 | B5: Trang giải pháp cấp 1 | C5: - Cấu trúc hiển thị bao gồm danh sách các giải pháp doanh nghiệp cung ứng | E5: https://docs.google.com/document/d/1VBRd2lBAot1leA6fn0N1w2CKKrkYqRenyMMelxqHnrM/edit?usp=sharing | I5: https://automech.vn/giai-phap/
+Row   6: A6: 6.0 | B6: Trang giải pháp cấp 2 | C6: - Cấu trúc hiển thị tương tự trang {sản phẩm cấp 2}, hiển thị dưới dạng bài viết SEO
+- Bổ sung 1 form đăng ký tư vấn cuối bài viết | I6: https://automech.vn/phu-tro-o-to/
+Row   7: A7: 8.0 | B7: Trang dịch vụ cấp 1 | C7: - Cấu trúc hiển thị tương tự như {trang giải pháp cấp 1} | E7: https://docs.google.com/document/d/1hetkjJ-rDB8mp_krHKSxL5gK9amOO8Q_RmvW-9kWP2s/edit?usp=sharing | I7: https://automech.vn/giai-phap/
+Row   8: A8: 9.0 | B8: Trang dịch vụ cấp 2 | C8: - Cấu trúc hiển thị tương tự trang {sản phẩm cấp 2}, hiển thị dưới dạng bài viết SEO
+- Bổ sung 1 form đăng ký tư vấn cuối bài viết | I8: https://automech.vn/phu-tro-o-to/
+Row   9: A9: 11.0 | B9: Trang dự án cấp 1 | C9: - Cấu trúc hiển thị tương tự như {trang giải pháp cấp 1} | E9: https://docs.google.com/document/d/1Ku953wE3zibbqnAVc_wUvhwkQ1MkVETx1_OQpLBHcoU/edit?usp=sharing | I9: https://automech.vn/giai-phap/
+Row  10: A10: 12.0 | B10: Trang dự án cấp 2 | C10: - Cấu trúc hiển thị tương tự trang {sản phẩm cấp 2}, hiển thị dưới dạng bài viết SEO
+- Bổ sung 1 form đăng ký tư vấn cuối bài viết | I10: https://automech.vn/phu-tro-o-to/
+Row  11: A11: 13.0 | B11: Trang tin tức cấp 1 | C11: - Chia cấu trúc hiển thị theo cấu trúc 3 cột 4 hành trên 1 trang, tương tự cho các danh mục sản phẩm nhỏ hơn | I11: https://automech.vn/tin-tuc/
+Row  12: A12: 14.0 | B12: Trang tin tức cấp 2 | C12: - Cấu trúc bài viết hiển thị tương tự như nguồn tham khoả, không có bổ sung gì thêm | I12: https://automech.vn/automech-va-fusheng-vietnam-ky-ket-hop-tac-chien-luoc/
+Row  13: A13: 15.0 | B13: Liên hệ | C13: - Cấu trúc bài viết hiển thị tương tự như nguồn tham khoả, không có bổ sung gì thêm | I13: https://automech.vn/lien-he/
