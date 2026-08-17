@@ -781,36 +781,50 @@
       </div>
 
       <form id="consultForm">
-        <div class="form-group">
-          <label class="form-label">Họ và Tên Quý Khách *</label>
-          <input type="text" class="form-input" placeholder="Ví dụ: Nguyễn Văn Minh" required>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+          <div class="form-group">
+            <label class="form-label">Họ và Tên Quý Khách *</label>
+            <input type="text" class="form-input" placeholder="Ví dụ: Nguyễn Văn Minh" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Số Điện Thoại / Zalo *</label>
+            <input type="tel" class="form-input" placeholder="Ví dụ: 0987 654 321" required>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+          <div class="form-group">
+            <label class="form-label">Địa Chỉ Email *</label>
+            <input type="email" class="form-input" placeholder="Ví dụ: minhtuan@ctweld.vn" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Tên Công Ty / Doanh Nghiệp *</label>
+            <input type="text" class="form-input" placeholder="Ví dụ: Công ty Kết Cấu Thép ABC" required>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+          <div class="form-group">
+            <label class="form-label">Lĩnh Vực Hoạt Động *</label>
+            <input type="text" class="form-input" placeholder="Ví dụ: Kết cấu thép, Đóng tàu..." required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Loại Máy Cần Tư Vấn *</label>
+            <input type="text" class="form-input" placeholder="Ví dụ: Máy hàn cổng SAW, Robot hàn..." required>
+          </div>
         </div>
 
         <div class="form-group">
-          <label class="form-label">Số Điện Thoại / Zalo *</label>
-          <input type="tel" class="form-input" placeholder="Ví dụ: 0987 654 321" required>
+          <label class="form-label">Độ Dày Vật Liệu Gia Công *</label>
+          <input type="text" class="form-input" placeholder="Ví dụ: Thép tấm dày 10mm - 30mm, Inox 5mm..." required>
         </div>
 
         <div class="form-group">
-          <label class="form-label">Tên Công Ty / Nhà Máy</label>
-          <input type="text" class="form-input" placeholder="Ví dụ: Công ty Kết Cấu Thép ABC">
-        </div>
-
-        <div class="form-group">
-          <label class="form-label">Danh Mục Quan Tâm *</label>
-          <select class="form-select" required>
-            <option value="">-- Chọn danh mục cần tư vấn --</option>
-            <option value="kct">Dây chuyền kết cấu thép dầm H/I/Box</option>
-            <option value="robot">Robot hàn tự động & Cánh tay robot</option>
-            <option value="laser">Máy cắt Laser Fiber / CNC Plasma</option>
-            <option value="dich-vu">Dịch vụ sửa chữa & bảo dưỡng nhà máy</option>
-            <option value="phu-tung">Vật tư tiêu hao & phụ tùng thay thế</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label class="form-label">Ghi Chú Nhu Cầu Kỹ Thuật</label>
-          <textarea class="form-textarea" rows="3" placeholder="Mô tả sơ lược về quy mô nhà xưởng, độ dày vật liệu hoặc bài toán đang gặp..."></textarea>
+          <label class="form-label">Địa Chỉ (Nhà Xưởng / Công Ty) *</label>
+          <textarea class="form-textarea" rows="2" placeholder="Nhập địa chỉ nhà xưởng hoặc trụ sở công ty..." required></textarea>
         </div>
 
         <button type="submit" class="btn btn-primary" style="width: 100%;"><i class="fas fa-paper-plane"></i> Gửi Yêu Cầu Tư Vấn Ngay</button>

@@ -207,23 +207,53 @@
           <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 24px;">Điền thông tin vào form dưới đây, chúng tôi sẽ phản hồi trong vòng 2 giờ làm việc.</p>
 
           <form id="contactPageForm">
-            <div class="form-group">
-              <label class="form-label">Họ và Tên Quý Khách *</label>
-              <input type="text" class="form-input" placeholder="Nguyễn Văn A" required>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+              <div class="form-group">
+                <label class="form-label">Họ và Tên Quý Khách *</label>
+                <input type="text" class="form-input" placeholder="Ví dụ: Nguyễn Văn Minh" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Số Điện Thoại / Zalo *</label>
+                <input type="tel" class="form-input" placeholder="Ví dụ: 0987 654 321" required>
+              </div>
             </div>
-            <div class="form-group">
-              <label class="form-label">Số Điện Thoại / Zalo *</label>
-              <input type="tel" class="form-input" placeholder="0987 654 321" required>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+              <div class="form-group">
+                <label class="form-label">Địa Chỉ Email *</label>
+                <input type="email" class="form-input" placeholder="Ví dụ: minhtuan@ctweld.vn" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Tên Công Ty / Doanh Nghiệp *</label>
+                <input type="text" class="form-input" placeholder="Ví dụ: Công ty Kết Cấu Thép ABC" required>
+              </div>
             </div>
-            <div class="form-group">
-              <label class="form-label">Email</label>
-              <input type="email" class="form-input" placeholder="email@company.vn">
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+              <div class="form-group">
+                <label class="form-label">Lĩnh Vực Hoạt Động *</label>
+                <input type="text" class="form-input" placeholder="Ví dụ: Kết cấu thép, Đóng tàu, Ô tô..." required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Loại Máy Cần Tư Vấn *</label>
+                <input type="text" class="form-input" placeholder="Ví dụ: Máy hàn cổng SAW, Robot hàn..." required>
+              </div>
             </div>
+
             <div class="form-group">
-              <label class="form-label">Nội Dung Cần Liên Hệ *</label>
-              <textarea class="form-textarea" rows="4" placeholder="Nhập thông tin cần tư vấn hoặc báo giá..." required></textarea>
+              <label class="form-label">Độ Dày Vật Liệu Gia Công *</label>
+              <input type="text" class="form-input" placeholder="Ví dụ: Thép tấm dày 10mm - 30mm, Inox 5mm..." required>
             </div>
-            <button type="submit" class="btn btn-primary" style="width: 100%;"><i class="fas fa-paper-plane"></i> Gửi Tin Nhắn Cho CTWELD</button>
+
+            <div class="form-group">
+              <label class="form-label">Địa Chỉ (Nhà Xưởng / Công Ty) *</label>
+              <textarea class="form-textarea" rows="3" placeholder="Nhập địa chỉ nhà xưởng hoặc trụ sở công ty của Quý khách..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 14px; font-size: 1rem;"><i class="fas fa-paper-plane"></i> Gửi Yêu Cầu Tư Vấn Cho CTWELD</button>
           </form>
         </div>
       </div>
