@@ -1,0 +1,47 @@
+{
+  "_source": {
+    "page_spec": "Excel Sheet 3 — mục 11.0 (Trang dự án cấp 1) & 12.0 (Trang dự án cấp 2); Sheet 1 mục 6.0 (Dự án nổi bật trang chủ)",
+    "sapo_doc": "https://docs.google.com/document/d/1Ku953wE3zibbqnAVc_wUvhwkQ1MkVETx1_OQpLBHcoU/edit (mở được — đã lấy nội dung)",
+    "layout_reference_level1": "https://automech.vn/giai-phap/",
+    "layout_reference_level2": "https://automech.vn/phu-tro-o-to/",
+    "homepage_reference": "https://weldcom.vn/"
+  },
+
+  "archive": {
+    "title": "Dự án",
+    "sapo": "CTWELD đã và đang triển khai nhiều dự án trong lĩnh vực cơ khí, kết cấu thép và tự động hóa hàn cho các doanh nghiệp sản xuất trên cả nước. Mỗi dự án đều được thực hiện với quy trình chặt chẽ, từ khảo sát, tư vấn giải pháp đến lắp đặt và bàn giao, đảm bảo tiến độ và chất lượng vận hành. Qua từng dự án, CTWELD không ngừng khẳng định năng lực kỹ thuật và uy tín, đồng hành cùng khách hàng nâng cao hiệu suất và tối ưu chi phí sản xuất.",
+    "sapo_status": "official — lấy từ Google Docs của khách hàng",
+    "spec": "Cấu trúc hiển thị tương tự trang giải pháp cấp 1.",
+    "layout": "grid 3 cột x 4 hàng + phân trang",
+    "detail_page_requirement": "Trang dự án cấp 2 hiển thị giống trang sản phẩm cấp 2 (bài viết SEO) + bổ sung 1 form đăng ký tư vấn cuối bài viết"
+  },
+
+  "homepage_section": {
+    "cards_per_view": 3.5,
+    "carousel": true,
+    "cta": { "label": "Xem Tất Cả Dự Án", "url": "du-an.html" }
+  },
+
+  "content_status": "placeholder — toàn bộ dự án bên dưới là dữ liệu demo dựng giao diện. Excel ghi rõ: \"Cần bổ sung thông tin các dự án đã triển khai\".",
+
+  "projects": [
+    { "id": 1, "title": "Dây Chuyền Cắt Phôi & Hàn Dầm H Zamil Steel", "slug": "day-chuyen-cat-phoi-han-dam-h-zamil-steel", "customer": "Zamil Steel", "location": "KCN Nội Bài, Hà Nội", "status": "Hoàn Thành 2025", "year": 2025, "excerpt": "Cung cấp 02 máy hàn cổng SAW 1250A và máy nắn dầm 800T công suất 1200 tấn/tháng." },
+    { "id": 2, "title": "Trạm Hàn Robot Estun Gá Khung Xe Điện VinFast", "slug": "tram-han-robot-estun-ga-khung-xe-dien-vinfast", "customer": "VinFast", "location": "KCN Đình Vũ, Hải Phòng", "status": "Hoàn Thành 2025", "year": 2025, "excerpt": "Tích hợp 06 trạm Robot hàn 6 trục kết hợp đồ gá kẹp khí nén tự động độ chính xác cao." },
+    { "id": 3, "title": "Hệ Thống Đĩa Quay Gá Hàn Bồn Bể Á Lực 50T", "slug": "he-thong-dia-quay-ga-han-bon-be-a-luc-50t", "customer": null, "location": "KCN Mỹ Phước, Bình Dương", "status": "Hoàn Thành 2026", "year": 2026, "excerpt": "Lắp đặt cụm đĩa quay gá hàn tự động hàn đường chéo và đường dọc bồn gas LPG." },
+    { "id": 4, "title": "Nhà Máy Kết Cấu Thép Đại Dũng - 04 Cổng Hàn SAW", "slug": "nha-may-ket-cau-thep-dai-dung-04-cong-han-saw", "customer": "Đại Dũng", "location": "KCN Đức Hòa, Long An", "status": "Hoàn Thành 2025", "year": 2025, "excerpt": "Lắp đặt tổ hợp 04 cổng hàn hồ quang chìm 2 mỏ tự động chuyên dụng cho dầm siêu trường." },
+    { "id": 5, "title": "Tổ Hợp Robot Hàn Khung Dầm Thép ATAD Steel", "slug": "to-hop-robot-han-khung-dam-thep-atad-steel", "customer": "ATAD Steel", "location": "KCN Nhơn Trạch, Đồng Nai", "status": "Hoàn Thành 2024", "year": 2024, "excerpt": "Triển khai trạm Robot Yaskawa 6 trục kết hợp nguồn hàn Megmeet Artsen PM500A cao cấp." },
+    { "id": 6, "title": "Dây Chuyền Laser Fiber Cắt Thép Tấm BMB Steel", "slug": "day-chuyen-laser-fiber-cat-thep-tam-bmb-steel", "customer": "BMB Steel", "location": "KCN VSIP, Bắc Ninh", "status": "Hoàn Thành 2025", "year": 2025, "excerpt": "Lắp đặt máy cắt Laser Fiber công suất 12kW bàn đôi song song khổ 2.5m x 6m nạp phôi tự động." },
+    { "id": 7, "title": "Hệ Thống Hàn Cần Cột Tự Động Kết Cấu Thép Bán Sơn", "slug": "he-thong-han-can-cot-tu-dong-ket-cau-thep-ban-son", "customer": "Bán Sơn", "location": "KCN Việt Hưng, Quảng Ninh", "status": "Hoàn Thành 2024", "year": 2024, "excerpt": "Cung cấp cần cột hàn tự động 6m x 6m tích hợp hệ thống bám đường hàn quang học cảm biến." },
+    { "id": 8, "title": "Trạm Robot Hàn Cắt CNC Công Nghiệp Hòa Phát", "slug": "tram-robot-han-cat-cnc-cong-nghiep-hoa-phat", "customer": "Hòa Phát", "location": "KCN Dung Quất, Quảng Ngãi", "status": "Hoàn Thành 2025", "year": 2025, "excerpt": "Tích hợp 04 trạm Robot hàn Fanuc ARC Mate và nguồn cắt Laser Fiber 20kW Raycus siêu công suất." },
+    { "id": 9, "title": "Dây Chuyền Nắn Thẳng Dầm Thuỷ Lực 1000T Seico", "slug": "day-chuyen-nan-thang-dam-thuy-luc-1000t-seico", "customer": "Seico", "location": "KCN Đại An, Hải Dương", "status": "Hoàn Thành 2025", "year": 2025, "excerpt": "Bàn giao máy nắn thẳng dầm H 1000 tấn nắn cánh dầm dày tới 60mm tốc độ cao." },
+    { "id": 10, "title": "Nhà Máy Cơ Khí Lilama 10 - Cổng Hàn SAW 1500A", "slug": "nha-may-co-khi-lilama-10-cong-han-saw-1500a", "customer": "Lilama 10", "location": "KCN Tiên Sơn, Bắc Ninh", "status": "Hoàn Thành 2024", "year": 2024, "excerpt": "Chuyển giao 02 cổng hàn tự động hồ quang chìm công suất dòng ra 1500A liên tục." },
+    { "id": 11, "title": "Trạm Hàn Robot Ống Thép Tự Động Tân Á Đại Thành", "slug": "tram-han-robot-ong-thep-tu-dong-tan-a-dai-thanh", "customer": "Tân Á Đại Thành", "location": "KCN Tân Trường, Hưng Yên", "status": "Hoàn Thành 2025", "year": 2025, "excerpt": "Lắp đặt 04 trạm Robot hàn đĩa quay tự động chính xác cho dây chuyền bình nước nóng." },
+    { "id": 12, "title": "Dây Chuyền Cắt Laser Fiber & Hàn Cột Thép Đông Anh", "slug": "day-chuyen-cat-laser-fiber-han-cot-thep-dong-anh", "customer": null, "location": "KCN Đông Anh, Hà Nội", "status": "Hoàn Thành 2025", "year": 2025, "excerpt": "Cung cấp máy cắt Laser Fiber 12kW bàn đôi song song và gá hàn thủy lực dầm H." }
+  ],
+
+  "open_issues": [
+    "Excel LƯU Ý NỘI BỘ (Sheet 1, mục 6.0): \"Cần bổ sung thông tin các dự án đã triển khai\".",
+    "Tên khách hàng trong dữ liệu demo là thương hiệu có thật — cần khách hàng xác nhận được phép nêu tên trước khi lên production.",
+    "Chưa có ảnh dự án thật; toàn bộ ảnh hiện là ảnh stock Unsplash."
+  ]
+}

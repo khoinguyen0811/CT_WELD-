@@ -1,0 +1,31 @@
+{
+  "_source": "Excel Sheet 1 & 2 — mục 7.0 Nhà cung cấp chiến lược. Tham khảo: https://weldcom.vn/",
+  "_spec": "Hiển thị Logo của tất cả các nhà cung cấp chiến lược dưới dạng băng truyền tự động chạy xoay vòng.",
+  "display": {
+    "type": "marquee",
+    "direction": "left",
+    "autoplay": true,
+    "loop": true,
+    "pause_on_hover": true
+  },
+  "content_status": "placeholder — Excel ghi \"Cần bổ sung thông tin danh sách các nhà cung cấp\". Demo đang hiển thị tên bằng chữ, chưa có file logo.",
+  "partners": [
+    { "name": "FANUC", "slug": "fanuc", "logo": null, "url": null },
+    { "name": "YASKAWA", "slug": "yaskawa", "logo": null, "url": null },
+    { "name": "MEGMEET", "slug": "megmeet", "logo": null, "url": null },
+    { "name": "ESTUN", "slug": "estun", "logo": null, "url": null },
+    { "name": "LINCOLN ELECTRIC", "slug": "lincoln-electric", "logo": null, "url": null },
+    { "name": "HYPERTHERM", "slug": "hypertherm", "logo": null, "url": null },
+    { "name": "PANASONIC", "slug": "panasonic", "logo": null, "url": null },
+    { "name": "OTC DAIHEN", "slug": "otc-daihen", "logo": null, "url": null },
+    { "name": "KUKA", "slug": "kuka", "logo": null, "url": null }
+  ],
+  "mentioned_in_official_docs": {
+    "_note": "Các hãng được nêu đích danh trong 2 tài liệu sản phẩm chính thức — nên có mặt trong danh sách nhà cung cấp",
+    "items": ["AOTAI (nguồn hàn AMIG 500PSR PLUS)", "Keyence (PLC / HMI)", "Raytools", "Precitec", "Donaldson (chuẩn công nghệ lọc bụi tham chiếu)"]
+  },
+  "open_issues": [
+    "Cần khách hàng gửi danh sách nhà cung cấp chính thức + file logo (PNG nền trong hoặc SVG).",
+    "Cần xác nhận quyền sử dụng logo của từng hãng."
+  ]
+}

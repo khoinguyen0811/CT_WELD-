@@ -1,0 +1,126 @@
+{
+  "_purpose": "Kết quả kiểm tra truy cập toàn bộ đường dẫn có trong file 1_Cấu trúc Website _ CT WELD.xlsx",
+  "_checked_at": "2026-08-17",
+  "_method": "Truy cập trực tiếp không đăng nhập (ẩn danh). Google Docs kiểm qua endpoint export?format=txt; Google Drive folder kiểm qua trang danh sách file.",
+
+  "google_docs": [
+    {
+      "cell": "Sheet 3 / E2",
+      "belongs_to": "Về chúng tôi",
+      "url": "https://docs.google.com/document/d/1JKgajDPU4MGS6AJQ2uh0kzHDqn5YLH5ryfNAkFCplvk/edit?tab=t.0#heading=h.3prulaazym1k",
+      "status": "DENIED",
+      "http_code": 401,
+      "detail": "Tài liệu giới hạn quyền truy cập — cần đổi chia sẻ sang \"Anyone with the link → Viewer\" hoặc cấp quyền cho email của mình.",
+      "content_extracted": false
+    },
+    {
+      "cell": "Sheet 3 / E3",
+      "belongs_to": "Trang sản phẩm cấp 1",
+      "url": "https://docs.google.com/document/d/1gALivFvqUF1bB5vcd-Xa4U2YwSKkWQjWlqdygNcFoa4/edit",
+      "status": "OK",
+      "http_code": 200,
+      "detail": "Chứa tiêu đề \"SẢN PHẨM\" + 1 đoạn SAPO.",
+      "content_extracted": true,
+      "saved_to": "products.json → archive.sapo"
+    },
+    {
+      "cell": "Sheet 3 / E5",
+      "belongs_to": "Trang giải pháp cấp 1",
+      "url": "https://docs.google.com/document/d/1VBRd2lBAot1leA6fn0N1w2CKKrkYqRenyMMelxqHnrM/edit",
+      "status": "OK",
+      "http_code": 200,
+      "detail": "Chứa tiêu đề \"Giải pháp\" + 1 đoạn SAPO.",
+      "content_extracted": true,
+      "saved_to": "solutions.json → archive.sapo"
+    },
+    {
+      "cell": "Sheet 3 / E7",
+      "belongs_to": "Trang dịch vụ cấp 1",
+      "url": "https://docs.google.com/document/d/1hetkjJ-rDB8mp_krHKSxL5gK9amOO8Q_RmvW-9kWP2s/edit",
+      "status": "OK",
+      "http_code": 200,
+      "detail": "Chứa tiêu đề \"Dịch vụ\" + 1 đoạn SAPO.",
+      "content_extracted": true,
+      "saved_to": "services.json → archive.sapo"
+    },
+    {
+      "cell": "Sheet 3 / E9",
+      "belongs_to": "Trang dự án cấp 1",
+      "url": "https://docs.google.com/document/d/1Ku953wE3zibbqnAVc_wUvhwkQ1MkVETx1_OQpLBHcoU/edit",
+      "status": "OK",
+      "http_code": 200,
+      "detail": "Chứa tiêu đề \"Dự án\" + 1 đoạn SAPO.",
+      "content_extracted": true,
+      "saved_to": "projects.json → archive.sapo"
+    }
+  ],
+
+  "google_drive_folders": [
+    {
+      "cell": "Sheet 3 / F2",
+      "belongs_to": "Về chúng tôi — Tài nguyên",
+      "url": "https://drive.google.com/drive/folders/1ToiKa8gyeelpC1-7tMlCZ4V_xWNKn860",
+      "status": "OK",
+      "files": [
+        { "name": "1_Tầm nhìn", "id": "1Xwq0Zpo9dEpFETMltx_5CdFx3WWPP1qA", "mime": "image/jpeg" },
+        { "name": "2_Sứ mệnh", "id": "1lZjiJvPKuMLZcb9wAZkr0EE_8WaBSFbz", "mime": "image/jpeg" }
+      ],
+      "saved_to": "about.json → vision_mission_values"
+    },
+    {
+      "cell": "Sheet 3 / F3",
+      "belongs_to": "Trang sản phẩm cấp 1 — Tài nguyên",
+      "url": "https://drive.google.com/drive/folders/1G2tBupVgQcZuZW3eS7ylmInO7MfUg6zT",
+      "status": "OK",
+      "files": [
+        { "name": "hàn 3 trong 1", "id": "1F_JwJ5PlWU0QwVbHoyNr87lDN7l1_0SF", "mime": "image/png" }
+      ],
+      "saved_to": "products.json → products[phj-0618ct2m].images"
+    },
+    {
+      "cell": "Sheet 3 / E4",
+      "belongs_to": "Trang sản phẩm cấp 2 — Nội dung chi tiết",
+      "url": "https://drive.google.com/drive/folders/1zNcBZ6ODdEpfyw5EmD6j0-mXYilPyejs",
+      "status": "OK",
+      "files": [
+        { "name": "1_Máy Phun Bi Làm Sạch Dầm H CTWELD CT1020-10", "id": "1zuid5UFN9W2sd-S2Q9_MtcRHXc0kBopJxDWV0f3_Fiw", "mime": "application/vnd.google-apps.document", "extracted": true },
+        { "name": "2_Máy hàn dầm H tự động 3 trong 1 CTWELD PHJ-0618CT2M", "id": "1J76uNy4LVPayn1tACvQXQ5Qa6plJ0sCe75Y8Upv6G6A", "mime": "application/vnd.google-apps.document", "extracted": true }
+      ],
+      "saved_to": "products.json → products[]"
+    }
+  ],
+
+  "reference_websites": [
+    { "url": "https://automech.vn/", "used_for": "Tham khảo bố cục tổng thể trang chủ, kích thước banner, sản phẩm, tin tức", "status": "OK" },
+    { "url": "https://automech.vn/san-pham/", "used_for": "Trang sản phẩm cấp 1", "status": "OK" },
+    { "url": "https://automech.vn/cobot-estun-co-arc-350/", "used_for": "Trang sản phẩm cấp 2", "status": "OK" },
+    { "url": "https://automech.vn/giai-phap/", "used_for": "Trang giải pháp / dịch vụ / dự án cấp 1", "status": "OK" },
+    { "url": "https://automech.vn/phu-tro-o-to/", "used_for": "Trang giải pháp / dịch vụ / dự án cấp 2", "status": "OK" },
+    { "url": "https://automech.vn/tin-tuc/", "used_for": "Trang tin tức cấp 1", "status": "OK" },
+    { "url": "https://automech.vn/automech-va-fusheng-vietnam-ky-ket-hop-tac-chien-luoc/", "used_for": "Trang tin tức cấp 2", "status": "OK" },
+    { "url": "https://automech.vn/lien-he/", "used_for": "Trang liên hệ", "status": "OK" },
+    { "url": "https://weldcom.vn/", "used_for": "Tham khảo section Dự án nổi bật & Nhà cung cấp chiến lược", "status": "OK" }
+  ],
+
+  "social_links_in_excel": [
+    { "platform": "Facebook", "url": "https://www.facebook.com/ctweld.SME/", "status": "có" },
+    { "platform": "Youtube", "url": "https://www.youtube.com/@ctweld_SME", "status": "có" },
+    { "platform": "Pinterest", "url": "https://www.pinterest.com/ctweld_SME/", "status": "có" },
+    { "platform": "Tiktok", "url": "https://www.tiktok.com/@ctweld_sme", "status": "có" },
+    { "platform": "Messenger", "url": "https://m.me/ctweld.SME/", "status": "có" },
+    { "platform": "Zalo OA", "url": null, "status": "để trống trong Excel — cần bổ sung" },
+    { "platform": "Linkedin", "url": null, "status": "để trống trong Excel — cần bổ sung" },
+    { "platform": "Instagram", "url": null, "status": "để trống trong Excel — cần bổ sung" }
+  ],
+
+  "summary": {
+    "google_docs_ok": 4,
+    "google_docs_denied": 1,
+    "google_drive_folders_ok": 3,
+    "google_drive_folders_denied": 0,
+    "needs_action": [
+      "Mở quyền Google Docs \"Về chúng tôi\" (1JKgajDPU4MGS6AJQ2uh0kzHDqn5YLH5ryfNAkFCplvk) — đây là link duy nhất không truy cập được.",
+      "Bổ sung link Zalo OA, Linkedin, Instagram."
+    ]
+  }
+}

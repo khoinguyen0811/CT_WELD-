@@ -1,0 +1,167 @@
+{
+  "_source": "1_Cấu trúc Website _ CT WELD.xlsx — Sheet 3 \"Cấu trúc trang danh mục\" (13 dòng)",
+  "_purpose": "Bảng yêu cầu gốc cho từng trang danh mục, giữ nguyên STT trong Excel để đối chiếu khi dựng WordPress.",
+  "_note_stt": "STT trong Excel nhảy cách (1, 2, 3, 5, 6, 8, 9, 11, 12, 13, 14, 15) — thiếu 4, 7, 10. Đây là lỗi đánh số trong file gốc, không thiếu nội dung.",
+
+  "pages": [
+    {
+      "stt": "1.0",
+      "name": "Về chúng tôi",
+      "level": 1,
+      "requirements": ["Hiển thị bài viết trong danh mục Về chúng tôi dưới dạng bài viết thông tin"],
+      "content_source": "https://docs.google.com/document/d/1JKgajDPU4MGS6AJQ2uh0kzHDqn5YLH5ryfNAkFCplvk/edit?tab=t.0#heading=h.3prulaazym1k",
+      "content_access": "DENIED (HTTP 401)",
+      "resource_source": "https://drive.google.com/drive/folders/1ToiKa8gyeelpC1-7tMlCZ4V_xWNKn860",
+      "resource_access": "OK — 2 ảnh (1_Tầm nhìn, 2_Sứ mệnh)",
+      "reference_url": null,
+      "data_ref": "about.json",
+      "demo_file": "ve-chung-toi.html"
+    },
+    {
+      "stt": "2.0",
+      "name": "Trang sản phẩm cấp 1",
+      "level": 1,
+      "requirements": [
+        "Hiển thị toàn bộ sản phẩm theo từng danh mục nhỏ",
+        "Có nút lọc theo danh mục sản phẩm và theo thương hiệu",
+        "Bổ sung tiêu đề \"Sản phẩm\" và phần \"Sapo\" ngay bên dưới tiêu đề"
+      ],
+      "content_source": "https://docs.google.com/document/d/1gALivFvqUF1bB5vcd-Xa4U2YwSKkWQjWlqdygNcFoa4/edit",
+      "content_access": "OK — đã lấy SAPO",
+      "resource_source": "https://drive.google.com/drive/folders/1G2tBupVgQcZuZW3eS7ylmInO7MfUg6zT",
+      "resource_access": "OK — 1 ảnh (hàn 3 trong 1)",
+      "reference_url": "https://automech.vn/san-pham/",
+      "data_ref": "products.json → archive, product-categories.json",
+      "demo_file": "san-pham.html"
+    },
+    {
+      "stt": "3.0",
+      "name": "Trang sản phẩm cấp 2",
+      "level": 2,
+      "requirements": [
+        "Hiển thị thông tin chi tiết sản phẩm dưới dạng bài viết SEO",
+        "Bổ sung 1 form đăng ký nhận tư vấn dưới cuối mỗi trang sản phẩm cấp 2"
+      ],
+      "content_source": "https://drive.google.com/drive/folders/1zNcBZ6ODdEpfyw5EmD6j0-mXYilPyejs",
+      "content_access": "OK — 2 tài liệu sản phẩm đầy đủ",
+      "reference_url": "https://automech.vn/cobot-estun-co-arc-350/",
+      "data_ref": "products.json → products[]",
+      "demo_file": "san-pham-chi-tiet.html"
+    },
+    {
+      "stt": "5.0",
+      "name": "Trang giải pháp cấp 1",
+      "level": 1,
+      "requirements": ["Cấu trúc hiển thị bao gồm danh sách các giải pháp doanh nghiệp cung ứng"],
+      "content_source": "https://docs.google.com/document/d/1VBRd2lBAot1leA6fn0N1w2CKKrkYqRenyMMelxqHnrM/edit",
+      "content_access": "OK — đã lấy SAPO",
+      "reference_url": "https://automech.vn/giai-phap/",
+      "data_ref": "solutions.json",
+      "demo_file": "giai-phap.html"
+    },
+    {
+      "stt": "6.0",
+      "name": "Trang giải pháp cấp 2",
+      "level": 2,
+      "requirements": [
+        "Cấu trúc hiển thị tương tự trang sản phẩm cấp 2, dạng bài viết SEO",
+        "Bổ sung 1 form đăng ký tư vấn cuối bài viết"
+      ],
+      "content_source": null,
+      "content_access": "MISSING — chưa có tài liệu nội dung",
+      "reference_url": "https://automech.vn/phu-tro-o-to/",
+      "data_ref": "solutions.json → solutions[]",
+      "demo_file": null
+    },
+    {
+      "stt": "8.0",
+      "name": "Trang dịch vụ cấp 1",
+      "level": 1,
+      "requirements": ["Cấu trúc hiển thị tương tự trang giải pháp cấp 1"],
+      "content_source": "https://docs.google.com/document/d/1hetkjJ-rDB8mp_krHKSxL5gK9amOO8Q_RmvW-9kWP2s/edit",
+      "content_access": "OK — đã lấy SAPO",
+      "reference_url": "https://automech.vn/giai-phap/",
+      "data_ref": "services.json",
+      "demo_file": "dich-vu.html"
+    },
+    {
+      "stt": "9.0",
+      "name": "Trang dịch vụ cấp 2",
+      "level": 2,
+      "requirements": [
+        "Cấu trúc hiển thị tương tự trang sản phẩm cấp 2, dạng bài viết SEO",
+        "Bổ sung 1 form đăng ký tư vấn cuối bài viết"
+      ],
+      "content_source": null,
+      "content_access": "MISSING — chưa có tài liệu nội dung",
+      "reference_url": "https://automech.vn/phu-tro-o-to/",
+      "data_ref": "services.json → services[]",
+      "demo_file": null
+    },
+    {
+      "stt": "11.0",
+      "name": "Trang dự án cấp 1",
+      "level": 1,
+      "requirements": ["Cấu trúc hiển thị tương tự trang giải pháp cấp 1"],
+      "content_source": "https://docs.google.com/document/d/1Ku953wE3zibbqnAVc_wUvhwkQ1MkVETx1_OQpLBHcoU/edit",
+      "content_access": "OK — đã lấy SAPO",
+      "reference_url": "https://automech.vn/giai-phap/",
+      "data_ref": "projects.json",
+      "demo_file": "du-an.html"
+    },
+    {
+      "stt": "12.0",
+      "name": "Trang dự án cấp 2",
+      "level": 2,
+      "requirements": [
+        "Cấu trúc hiển thị tương tự trang sản phẩm cấp 2, dạng bài viết SEO",
+        "Bổ sung 1 form đăng ký tư vấn cuối bài viết"
+      ],
+      "content_source": null,
+      "content_access": "MISSING — chưa có tài liệu nội dung",
+      "reference_url": "https://automech.vn/phu-tro-o-to/",
+      "data_ref": "projects.json → projects[]",
+      "demo_file": null
+    },
+    {
+      "stt": "13.0",
+      "name": "Trang tin tức cấp 1",
+      "level": 1,
+      "requirements": ["Chia cấu trúc hiển thị theo 3 cột x 4 hàng trên 1 trang, tương tự cho các danh mục nhỏ hơn"],
+      "content_source": null,
+      "content_access": "MISSING — không có Google Docs SAPO cho trang tin tức",
+      "reference_url": "https://automech.vn/tin-tuc/",
+      "data_ref": "news.json",
+      "demo_file": "tin-tuc.html"
+    },
+    {
+      "stt": "14.0",
+      "name": "Trang tin tức cấp 2",
+      "level": 2,
+      "requirements": ["Cấu trúc bài viết hiển thị tương tự nguồn tham khảo, không bổ sung gì thêm"],
+      "content_source": null,
+      "content_access": "MISSING — chưa có nội dung bài viết thật",
+      "reference_url": "https://automech.vn/automech-va-fusheng-vietnam-ky-ket-hop-tac-chien-luoc/",
+      "data_ref": "news.json → posts[]",
+      "demo_file": null
+    },
+    {
+      "stt": "15.0",
+      "name": "Liên hệ",
+      "level": 1,
+      "requirements": ["Cấu trúc hiển thị tương tự nguồn tham khảo, không bổ sung gì thêm"],
+      "content_source": null,
+      "content_access": "N/A — dùng thông tin công ty ở site.json",
+      "reference_url": "https://automech.vn/lien-he/",
+      "data_ref": "site.json → company, forms.json → consultation",
+      "demo_file": "lien-he.html"
+    }
+  ],
+
+  "summary": {
+    "total_pages_specified": 12,
+    "content_ready": 5,
+    "content_missing": 6,
+    "content_access_denied": 1
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "_source": "1_Cấu trúc Website _ CT WELD.xlsx — Sheet 1 (Desktop) mục 1.0 & Sheet 2 (Mobile) mục 1.0",
+  "_spec": {
+    "desktop": "Menu Stickybar ghim ở đầu trang, chạy lăn theo con trỏ chuột. Hiển thị 8 danh mục chính (I → VIII), các danh mục con hiện ở dropdown.",
+    "mobile": "Chỉ hiển thị Logo và nút hamburger; bấm vào mở toàn bộ danh sách menu (bao gồm cả danh mục con).",
+    "note_from_excel": "Cột NỘI DUNG ghi \"7 danh mục chính\" nhưng cột hiển thị liệt kê 8 mục (I → VIII). Đã lấy theo danh sách 8 mục thực tế."
+  },
+  "items": [
+    {
+      "order": 1,
+      "roman": "I",
+      "label": "Trang chủ",
+      "slug": "trang-chu",
+      "url": "index.html",
+      "wp_template": "front-page",
+      "children": []
+    },
+    {
+      "order": 2,
+      "roman": "II",
+      "label": "Về chúng tôi",
+      "label_in_demo": "Giới thiệu",
+      "slug": "ve-chung-toi",
+      "url": "ve-chung-toi.html",
+      "wp_template": "page",
+      "children": []
+    },
+    {
+      "order": 3,
+      "roman": "III",
+      "label": "Sản phẩm",
+      "slug": "san-pham",
+      "url": "san-pham.html",
+      "wp_template": "archive-product",
+      "children": [
+        { "order": "3.1", "label": "Dây chuyền kết cấu thép", "slug": "day-chuyen-ket-cau-thep", "url": "san-pham.html?cat=ket-cau-thep" },
+        { "order": "3.2", "label": "Robot công nghiệp", "slug": "robot-cong-nghiep", "url": "san-pham.html?cat=robot" }
+      ]
+    },
+    {
+      "order": 4,
+      "roman": "IV",
+      "label": "Giải pháp",
+      "slug": "giai-phap",
+      "url": "giai-phap.html",
+      "wp_template": "archive-solution",
+      "children": [
+        { "order": "4.1", "label": "Giải pháp gia công kết cấu thép", "slug": "giai-phap-gia-cong-ket-cau-thep", "url": "giai-phap.html#ket-cau-thep" },
+        { "order": "4.2", "label": "Giải pháp tự động hoá", "slug": "giai-phap-tu-dong-hoa", "url": "giai-phap.html#tu-dong-hoa" },
+        { "order": "4.3", "label": "Giải pháp công nghiệp xây dựng", "slug": "giai-phap-cong-nghiep-xay-dung", "url": "giai-phap.html#xay-dung", "content_status": "missing", "note": "Menu có mục này nhưng trang giai-phap.html hiện chưa có section tương ứng — chờ nội dung khách hàng." }
+      ]
+    },
+    {
+      "order": 5,
+      "roman": "V",
+      "label": "Dịch vụ",
+      "slug": "dich-vu",
+      "url": "dich-vu.html",
+      "wp_template": "archive-service",
+      "children": [
+        { "order": "5.1", "label": "Sửa chữa thiết bị", "slug": "sua-chua-thiet-bi", "url": "dich-vu.html#sua-chua" },
+        { "order": "5.2", "label": "Bảo dưỡng định kỳ", "slug": "bao-duong-dinh-ky", "url": "dich-vu.html#bao-duong" },
+        { "order": "5.3", "label": "Cung cấp vật tư tiêu hao", "slug": "cung-cap-vat-tu-tieu-hao", "url": "dich-vu.html#vat-tu" },
+        { "order": "5.4", "label": "Cung cấp phụ tùng thay thế", "slug": "cung-cap-phu-tung-thay-the", "url": "dich-vu.html#phu-tung" }
+      ]
+    },
+    {
+      "order": 6,
+      "roman": "VI",
+      "label": "Dự án",
+      "slug": "du-an",
+      "url": "du-an.html",
+      "wp_template": "archive-project",
+      "children": []
+    },
+    {
+      "order": 7,
+      "roman": "VII",
+      "label": "Tin tức",
+      "slug": "tin-tuc",
+      "url": "tin-tuc.html",
+      "wp_template": "archive-post",
+      "children": [
+        { "order": "7.1", "label": "Tin tức doanh nghiệp", "slug": "tin-tuc-doanh-nghiep", "url": "tin-tuc.html#doanh-nghiep" },
+        { "order": "7.2", "label": "Tin tức ngành", "slug": "tin-tuc-nganh", "url": "tin-tuc.html#nganh" },
+        { "order": "7.3", "label": "Thông cáo báo chí", "slug": "thong-cao-bao-chi", "url": "tin-tuc.html#bao-chi" }
+      ]
+    },
+    {
+      "order": 8,
+      "roman": "VIII",
+      "label": "Liên hệ",
+      "slug": "lien-he",
+      "url": "lien-he.html",
+      "wp_template": "page",
+      "children": []
+    }
+  ],
+  "open_issues_from_excel": [
+    "Cột LƯU Ý NỘI BỘ (Sheet 1, mục 1.0): \"Cần bổ sung thông tin các giải pháp\"",
+    "Cột LƯU Ý NỘI BỘ (Sheet 1, mục 1.0): \"Cần bổ sung thông tin các dịch vụ\""
+  ]
+}

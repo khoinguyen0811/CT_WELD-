@@ -1,0 +1,997 @@
+{
+  "_source": {
+    "page_spec": "Excel Sheet 3 — mục 2.0 (Trang sản phẩm cấp 1) & 3.0 (Trang sản phẩm cấp 2)",
+    "sapo_doc": "https://docs.google.com/document/d/1gALivFvqUF1bB5vcd-Xa4U2YwSKkWQjWlqdygNcFoa4/edit (mở được — đã lấy nội dung)",
+    "detail_docs_folder": "https://drive.google.com/drive/folders/1zNcBZ6ODdEpfyw5EmD6j0-mXYilPyejs (mở được — 2 file tài liệu sản phẩm)",
+    "layout_reference_level1": "https://automech.vn/san-pham/",
+    "layout_reference_level2": "https://automech.vn/cobot-estun-co-arc-350/"
+  },
+  "archive": {
+    "title": "Sản phẩm",
+    "sapo": "CTWELD cung cấp đa dạng thiết bị cơ khí và hàn tự động, từ máy hàn thông minh, robot – cobot hàn đến hệ thống cắt CNC plasma và vật tư tiêu hao ngành hàn. Toàn bộ sản phẩm được lựa chọn từ các thương hiệu uy tín trên thế giới, đảm bảo độ chính xác, độ bền cao và vận hành ổn định. Với đội ngũ kỹ sư giàu kinh nghiệm, CTWELD luôn sẵn sàng tư vấn giải pháp phù hợp với từng nhu cầu sản xuất, giúp doanh nghiệp tối ưu hiệu suất và tiết kiệm chi phí.",
+    "sapo_status": "official — lấy từ Google Docs của khách hàng",
+    "filters": [
+      "product_cat",
+      "product_brand"
+    ],
+    "layout": "grid",
+    "detail_page_requirement": "Trang sản phẩm cấp 2 hiển thị dưới dạng bài viết SEO + bổ sung 1 form đăng ký nhận tư vấn ở cuối trang (form_ref: forms.json → consultation)"
+  },
+  "products": [
+    {
+      "id": "ct1020-10",
+      "content_status": "official",
+      "source_doc": "https://docs.google.com/document/d/1zuid5UFN9W2sd-S2Q9_MtcRHXc0kBopJxDWV0f3_Fiw/edit",
+      "title": "Máy Phun Bi Làm Sạch Dầm H CTWELD CT1020-10",
+      "slug": "may-phun-bi-lam-sach-dam-h-ctweld-ct1020-10",
+      "seo_title": "Máy phun bi làm sạch dầm H CTWELD CT1020-10 - Giải pháp xử lý bề mặt thép tối ưu chi phí",
+      "model": "CT1020-10",
+      "brand": "CTWELD",
+      "category_slug": "ket-cau-thep",
+      "product_type": "Máy phun bi làm sạch dạng băng tải con lăn",
+      "images": [],
+      "images_status": "missing — tài liệu Google Docs không kèm ảnh sản phẩm",
+      "highlight_specs": [
+        {
+          "key": "Model",
+          "value": "CT1020-10"
+        },
+        {
+          "key": "Thương hiệu",
+          "value": "CTWELD"
+        },
+        {
+          "key": "Loại thiết bị",
+          "value": "Máy phun bi làm sạch dạng băng tải con lăn"
+        },
+        {
+          "key": "Kích thước dầm khả dụng",
+          "value": "1000 × 2000 mm"
+        },
+        {
+          "key": "Tiêu chuẩn làm sạch",
+          "value": "SA 2.0 – 2.5 (ISO 8501-1)"
+        },
+        {
+          "key": "Bảo hành",
+          "value": "12 tháng (lỗi nhà sản xuất)"
+        }
+      ],
+      "sapo": "Máy phun bi làm sạch dầm H CT1020-10 là thiết bị tiền xử lý bề mặt thép chuyên dụng, dùng để loại bỏ rỉ sét, xỉ hàn và lớp oxit trên dầm H, thép hình, thép tấm và kết cấu dạng lưới. Với buồng phun dài tới 10m — dài hơn hẳn thiết kế phổ thông trên thị trường (6-7m) — máy giúp thu hồi bi tốt hơn, làm sạch đồng đều và tiết kiệm đáng kể chi phí vận hành. Đây là giải pháp được nhiều nhà máy kết cấu thép, cầu đường và cơ khí chế tạo lựa chọn để chuẩn hóa chất lượng bề mặt trước khi sơn phủ.",
+      "content": [
+        {
+          "heading": "1. Máy phun bi làm sạch dầm H: Giải pháp xử lý bề mặt thép thế hệ mới",
+          "children": [
+            {
+              "heading": "1.1. Phun bi làm sạch là gì",
+              "body": "Phun bi làm sạch (Shot Blasting) là công nghệ dùng dòng bi thép tốc độ cao bắn liên tục lên bề mặt kim loại để loại bỏ rỉ sét, xỉ hàn, lớp oxit và tạp chất bám dính. Khác với cách làm sạch thủ công (mài, phun cát), công nghệ này xử lý đồng đều trên diện tích lớn trong thời gian ngắn, đồng thời tạo ra độ nhám bề mặt chuẩn hóa theo yêu cầu kỹ thuật."
+            },
+            {
+              "heading": "1.2. Vai trò của phun bi trong xử lý bề mặt thép hiện đại",
+              "body": "Trước khi sơn phủ hoặc mạ bảo vệ, bề mặt thép bắt buộc phải đạt độ sạch và độ nhám nhất định - nếu không, lớp sơn sẽ bong tróc sớm, giảm khả năng chống ăn mòn. Máy phun bi đóng vai trò như một \"bước lọc chất lượng\" bắt buộc trong dây chuyền sản xuất kết cấu thép, giúp doanh nghiệp kiểm soát được độ bền và tuổi thọ sản phẩm đầu ra một cách ổn định thay vì phụ thuộc vào tay nghề công nhân."
+            },
+            {
+              "heading": "1.3. Tổng quan Máy phun bi CT1020-10",
+              "body": "CT1020-10 là dòng máy phun bi làm sạch dạng băng tải con lăn, được CTWELD phát triển chuyên biệt cho dầm H, thép hình và thép tấm khổ lớn. Hệ thống tích hợp đồng bộ giữa buồng phun bi hiệu suất cao, hệ thống tuần hoàn – thu hồi bi và hệ lọc bụi đạt hiệu suất tới 99%, cho phép xử lý liên tục với chi phí vận hành thấp hơn các dòng máy phổ thông cùng phân khúc."
+            },
+            {
+              "heading": "1.4. Xu hướng ứng dụng máy phun bi trong ngành cơ khí – kết cấu thép Việt Nam",
+              "body": "Khi các nhà máy Việt Nam ngày càng tham gia sâu vào chuỗi cung ứng xuất khẩu (kết cấu thép, toa xe, máy móc xây dựng), yêu cầu về tiêu chuẩn bề mặt trước sơn (SA 2.0-2.5 theo ISO 8501-1) trở thành điều kiện bắt buộc trong hợp đồng. Vì vậy, đầu tư máy phun bi công nghiệp không còn là lựa chọn mà đang trở thành tiêu chuẩn tối thiểu để doanh nghiệp đủ điều kiện tham gia các gói thầu và đơn hàng xuất khẩu."
+            }
+          ]
+        },
+        {
+          "heading": "2. Đặc điểm nổi bật của Máy phun bi CT1020-10",
+          "children": [
+            {
+              "heading": "2.1. Buồng phun dài 10m — thu hồi bi tốt, tiết kiệm chi phí vận hành",
+              "body": "Buồng phun chính dài tới 10m, trong khi các thiết kế phổ thông trên thị trường chỉ khoảng 6-7m. Buồng dài hơn giúp máy thu hồi bi triệt để hơn, giảm đáng kể chi phí tiêu hao bi thép trong quá trình vận hành lâu dài."
+            },
+            {
+              "heading": "2.2. Hố móng nông — tiết kiệm chi phí đầu tư ban đầu",
+              "body": "Máy chỉ yêu cầu hố móng sâu 1,5m, so với mức 2,5m phổ biến ở các dòng máy khác — giảm khoảng 40% khối lượng đào móng. Với nền đất yếu, riêng khoản này có thể tiết kiệm tới cả trăm triệu đồng chi phí thi công, đồng thời giảm rủi ro thấm nước, ngập hố móng — vốn là vấn đề thường gặp với điều kiện nền đất và mực nước ngầm tại Việt Nam."
+            },
+            {
+              "heading": "2.3. Buồng phun khép kín, an toàn cho người vận hành",
+              "body": "Hai buồng phụ hai bên (4m × 2m mỗi bên) được trang bị 8 lớp rèm chắn cao su lõi thép, giữ bi không bắn ra ngoài. Thiết kế khép kín kết hợp áp suất âm nhẹ bên trong giúp môi trường làm việc sạch hơn, giảm bụi phát tán và giảm thất thoát vật liệu."
+            },
+            {
+              "heading": "2.4. Hệ thống lọc bụi hiệu suất 99%, đạt chuẩn phát thải công nghiệp",
+              "body": "Sử dụng lõi lọc dạng cartridge xung khí nén, diện tích lọc lớn gấp 30-40 lần lọc túi truyền thống, độ chính xác lọc đạt 5 μm. Nồng độ bụi phát thải dưới 30 mg/m³ — thấp hơn nhiều so với quy chuẩn môi trường, giúp doanh nghiệp yên tâm về mặt tuân thủ."
+            },
+            {
+              "heading": "2.5. Làm sạch đồng đều theo không gian ba chiều",
+              "body": "Các đầu phun bi được bố trí ở nhiều vị trí quanh buồng phun (trên, dưới, trước, sau), tạo dòng bi tác động lên mọi bề mặt của phôi mà không cần lật xoay nhiều lần, rút ngắn thời gian xử lý mỗi mẻ."
+            }
+          ]
+        },
+        {
+          "heading": "3. Công nghệ tích hợp trên Máy phun bi CT1020-10",
+          "children": [
+            {
+              "heading": "3.1. Cụm đầu phun bi (Blast Wheel) hiệu suất cao",
+              "body": "Mỗi đầu phun gồm cánh bắn, đĩa phân phối và ống định hướng, gia tốc bi thép tới tốc độ 65-70 m/s trước khi bắn ra bề mặt phôi. Với 10 đầu phun hoạt động đồng thời, mỗi đầu đạt lưu lượng 250kg bi/phút, máy tạo ra mật độ va đập đủ lớn để làm sạch nhanh cả những phôi kích thước lớn."
+            },
+            {
+              "heading": "3.2. Hệ thống băng tải con lăn chịu tải lớn",
+              "body": "Con lăn được trang bị ống lót chống mài mòn, dễ tháo lắp bảo trì, chịu tải tới 1000 kg/m — phù hợp vận chuyển dầm thép, thép hình khối lượng lớn qua vùng phun mà không gây biến dạng hay xô lệch phôi."
+            },
+            {
+              "heading": "3.3. Hệ tuần hoàn – thu hồi bi thông minh",
+              "body": "Sau khi phun, hỗn hợp bi và bụi được vít tải thu gom, gầu tải nâng lên và đưa vào bộ phân ly. Tại đây, luồng khí ngang tách bi sạch (rơi xuống để tái sử dụng) khỏi bụi mịn (được hút vào hệ lọc), giúp bi thép được tuần hoàn liên tục thay vì phải bổ sung liên tục — tiết kiệm chi phí vật tư đáng kể."
+            },
+            {
+              "heading": "3.4. Hệ lọc bụi công nghệ DEC",
+              "body": "Vật liệu lọc phủ lớp sợi siêu mịn cỡ submicron, ứng dụng công nghệ bảo vệ môi trường tương tự chuẩn Donaldson (Mỹ). Lõi lọc dễ tháo lắp, chỉ cần 1 người thao tác bảo trì, tự động làm sạch định kỳ bằng khí nén xung áp mà không cần dừng máy."
+            },
+            {
+              "heading": "3.5. Hệ thống điều khiển điện tập trung",
+              "body": "Toàn bộ băng tải, đầu phun bi, hệ tuần hoàn bi và hệ lọc bụi được vận hành đồng bộ qua tủ điều khiển trung tâm, cho phép người vận hành theo dõi và điều chỉnh tốc độ băng tải, lưu lượng bi theo thực tế chất lượng làm sạch mong muốn."
+            }
+          ]
+        },
+        {
+          "heading": "5. Nguyên lý hoạt động của Máy phun bi CT1020-10",
+          "body": "Máy vận hành theo một chu trình khép kín, gồm 4 giai đoạn chính:",
+          "list": [
+            "Đưa phôi vào buồng phun: Động cơ dẫn động băng tải con lăn đưa dầm thép/thép hình vào vùng phun bên trong buồng làm sạch.",
+            "Phun bi làm sạch: Các đầu phun bi (bố trí trên, dưới, trước, sau) tạo dòng bi tốc độ cao tác động khắp bề mặt phôi, loại bỏ rỉ sét, xỉ hàn và lớp oxit, đồng thời giúp khử ứng suất bên trong phôi, hạn chế biến dạng khi gia công.",
+            "Tuần hoàn bi và lọc bụi: Hỗn hợp bi – bụi được thu gom, tách lọc để tái sử dụng bi sạch; luồng khí chứa bụi được hút qua hệ lọc cartridge hiệu suất 99% trước khi xả khí sạch ra môi trường.",
+            "Đưa phôi ra: Phôi đã làm sạch tiếp tục di chuyển ra khỏi buồng phun, sẵn sàng cho công đoạn sơn phủ hoặc gia công tiếp theo."
+          ],
+          "body_after": "Nhờ chu trình khép kín này, quá trình làm sạch diễn ra liên tục với tốc độ ổn định, không phụ thuộc vào thao tác thủ công — giúp chất lượng bề mặt đồng đều giữa các mẻ sản xuất."
+        },
+        {
+          "heading": "6. Ứng dụng thực tế của Máy phun bi CT1020-10",
+          "children": [
+            {
+              "heading": "6.1. Kết cấu thép hàn",
+              "body": "Làm sạch dầm, cột thép, bản mã trước khi sơn chống gỉ, đảm bảo lớp sơn bám dính tốt và bền theo thời gian."
+            },
+            {
+              "heading": "6.2. Sản xuất toa xe đường sắt",
+              "body": "Xử lý bề mặt khung, vỏ toa xe đạt chuẩn trước khi sơn phủ chống ăn mòn, đáp ứng yêu cầu khắt khe về tuổi thọ vận hành."
+            },
+            {
+              "heading": "6.3. Máy móc xây dựng",
+              "body": "Làm sạch các chi tiết kết cấu máy trước sơn, cải thiện độ bền và khả năng chịu mỏi của thiết bị trong môi trường vận hành khắc nghiệt."
+            },
+            {
+              "heading": "6.4. Chế tạo cầu thép",
+              "body": "Xử lý bề mặt dầm cầu, cấu kiện thép lớn theo đúng tiêu chuẩn SA trước khi sơn phủ epoxy, đảm bảo tuổi thọ công trình theo thiết kế."
+            },
+            {
+              "heading": "6.5. Xưởng gia công kết cấu thép xuất khẩu",
+              "body": "Chuẩn hóa chất lượng bề mặt sản phẩm để đáp ứng yêu cầu kiểm định của khách hàng quốc tế trước khi xuất xưởng."
+            }
+          ]
+        },
+        {
+          "heading": "7. Lợi ích khi sử dụng Máy phun bi CT1020-10",
+          "children": [
+            {
+              "heading": "7.1. Nâng cao độ bám dính lớp sơn",
+              "body": "Bề mặt sạch, độ nhám chuẩn giúp lớp sơn bám chắc hơn, giảm nguy cơ bong tróc, kéo dài tuổi thọ lớp phủ bảo vệ."
+            },
+            {
+              "heading": "7.2. Tăng khả năng chống ăn mòn và chịu mỏi",
+              "body": "Loại bỏ triệt để rỉ sét và tạp chất giúp chi tiết thép bền hơn trong môi trường khắc nghiệt, đồng thời quá trình phun bi giúp khử ứng suất bên trong, hạn chế biến dạng."
+            },
+            {
+              "heading": "7.3. Tiết kiệm chi phí đầu tư và vận hành dài hạn",
+              "body": "Hố móng nông hơn giúp giảm chi phí thi công ban đầu; buồng phun dài giúp thu hồi bi tốt hơn, giảm chi phí bi thép tiêu hao theo thời gian."
+            },
+            {
+              "heading": "7.4. Đảm bảo môi trường làm việc sạch, an toàn",
+              "body": "Thiết kế khép kín và hệ lọc bụi hiệu suất cao giúp giảm bụi phát tán, bảo vệ sức khỏe người lao động và tuân thủ quy chuẩn môi trường."
+            },
+            {
+              "heading": "7.5. Xử lý được cấu kiện khổ lớn, khối lượng nặng",
+              "body": "Hệ băng tải con lăn chịu tải 1000 kg/m phù hợp với dầm H, thép hình có kích thước và trọng lượng lớn mà các máy phun bi cỡ nhỏ không đáp ứng được."
+            }
+          ]
+        },
+        {
+          "heading": "9. Máy phun bi CT1020-10 phù hợp với doanh nghiệp nào?",
+          "children": [
+            {
+              "heading": "9.1. Nhà máy kết cấu thép",
+              "body": "Cần chuẩn hóa chất lượng bề mặt trước sơn để đáp ứng tiêu chuẩn hợp đồng và kéo dài tuổi thọ công trình."
+            },
+            {
+              "heading": "9.2. Doanh nghiệp sản xuất xuất khẩu",
+              "body": "Cần đáp ứng tiêu chuẩn bề mặt quốc tế (SA 2.0-2.5) để đủ điều kiện tham gia chuỗi cung ứng toàn cầu."
+            },
+            {
+              "heading": "9.3. Nhà máy chế tạo toa xe, máy móc xây dựng",
+              "body": "Cần xử lý bề mặt chi tiết khổ lớn, khối lượng nặng với độ bền cao trong môi trường vận hành khắc nghiệt."
+            },
+            {
+              "heading": "9.4. Đơn vị thi công cầu thép, công trình hạ tầng",
+              "body": "Cần đảm bảo chất lượng bề mặt kết cấu thép đạt chuẩn trước khi sơn phủ bảo vệ dài hạn."
+            }
+          ]
+        },
+        {
+          "heading": "10. Hướng dẫn lựa chọn máy phun bi phù hợp",
+          "children": [
+            {
+              "heading": "10.1. Xác định kích thước phôi cần xử lý",
+              "body": "CT1020-10 phù hợp với dầm/thép hình có kích thước tối đa khoảng 1000 × 2000mm. Với phôi lớn hơn, cần trao đổi để CTWELD tư vấn cấu hình buồng phun phù hợp."
+            },
+            {
+              "heading": "10.2. Xác định tiêu chuẩn bề mặt cần đạt",
+              "body": "Nếu yêu cầu hợp đồng quy định cụ thể cấp độ làm sạch (SA 2.0, SA 2.5...) hoặc độ nhám, cần xác nhận trước để cấu hình tốc độ băng tải và lưu lượng bi phù hợp."
+            },
+            {
+              "heading": "10.3. Đánh giá điều kiện nền móng nhà xưởng",
+              "body": "Với nền đất yếu hoặc mực nước ngầm cao, ưu tiên dòng máy có hố móng nông để giảm chi phí và rủi ro thi công."
+            },
+            {
+              "heading": "10.4. Xác định năng suất sản xuất mong muốn",
+              "body": "Tần suất vận hành, tốc độ băng tải cần được tính toán dựa trên sản lượng thực tế của nhà máy để tối ưu đầu tư."
+            },
+            {
+              "heading": "10.5. Lựa chọn đơn vị cung cấp có năng lực lắp đặt và hậu mãi",
+              "body": "Vì đây là hệ thống tích hợp nhiều cụm thiết bị (băng tải, đầu phun, lọc bụi), nên chọn đơn vị có đội ngũ kỹ thuật trực tiếp lắp đặt, đào tạo vận hành và cung cấp phụ tùng thay thế rõ nguồn gốc."
+            }
+          ]
+        },
+        {
+          "heading": "11. Giải pháp Máy phun bi CT1020-10 tại CTWELD",
+          "body": "CTWELD cung cấp giải pháp trọn gói cho Máy phun bi làm sạch dầm H CT1020-10, bao gồm vận chuyển, lắp đặt, đào tạo vận hành và bàn giao trực tiếp tại nhà máy khách hàng. Sản phẩm được bảo hành 12 tháng đối với lỗi từ nhà sản xuất, kèm chế độ bảo trì định kỳ 2 lần/năm trong thời gian bảo hành. Các linh kiện thay thế (động cơ, vòng bi, van điều khiển, dây đai...) đều có nguồn gốc từ các thương hiệu công nghiệp uy tín, giúp khách hàng thuận tiện trong việc bảo trì và thay thế phụ tùng lâu dài sau khi hết bảo hành."
+        }
+      ],
+      "spec_table": {
+        "heading": "4. Thông số kỹ thuật Máy phun bi CT1020-10",
+        "columns": [
+          "Hạng mục",
+          "Thông số"
+        ],
+        "rows": [
+          [
+            "Kích thước buồng làm sạch",
+            "1200 x 2200 mm"
+          ],
+          [
+            "Kích thước dầm khả dụng",
+            "1000 × 2000 mm"
+          ],
+          [
+            "Tải trọng con lăn",
+            "1000 kg/m"
+          ],
+          [
+            "Tiêu chuẩn bề mặt sau xử lý",
+            "SA 2.0 – 2.5 (ISO 8501-1)"
+          ],
+          [
+            "Độ nhám bề mặt",
+            "15 – 65 μm (có thể điều chỉnh)"
+          ],
+          [
+            "Độ ồn",
+            "≤ 85 dB"
+          ],
+          [
+            "Nồng độ phát thải bụi",
+            "< 30 mg/m³"
+          ],
+          [
+            "Tổng công suất",
+            "~180 kW"
+          ],
+          [
+            "Tần suất hoạt động",
+            "16 giờ/ngày"
+          ],
+          [
+            "Hiệu suất lọc bụi",
+            "99%"
+          ]
+        ]
+      },
+      "comparison_table": {
+        "heading": "8. So sánh Máy phun bi CT1020-10 với phương pháp làm sạch truyền thống",
+        "columns": [
+          "Tiêu chí",
+          "Máy phun bi CT1020-10",
+          "Làm sạch thủ công / máy phổ thông"
+        ],
+        "rows": [
+          [
+            "Độ đồng đều bề mặt",
+            "Cao, đạt chuẩn SA 2.0-2.5 ổn định mọi mẻ",
+            "Phụ thuộc tay nghề, dễ không đồng đều"
+          ],
+          [
+            "Chi phí bi thép tiêu hao",
+            "Thấp nhờ buồng phun dài 10m, thu hồi bi tốt",
+            "Cao hơn do buồng phun ngắn (6-7m), thất thoát bi nhiều"
+          ],
+          [
+            "Chi phí xây dựng móng",
+            "Thấp, hố móng chỉ sâu 1,5m",
+            "Cao hơn, hố móng thường sâu tới 2,5m"
+          ],
+          [
+            "Kiểm soát bụi/môi trường",
+            "Hiệu suất lọc 99%, đạt chuẩn phát thải",
+            "Nhiều bụi phát tán, khó kiểm soát"
+          ],
+          [
+            "Năng suất xử lý",
+            "Liên tục, tự động, 16 giờ/ngày",
+            "Gián đoạn, phụ thuộc nhân công"
+          ]
+        ]
+      },
+      "faq": {
+        "heading": "12. Câu hỏi thường gặp về Máy phun bi CT1020-10",
+        "items": [
+          {
+            "q": "Máy phun bi CT1020-10 dùng để làm gì?",
+            "a": "Đây là máy tiền xử lý bề mặt thép, dùng để làm sạch rỉ sét, xỉ hàn và lớp oxit trên dầm H, thép hình và thép tấm trước khi sơn phủ hoặc gia công tiếp theo."
+          },
+          {
+            "q": "Máy có tốn nhiều bi thép trong quá trình vận hành không?",
+            "a": "Nhờ buồng phun dài 10m và hệ thống tuần hoàn – thu hồi bi tự động, phần lớn bi thép được tái sử dụng liên tục, giúp giảm đáng kể chi phí bi tiêu hao so với các dòng máy có buồng phun ngắn hơn."
+          },
+          {
+            "q": "Máy có gây ô nhiễm bụi cho nhà xưởng không?",
+            "a": "Không. Hệ thống hoạt động trong buồng kín kết hợp hệ lọc bụi cartridge hiệu suất 99%, nồng độ phát thải dưới 30 mg/m³, thấp hơn nhiều so với quy chuẩn môi trường hiện hành."
+          },
+          {
+            "q": "Cần chuẩn bị gì trước khi lắp đặt máy?",
+            "a": "Nhà máy cần thi công móng theo bản vẽ, chuẩn bị hệ thống điện 3 pha, nhân sự phối hợp tiếp nhận và lắp đặt thiết bị theo hướng dẫn của CTWELD."
+          },
+          {
+            "q": "CTWELD có hỗ trợ lắp đặt và đào tạo vận hành không?",
+            "a": "Có. CTWELD cung cấp dịch vụ trọn gói từ lắp đặt, chạy thử, đào tạo nhân sự vận hành đến bảo trì định kỳ trong suốt thời gian bảo hành."
+          }
+        ]
+      },
+      "cta": {
+        "company": "Công ty TNHH Dịch vụ Kỹ thuật và Giải pháp Cơ khí CTWELD",
+        "hotline": "0969.730.762",
+        "email": "minhtuan@ctweld.vn",
+        "text": "Liên hệ ngay để nhận báo giá chi tiết và tư vấn cấu hình máy phun bi phù hợp với nhà xưởng của bạn.",
+        "form_ref": "forms.json → consultation"
+      }
+    },
+    {
+      "id": "phj-0618ct2m",
+      "content_status": "official",
+      "source_doc": "https://docs.google.com/document/d/1J76uNy4LVPayn1tACvQXQ5Qa6plJ0sCe75Y8Upv6G6A/edit",
+      "title": "Máy hàn dầm H tự động 3 trong 1 CTWELD PHJ-0618CT2M",
+      "slug": "may-han-dam-h-tu-dong-3-trong-1-ctweld-phj-0618ct2m",
+      "seo_title": "Máy hàn dầm H tự động 3 trong 1 CTWELD PHJ-0618CT2M — Trạm hàn đứng thông minh thế hệ mới",
+      "model": "PHJ-0618CT2M",
+      "brand": "CTWELD",
+      "category_slug": "ket-cau-thep",
+      "product_type": "Trạm hàn đứng thông minh 3 trong 1 (đính gá – hàn SAW – nắn thẳng)",
+      "images": [
+        {
+          "src": "images/han-3-trong-1.png",
+          "title": "hàn 3 trong 1",
+          "source": "Google Drive folder 1G2tBupVgQcZuZW3eS7ylmInO7MfUg6zT",
+          "status": "đã tải về repo (images/han-3-trong-1.png) — ảnh render máy hàn dầm H 3 trong 1",
+          "drive_url": "https://drive.google.com/file/d/1F_JwJ5PlWU0QwVbHoyNr87lDN7l1_0SF/view"
+        }
+      ],
+      "highlight_specs": [
+        {
+          "key": "Model",
+          "value": "PHJ-0618CT2M"
+        },
+        {
+          "key": "Chiều cao bụng dầm",
+          "value": "200 – 1.800 mm"
+        },
+        {
+          "key": "Chiều dài dầm hàn được",
+          "value": "4.000 – 15.000 mm"
+        },
+        {
+          "key": "Tốc độ hàn",
+          "value": "200 – 1.500 mm/phút"
+        },
+        {
+          "key": "Nguồn hàn",
+          "value": "AMIG 500PSR PLUS × 04, 30–500A"
+        },
+        {
+          "key": "Điện áp hoạt động",
+          "value": "380V/3 pha, 50/60Hz"
+        }
+      ],
+      "sapo": "PHJ-0618CT2M là trạm hàn đứng thông minh 3 trong 1 do CTWELD nghiên cứu phát triển, gộp ba công đoạn đính gá, hàn ngập dây dưới lớp thuốc (SAW) và nắn thẳng dầm chữ H vào một trạm liên hoàn duy nhất. Sản phẩm giải quyết bài toán phụ thuộc tay nghề thợ hàn và tốc độ thi công chậm khi gia công kết cấu thép hạng nhẹ. Với hệ thống kẹp gá, hàn và nắn tự động hóa toàn phần cùng bộ điều khiển CT2W do CTWELD làm chủ, máy chỉ cần một người vận hành thay vì hai đến ba người, đồng thời nâng năng suất thêm 20–30% so với thế hệ cũ. Đây là giải pháp phù hợp cho các xưởng kết cấu thép đang cần chuẩn hóa chất lượng và rút ngắn chu kỳ sản xuất.",
+      "content": [
+        {
+          "heading": "1. CTWELD PHJ-0618CT2M: Giải pháp hàn dầm H tự động thế hệ mới",
+          "children": [
+            {
+              "heading": "1.1 Khái niệm nền tảng: Hàn dầm 3 trong 1 là gì?",
+              "body": "Hàn dầm 3 trong 1 là mô hình tích hợp đính gá, hàn và nắn thẳng dầm chữ H vào một trạm cơ điện tử duy nhất, thay vì bố trí ba trạm rời rạc như dây chuyền truyền thống. Nhờ dầm được giữ cố định xuyên suốt quá trình, sai số hình học giữa các công đoạn được loại bỏ ngay từ gốc."
+            },
+            {
+              "heading": "1.2 Vai trò của máy hàn dầm tự động trong ngành cơ khí kết cấu thép hiện nay",
+              "body": "Dầm chữ H là cấu kiện chịu lực chính trong nhà thép tiền chế và nhà xưởng công nghiệp, nơi chất lượng mối hàn ảnh hưởng trực tiếp đến khả năng chịu tải công trình. Khi hàn bán tự động, chất lượng phụ thuộc gần như hoàn toàn vào tay nghề thợ theo từng ca. Trạm hàn tích hợp giúp chuẩn hóa thông số hàn, giữ chất lượng ổn định bất kể ai vận hành."
+            },
+            {
+              "heading": "1.3 Tổng quan sản phẩm Máy hàn dầm H PHJ-0618CT2M",
+              "body": "PHJ-0618CT2M gồm ba cụm chính: cụm cơ khí (kẹp gá, con lăn, hệ nắn), cụm nguồn hàn (4 bộ AOTAI AMIG 500PSR PLUS) và cụm điều khiển (PLC Keyence, bộ điều khiển CT2W). Máy chuyên dùng cho hàn dầm chữ H tư thế 2F trong kết cấu thép hạng nhẹ, đi kèm băng tải vào/ra khoảng 12m mỗi bên tạo thành một dây chuyền hoàn chỉnh."
+            },
+            {
+              "heading": "1.4 Xu hướng ứng dụng tại Việt Nam",
+              "body": "Ngành xây dựng nhà thép tiền chế đang chịu áp lực kép: tiến độ rút ngắn và thiếu hụt thợ hàn tay nghề cao, đặc biệt ngoài các đô thị lớn. Các trạm hàn tích hợp có khả năng lưu và giám sát dữ liệu vận hành đang trở thành lựa chọn ưu tiên của các xưởng gia công dầm quy mô vừa và lớn."
+            }
+          ]
+        },
+        {
+          "heading": "2. Đặc điểm nổi bật của CTWELD PHJ-0618CT2M",
+          "children": [
+            {
+              "heading": "2.1 An toàn và dễ vận hành nhờ bộ điều khiển tập trung",
+              "body": "Bộ điều khiển CT2W thay thế hoàn toàn bảng nút bấm cơ khí dễ thao tác nhầm của thế hệ cũ. Giao diện HMI song ngữ Anh – Việt, tối giản màn hình, giúp thợ mới làm quen máy nhanh hơn nhiều so với bộ điều khiển nhiều lớp menu."
+            },
+            {
+              "heading": "2.2 Tích hợp và đồng bộ hóa toàn bộ chu trình sản xuất",
+              "body": "Các công đoạn kẹp cánh, kẹp bụng, đính, hàn và nắn được PLC Keyence điều phối đồng bộ theo một trình tự lập trình sẵn. Việc đồng bộ hóa này giảm phụ thuộc vào kinh nghiệm cá nhân trong khâu căn chỉnh giữa các công đoạn."
+            },
+            {
+              "heading": "2.3 Độ chính xác cao nhờ kiểm soát dòng hàn full-digital",
+              "body": "Nguồn hàn AOTAI dùng bộ điều khiển full-digital, tự động chọn 1 hoặc 2 dây hàn theo bề rộng mối hàn K và tự khớp dòng/áp theo tốc độ hàn thực tế. Nhờ vậy mối hàn đạt đúng thông số bản vẽ mà thợ không cần tự dò bằng kinh nghiệm."
+            },
+            {
+              "heading": "2.4 Rút ngắn thời gian triển khai nhờ thư viện thông số hàn dựng sẵn",
+              "body": "Máy được cài sẵn bộ dữ liệu thông số hàn do chuyên gia CTWELD kiểm nghiệm trên nhiều loại vật liệu và kích thước dầm. Doanh nghiệp có thể đưa máy vào sản xuất ổn định ngay từ những ca đầu tiên thay vì mất hàng tuần hiệu chỉnh."
+            },
+            {
+              "heading": "2.5 Tối ưu không gian nhờ thiết kế trạm liên hoàn",
+              "body": "Thay vì ba trạm rời rạc chiếm nhiều diện tích và phát sinh chi phí vận chuyển phôi trung gian, PHJ-0618CT2M gộp toàn bộ vào một cụm máy chính với băng tải vào/ra gọn gàng hai đầu."
+            }
+          ]
+        },
+        {
+          "heading": "3. Công nghệ tích hợp trên PHJ-0618CT2M",
+          "children": [
+            {
+              "heading": "3.1 Hệ điều khiển trung tâm PLC Keyence",
+              "body": "PLC Keyence với chu kỳ quét 50ns và 3 trục điều khiển phát xung 100kHz là nền tảng để toàn bộ chu trình kẹp – hàn – nắn hoạt động đồng bộ, không phát sinh độ trễ tích lũy giữa các cơ cấu chấp hành."
+            },
+            {
+              "heading": "3.2 Công nghệ hàn lõi: Tandem MIG dưới lớp thuốc và hàn xung AOTAI",
+              "body": "Máy ứng dụng hàn ngập dây dưới lớp thuốc (SAW) kết hợp 4 nguồn hàn xung AOTAI AMIG 500PSR PLUS, đạt chu kỳ tải (Duty Cycle) 100% ở dòng 500A tại 40°C — nghĩa là hàn liên tục ở công suất tối đa mà không cần nghỉ giải nhiệt. Cơ chế 4 nguồn DC độc lập cũng loại bỏ hiện tượng nhiễu dòng hàn thường gặp ở máy cổng Tandem thông thường."
+            },
+            {
+              "heading": "3.3 Giao diện lập trình và vận hành HMI song ngữ",
+              "body": "HMI Keyence hiển thị đầy đủ dữ liệu hàn theo thời gian thực bằng giao diện song ngữ, tối giản số lớp thao tác. Người vận hành chỉ cần nhập cạnh hàn theo bản vẽ và chọn tốc độ hàn gợi ý, máy sẽ tự tính thông số còn lại."
+            },
+            {
+              "heading": "3.4 Hệ thống an toàn và giám sát dữ liệu vận hành",
+              "body": "Thiết bị giám sát tích hợp kết nối Ethernet với máy tính trung tâm, ghi nhận thời gian hàn thực tế, chấm công người vận hành và lưu thông số hàn theo từng cá nhân. Đây là dữ liệu để quản lý đánh giá năng lực và lên kế hoạch đào tạo."
+            },
+            {
+              "heading": "3.5 Khả năng kết nối mở rộng hướng tới nhà máy thông minh",
+              "body": "Nguồn hàn và bộ điều khiển CT2W đều hỗ trợ kết nối Ethernet, gửi dữ liệu vận hành về hệ thống trung tâm và tự động cảnh báo lỗi phát sinh — bước nền tảng hướng tới mô hình nhà máy thông minh."
+            }
+          ]
+        },
+        {
+          "heading": "4. Những cải tiến độc quyền của CTWELD trên PHJ-0618CT2M",
+          "body": "Đây là các cải tiến CTWELD tự nghiên cứu dựa trên kinh nghiệm vận hành thực tế tại nhà máy Việt Nam, không phải cấu hình nguyên bản của nhà sản xuất khung máy. Tổng thể các cải tiến này giúp tăng 20–30% năng suất so với máy thế hệ cũ.",
+          "children": [
+            {
+              "heading": "4.1 Hệ thống đính đầu dầm thủy lực lắp ngoài",
+              "body": "Cụm đính đầu dầm lắp ngoài với xi lanh thủy lực cho phép công nhân chuẩn bị cây dầm tiếp theo ngay trong khi máy đang hàn – nắn cây dầm hiện tại, trực tiếp rút ngắn thời gian chờ giữa hai chu kỳ."
+            },
+            {
+              "heading": "4.2 Cụm 8 lô kẹp bụng dầm dẫn động bằng một trục vít me thủy lực chính",
+              "body": "8 lô kẹp bụng dầm vận hành đồng bộ qua một trục vít me thủy lực duy nhất, đảm bảo lực kẹp đều trên toàn chiều dài dầm; nắp chắn bụi cải tiến ngăn xỉ hàn rơi vào vòng bi, giảm chi phí bảo trì."
+            },
+            {
+              "heading": "4.3 Mỏ hàn thiết kế nhỏ gọn, loại bỏ tắc bép khi mồi hồ quang",
+              "body": "Ruột gà tiếp cận trực tiếp tới bép hàn giúp cấp dây ổn định ngay từ lúc mồi hồ quang, loại bỏ hoàn toàn hiện tượng tắc bép thường gặp ở mỏ hàn có khoảng cách dài."
+            },
+            {
+              "heading": "4.4 Hệ thống ra vào mỏ hàn tự động bằng động cơ — giảm một nửa nhân công căn chỉnh",
+              "body": "Hệ thống định vị mỏ hàn bằng động cơ thay cho việc hai thợ chỉnh tay hai bên, giúp chỉ cần một người vận hành, cắt giảm 50% nhân sự cho khâu căn chỉnh mỏ hàn mỗi ca."
+            },
+            {
+              "heading": "4.5 Encoder nắn tự động hiển thị thông số trực tiếp trên màn hình",
+              "body": "Thay vì nắn thủ công theo kinh nghiệm, công nhân chỉ cần chỉnh theo giá trị hiển thị trên màn hình, giảm sai số phụ thuộc cảm quan cá nhân và tăng tốc độ thao tác."
+            },
+            {
+              "heading": "4.6 Hệ thống nâng đầu dầm đặt sát thân máy — giảm cong vênh, xoắn dầm",
+              "body": "Bố trí sát thân máy thay vì đặt xa như cơ cấu nguyên bản giúp giữ dầm ổn định sớm hơn, giảm tối đa cong vênh và xoắn dầm khi ra thành phẩm."
+            }
+          ]
+        },
+        {
+          "heading": "6. Nguyên lý hoạt động của PHJ-0618CT2M",
+          "children": [
+            {
+              "heading": "6.1 Cơ chế lõi",
+              "body": "PLC Keyence điều phối theo vòng lặp cảm biến – xử lý – chấp hành: cảm biến vị trí và encoder gửi dữ liệu liên tục về PLC, PLC ra lệnh cho cơ cấu thủy lực/khí nén hoạt động theo trình tự lập trình sẵn. Nguồn hàn AOTAI nhận lệnh dòng/áp qua Ethernet và tự điều chỉnh theo tốc độ hàn thực tế."
+            },
+            {
+              "heading": "6.2 Quy trình vận hành từng bước",
+              "list": [
+                "Nạp dầm qua băng tải đầu vào, hệ thống kẹp cánh và kẹp bụng tự động định vị dầm.",
+                "Cụm đính đầu dầm thủy lực đính cố định hai đầu dầm.",
+                "Bốn nguồn AOTAI hàn ngập dây dưới lớp thuốc theo công nghệ Tandem, tự chọn số dây theo K.",
+                "Hệ thống encoder nắn hiển thị thông số, công nhân chỉnh theo giá trị trên màn hình.",
+                "Dầm thành phẩm ra băng tải đầu ra, dữ liệu ca hàn được ghi nhận về hệ thống trung tâm."
+              ]
+            },
+            {
+              "heading": "6.3 Cơ chế đảm bảo độ chính xác/chất lượng đầu ra",
+              "body": "Độ chính xác được đảm bảo ở ba lớp: cơ khí (kẹp đồng đều qua một trục vít me chính), điều khiển (biến tần tích hợp vòng PID) và công nghệ hàn (nguồn full-digital kiểm soát dạng sóng hồ quang thời gian thực). Ba lớp hoạt động đồng bộ qua PLC trung tâm nên sai số không cộng dồn giữa các công đoạn."
+            },
+            {
+              "heading": "6.4 Sự phối hợp giữa người vận hành và máy",
+              "body": "Người vận hành chỉ đảm nhận các quyết định cần kinh nghiệm — nhập cạnh hàn, chọn tốc độ hàn, đối chiếu giá trị nắn — trong khi các thao tác lặp lại đòi hỏi độ chính xác cao được máy tự động hóa hoàn toàn."
+            },
+            {
+              "heading": "6.5 Tác động đến chu kỳ và hiệu suất sản xuất",
+              "body": "Cơ chế chuẩn bị song song ở mục 4.1 cùng tự động hóa khâu căn chỉnh giúp CTWELD ghi nhận mức tăng năng suất 20–30% so với máy thế hệ cũ, đồng thời giảm nhân công căn chỉnh từ hai người xuống một người trên mỗi ca."
+            }
+          ]
+        },
+        {
+          "heading": "7. Ứng dụng thực tế của CTWELD PHJ-0618CT2M",
+          "children": [
+            {
+              "heading": "7.1 Sản xuất dầm chữ H cho nhà thép tiền chế (PEB)",
+              "body": "Hàn dầm chính và dầm phụ có chiều cao bụng 200–1.800mm, đúng dải kích thước phổ biến của khung nhà xưởng công nghiệp một tầng."
+            },
+            {
+              "heading": "7.2 Gia công cột kèo và dầm mái cho nhà xưởng công nghiệp",
+              "body": "Khả năng hàn dầm dài đến 15m, cánh dày tới 20mm phù hợp gia công cột kèo chịu lực chính, đòi hỏi độ chính xác kích thước để lắp dựng đúng vị trí bulong liên kết."
+            },
+            {
+              "heading": "7.3 Sản xuất dầm cho hệ thống giàn giáo, khung đỡ công nghiệp",
+              "body": "Tốc độ hàn linh hoạt 200–1.500mm/phút phù hợp cả các đoạn dầm ngắn cần kiểm soát nhiệt trên tiết diện mỏng khi hàn khung đỡ băng tải, giá đỡ silo."
+            },
+            {
+              "heading": "7.4 Gia công dầm cho công trình hạ tầng, cầu đường quy mô vừa",
+              "body": "Mối hàn K tối đa 8mm và tư thế hàn 2F đáp ứng các cấu kiện dầm dùng trong công trình cầu đường, bến cảng quy mô vừa."
+            },
+            {
+              "heading": "7.5 Xưởng gia công đa dạng vật liệu Q235 quy mô lớn",
+              "body": "Với duty cycle 100% ở 500A, máy phù hợp các xưởng cần vận hành liên tục nhiều ca mà không bị gián đoạn do nguồn hàn quá nhiệt."
+            }
+          ]
+        },
+        {
+          "heading": "8. Lợi ích khi sử dụng CTWELD PHJ-0618CT2M",
+          "children": [
+            {
+              "heading": "8.1 Tăng năng suất 20–30% trên mỗi ca sản xuất",
+              "body": "Cơ chế chuẩn bị song song và tự động hóa căn chỉnh giúp rút ngắn đáng kể thời gian hoàn thành đơn hàng."
+            },
+            {
+              "heading": "8.2 Chất lượng mối hàn ổn định giữa các ca làm việc",
+              "body": "Thư viện thông số hàn dựng sẵn loại bỏ sự phụ thuộc vào cảm quan cá nhân, giữ chất lượng đồng đều dù đổi người vận hành."
+            },
+            {
+              "heading": "8.3 Giảm phụ thuộc vào thợ hàn tay nghề cao",
+              "body": "Hệ thống tự động căn chỉnh giúp giảm từ hai thợ kinh nghiệm xuống một người vận hành cơ bản cho khâu điều chỉnh mỏ hàn và nắn dầm."
+            },
+            {
+              "heading": "8.4 Nâng cao an toàn lao động",
+              "body": "Cơ cấu thủy lực/khí nén thay thao tác tay trực tiếp gần vùng hồ quang ở các khâu kẹp, đính, ra vào mỏ hàn."
+            },
+            {
+              "heading": "8.5 Linh hoạt với nhiều kích thước dầm trong cùng một máy",
+              "body": "Dải thông số rộng cho phép một trạm máy đáp ứng nhiều đơn hàng khác nhau, không cần đầu tư nhiều máy chuyên dụng."
+            }
+          ]
+        },
+        {
+          "heading": "10. PHJ-0618CT2M phù hợp với doanh nghiệp nào?",
+          "children": [
+            {
+              "heading": "10.1 Xưởng gia công kết cấu thép đang gặp giới hạn về sản lượng",
+              "body": "Đã đầu tư máy bán tự động rời rạc nhưng thời gian chờ giữa các công đoạn quá dài, cần chuyển sang mô hình trạm liên hoàn để rút ngắn chu kỳ."
+            },
+            {
+              "heading": "10.2 Nhà máy đang chịu áp lực thiếu thợ hàn tay nghề cao",
+              "body": "Khó tuyển hoặc giữ chân thợ hàn kinh nghiệm, dẫn đến chất lượng không đồng đều giữa các ca, hưởng lợi trực tiếp từ cơ chế tự động căn chỉnh."
+            },
+            {
+              "heading": "10.3 Tổng thầu/nhà máy cần kiểm soát chất lượng theo dữ liệu",
+              "body": "Cần báo cáo dữ liệu sản xuất cho chủ đầu tư hoặc phục vụ kiểm soát chất lượng nội bộ, phù hợp với khả năng lưu và truy xuất dữ liệu theo từng ca của hệ thống giám sát tích hợp."
+            },
+            {
+              "heading": "10.4 Doanh nghiệp đang lên kế hoạch chuyển đổi số sản xuất",
+              "body": "Có lộ trình kết nối thiết bị với hệ thống quản lý trung tâm, phù hợp với khả năng kết nối Ethernet sẵn có của cả nguồn hàn và bộ điều khiển CT2W."
+            }
+          ]
+        },
+        {
+          "heading": "11. Hướng dẫn lựa chọn máy hàn dầm phù hợp",
+          "children": [
+            {
+              "heading": "11.1 Xác định dải kích thước dầm cần gia công",
+              "body": "So sánh chiều cao bụng và chiều dài dầm phổ biến trong đơn hàng thực tế với dải thông số máy (H: 200–1.800mm, dài 4.000–15.000mm) trước khi quyết định đầu tư."
+            },
+            {
+              "heading": "11.2 Đánh giá sản lượng và tần suất vận hành liên tục",
+              "body": "Với duty cycle 100% ở 500A/40°C, máy phù hợp xưởng chạy nhiều ca liên tục; sản lượng thấp cần cân nhắc bài toán hoàn vốn kỹ hơn."
+            },
+            {
+              "heading": "11.3 Kiểm tra hạ tầng điện và mặt bằng nhà xưởng",
+              "body": "Tổng công suất 96,1kW yêu cầu nguồn 3 pha 380V ổn định và mặt bằng đủ cho băng tải vào/ra khoảng 12m mỗi bên."
+            },
+            {
+              "heading": "11.4 Đánh giá nhu cầu giám sát và quản lý nhân sự vận hành",
+              "body": "Nếu cần dữ liệu đánh giá năng lực thợ hàn để đào tạo, ưu tiên cấu hình có đầy đủ module giám sát kết nối Ethernet."
+            },
+            {
+              "heading": "11.5 Tiêu chí chọn đơn vị cung cấp",
+              "body": "Ưu tiên đơn vị công bố rõ nguồn gốc từng cụm thiết bị, có chính sách bảo hành tách bạch, đội ngũ hỗ trợ lắp đặt – đào tạo tại chỗ và cam kết cung cấp phụ tùng thay thế."
+            }
+          ]
+        },
+        {
+          "heading": "12. Giải pháp PHJ-0618CT2M tại CTWELD",
+          "children": [
+            {
+              "heading": "12.1 Chính hãng, xuất xứ rõ ràng",
+              "body": "CTWELD công bố minh bạch nguồn gốc từng cụm: khung máy Trung Quốc, bộ điều khiển – phần mềm do CTWELD phát triển tại Việt Nam, nguồn hàn AOTAI và PLC/HMI Keyence chính hãng."
+            },
+            {
+              "heading": "12.2 Tư vấn giải pháp và bài toán hoàn vốn (ROI)",
+              "body": "Đội ngũ kỹ thuật khảo sát dải kích thước dầm, sản lượng và hạ tầng điện thực tế để tư vấn cấu hình phù hợp, tránh đầu tư dư thừa hoặc thiếu công suất."
+            },
+            {
+              "heading": "12.3 Thiết kế tích hợp hệ thống phụ trợ",
+              "body": "CTWELD thiết kế đồng bộ băng tải, trạm thủy lực, hệ thống thu hồi thuốc hàn và tủ điện theo mặt bằng nhà xưởng khách hàng."
+            },
+            {
+              "heading": "12.4 Đào tạo chuyển giao vận hành tại chỗ",
+              "body": "Chi phí đã bao gồm công lắp đặt, đào tạo và bàn giao trực tiếp tại nhà máy khách hàng."
+            },
+            {
+              "heading": "12.5 Bảo trì và hỗ trợ kỹ thuật có cam kết rõ ràng",
+              "body": "Bảo hành thân máy 12 tháng, nguồn hàn và bộ điều khiển 24 tháng; bảo trì định kỳ 2 lần/năm trong thời gian bảo hành; cam kết cung cấp phụ tùng thay thế."
+            }
+          ]
+        }
+      ],
+      "spec_table": {
+        "heading": "5. Thông số kỹ thuật PHJ-0618CT2M",
+        "columns": [
+          "STT",
+          "Mô tả",
+          "ĐVT",
+          "Thông số"
+        ],
+        "rows": [
+          [
+            "1",
+            "Chiều cao bụng dầm (H)",
+            "mm",
+            "200 – 1.800"
+          ],
+          [
+            "2",
+            "Độ dày bụng / cánh dầm",
+            "mm",
+            "5–14 / 6–20 (Q235)"
+          ],
+          [
+            "3",
+            "Chiều rộng cánh dầm (B)",
+            "mm",
+            "150 – 600"
+          ],
+          [
+            "4",
+            "Chiều dài dầm",
+            "mm",
+            "4.000 – 15.000"
+          ],
+          [
+            "5",
+            "Tốc độ hàn",
+            "mm/phút",
+            "200 – 1.500"
+          ],
+          [
+            "6",
+            "Mối hàn lớn nhất (K)",
+            "mm",
+            "8"
+          ],
+          [
+            "7",
+            "Tư thế hàn",
+            "—",
+            "2F"
+          ],
+          [
+            "8",
+            "Dòng hàn / Duty Cycle",
+            "A / %",
+            "30–500A, 100% tại 500A/40°C"
+          ],
+          [
+            "9",
+            "Nguồn điện vào",
+            "V/Hz",
+            "AC380, 50Hz, 3 pha 4 dây"
+          ],
+          [
+            "10",
+            "Tổng công suất hệ thống",
+            "kW",
+            "96,1"
+          ]
+        ],
+        "note": "Thông số đo trong điều kiện tiêu chuẩn theo công bố của nhà sản xuất, thực tế có thể thay đổi theo vật liệu và điều kiện hàn cụ thể."
+      },
+      "comparison_table": {
+        "heading": "9. So sánh PHJ-0618CT2M với máy hàn dầm thế hệ cũ",
+        "columns": [
+          "Tiêu chí",
+          "Máy thế hệ cũ",
+          "CTWELD PHJ-0618CT2M"
+        ],
+        "rows": [
+          [
+            "Bộ điều khiển",
+            "Nút bấm cơ học, không lưu dữ liệu hàn",
+            "CT2W kỹ thuật số, lưu 100 bộ thông số hàn"
+          ],
+          [
+            "Nhân công căn chỉnh mỏ hàn",
+            "Cần 2 người chỉnh tay",
+            "Chỉ cần 1 người nhờ động cơ tự động"
+          ],
+          [
+            "Nắn dầm",
+            "Nắn thủ công theo kinh nghiệm",
+            "Encoder hiển thị số liệu trực tiếp"
+          ],
+          [
+            "Giám sát năng suất",
+            "Không có dữ liệu đánh giá",
+            "Giám sát online, chấm công tự động"
+          ],
+          [
+            "Năng suất tổng thể",
+            "Mức nền tham chiếu",
+            "Tăng 20 – 30%"
+          ]
+        ]
+      },
+      "faq": {
+        "heading": "13. Câu hỏi thường gặp về PHJ-0618CT2M",
+        "items": [
+          {
+            "q": "PHJ-0618CT2M là loại máy hàn gì?",
+            "a": "Đây là trạm hàn đứng thông minh 3 trong 1, tích hợp ba công đoạn đính đầu dầm, hàn ngập dây dưới lớp thuốc (SAW) hai dây hai hồ quang độc lập và nắn thẳng dầm chữ H trong một hệ thống liên hoàn, sử dụng nguồn hàn xung robot AOTAI và bộ điều khiển CT2W do CTWELD phát triển."
+          },
+          {
+            "q": "Vận hành máy có an toàn không?",
+            "a": "Các khâu tiếp xúc gần vùng hồ quang và nhiệt độ cao như kẹp, đính, ra vào mỏ hàn đều được cơ cấu thủy lực/khí nén thực hiện tự động, giảm thao tác tay trực tiếp của người vận hành trong vùng nguy hiểm. Doanh nghiệp vẫn cần tuân thủ quy trình an toàn hàn tiêu chuẩn (bảo hộ, thông gió, PCCC) như với mọi thiết bị hàn công nghiệp khác."
+          },
+          {
+            "q": "Đào tạo vận hành máy có khó không?",
+            "a": "Giao diện HMI song ngữ Anh – Việt cùng thư viện thông số hàn dựng sẵn giúp thợ vận hành chỉ cần nhập cạnh hàn theo bản vẽ và chọn tốc độ hàn gợi ý, không đòi hỏi kinh nghiệm dò thông số từ đầu như máy thế hệ cũ. CTWELD trực tiếp đào tạo và bàn giao tại nhà máy khách hàng trong quá trình lắp đặt."
+          },
+          {
+            "q": "Máy có thay thế hoàn toàn thợ hàn tay nghề cao không?",
+            "a": "Không hoàn toàn. Máy tự động hóa các khâu lặp lại đòi hỏi độ chính xác cao (định vị mỏ hàn, kiểm soát dòng/áp, nắn theo số liệu), nhưng vẫn cần người vận hành ra quyết định về thông số đầu vào và kiểm tra chất lượng cuối cùng. Vai trò của thợ hàn chuyển từ thao tác tay sang giám sát và kiểm soát quy trình."
+          },
+          {
+            "q": "CTWELD có cung cấp giải pháp trọn gói không?",
+            "a": "Có. CTWELD cung cấp trọn gói từ thiết bị chính hãng, thiết kế tích hợp hệ thống phụ trợ (băng tải, trạm thủy lực, tủ điện), vận chuyển, lắp đặt, đào tạo vận hành đến bảo trì định kỳ và hỗ trợ kỹ thuật trong và sau thời gian bảo hành."
+          }
+        ]
+      },
+      "cta": {
+        "company": "Công ty TNHH Dịch vụ Kỹ thuật và Giải pháp Cơ khí CTWELD",
+        "hotline": "0969.730.762",
+        "email": "minhtuan@ctweld.vn",
+        "text": "Liên hệ ngay để nhận báo giá chi tiết và tư vấn cấu hình phù hợp với nhà xưởng của bạn.",
+        "form_ref": "forms.json → consultation"
+      }
+    }
+  ],
+  "demo_products": {
+    "_note": "Dữ liệu mẫu đang chạy trên bản demo HTML (index.html mục 5.0 và san-pham.html). Chưa phải sản phẩm chính thức — dùng để dựng giao diện, sẽ thay bằng dữ liệu thật khi khách hàng gửi đủ danh sách sản phẩm.",
+    "content_status": "placeholder",
+    "items": [
+      {
+        "title": "Robot Hàn Cộng Tác Cobot Estun CO-ARC 350",
+        "slug": "robot-han-cong-tac-cobot-estun-co-arc-350",
+        "code": "ESTUN-CO-ARC350",
+        "brand": "Estun Automation",
+        "category_slug": "robot",
+        "tag": "HOT",
+        "specs": [
+          {
+            "key": "Bán kính với",
+            "value": "1400 mm"
+          },
+          {
+            "key": "Tải trọng",
+            "value": "5 kg"
+          },
+          {
+            "key": "Nguồn hàn",
+            "value": "Megmeet Artsen II"
+          }
+        ]
+      },
+      {
+        "title": "Máy Hàn Hồ Quang Chìm SAW-1250 2 Mỏ Cổng Cán",
+        "slug": "may-han-ho-quang-chim-saw-1250-2-mo-cong-can",
+        "code": "CTW-SAW1250D",
+        "brand": "CTWELD",
+        "category_slug": "ket-cau-thep",
+        "tag": "MỚI",
+        "specs": [
+          {
+            "key": "Dòng hàn định mức",
+            "value": "1250A (100%)"
+          },
+          {
+            "key": "Khổ dầm hàn",
+            "value": "2000 x 800 mm"
+          },
+          {
+            "key": "Tốc độ hàn",
+            "value": "150-1200 mm/min"
+          }
+        ]
+      },
+      {
+        "title": "Máy Cắt Laser Fiber 12000W Bàn Đôi Song Song",
+        "slug": "may-cat-laser-fiber-12000w-ban-doi-song-song",
+        "code": "CTW-FL12000W",
+        "brand": "Raycus Laser",
+        "category_slug": "ket-cau-thep",
+        "tag": "TOP",
+        "specs": [
+          {
+            "key": "Công suất nguồn",
+            "value": "12 kW Raycus/IPG"
+          },
+          {
+            "key": "Vùng cắt",
+            "value": "6000 x 2500 mm"
+          },
+          {
+            "key": "Độ dày thép carbon",
+            "value": "Cắt tới 40 mm"
+          }
+        ],
+        "category_merged_from": "cat-cnc"
+      },
+      {
+        "title": "Máy Nắn Thẳng Dầm H Thuỷ Lực Công Suất 1000 Tấn",
+        "slug": "may-nan-thang-dam-h-thuy-luc-1000-tan",
+        "code": "CTW-HYD1000T",
+        "brand": "CTWELD",
+        "category_slug": "ket-cau-thep",
+        "tag": "PRO",
+        "specs": [
+          {
+            "key": "Lực nắn tối đa",
+            "value": "1000 Tấn"
+          },
+          {
+            "key": "Độ dày cánh dầm",
+            "value": "Tối đa 60 mm"
+          },
+          {
+            "key": "Chiều cao cánh",
+            "value": "200-1000 mm"
+          }
+        ]
+      },
+      {
+        "title": "Cánh Tay Robot Hàn Công Nghiệp Yaskawa AR1440",
+        "slug": "canh-tay-robot-han-cong-nghiep-yaskawa-ar1440",
+        "code": "YASKAWA-AR1440",
+        "brand": "Yaskawa",
+        "category_slug": "robot",
+        "tag": "YASKAWA",
+        "specs": [
+          {
+            "key": "Số trục",
+            "value": "6 Trục tự do"
+          },
+          {
+            "key": "Bán kính",
+            "value": "1440 mm"
+          }
+        ]
+      },
+      {
+        "title": "Nguồn Hàn Xung Số Hoá Megmeet Artsen PM500A",
+        "slug": "nguon-han-xung-so-hoa-megmeet-artsen-pm500a",
+        "code": "MEG-ARTSEN-500",
+        "brand": "Megmeet",
+        "category_slug": "robot",
+        "tag": "MEGMEET",
+        "specs": [
+          {
+            "key": "Công nghệ",
+            "value": "Digital Pulse MIG"
+          },
+          {
+            "key": "Dòng ra",
+            "value": "500A (100%)"
+          }
+        ],
+        "category_merged_from": "thiet-bi-han"
+      },
+      {
+        "title": "Máy Cắt Ống Thép Laser Fiber 3D Tự Động Nạp Phôi",
+        "slug": "may-cat-ong-thep-laser-fiber-3d-tu-dong-nap-phoi",
+        "code": "CTW-TUBE3D",
+        "brand": "CTWELD",
+        "category_slug": "ket-cau-thep",
+        "tag": "LASER TUBE",
+        "specs": [
+          {
+            "key": "Đường kính ống",
+            "value": "Ø20 - Ø220 mm"
+          },
+          {
+            "key": "Chiều dài ống",
+            "value": "6000 mm"
+          }
+        ],
+        "category_merged_from": "cat-cnc"
+      },
+      {
+        "title": "Tổ Hợp Máy Hàn Cần Cột Dầm H Tự Động SAW",
+        "slug": "to-hop-may-han-can-cot-dam-h-tu-dong-saw",
+        "code": "CTW-COL-SAW",
+        "brand": "CTWELD",
+        "category_slug": "ket-cau-thep",
+        "tag": "H-BEAM",
+        "specs": [
+          {
+            "key": "Hành trình cột",
+            "value": "6000 x 6000 mm"
+          },
+          {
+            "key": "Nguồn hàn",
+            "value": "1000A / 1250A"
+          }
+        ]
+      },
+      {
+        "title": "Robot Hàn Kết Cấu Thép Fanuc ARC Mate 120iD",
+        "slug": "robot-han-ket-cau-thep-fanuc-arc-mate-120id",
+        "code": "FANUC-ARC-120ID",
+        "brand": "Fanuc",
+        "category_slug": "robot",
+        "tag": "FANUC",
+        "specs": [
+          {
+            "key": "Tải trọng tay",
+            "value": "25 kg"
+          },
+          {
+            "key": "Bán kính với",
+            "value": "1831 mm"
+          }
+        ]
+      }
+    ]
+  },
+  "open_issues": [
+    "Excel LƯU Ý NỘI BỘ (mục 4.0 & 5.0): \"Cần bổ sung tất cả thông tin sản phẩm để chia danh mục phù hợp\" — hiện mới có 2 sản phẩm đủ tài liệu.",
+    "Chưa có ảnh sản phẩm thật cho CT1020-10; PHJ-0618CT2M mới có 1 ảnh trên Drive.",
+    "Chưa có giá / chính sách báo giá — trang chi tiết đang dùng CTA \"Xem Chi Tiết & Báo Giá\"."
+  ]
+}

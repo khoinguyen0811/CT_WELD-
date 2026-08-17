@@ -1,12 +1,13 @@
 /* ==========================================================================
    CTWELD - MAIN JAVASCRIPT LOGIC
-   Includes: Manual Hero Slider, Projects 3.5-Card Slider, News 3.5-Card Autoplay Slider,
+   Includes: Hero Slider (autoplay 8s), Projects 3.5-Card Slider, News 3.5-Card Autoplay Slider,
    About Us Media Gallery Thumbnails, Consultation Modal Form, & Mobile Navigation.
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', function() {
   
-  // 1. HERO BANNER MANUAL SLIDER
+  // 1. HERO BANNER SLIDER (AUTOPLAY 8s PER SPEC + MANUAL ARROWS/DOTS)
+  const heroSlider = document.querySelector('.hero-slider');
   const slideTrack = document.querySelector('.hero-slider .slide-track');
   const slideItems = document.querySelectorAll('.hero-slider .slide-item');
   const dots = document.querySelectorAll('.hero-slider .dot-item');
@@ -14,6 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const nextBtn = document.querySelector('.hero-slider .arrow-next');
   let currentSlide = 0;
   const totalSlides = slideItems.length;
+  const HERO_AUTOPLAY_MS = 8000;
+  let heroTimer = null;
 
   function goToSlide(index) {
     if (index < 0) index = totalSlides - 1;
@@ -33,17 +36,46 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
+  function startHeroAutoplay() {
+    if (totalSlides < 2) return;
+    stopHeroAutoplay();
+    heroTimer = setInterval(() => goToSlide(currentSlide + 1), HERO_AUTOPLAY_MS);
+  }
+
+  function stopHeroAutoplay() {
+    if (heroTimer) {
+      clearInterval(heroTimer);
+      heroTimer = null;
+    }
+  }
+
+  // Thao tác thủ công thì đếm lại 8s từ đầu, tránh nhảy slide ngay sau khi bấm
+  function restartHeroAutoplay() {
+    if (heroTimer) startHeroAutoplay();
+  }
+
   if (prevBtn && nextBtn) {
-    prevBtn.addEventListener('click', () => goToSlide(currentSlide - 1));
-    nextBtn.addEventListener('click', () => goToSlide(currentSlide + 1));
+    prevBtn.addEventListener('click', () => { goToSlide(currentSlide - 1); restartHeroAutoplay(); });
+    nextBtn.addEventListener('click', () => { goToSlide(currentSlide + 1); restartHeroAutoplay(); });
   }
 
   dots.forEach(dot => {
     dot.addEventListener('click', function() {
       const slideIndex = parseInt(this.getAttribute('data-slide'));
       goToSlide(slideIndex);
+      restartHeroAutoplay();
     });
   });
+
+  if (heroSlider) {
+    heroSlider.addEventListener('mouseenter', stopHeroAutoplay);
+    heroSlider.addEventListener('mouseleave', startHeroAutoplay);
+    // Dừng autoplay khi tab bị ẩn để không nhảy dồn slide lúc quay lại
+    document.addEventListener('visibilitychange', () => {
+      document.hidden ? stopHeroAutoplay() : startHeroAutoplay();
+    });
+    startHeroAutoplay();
+  }
 
   // 2. FEATURED PROJECTS CAROUSEL (3.5 CARDS PER VIEW)
   const projTrack = document.querySelector('.projects-track');

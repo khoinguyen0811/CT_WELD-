@@ -1,0 +1,239 @@
+{
+  "_source": "1_Cấu trúc Website _ CT WELD.xlsx — Sheet 1 (Desktop) & Sheet 2 (Mobile), mục 1.0 → 10.0",
+  "_note": "Mỗi section giữ nguyên số thứ tự STT trong file Excel để đối chiếu khi dựng WordPress.",
+  "sections": [
+    {
+      "stt": "1.0",
+      "key": "menu_stickybar",
+      "name": "Menu Stickybar",
+      "data_ref": "menu.json",
+      "behavior": {
+        "sticky": true,
+        "desktop": "Ghim ở đầu trang, chạy lăn theo con trỏ chuột",
+        "mobile": "Chỉ hiển thị Logo + nút hamburger, mở ra toàn bộ menu bao gồm danh mục con"
+      }
+    },
+    {
+      "stt": "2.0",
+      "key": "hero_slider",
+      "name": "Slide ảnh banner",
+      "spec": "Hiển thị ảnh banner dưới dạng ảnh trượt",
+      "behavior": {
+        "autoplay": true,
+        "autoplay_interval_ms": 8000,
+        "autoplay_note": "ĐÃ TRIỂN KHAI: js/main.js tự đổi slide mỗi 8000ms, tạm dừng khi rê chuột vào slider hoặc khi tab bị ẩn, và đếm lại 8s sau mỗi thao tác thủ công.",
+        "controls": [
+          "dots",
+          "arrows",
+          "autoplay"
+        ],
+        "size_reference": "https://automech.vn/"
+      },
+      "slides": [
+        {
+          "order": 1,
+          "type": "video",
+          "src": "hero_video.mp4",
+          "title": "Slide 1: Video Hero",
+          "autoplay": true,
+          "loop": true,
+          "muted": true
+        },
+        {
+          "order": 2,
+          "type": "image",
+          "src": "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=1920&q=80",
+          "title": "Slide 2: Dầm H",
+          "placeholder": true
+        },
+        {
+          "order": 3,
+          "type": "image",
+          "src": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1920&q=80",
+          "title": "Slide 3: Bảo Dưỡng",
+          "placeholder": true
+        }
+      ],
+      "content_status": "placeholder — cần ảnh banner thật của CTWELD"
+    },
+    {
+      "stt": "3.0",
+      "key": "about_teaser",
+      "name": "Về chúng tôi",
+      "spec": [
+        "Hiển thị 1 phần nội dung SAPO trong danh mục {{về chúng tôi}} kèm nút xem thêm bên dưới — toàn bộ nằm bên trái",
+        "Hiển thị hình ảnh doanh nghiệp bên phải (sau này có thể thay bằng video TVC quảng cáo)"
+      ],
+      "layout": {
+        "text": "left",
+        "media": "right"
+      },
+      "title": "ĐỐI TÁC KỸ THUẬT TIN CẬY",
+      "title_highlight": "TRONG NGÀNH CƠ KHÍ & TỰ ĐỘNG HOÁ HÀN",
+      "sapo": "Công ty TNHH Dịch Vụ Kỹ Thuật và Giải Pháp Cơ Khí CTWELD là đơn vị tiên phong chuyên tư vấn, nhập khẩu và chuyển giao công nghệ máy cơ khí, dây chuyền hàn kết cấu thép và Robot công nghiệp tại Việt Nam.",
+      "body": "Với phương châm \"Công nghệ dẫn lối tương lai\", CTWELD mang đến cho các nhà máy giải pháp tổng thể từ khâu cắt phôi CNC, đính gá, hàn tự động đến kiểm tra NDT bề mặt mồi hàn.",
+      "stats": [
+        {
+          "number": "12+",
+          "label": "Năm Kinh Nghiệm"
+        },
+        {
+          "number": "350+",
+          "label": "Dự Án Bàn Giao"
+        },
+        {
+          "number": "99.8%",
+          "label": "Độ Chính Xác Kỹ Thuật"
+        }
+      ],
+      "cta": {
+        "label": "Xem Thêm Năng Lực CTWELD",
+        "url": "ve-chung-toi.html"
+      },
+      "media": {
+        "type": "image_gallery",
+        "supports_tvc_video": true,
+        "main": "images/su-menh.jpg",
+        "thumbs": [
+          {
+            "title": "Dây Chuyền Robot Hàn Kết Cấu Thép",
+            "src": "images/su-menh.jpg",
+            "status": "official"
+          },
+          {
+            "title": "Máy Hàn Dầm H Tự Động 3 Trong 1 PHJ-0618CT2M",
+            "src": "images/han-3-trong-1.png",
+            "status": "official"
+          },
+          {
+            "title": "Trụ Sở CTWELD - Khai Sơn Town, Long Biên, Hà Nội",
+            "src": "images/tam-nhin.jpg",
+            "status": "official"
+          }
+        ],
+        "content_status": "official — đã thay bằng 3 ảnh thật tải từ Google Drive của khách hàng"
+      }
+    },
+    {
+      "stt": "4.0",
+      "key": "product_categories",
+      "name": "Danh mục sản phẩm",
+      "spec": "Hiển thị các danh mục sản phẩm và sản phẩm chi tiết trong danh mục. Bên trên mỗi danh mục có ảnh mô tả tương ứng.",
+      "heading": "Hệ Thống Thiết Bị &",
+      "heading_highlight": "Dây Chuyền Công Nghiệp",
+      "subtitle": "Phân loại danh mục theo nhóm sản phẩm tiêu chuẩn phục vụ cho các nhà máy gia công kết cấu thép & tự động hoá chế tạo.",
+      "data_ref": "product-categories.json",
+      "internal_note": "Đã gộp về 2 danh mục theo Excel (3.1, 3.2). Vẫn cần bổ sung đủ thông tin sản phẩm để chia danh mục con chính xác."
+    },
+    {
+      "stt": "5.0",
+      "key": "featured_products",
+      "name": "Dòng máy nổi bật",
+      "spec": "Hiển thị các dòng máy cập nhật mới nhất trong {{danh mục sản phẩm}}, có nút xem tất cả trỏ vào {Sản phẩm cấp 1}.",
+      "heading": "Thiết Bị Cập Nhật",
+      "heading_highlight": "Mới Nhất 2026",
+      "subtitle": "Các dòng máy hàn tự động và robot gia công được các tập đoàn cơ khí hàng đầu tin dùng.",
+      "data_ref": "products.json",
+      "query": {
+        "source": "products",
+        "order_by": "date_desc",
+        "limit": 4
+      },
+      "cta": {
+        "label": "Xem Tất Cả Sản Phẩm",
+        "url": "san-pham.html"
+      },
+      "internal_note": "Cần bổ sung tất cả thông tin sản phẩm để chia danh mục phù hợp"
+    },
+    {
+      "stt": "6.0",
+      "key": "featured_projects",
+      "name": "Dự án nổi bật",
+      "spec": "Hiển thị toàn bộ bài viết trong mục {dự án} dưới dạng tin tức bài viết; hiển thị tối đa 3.5 thẻ để người dùng hiểu có thể trượt ngang; có nút xem tất cả trỏ vào {Dự án cấp 1}.",
+      "heading": "Công Trình &",
+      "heading_highlight": "Dây Chuyền Đã Triển Khai",
+      "subtitle": "Xem qua các dự án lắp đặt dây chuyền hàn kết cấu thép và trạm Robot hàn tự động cho khách hàng toàn quốc.",
+      "behavior": {
+        "type": "carousel",
+        "cards_per_view": 3.5,
+        "autoplay": false,
+        "controls": [
+          "arrows"
+        ]
+      },
+      "data_ref": "projects.json",
+      "query": {
+        "source": "projects",
+        "order_by": "date_desc",
+        "limit": 6
+      },
+      "cta": {
+        "label": "Xem Tất Cả Dự Án",
+        "url": "du-an.html"
+      },
+      "reference_url": "https://weldcom.vn/",
+      "internal_note": "Cần bổ sung thông tin các dự án đã triển khai"
+    },
+    {
+      "stt": "7.0",
+      "key": "partners",
+      "name": "Nhà cung cấp chiến lược",
+      "spec": "Hiển thị logo của tất cả nhà cung cấp chiến lược dưới dạng băng truyền tự động chạy xoay vòng.",
+      "heading": "Nhà Cung Cấp &",
+      "heading_highlight": "Hãng Thiết Bị Chiến Lược",
+      "subtitle": "Đồng hành cùng các thương hiệu hàng đầu thế giới trong lĩnh vực robot công nghiệp, nguồn hàn & công nghệ gia công cơ khí.",
+      "behavior": {
+        "type": "marquee",
+        "loop": true,
+        "autoplay": true
+      },
+      "data_ref": "partners.json",
+      "reference_url": "https://weldcom.vn/",
+      "internal_note": "Cần bổ sung thông tin danh sách các nhà cung cấp"
+    },
+    {
+      "stt": "8.0",
+      "key": "news",
+      "name": "Tin tức",
+      "spec": "Hiển thị toàn bộ bài viết trong danh mục {Tin tức}; bổ sung nút xem tất cả đẩy vào trang {Tin tức cấp 1}.",
+      "heading": "Bài Viết Chuyên Ngành &",
+      "heading_highlight": "Thông Tin CTWELD",
+      "subtitle": "Cập nhật tin tức doanh nghiệp, tài liệu kỹ thuật hàn cơ khí và các xu hướng công nghệ chế tạo mới.",
+      "behavior": {
+        "type": "carousel",
+        "cards_per_view": 3.5,
+        "autoplay": true,
+        "controls": [
+          "arrows"
+        ]
+      },
+      "data_ref": "news.json",
+      "query": {
+        "source": "posts",
+        "order_by": "date_desc",
+        "limit": 6
+      },
+      "cta": {
+        "label": "Xem Tất Cả Bài Viết Tin Tức",
+        "url": "tin-tuc.html"
+      }
+    },
+    {
+      "stt": "9.0",
+      "key": "footer",
+      "name": "Footer",
+      "data_ref": "site.json → footer / company / social_links / policies",
+      "internal_note": "Bổ sung file logo thương hiệu (bản vector/PNG nền trong độ phân giải cao)"
+    },
+    {
+      "stt": "10.0",
+      "key": "extra_features",
+      "name": "Tính năng bổ sung",
+      "data_ref": "site.json → quick_contact_bar / languages"
+    }
+  ],
+  "reference_urls": {
+    "layout_reference": "https://automech.vn/",
+    "projects_partners_reference": "https://weldcom.vn/"
+  }
+}

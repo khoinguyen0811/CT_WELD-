@@ -1,0 +1,83 @@
+{
+  "_source": {
+    "page_spec": "Excel Sheet 3 — mục 8.0 (Trang dịch vụ cấp 1) & 9.0 (Trang dịch vụ cấp 2)",
+    "sapo_doc": "https://docs.google.com/document/d/1hetkjJ-rDB8mp_krHKSxL5gK9amOO8Q_RmvW-9kWP2s/edit (mở được — đã lấy nội dung)",
+    "layout_reference_level1": "https://automech.vn/giai-phap/",
+    "layout_reference_level2": "https://automech.vn/phu-tro-o-to/"
+  },
+
+  "archive": {
+    "title": "Dịch vụ",
+    "sapo": "CTWELD cung cấp đa dạng dịch vụ kỹ thuật trong lĩnh vực cơ khí và hàn tự động, từ tư vấn – thiết kế giải pháp, lắp đặt dây chuyền, đến bảo trì – bảo hành và đào tạo chuyển giao công nghệ. Mỗi dịch vụ đều được thực hiện bởi đội ngũ kỹ sư giàu kinh nghiệm, đảm bảo tiến độ, chất lượng và hiệu quả vận hành lâu dài cho khách hàng. CTWELD cam kết đồng hành sát sao, hỗ trợ kỹ thuật nhanh chóng, giúp doanh nghiệp yên tâm trong suốt quá trình sử dụng thiết bị.",
+    "sapo_status": "official — lấy từ Google Docs của khách hàng",
+    "spec": "Cấu trúc hiển thị tương tự trang giải pháp cấp 1.",
+    "detail_page_requirement": "Trang dịch vụ cấp 2 hiển thị giống trang sản phẩm cấp 2 (bài viết SEO) + bổ sung 1 form đăng ký tư vấn cuối bài viết (form_ref: forms.json → service_request)"
+  },
+
+  "services": [
+    {
+      "id": "dv-5-1",
+      "menu_order": "5.1",
+      "title": "Sửa Chữa Thiết Bị Hàn & CNC",
+      "menu_label": "Sửa chữa thiết bị",
+      "slug": "sua-chua-thiet-bi",
+      "anchor": "sua-chua",
+      "content_status": "draft — nội dung demo, chờ tài liệu chính thức",
+      "summary": "Khắc phục lỗi bo mạch bo công suất nguồn hàn IGBT, cân chỉnh góc lệch Robot hàn, sửa chữa hệ thống điều khiển chiều cao đầu cắt THC máy Plasma CNC."
+    },
+    {
+      "id": "dv-5-2",
+      "menu_order": "5.2",
+      "title": "Bảo Dưỡng Định Kỳ Nhà Máy",
+      "menu_label": "Bảo dưỡng định kỳ",
+      "slug": "bao-duong-dinh-ky",
+      "anchor": "bao-duong",
+      "content_status": "draft — nội dung demo, chờ tài liệu chính thức",
+      "summary": "Gói bảo trì 3 tháng / 6 tháng / 1 năm cho toàn bộ hệ thống máy đính dầm, máy nắn dầm, cổng hàn SAW giúp phòng ngừa hỏng hóc đột xuất."
+    },
+    {
+      "id": "dv-5-3",
+      "menu_order": "5.3",
+      "title": "Cung Cấp Vật Tư Tiêu Hao",
+      "menu_label": "Cung cấp vật tư tiêu hao",
+      "slug": "cung-cap-vat-tu-tieu-hao",
+      "anchor": "vat-tu",
+      "content_status": "draft — nội dung demo, chờ tài liệu chính thức",
+      "summary": "Phân phối bép cắt Laser Raytools/Precitec, chụp bảo vệ, kính bảo vệ thấu kính, dây hàn CO2/MAG, thuốc hàn hồ quang chìm SJ101/SJ301."
+    },
+    {
+      "id": "dv-5-4",
+      "menu_order": "5.4",
+      "title": "Cung Cấp Phụ Tùng Thay Thế",
+      "menu_label": "Cung cấp phụ tùng thay thế",
+      "slug": "cung-cap-phu-tung-thay-the",
+      "anchor": "phu-tung",
+      "content_status": "draft — nội dung demo, chờ tài liệu chính thức",
+      "summary": "Sẵn kho bánh xe miết dầm H, động cơ Servo Yaskawa/Panasonic, biến tần Yaskawa, bo mạch điều khiển Megmeet, béc hàn công nghiệp."
+    }
+  ],
+
+  "warranty_commitments": {
+    "_note": "Trích từ tài liệu sản phẩm chính thức trên Google Drive — dùng được cho trang Chính sách bảo hành và trang Dịch vụ.",
+    "content_status": "official",
+    "items": [
+      "Bảo hành thân máy 12 tháng đối với lỗi từ nhà sản xuất.",
+      "Nguồn hàn và bộ điều khiển bảo hành 24 tháng (áp dụng cho PHJ-0618CT2M).",
+      "Bảo trì định kỳ 2 lần/năm trong thời gian bảo hành.",
+      "Cam kết cung cấp phụ tùng thay thế lâu dài sau khi hết bảo hành.",
+      "Chi phí đã bao gồm vận chuyển, lắp đặt, chạy thử, đào tạo vận hành và bàn giao tại nhà máy khách hàng."
+    ]
+  },
+
+  "cta_section": {
+    "heading": "Yêu Cầu Dịch Vụ / Báo Giá Phụ Tùng",
+    "description": "Liên hệ đội ngũ phản ứng nhanh CTWELD để xử lý sự cố thiết bị của bạn.",
+    "anchor": "form-dich-vu",
+    "form_ref": "forms.json → service_request"
+  },
+
+  "open_issues": [
+    "Excel LƯU Ý NỘI BỘ (Sheet 1, mục 1.0): \"Cần bổ sung thông tin các dịch vụ\".",
+    "Cả 4 dịch vụ hiện chỉ có 1 câu mô tả demo, chưa có bài viết SEO cấp 2 như yêu cầu Excel."
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "_source": "Trang chủ mục 4.0 (Excel Sheet 1) + menu III. Sản phẩm (3.1, 3.2) + demo index.html / san-pham.html",
+  "_note": "Đã gộp về đúng 2 danh mục theo Excel (3.1 Dây chuyền kết cấu thép, 3.2 Robot công nghiệp). Hai danh mục demo tự thêm trước đây (Cắt CNC Laser, Vật tư & Phụ tùng) đã được xử lý — xem `merged_categories` bên dưới.",
+  "wp_taxonomy": "product_cat",
+  "categories": [
+    {
+      "id": 1,
+      "order": 1,
+      "code": "01",
+      "badge": "01. KẾT CẤU THÉP",
+      "name": "Dây Chuyền Kết Cấu Thép",
+      "slug": "ket-cau-thep",
+      "in_menu": true,
+      "menu_order": "3.1",
+      "description": "Máy đính dầm H, Máy hàn hồ quang chìm SAW 2 mỏ, Máy nắn dầm thuỷ lực 1000 tấn, máy cắt Laser Fiber và máy phun bi làm sạch bề mặt.",
+      "image": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80",
+      "image_status": "placeholder",
+      "url": "san-pham.html?cat=ket-cau-thep",
+      "count_demo": 87,
+      "subcategories": [
+        { "name": "Dây chuyền hàn dầm H/I/Box", "slug": "han-dam-h" },
+        { "name": "Máy nắn thẳng dầm thuỷ lực", "slug": "nan-thang" },
+        { "name": "Máy hàn hồ quang chìm SAW", "slug": "saw" },
+        { "name": "Máy cắt Laser Fiber tấm", "slug": "laser-tam", "merged_from": "cat-cnc" },
+        { "name": "Máy cắt ống Laser 3D", "slug": "laser-ong", "merged_from": "cat-cnc" },
+        { "name": "Máy phun bi làm sạch bề mặt", "slug": "phun-bi" },
+        { "name": "Đồ gá thủy lực Jig kẹp", "slug": "jig", "merged_from": "thiet-bi-han" }
+      ]
+    },
+    {
+      "id": 2,
+      "order": 2,
+      "code": "02",
+      "badge": "02. ROBOTICS",
+      "name": "Robot Công Nghiệp & Cánh Tay Hàn",
+      "slug": "robot",
+      "in_menu": true,
+      "menu_order": "3.2",
+      "description": "Robot hàn Estun, Yaskawa, Fanuc kết hợp nguồn hàn Megmeet Artsen 500A chuyên hàn khung xe, bồn bể, đường ống công nghiệp.",
+      "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80",
+      "image_status": "placeholder",
+      "url": "san-pham.html?cat=robot",
+      "count_demo": 73,
+      "subcategories": [
+        { "name": "Robot hàn Estun Cobot", "slug": "cobot" },
+        { "name": "Cánh tay Robot Yaskawa", "slug": "yaskawa" },
+        { "name": "Trạm Robot hàn tự động Fanuc", "slug": "fanuc" },
+        { "name": "Nguồn hàn Megmeet Artsen", "slug": "megmeet", "merged_from": "thiet-bi-han" }
+      ]
+    }
+  ],
+
+  "merged_categories": {
+    "_note": "Hai danh mục demo tự thêm đã bị gộp/bỏ ngày 2026-08-17 để khớp cấu trúc menu trong Excel. Giữ lại đây để truy vết và để làm redirect 301 khi lên WordPress.",
+    "items": [
+      {
+        "old_slug": "cat-cnc",
+        "old_name": "Máy Cắt Laser Fiber & Plasma CNC",
+        "action": "merged",
+        "merged_into": "ket-cau-thep",
+        "reason": "Cắt phôi bản mã Laser/Plasma là công đoạn đầu của dây chuyền kết cấu thép — đã đưa thành 2 danh mục con laser-tam và laser-ong.",
+        "redirect_301": "san-pham.html?cat=ket-cau-thep"
+      },
+      {
+        "old_slug": "thiet-bi-han",
+        "old_name": "Vật Tư Tiêu Hao & Gá Hàn",
+        "action": "split",
+        "merged_into": ["ket-cau-thep (đồ gá Jig)", "robot (nguồn hàn Megmeet)"],
+        "moved_to_services": "Phần vật tư tiêu hao và phụ tùng thay thế thuộc về Dịch vụ 5.3 và 5.4 (services.json), không phải danh mục sản phẩm.",
+        "redirect_301": "san-pham.html"
+      }
+    ]
+  },
+  "brands": {
+    "_note": "Trang sản phẩm cấp 1 (Excel Sheet 3, mục 2.0) yêu cầu bộ lọc theo danh mục sản phẩm VÀ theo thương hiệu.",
+    "wp_taxonomy": "product_brand",
+    "items": [
+      { "name": "Megmeet", "slug": "megmeet", "count": 52 },
+      { "name": "Estun Automation", "slug": "estun-automation", "count": 41 },
+      { "name": "Fanuc", "slug": "fanuc", "count": 36 },
+      { "name": "Raycus Laser", "slug": "raycus-laser", "count": 34 },
+      { "name": "Yaskawa", "slug": "yaskawa", "count": 29 },
+      { "name": "CTWELD", "slug": "ctweld", "count": null, "note": "Thương hiệu của chính doanh nghiệp — 2 sản phẩm có tài liệu đầy đủ đều thuộc thương hiệu này" }
+    ],
+    "count_status": "Số lượng là dữ liệu demo, cần tính lại theo dữ liệu thật khi import WP"
+  }
+}

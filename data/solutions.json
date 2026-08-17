@@ -1,0 +1,82 @@
+{
+  "_source": {
+    "page_spec": "Excel Sheet 3 — mục 5.0 (Trang giải pháp cấp 1) & 6.0 (Trang giải pháp cấp 2)",
+    "sapo_doc": "https://docs.google.com/document/d/1VBRd2lBAot1leA6fn0N1w2CKKrkYqRenyMMelxqHnrM/edit (mở được — đã lấy nội dung)",
+    "layout_reference_level1": "https://automech.vn/giai-phap/",
+    "layout_reference_level2": "https://automech.vn/phu-tro-o-to/"
+  },
+  "archive": {
+    "title": "Giải pháp",
+    "sapo": "CTWELD mang đến các giải pháp cơ khí và tự động hóa toàn diện, từ tư vấn thiết kế, gia công cơ khí chính xác đến hệ thống kết cấu thép và hàn tự động ứng dụng công nghệ tiên tiến. Mỗi giải pháp được xây dựng dựa trên nhu cầu thực tế của từng doanh nghiệp, giúp tối ưu quy trình sản xuất, nâng cao năng suất và độ chính xác. Với đội ngũ kỹ sư giàu kinh nghiệm, CTWELD cam kết đồng hành cùng khách hàng để hiện thực hóa những giải pháp cơ khí thông minh, hiệu quả và bền vững.",
+    "sapo_status": "official — lấy từ Google Docs của khách hàng",
+    "spec": "Cấu trúc hiển thị bao gồm danh sách các giải pháp doanh nghiệp cung ứng.",
+    "detail_page_requirement": "Trang giải pháp cấp 2 hiển thị giống trang sản phẩm cấp 2 (bài viết SEO) + bổ sung 1 form đăng ký tư vấn cuối bài viết (form_ref: forms.json → consultation)"
+  },
+  "solutions": [
+    {
+      "id": "gp-4-1",
+      "menu_order": "4.1",
+      "title": "Giải Pháp Gia Công Kết Cấu Thép Dầm H/I/BOX",
+      "menu_label": "Giải pháp gia công kết cấu thép",
+      "slug": "giai-phap-gia-cong-ket-cau-thep",
+      "anchor": "ket-cau-thep",
+      "content_status": "draft — nội dung demo, chờ tài liệu chính thức",
+      "summary": "Hệ thống kết nối liên hoàn từ khâu Cắt phôi bản mã Laser/Plasma CNC → Máy gá đính dầm tự động → Cổng hàn hồ quang chìm 2 mỏ → Máy nắn thẳng dầm thuỷ lực.",
+      "benefits": [
+        "Giảm 70% số lượng thợ hàn gá thủ công trên dây chuyền.",
+        "Năng suất sản xuất đạt 1,000 - 3,000 tấn thép/tháng/dây chuyền.",
+        "Mối hàn sâu, đồng đều 100% đạt kiểm tra siêu âm NDT UT/MT."
+      ],
+      "related_products": [
+        "ct1020-10",
+        "phj-0618ct2m"
+      ]
+    },
+    {
+      "id": "gp-4-2",
+      "menu_order": "4.2",
+      "title": "Giải Pháp Tự Động Hoá Hàn Bằng Robot",
+      "menu_label": "Giải pháp tự động hoá",
+      "slug": "giai-phap-tu-dong-hoa",
+      "anchor": "tu-dong-hoa",
+      "content_status": "draft — nội dung demo, chờ tài liệu chính thức",
+      "summary": "Tích hợp Robot hàn công nghiệp (Estun, Yaskawa, Fanuc) kết hợp bàn xoay 2 vị trí và hệ thống cảm biến dò đường hàn bằng Laser (Laser Seam Tracking).",
+      "benefits": [
+        "Ứng dụng hàn khung xe máy, ô tô, ống xả, bồn chứa LPG, giàn giáo.",
+        "Tốc độ hàn nhanh gấp 3 lần thợ hàn lành nghề."
+      ],
+      "related_products": []
+    },
+    {
+      "id": "gp-4-3",
+      "menu_order": "4.3",
+      "title": "Giải Pháp Công Nghiệp Xây Dựng",
+      "menu_label": "Giải pháp công nghiệp xây dựng",
+      "slug": "giai-phap-cong-nghiep-xay-dung",
+      "anchor": "xay-dung",
+      "content_status": "draft",
+      "summary": "Giải pháp thiết bị đồng bộ cho nhà thép tiền chế và hạ tầng công nghiệp: từ chế tạo cột kèo, dầm mái, khung giàn giáo đến xử lý bề mặt và sơn phủ cấu kiện trước khi lắp dựng công trình.",
+      "benefits": [
+        "Chế tạo dầm H dài tới 15m, cao bụng 200 - 1.800mm cho nhà xưởng công nghiệp.",
+        "Xử lý bề mặt đạt chuẩn SA 2.0 - 2.5 (ISO 8501-1) trước khi sơn phủ bảo vệ.",
+        "Chuẩn hoá chất lượng cấu kiện, đáp ứng điều kiện dự thầu và đơn hàng xuất khẩu."
+      ],
+      "note": "Excel không cung cấp nội dung cho mục 4.3. Section đã được dựng trong giai-phap.html (id=xay-dung) bằng nội dung draft biên soạn từ 2 tài liệu sản phẩm chính thức — CẦN KHÁCH HÀNG DUYỆT trước khi lên production.",
+      "related_products": [
+        "phj-0618ct2m",
+        "ct1020-10"
+      ]
+    }
+  ],
+  "cta_section": {
+    "heading": "Đăng Ký Nhận Giải Pháp Kỹ Thuật Tối Ưu",
+    "description": "Nhận bản khảo sát mặt bằng và bài toán kinh tế tính điểm hòa vốn đầu tư từ CTWELD.",
+    "anchor": "form-tu-van-gp",
+    "form_ref": "forms.json → consultation"
+  },
+  "open_issues": [
+    "Excel LƯU Ý NỘI BỘ (Sheet 1, mục 1.0): \"Cần bổ sung thông tin các giải pháp\".",
+    "Nội dung cả 3 giải pháp hiện là bản draft, chưa được khách hàng duyệt.",
+    "Chưa có bài viết SEO cấp 2 cho từng giải pháp như Excel yêu cầu (mục 6.0)."
+  ]
+}

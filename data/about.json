@@ -1,0 +1,127 @@
+{
+  "_source": {
+    "page_spec": "Excel Sheet 3 — mục 1.0 (Về chúng tôi): \"Hiển thị bài viết trong danh mục về chúng tôi dưới dạng bài viết thông tin\"",
+    "content_doc": "https://docs.google.com/document/d/1JKgajDPU4MGS6AJQ2uh0kzHDqn5YLH5ryfNAkFCplvk/edit?tab=t.0#heading=h.3prulaazym1k",
+    "content_doc_access": "KHÔNG MỞ ĐƯỢC — HTTP 401, tài liệu bị giới hạn quyền truy cập. Cần khách hàng đổi sang \"Anyone with the link\" hoặc cấp quyền.",
+    "media_folder": "https://drive.google.com/drive/folders/1ToiKa8gyeelpC1-7tMlCZ4V_xWNKn860 (mở được — 2 ảnh)"
+  },
+  "content_status": "partial — nội dung chính thức nằm trong Google Docs đang bị khoá quyền. Phần dưới đây là bản demo đang chạy trên ve-chung-toi.html.",
+  "hero": {
+    "title": "Về Chúng Tôi - Năng Lực CTWELD",
+    "subtitle": "Tìm hiểu về hành trình phát triển, năng lực công nghệ và đội ngũ chuyên gia kỹ thuật hàn cơ khí hàng đầu của CTWELD."
+  },
+  "intro": {
+    "heading": "CTWELD - Tiên Phong Chuyển Giao Công Nghệ",
+    "paragraphs": [
+      "CÔNG TY TNHH DỊCH VỤ KỸ THUẬT VÀ GIẢI PHÁP CƠ KHÍ CTWELD (MST: 0111059841) được thành lập với mục tiêu mang đến cho các doanh nghiệp cơ khí Việt Nam những công nghệ chế tạo hiện đại, chính xác và hiệu quả kinh tế cao nhất.",
+      "Với sứ mệnh \"Công nghệ dẫn lối tương lai\", CTWELD tập trung chuyên sâu vào ngành gia công kết cấu thép, hàn tự động hóa bằng Robot, công nghệ cắt Laser Fiber công suất lớn và các hệ thống đồ gá Jig kẹp thông minh."
+    ]
+  },
+  "sapo_homepage": {
+    "_note": "Đoạn SAPO rút gọn dùng cho section 3.0 ở trang chủ",
+    "text": "Công ty TNHH Dịch Vụ Kỹ Thuật và Giải Pháp Cơ Khí CTWELD là đơn vị tiên phong chuyên tư vấn, nhập khẩu và chuyển giao công nghệ máy cơ khí, dây chuyền hàn kết cấu thép và Robot công nghiệp tại Việt Nam."
+  },
+  "vision_mission_values": {
+    "heading": "Tầm Nhìn - Sứ Mệnh - Giá Trị Cốt Lõi",
+    "items": [
+      {
+        "key": "vision",
+        "title": "Tầm Nhìn Của Chúng Tôi",
+        "body": "Trở thành đơn vị tiên phong dẫn đầu tại Việt Nam trong lĩnh vực tư vấn, nhập khẩu và chuyển giao công nghệ hàn tự động, dây chuyền kết cấu thép và Robot công nghiệp.",
+        "image": {
+          "name": "1_Tầm nhìn",
+          "drive_id": "1Xwq0Zpo9dEpFETMltx_5CdFx3WWPP1qA",
+          "url": "https://drive.google.com/file/d/1Xwq0Zpo9dEpFETMltx_5CdFx3WWPP1qA/view",
+          "mime": "image/jpeg",
+          "status": "đã tải về repo — ảnh chụp trụ sở CTWELD tại Khai Sơn Town, Long Biên, Hà Nội",
+          "src": "images/tam-nhin.jpg",
+          "used_in_demo": "ve-chung-toi.html (khối giới thiệu) + index.html (thumb 3)",
+          "drive_url": "https://drive.google.com/file/d/1Xwq0Zpo9dEpFETMltx_5CdFx3WWPP1qA/view",
+          "dimensions": "2752x1536"
+        }
+      },
+      {
+        "key": "mission",
+        "title": "Sứ Mệnh Của Chúng Tôi",
+        "body": "Giúp các nhà máy cơ khí cắt giảm 50% thời gian gia công, tối ưu chi phí vận hành và đảm bảo độ bền mối hàn chuẩn kiểm định NDT cao nhất.",
+        "image": {
+          "name": "2_Sứ mệnh",
+          "drive_id": "1lZjiJvPKuMLZcb9wAZkr0EE_8WaBSFbz",
+          "url": "https://drive.google.com/file/d/1lZjiJvPKuMLZcb9wAZkr0EE_8WaBSFbz/view",
+          "mime": "image/jpeg",
+          "status": "đã tải về repo — ảnh chụp dây chuyền robot hàn kết cấu thép trong nhà máy",
+          "src": "images/su-menh.jpg",
+          "used_in_demo": "index.html (ảnh chính khối Về chúng tôi + thumb 1)",
+          "drive_url": "https://drive.google.com/file/d/1lZjiJvPKuMLZcb9wAZkr0EE_8WaBSFbz/view",
+          "dimensions": "1000x632"
+        }
+      },
+      {
+        "key": "core_values",
+        "title": "Giá Trị Cốt Lõi",
+        "body": "Lấy công nghệ tiên phong làm kim chỉ nam, cam kết thiết bị chính hãng nhập khẩu trực tiếp, kỹ thuật chuyên sâu 24/7 và đồng hành bền vững cùng khách hàng.",
+        "image": null,
+        "image_status": "missing — thư mục Drive chỉ có ảnh Tầm nhìn và Sứ mệnh"
+      }
+    ],
+    "_image_note": "Lưu ý: 2 file trên Drive đặt tên \"Tầm nhìn\" / \"Sứ mệnh\" nhưng nội dung thực tế là ảnh chụp trụ sở và ảnh dây chuyền robot hàn — không phải đồ hoạ minh hoạ tầm nhìn/sứ mệnh. Đã dùng làm ảnh thật thay ảnh stock."
+  },
+  "stats": [
+    {
+      "number": "12+",
+      "label": "Năm Kinh Nghiệm"
+    },
+    {
+      "number": "350+",
+      "label": "Dự Án Bàn Giao"
+    },
+    {
+      "number": "99.8%",
+      "label": "Độ Chính Xác Kỹ Thuật"
+    }
+  ],
+  "stats_status": "placeholder — cần khách hàng xác nhận số liệu thật",
+  "featured_projects_section": {
+    "heading": "Công Trình & Dây Chuyền Đã Triển Khai",
+    "subtitle": "Một số dự án tiêu biểu CTWELD đã tư vấn, chuyển giao công nghệ và đưa vào vận hành thực tế tại các nhà máy cơ khí lớn.",
+    "content_status": "placeholder",
+    "items": [
+      {
+        "title": "Dây Chuyền Hàn Tự Động Kết Cấu Thép Đại Dũng",
+        "excerpt": "Cung cấp và chuyển giao 4 tổ hợp Robot hàn dầm H-Beam kết hợp hệ thống Jig kẹp thông minh."
+      },
+      {
+        "title": "Hệ Thống Robot Hàn Cổng Dầm Xưởng Chế Tạo BMB Steel",
+        "excerpt": "Tích hợp nguồn hàn Megmeet 500A kết hợp cánh tay Robot Estun tăng 40% hiệu suất hàn dầm."
+      },
+      {
+        "title": "Dây Chuyền Cắt CNC Laser Fiber 20kW Nhà Máy ATAD",
+        "excerpt": "Tư vấn chọn cấu hình nguồn Laser Raycus 20kW và lắp đặt bàn chuyển đổi tự động kép."
+      },
+      {
+        "title": "Hệ Thống Đồ Gá Jig Kẹp Tự Động Hàn Dầm Khung Nhà Xưởng",
+        "excerpt": "Thiết kế đồ gá thủy lực định vị chính xác cao, chống biến dạng nhiệt kim loại khi hàn."
+      },
+      {
+        "title": "Tổ Hợp Máy Hàn Cần Cột H-Beam Nhà Máy Zamil Steel",
+        "excerpt": "Chuyển giao công nghệ hàn dưới lớp thuốc SAW tự động hóa đường hàn ngấu sâu đạt kiểm định."
+      },
+      {
+        "title": "Dây Chuyền Lắp Ráp & Hàn Cấu Kiện Thép Tiền Chế Việt Xô",
+        "excerpt": "Tự động hóa đồng bộ từ khâu đính gá, hàn ngang dầm đến nắn thẳng cánh dầm sau hàn."
+      }
+    ]
+  },
+  "history": {
+    "heading": "Quá Trình Hình Thành Của CTWELD",
+    "body": "CTWELD đặt mục tiêu trở thành đơn vị số 1 trên thị trường về chất lượng sản phẩm và dịch vụ hậu mãi. Chúng tôi cam kết xây dựng mối quan hệ với khách hàng bằng sự tin cậy, nhiệt tình và tinh thần trách nhiệm cao nhất.",
+    "timeline": [],
+    "content_status": "missing — chưa có mốc thời gian lịch sử hình thành. Nội dung này nhiều khả năng nằm trong Google Docs đang bị khoá quyền."
+  },
+  "open_issues": [
+    "Google Docs \"Về chúng tôi\" trả về HTTP 401 — cần mở quyền chia sẻ để lấy nội dung chính thức.",
+    "Thiếu ảnh cho mục Giá trị cốt lõi.",
+    "Thiếu timeline quá trình hình thành.",
+    "Số liệu thống kê (12+ / 350+ / 99.8%) là dữ liệu demo."
+  ]
+}

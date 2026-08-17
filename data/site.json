@@ -1,0 +1,281 @@
+{
+  "_source": "1_Cấu trúc Website _ CT WELD.xlsx — Sheet 1 & 2, mục 9.0 (Footer) và 10.0 (Tính năng bổ sung)",
+  "site": {
+    "name": "CTWELD",
+    "brand_full": "CT WELD",
+    "tagline": "Công nghệ dẫn lối tương lai",
+    "domain": "cokhictweld060.mbws.vn",
+    "logo": "logoweld.png",
+    "seo": {
+      "title": "CTWELD | Giải Pháp Hàn Tự Động & Dây Chuyền Kết Cấu Thép Chuyên Nghiệp",
+      "description": "Công ty TNHH Dịch Vụ Kỹ Thuật và Giải Pháp Cơ Khí CTWELD - Chuyên cung cấp giải pháp hàn tự động, Robot công nghiệp, dây chuyền gia công kết cấu thép và thiết bị cơ khí công nghệ cao."
+    },
+    "copyright": "© 2026 cokhictweld060.mbws.vn. Tất cả quyền được bảo lưu.",
+    "designed_by": "Thiết kế bởi CTWELD"
+  },
+  "company": {
+    "legal_name": "CÔNG TY TNHH DỊCH VỤ KỸ THUẬT VÀ GIẢI PHÁP CƠ KHÍ CTWELD",
+    "tax_code": "0111059841",
+    "address": "6.10, Khai Sơn Town, Phường Thượng Thanh, Quận Long Biên, TP. Hà Nội",
+    "phone": "0866060894",
+    "phone_display": "0866 060 894",
+    "email": "minhtuan@ctweld.vn",
+    "hotline_secondary": "0969730762",
+    "hotline_secondary_display": "0969.730.762",
+    "hotline_secondary_note": "ĐÃ CHỐT: số chính thức toàn site là 0866 060 894 (theo Footer file Excel). Số 0969.730.762 xuất hiện trong 2 tài liệu sản phẩm trên Drive được coi là số cũ — cần khách hàng sửa lại trong tài liệu gốc.",
+    "contacts": [
+      {
+        "role": "Kinh doanh",
+        "name": "Mr. Tuấn",
+        "email": "minhtuan@ctweld.vn",
+        "phone": "0866 060 894"
+      },
+      {
+        "role": "Kỹ thuật",
+        "name": "Hotline kỹ thuật",
+        "email": "minhtuan@ctweld.vn",
+        "phone": "0866 060 894"
+      }
+    ],
+    "map_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.473523589417!2d105.87532341540263!3d21.053744992299884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135a987d6050b1d%3A0xa1969ebaa3c683b5!2sKhai%20S%C6%A1n%20Town!5e0!3m2!1svi!2svn!4v1700000000000!5m2!1svi!2svn",
+    "description_short": "Đơn vị tiên phong trong lĩnh vực giải pháp hàn tự động, dây chuyền kết cấu thép, Robot công nghiệp và thiết bị cơ khí chế tạo công nghệ cao.",
+    "hotline_secondary_status": "deprecated"
+  },
+  "social_links": [
+    {
+      "key": "facebook",
+      "label": "Facebook",
+      "url": "https://www.facebook.com/ctweld.SME/",
+      "icon": "fab fa-facebook-f",
+      "status": "ok"
+    },
+    {
+      "key": "youtube",
+      "label": "Youtube",
+      "url": "https://www.youtube.com/@ctweld_SME",
+      "icon": "fab fa-youtube",
+      "status": "ok"
+    },
+    {
+      "key": "pinterest",
+      "label": "Pinterest",
+      "url": "https://www.pinterest.com/ctweld_SME/",
+      "icon": "fab fa-pinterest-p",
+      "status": "ok"
+    },
+    {
+      "key": "tiktok",
+      "label": "Tiktok",
+      "url": "https://www.tiktok.com/@ctweld_sme",
+      "icon": "fab fa-tiktok",
+      "status": "ok"
+    },
+    {
+      "key": "zalo_oa",
+      "label": "Zalo OA",
+      "url": "",
+      "icon": "fas fa-comment-dots",
+      "status": "missing",
+      "note": "File Excel để trống — cần bổ sung"
+    },
+    {
+      "key": "linkedin",
+      "label": "Linkedin",
+      "url": "",
+      "icon": "fab fa-linkedin-in",
+      "status": "missing",
+      "note": "File Excel để trống — cần bổ sung"
+    },
+    {
+      "key": "instagram",
+      "label": "Instagram",
+      "url": "",
+      "icon": "fab fa-instagram",
+      "status": "missing",
+      "note": "File Excel để trống — cần bổ sung"
+    }
+  ],
+  "quick_contact_bar": {
+    "_spec": "Sheet 1, mục 10.0 — nút liên hệ nhanh nổi cố định",
+    "items": [
+      {
+        "key": "hotline",
+        "label": "Gọi Hotline: 0866060894",
+        "url": "tel:0866060894",
+        "icon": "fas fa-phone-alt"
+      },
+      {
+        "key": "zalo",
+        "label": "Chat Zalo Kỹ Thuật",
+        "url": "https://zalo.me/0866060894",
+        "icon": "fas fa-comment-dots",
+        "status": "cần thay bằng link Zalo OA chính thức"
+      },
+      {
+        "key": "messenger",
+        "label": "Messenger Fanpage",
+        "url": "https://m.me/ctweld.SME/",
+        "icon": "fab fa-facebook-messenger"
+      },
+      {
+        "key": "email",
+        "label": "Email: minhtuan@ctweld.vn",
+        "url": "mailto:minhtuan@ctweld.vn",
+        "icon": "fas fa-envelope"
+      },
+      {
+        "key": "form",
+        "label": "Đăng Ký Tư Vấn Kỹ Thuật",
+        "url": "#consult-modal",
+        "icon": "fas fa-file-signature",
+        "action": "open_modal"
+      }
+    ]
+  },
+  "languages": {
+    "_spec": "Sheet 1, mục 10.0 — yêu cầu song ngữ Việt / Anh",
+    "required": [
+      "vi",
+      "en"
+    ],
+    "default": "vi",
+    "available_in_demo": [
+      {
+        "code": "vi",
+        "label": "Tiếng Việt",
+        "flag": "🇻🇳",
+        "active": true
+      },
+      {
+        "code": "en",
+        "label": "English",
+        "flag": "🇺🇸",
+        "active": false
+      }
+    ],
+    "_note": "Đã bỏ nút cờ Trung Quốc khỏi toàn bộ trang demo — Excel chỉ yêu cầu song ngữ Việt/Anh."
+  },
+  "policies": {
+    "_spec": "Sheet 1, mục 9.0 — danh sách chính sách bắt buộc trong Footer",
+    "required_by_spec": [
+      {
+        "title": "Điều khoản sử dụng",
+        "slug": "dieu-khoan-su-dung",
+        "content_status": "missing"
+      },
+      {
+        "title": "Chính sách bảo mật thông tin",
+        "slug": "chinh-sach-bao-mat-thong-tin",
+        "content_status": "missing"
+      },
+      {
+        "title": "Chính sách vận chuyển giao nhận",
+        "slug": "chinh-sach-van-chuyen-giao-nhan",
+        "content_status": "missing"
+      },
+      {
+        "title": "Chính sách bảo hành",
+        "slug": "chinh-sach-bao-hanh",
+        "content_status": "missing"
+      }
+    ]
+  },
+  "header": {
+    "announcement": "Chào mừng quý khách đến với CT WELD - Đơn vị giải pháp công nghệ cơ khí & hàn tự động chuyên nghiệp.",
+    "help_link": {
+      "label": "Cần hỗ trợ?",
+      "url": "lien-he.html"
+    },
+    "quick_links": [
+      {
+        "label": "Dự án",
+        "url": "du-an.html"
+      },
+      {
+        "label": "Tin tức",
+        "url": "tin-tuc.html"
+      },
+      {
+        "label": "Hỏi đáp",
+        "url": "lien-he.html"
+      }
+    ],
+    "search_placeholder": "Tìm kiếm model máy hàn, dây chuyền kết cấu thép, robot...",
+    "contact_blocks": [
+      {
+        "icon": "fas fa-phone-alt",
+        "value": "0866 060 894",
+        "label": "Hotline Kỹ Thuật"
+      },
+      {
+        "icon": "fas fa-envelope",
+        "value": "minhtuan@ctweld.vn",
+        "label": "Địa chỉ Email"
+      }
+    ],
+    "cta_button": {
+      "label": "Tư vấn kỹ thuật",
+      "icon": "fas fa-headset",
+      "action": "open_modal"
+    },
+    "sticky": true,
+    "sticky_note": "Sheet 1 & 2, mục 1.0 — Ghim ở đầu trang, chạy lăn theo con trỏ chuột"
+  },
+  "footer": {
+    "newsletter": {
+      "_spec": "Sheet 1, mục 9.0 — Form thu thập Email khách hàng",
+      "heading": "KẾT NỐI VỚI CTWELD",
+      "description": "Nhận tư vấn giải pháp hàn tự động, báo giá máy móc & bản tin kỹ thuật cơ khí mới nhất từ CTWELD.",
+      "placeholder": "Nhập số điện thoại hoặc email của bạn...",
+      "submit_label": "Đăng Ký"
+    },
+    "columns": [
+      {
+        "heading": "VỀ CHÚNG TÔI",
+        "links": [
+          {
+            "label": "Giới thiệu chung",
+            "url": "ve-chung-toi.html"
+          },
+          {
+            "label": "Danh mục sản phẩm",
+            "url": "san-pham.html"
+          },
+          {
+            "label": "Hãng sản xuất",
+            "url": "index.html#partners"
+          },
+          {
+            "label": "Tin tức & Sự kiện",
+            "url": "tin-tuc.html"
+          }
+        ]
+      },
+      {
+        "heading": "DỊCH VỤ & CHÍNH SÁCH",
+        "links": [
+          {
+            "label": "Chính sách thanh toán",
+            "url": "lien-he.html"
+          },
+          {
+            "label": "Quy định vận chuyển",
+            "url": "lien-he.html"
+          },
+          {
+            "label": "Chính sách bảo mật",
+            "url": "lien-he.html"
+          },
+          {
+            "label": "Chính sách bảo hành",
+            "url": "dich-vu.html"
+          }
+        ]
+      },
+      {
+        "heading": "BẢN ĐỒ VỊ TRÍ",
+        "type": "map"
+      }
+    ]
+  }
+}

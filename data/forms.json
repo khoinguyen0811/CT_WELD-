@@ -1,0 +1,63 @@
+{
+  "_source": "Excel Sheet 3 — yêu cầu \"Bổ sung thêm 1 form đăng ký nhận tư vấn dưới cuối mỗi trang sản phẩm cấp 2 / giải pháp cấp 2 / dịch vụ cấp 2 / dự án cấp 2\"; Sheet 1 mục 9.0 — \"Form thu thập Email khách hàng\" ở Footer.",
+  "_wp_note": "Cấu trúc field dưới đây map trực tiếp sang Contact Form 7 / WPForms khi import.",
+
+  "forms": [
+    {
+      "id": "consultation",
+      "name": "Đăng Ký Tư Vấn & Nhận Báo Giá",
+      "description": "Vui lòng để lại thông tin nhu cầu, kỹ sư CTWELD sẽ liên hệ tư vấn giải pháp phù hợp nhất.",
+      "submit_label": "Gửi Yêu Cầu Tư Vấn Ngay",
+      "submit_icon": "fas fa-paper-plane",
+      "used_on": [
+        "Modal tư vấn toàn site (nút \"Tư vấn kỹ thuật\" ở header + nút nổi quick contact)",
+        "Cuối trang sản phẩm cấp 2",
+        "Cuối trang giải pháp cấp 2",
+        "Cuối trang dự án cấp 2",
+        "Trang liên hệ"
+      ],
+      "fields": [
+        { "name": "full_name", "label": "Họ và Tên Quý Khách", "type": "text", "required": true, "placeholder": "Ví dụ: Nguyễn Văn Minh", "col": "1/2" },
+        { "name": "phone", "label": "Số Điện Thoại / Zalo", "type": "tel", "required": true, "placeholder": "Ví dụ: 0987 654 321", "col": "1/2" },
+        { "name": "email", "label": "Địa Chỉ Email", "type": "email", "required": true, "placeholder": "Ví dụ: minhtuan@ctweld.vn", "col": "1/2" },
+        { "name": "company", "label": "Tên Công Ty / Doanh Nghiệp", "type": "text", "required": true, "placeholder": "Ví dụ: Công ty Kết Cấu Thép ABC", "col": "1/2" },
+        { "name": "industry", "label": "Lĩnh Vực Hoạt Động", "type": "text", "required": true, "placeholder": "Ví dụ: Kết cấu thép, Đóng tàu, Ô tô...", "col": "1/2" },
+        { "name": "machine_type", "label": "Loại Máy Cần Tư Vấn", "type": "text", "required": true, "placeholder": "Ví dụ: Máy hàn cổng SAW, Robot hàn...", "col": "1/2" },
+        { "name": "material_thickness", "label": "Độ Dày Vật Liệu Gia Công", "type": "text", "required": true, "placeholder": "Ví dụ: Thép tấm dày 10mm - 30mm, Inox 5mm...", "col": "full" },
+        { "name": "address", "label": "Địa Chỉ (Nhà Xưởng / Công Ty)", "type": "textarea", "rows": 2, "required": true, "placeholder": "Nhập địa chỉ nhà xưởng hoặc trụ sở công ty của Quý khách...", "col": "full" }
+      ],
+      "notify_email": "minhtuan@ctweld.vn"
+    },
+
+    {
+      "id": "service_request",
+      "name": "Yêu Cầu Dịch Vụ / Báo Giá Phụ Tùng",
+      "description": "Liên hệ đội ngũ phản ứng nhanh CTWELD để xử lý sự cố thiết bị của bạn.",
+      "submit_label": "Gửi Yêu Cầu Dịch Vụ",
+      "used_on": ["Cuối trang dịch vụ cấp 1 & cấp 2"],
+      "fields_ref": "Dùng lại field của form consultation; đổi nhãn \"Loại Máy Cần Tư Vấn\" thành \"Thiết Bị Cần Hỗ Trợ\" và bổ sung field mô tả sự cố.",
+      "extra_fields": [
+        { "name": "issue_description", "label": "Mô Tả Sự Cố / Nhu Cầu Dịch Vụ", "type": "textarea", "rows": 3, "required": true, "placeholder": "Mô tả tình trạng thiết bị hoặc loại phụ tùng cần báo giá...", "col": "full" }
+      ],
+      "notify_email": "minhtuan@ctweld.vn"
+    },
+
+    {
+      "id": "newsletter",
+      "name": "Form thu thập Email khách hàng (Footer)",
+      "description": "Nhận tư vấn giải pháp hàn tự động, báo giá máy móc & bản tin kỹ thuật cơ khí mới nhất từ CTWELD.",
+      "submit_label": "Đăng Ký",
+      "used_on": ["Footer toàn site"],
+      "fields": [
+        { "name": "contact", "label": "Số điện thoại hoặc Email", "type": "text", "required": true, "placeholder": "Nhập số điện thoại hoặc email của bạn...", "col": "full" }
+      ],
+      "notify_email": "minhtuan@ctweld.vn"
+    }
+  ],
+
+  "open_issues": [
+    "Chưa xác định nơi lưu lead (chỉ gửi email hay lưu DB / CRM).",
+    "Chưa có reCAPTCHA / chống spam.",
+    "Song ngữ Việt–Anh: cần bản dịch nhãn field cho version tiếng Anh."
+  ]
+}
