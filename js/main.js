@@ -1,7 +1,7 @@
 /* ==========================================================================
    CTWELD - MAIN JAVASCRIPT LOGIC
    Includes: Manual Hero Slider, Projects 3.5-Card Slider, News 3.5-Card Autoplay Slider,
-   Consultation Modal Form, & Mobile Navigation Toggle.
+   About Us Media Gallery Thumbnails, Consultation Modal Form, & Mobile Navigation.
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -88,7 +88,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
   if (newsTrack && newsPrev && newsNext) {
     const newsCards = newsTrack.querySelectorAll('.news-card');
-    // Matched with project slider: 3.5 cards per view, max index = newsCards.length - 3
     const maxNewsIndex = Math.max(0, newsCards.length - 3);
 
     function updateNewsSlider() {
@@ -101,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if (newsIndex < maxNewsIndex) {
         newsIndex++;
       } else {
-        newsIndex = 0; // Loop back to start
+        newsIndex = 0;
       }
       updateNewsSlider();
     }
@@ -125,7 +124,6 @@ document.addEventListener('DOMContentLoaded', function() {
       resetNewsAutoplay();
     });
 
-    // Start automatic sliding every 4000ms (4 seconds)
     function startNewsAutoplay() {
       stopNewsAutoplay();
       newsAutoPlayTimer = setInterval(nextNews, 4000);
@@ -142,7 +140,6 @@ document.addEventListener('DOMContentLoaded', function() {
       startNewsAutoplay();
     }
 
-    // Pause autoplay when hovering over the news slider
     const newsWrapper = document.querySelector('.news-slider-wrapper');
     if (newsWrapper) {
       newsWrapper.addEventListener('mouseenter', stopNewsAutoplay);
@@ -152,7 +149,29 @@ document.addEventListener('DOMContentLoaded', function() {
     startNewsAutoplay();
   }
 
-  // 4. CONSULTATION MODAL FORM LOGIC
+  // 4. ABOUT US INTERACTIVE MEDIA GALLERY (PRODUCT DETAIL STYLE THUMBNAIL GALLERY)
+  const aboutThumbs = document.querySelectorAll('.about-thumb');
+  const aboutMainImg = document.getElementById('aboutMainImg');
+
+  if (aboutThumbs.length && aboutMainImg) {
+    aboutThumbs.forEach(thumb => {
+      thumb.addEventListener('click', function() {
+        const newImgSrc = this.getAttribute('data-img');
+        if (newImgSrc && aboutMainImg.src !== newImgSrc) {
+          aboutMainImg.style.opacity = '0.2';
+          setTimeout(() => {
+            aboutMainImg.src = newImgSrc;
+            aboutMainImg.style.opacity = '1';
+          }, 150);
+        }
+
+        aboutThumbs.forEach(t => t.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+  }
+
+  // 5. CONSULTATION MODAL FORM LOGIC
   const modalOverlay = document.querySelector('.modal-overlay');
   const triggerBtns = document.querySelectorAll('.trigger-consult-modal');
   const closeBtn = document.querySelector('.modal-close');
@@ -190,7 +209,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // 5. MOBILE NAVIGATION TOGGLE
+  // 6. MOBILE NAVIGATION TOGGLE
   const mobileToggle = document.querySelector('.mobile-toggle');
   const navLinks = document.querySelector('.nav-links-list');
 
