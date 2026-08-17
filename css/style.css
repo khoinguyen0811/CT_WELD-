@@ -962,8 +962,8 @@ button {
 }
 
 .pillar-card-title {
-  font-family: var(--font-heading);
-  font-size: 1.1rem;
+  font-family: var(--font-main); /* Gilroy font as requested by user */
+  font-size: 1.15rem;
   font-weight: 700;
   color: var(--color-text-heading);
   margin-bottom: 12px;
@@ -973,11 +973,11 @@ button {
 }
 
 .pillar-card-desc {
-  font-size: 0.875rem;
+  font-size: 0.95rem; /* Larger text size as requested by user */
   color: var(--color-text-muted);
   text-align: justify;
   text-justify: inter-word;
-  line-height: 1.55;
+  line-height: 1.6;
   width: 100%;
 }
 
