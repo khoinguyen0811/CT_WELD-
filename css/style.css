@@ -859,7 +859,7 @@ button {
 }
 
 /* ==========================================================================
-   4. PRODUCT CATEGORIES (SOFTENED TITLE COLOR & 1-LINE ELLIPSIS TRUNCATION)
+   4. PRODUCT CATEGORIES (CARD HOVER: LIFT 2PX, NO BORDER COLOR CHANGE, NO SHADOW)
    ========================================================================== */
 .categories-section {
   padding: 80px 0 96px 0;
@@ -877,15 +877,16 @@ button {
   border-radius: var(--radius-md);
   border: 1px solid var(--color-border);
   overflow: hidden;
-  transition: all var(--transition-normal);
+  transition: transform var(--transition-fast);
   display: flex;
   flex-direction: column;
 }
 
+/* Hover: Lift 2px, keep border color unchanged, no box shadow */
 .category-card:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-md);
-  border-color: var(--color-brand-orange);
+  transform: translateY(-2px);
+  box-shadow: none;
+  border-color: var(--color-border);
 }
 
 .cat-thumb {
@@ -903,7 +904,7 @@ button {
 }
 
 .category-card:hover .cat-thumb img {
-  transform: scale(1.08);
+  transform: scale(1.05);
 }
 
 .cat-badge {
@@ -927,12 +928,11 @@ button {
   flex-direction: column;
 }
 
-/* Category Card Title: Softened Dark Color & 1-Line Ellipsis Truncation */
 .cat-title {
   font-family: var(--font-heading);
   font-size: 1.15rem;
   font-weight: 600;
-  color: var(--color-text-card-title); /* Softened dark color #2D3748 */
+  color: var(--color-text-card-title);
   margin-bottom: 10px;
   white-space: nowrap;
   overflow: hidden;
@@ -962,7 +962,7 @@ button {
 }
 
 /* ==========================================================================
-   5. FEATURED MACHINES (SOFTENED TITLE COLOR & 1-LINE ELLIPSIS TRUNCATION)
+   5. FEATURED MACHINES (CARD HOVER: LIFT 2PX, NO BORDER COLOR CHANGE, NO SHADOW)
    ========================================================================== */
 .featured-section {
   padding: 80px 0 96px 0;
@@ -980,15 +980,16 @@ button {
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   overflow: hidden;
-  transition: all var(--transition-normal);
+  transition: transform var(--transition-fast);
   display: flex;
   flex-direction: column;
 }
 
+/* Hover: Lift 2px, keep border color unchanged, no box shadow */
 .product-card:hover {
-  box-shadow: var(--shadow-md);
-  transform: translateY(-4px);
-  border-color: var(--color-brand-orange);
+  transform: translateY(-2px);
+  box-shadow: none;
+  border-color: var(--color-border);
 }
 
 .product-thumb {
@@ -1037,12 +1038,11 @@ button {
   white-space: nowrap;
 }
 
-/* Product Card Title: Softened Dark Color & 1-Line Ellipsis Truncation (...) */
 .prod-title {
   font-family: var(--font-heading);
   font-size: 1.05rem;
   font-weight: 600;
-  color: var(--color-text-card-title); /* Softened dark color #2D3748 */
+  color: var(--color-text-card-title);
   margin-bottom: 12px;
   line-height: 1.35;
   white-space: nowrap;
@@ -1085,7 +1085,7 @@ button {
 }
 
 /* ==========================================================================
-   6. FEATURED PROJECTS CAROUSEL (SOFTENED TITLE COLOR & 1-LINE ELLIPSIS TRUNCATION)
+   6. FEATURED PROJECTS CAROUSEL (CARD HOVER: LIFT 2PX, NO BORDER COLOR CHANGE, NO SHADOW)
    ========================================================================== */
 .projects-section {
   padding: 80px 0 96px 0;
@@ -1114,13 +1114,14 @@ button {
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   overflow: hidden;
-  transition: all var(--transition-fast);
+  transition: transform var(--transition-fast);
 }
 
+/* Hover: Lift 2px, keep border color unchanged, no box shadow */
 .project-card:hover {
-  transform: translateY(-6px);
-  border-color: var(--color-brand-orange);
-  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+  box-shadow: none;
+  border-color: var(--color-border);
 }
 
 .proj-thumb {
@@ -1166,12 +1167,11 @@ button {
   white-space: nowrap;
 }
 
-/* Project Card Title: Softened Dark Color & 1-Line Ellipsis Truncation (...) */
 .proj-title {
   font-family: var(--font-heading);
   font-size: 1.1rem;
   font-weight: 600;
-  color: var(--color-text-card-title); /* Softened dark color #2D3748 */
+  color: var(--color-text-card-title);
   margin-bottom: 12px;
   line-height: 1.35;
   white-space: nowrap;
@@ -1261,7 +1261,7 @@ button {
 }
 
 /* ==========================================================================
-   8. NEWS SECTION (SOFTENED TITLE COLOR & 1-LINE ELLIPSIS TRUNCATION)
+   8. NEWS SECTION (CARD HOVER: LIFT 2PX, NO BORDER COLOR CHANGE, NO SHADOW)
    ========================================================================== */
 .news-section {
   padding: 80px 0 96px 0;
@@ -1279,15 +1279,16 @@ button {
   border-radius: var(--radius-md);
   border: 1px solid var(--color-border);
   overflow: hidden;
-  transition: all var(--transition-normal);
+  transition: transform var(--transition-fast);
   display: flex;
   flex-direction: column;
 }
 
+/* Hover: Lift 2px, keep border color unchanged, no box shadow */
 .news-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-md);
-  border-color: var(--color-brand-orange);
+  transform: translateY(-2px);
+  box-shadow: none;
+  border-color: var(--color-border);
 }
 
 .news-thumb {
@@ -1317,12 +1318,11 @@ button {
   white-space: nowrap;
 }
 
-/* News Card Title: Softened Dark Color & 1-Line Ellipsis Truncation (...) */
 .news-title {
   font-family: var(--font-heading);
   font-size: 1.1rem;
   font-weight: 600;
-  color: var(--color-text-card-title); /* Softened dark color #2D3748 */
+  color: var(--color-text-card-title);
   margin-bottom: 12px;
   line-height: 1.4;
   white-space: nowrap;
