@@ -1207,6 +1207,199 @@ button {
 }
 
 /* ==========================================================================
+   PRODUCT PAGE SIDEBAR & SEARCH/STATS TOOLBAR LAYOUT
+   ========================================================================== */
+.product-page-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.product-sidebar {
+  background: var(--color-bg-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.sidebar-widget-title {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-text-heading);
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--color-brand-orange);
+  margin-bottom: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.sidebar-cat-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sidebar-cat-item > a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 0.925rem;
+  font-weight: 600;
+  color: var(--color-text-heading);
+  transition: all var(--transition-fast);
+}
+
+.sidebar-cat-item > a:hover,
+.sidebar-cat-item.active > a {
+  background-color: var(--color-orange-subtle);
+  color: var(--color-brand-orange);
+}
+
+.cat-count {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  background: rgba(243, 112, 33, 0.12);
+  color: var(--color-brand-orange);
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+
+.sidebar-subcat-list {
+  padding-left: 14px;
+  margin-top: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.sidebar-subcat-list a {
+  display: block;
+  padding: 6px 10px;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  font-weight: 500;
+  transition: all var(--transition-fast);
+}
+
+.sidebar-subcat-list a:hover {
+  color: var(--color-brand-orange);
+}
+
+.brand-filter-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.brand-filter-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.875rem;
+  color: var(--color-text-heading);
+  cursor: pointer;
+  user-select: none;
+}
+
+.brand-filter-item input[type="checkbox"] {
+  accent-color: var(--color-brand-orange);
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.product-toolbar {
+  background: var(--color-bg-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 16px 24px;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  box-shadow: var(--shadow-sm);
+}
+
+.toolbar-stats {
+  font-size: 0.925rem;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+.toolbar-stats strong {
+  color: var(--color-brand-orange);
+  font-weight: 700;
+}
+
+.toolbar-controls {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.toolbar-search {
+  position: relative;
+  max-width: 320px;
+  width: 100%;
+}
+
+.toolbar-search-input {
+  width: 100%;
+  padding: 8px 14px 8px 36px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  font-size: 0.875rem;
+  background: var(--color-bg-light);
+}
+
+.toolbar-search-input:focus {
+  border-color: var(--color-brand-orange);
+  background: var(--color-bg-white);
+}
+
+.toolbar-search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+}
+
+.toolbar-sort-select {
+  padding: 8px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text-heading);
+  background: var(--color-bg-light);
+  cursor: pointer;
+}
+
+.toolbar-sort-select:focus {
+  border-color: var(--color-brand-orange);
+}
+
+.product-grid-3cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* ==========================================================================
    6. FEATURED PROJECTS CAROUSEL (3.5 CARDS PER VIEW)
    ========================================================================== */
 .projects-section {

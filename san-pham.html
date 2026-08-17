@@ -149,189 +149,356 @@
     </div>
   </section>
 
-  <!-- PRODUCTS SECTION WITH FILTER -->
-  <section style="padding: 60px 0; background: var(--color-light-slate);">
+  <!-- PRODUCTS SECTION WITH LEFT SIDEBAR & TOP TOOLBAR -->
+  <section style="padding: 60px 0; background: var(--color-bg-light);">
     <div class="container">
-      <!-- Filter Bar -->
-      <div class="filter-bar">
-        <div class="filter-group">
-          <span style="font-size: 0.875rem; font-weight: 700; color: var(--color-dark-navy); align-self: center; margin-right: 8px;">
-            <i class="fas fa-filter"></i> Lọc Theo Nhóm:
-          </span>
-          <button class="filter-btn active" data-filter="all">Tất Cả Sản Phẩm</button>
-          <button class="filter-btn" data-filter="ket-cau-thep">Dây Chuyền KCT</button>
-          <button class="filter-btn" data-filter="robot">Robot Hàn</button>
-          <button class="filter-btn" data-filter="cat-cnc">Cắt CNC Laser</button>
-          <button class="filter-btn" data-filter="thiet-bi-han">Nguồn & Gá Hàn</button>
-        </div>
 
-        <div style="font-size: 0.85rem; color: var(--color-text-muted);">
-          Hiển thị <strong>8</strong> thiết bị nổi bật
-        </div>
+      <div class="product-page-layout">
+        <!-- LEFT SIDEBAR WIDGETS -->
+        <aside class="product-sidebar">
+          <!-- Widget 1: Product Categories -->
+          <div class="sidebar-widget">
+            <h3 class="sidebar-widget-title"><i class="fas fa-th-list" style="color: var(--color-brand-orange);"></i> Danh Mục Sản Phẩm</h3>
+            <ul class="sidebar-cat-list">
+              <li class="sidebar-cat-item active">
+                <a href="san-pham.html">Tất Cả Sản Phẩm <span class="cat-count">192</span></a>
+              </li>
+              <li class="sidebar-cat-item">
+                <a href="san-pham.html?cat=ket-cau-thep">Dây Chuyền Kết Cấu Thép <span class="cat-count">45</span></a>
+                <div class="sidebar-subcat-list">
+                  <a href="san-pham.html?sub=han-dam-h">• Dây chuyền hàn dầm H/I/Box</a>
+                  <a href="san-pham.html?sub=nan-thang">• Máy nắn thẳng dầm thuỷ lực</a>
+                  <a href="san-pham.html?sub=saw">• Máy hàn hồ quang chìm SAW</a>
+                </div>
+              </li>
+              <li class="sidebar-cat-item">
+                <a href="san-pham.html?cat=robot">Robot Công Nghiệp <span class="cat-count">38</span></a>
+                <div class="sidebar-subcat-list">
+                  <a href="san-pham.html?sub=cobot">• Robot hàn Estun Cobot</a>
+                  <a href="san-pham.html?sub=yaskawa">• Cánh tay Robot Yaskawa</a>
+                  <a href="san-pham.html?sub=fanuc">• Trạm Robot hàn tự động Fanuc</a>
+                </div>
+              </li>
+              <li class="sidebar-cat-item">
+                <a href="san-pham.html?cat=cat-cnc">Máy Cắt CNC Laser <span class="cat-count">42</span></a>
+                <div class="sidebar-subcat-list">
+                  <a href="san-pham.html?sub=laser-tam">• Máy cắt Laser Fiber tấm</a>
+                  <a href="san-pham.html?sub=laser-ong">• Máy cắt ống Laser 3D</a>
+                </div>
+              </li>
+              <li class="sidebar-cat-item">
+                <a href="san-pham.html?cat=thiet-bi-han">Nguồn Hàn & Đồ Gá Jig <span class="cat-count">35</span></a>
+                <div class="sidebar-subcat-list">
+                  <a href="san-pham.html?sub=megmeet">• Nguồn hàn Megmeet Artsen</a>
+                  <a href="san-pham.html?sub=jig">• Đồ gá thủy lực Jig kẹp</a>
+                </div>
+              </li>
+              <li class="sidebar-cat-item">
+                <a href="san-pham.html?cat=vattu">Vật Tư & Phụ Tùng <span class="cat-count">32</span></a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Widget 2: Brand Filter -->
+          <div class="sidebar-widget">
+            <h3 class="sidebar-widget-title"><i class="fas fa-tags" style="color: var(--color-brand-orange);"></i> Thương Hiệu</h3>
+            <div class="brand-filter-list">
+              <label class="brand-filter-item">
+                <input type="checkbox" checked> Megmeet (52)
+              </label>
+              <label class="brand-filter-item">
+                <input type="checkbox" checked> Estun Automation (41)
+              </label>
+              <label class="brand-filter-item">
+                <input type="checkbox" checked> Fanuc (36)
+              </label>
+              <label class="brand-filter-item">
+                <input type="checkbox" checked> Raycus Laser (34)
+              </label>
+              <label class="brand-filter-item">
+                <input type="checkbox" checked> Yaskawa (29)
+              </label>
+            </div>
+          </div>
+
+          <!-- Widget 3: Hotline Support Banner -->
+          <div style="background: var(--color-orange-subtle); padding: 20px; border-radius: var(--radius-md); border: 1px solid var(--color-border-orange); text-align: center;">
+            <i class="fas fa-headset" style="font-size: 2.2rem; color: var(--color-brand-orange); margin-bottom: 10px;"></i>
+            <h4 style="font-family: var(--font-heading); font-size: 1.05rem; font-weight: 700; color: var(--color-text-heading); margin-bottom: 6px;">TƯ VẤN KỸ THUẬT 24/7</h4>
+            <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: 12px;">Liên hệ ngay để nhận báo giá máy móc tốt nhất</p>
+            <a href="tel:0866060894" class="btn btn-primary btn-sm" style="width: 100%;"><i class="fas fa-phone-alt"></i> 0866 060 894</a>
+          </div>
+        </aside>
+
+        <!-- RIGHT MAIN CONTENT AREA -->
+        <main class="product-main-content">
+          <!-- TOP TOOLBAR: SEARCH, STATISTICS & SORTING -->
+          <div class="product-toolbar">
+            <div class="toolbar-stats">
+              Hiển thị từ <strong>1 đến 12</strong> trong <strong>192</strong> kết quả
+            </div>
+
+            <div class="toolbar-controls">
+              <!-- Search Box -->
+              <div class="toolbar-search">
+                <i class="fas fa-search toolbar-search-icon"></i>
+                <input type="text" placeholder="Tìm kiếm tên sản phẩm, mã model..." class="toolbar-search-input">
+              </div>
+
+              <!-- Sorting Dropdown -->
+              <select class="toolbar-sort-select">
+                <option value="newest">Sắp xếp: Mới nhất</option>
+                <option value="name-az">Sắp xếp: Tên A - Z</option>
+                <option value="views">Sắp xếp: Xem nhiều nhất</option>
+                <option value="featured">Sắp xếp: Nổi bật nhất</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- PRODUCTS GRID (3 COLUMNS) -->
+          <div class="product-grid-3cols">
+            <!-- Item 1 -->
+            <div class="product-card">
+              <div class="product-thumb">
+                <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=500&q=80" alt="Cobot Estun CO-ARC 350">
+                <span class="prod-tag">ESTUN</span>
+              </div>
+              <div class="product-info">
+                <span class="prod-code">CODE: ESTUN-CO-ARC350</span>
+                <h3 class="prod-title">Robot Hàn Cộng Tác Cobot Estun CO-ARC 350</h3>
+                <div class="prod-specs">
+                  <div class="spec-item"><span class="spec-key">Bán kính với:</span><span class="spec-val">1400 mm</span></div>
+                  <div class="spec-item"><span class="spec-key">Nguồn hàn:</span><span class="spec-val">Megmeet Artsen II</span></div>
+                </div>
+                <div class="prod-action">
+                  <a href="san-pham-chi-tiet.html" class="btn btn-secondary btn-sm" style="width: 100%;">Xem Chi Tiết</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="product-card">
+              <div class="product-thumb">
+                <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=500&q=80" alt="Máy Hàn Hồ Quang Chìm SAW-1250">
+                <span class="prod-tag">SAW</span>
+              </div>
+              <div class="product-info">
+                <span class="prod-code">CODE: CTW-SAW1250D</span>
+                <h3 class="prod-title">Máy Hàn Hồ Quang Chìm SAW-1250 2 Mỏ Cổng Cán</h3>
+                <div class="prod-specs">
+                  <div class="spec-item"><span class="spec-key">Dòng hàn:</span><span class="spec-val">1250A (100%)</span></div>
+                  <div class="spec-item"><span class="spec-key">Khổ dầm:</span><span class="spec-val">2000 x 800 mm</span></div>
+                </div>
+                <div class="prod-action">
+                  <a href="san-pham-chi-tiet.html" class="btn btn-secondary btn-sm" style="width: 100%;">Xem Chi Tiết</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="product-card">
+              <div class="product-thumb">
+                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=500&q=80" alt="Máy Cắt Laser Fiber 12kW">
+                <span class="prod-tag">LASER</span>
+              </div>
+              <div class="product-info">
+                <span class="prod-code">CODE: CTW-FL12000W</span>
+                <h3 class="prod-title">Máy Cắt Laser Fiber 12000W Bàn Đôi Song Song</h3>
+                <div class="prod-specs">
+                  <div class="spec-item"><span class="spec-key">Nguồn Laser:</span><span class="spec-val">12kW Raycus</span></div>
+                  <div class="spec-item"><span class="spec-key">Bàn cắt:</span><span class="spec-val">6000 x 2500 mm</span></div>
+                </div>
+                <div class="prod-action">
+                  <a href="san-pham-chi-tiet.html" class="btn btn-secondary btn-sm" style="width: 100%;">Xem Chi Tiết</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="product-card">
+              <div class="product-thumb">
+                <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=500&q=80" alt="Máy Nắn Thẳng Dầm H 1000T">
+                <span class="prod-tag">THUỶ LỰC</span>
+              </div>
+              <div class="product-info">
+                <span class="prod-code">CODE: CTW-HYD1000T</span>
+                <h3 class="prod-title">Máy Nắn Thẳng Dầm H Thuỷ Lực 1000 Tấn</h3>
+                <div class="prod-specs">
+                  <div class="spec-item"><span class="spec-key">Lực nắn:</span><span class="spec-val">1000 Tấn</span></div>
+                  <div class="spec-item"><span class="spec-key">Chiều dày cánh:</span><span class="spec-val">Max 60 mm</span></div>
+                </div>
+                <div class="prod-action">
+                  <a href="san-pham-chi-tiet.html" class="btn btn-secondary btn-sm" style="width: 100%;">Xem Chi Tiết</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="product-card">
+              <div class="product-thumb">
+                <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=500&q=80" alt="Cánh Tay Robot Hàn Yaskawa AR1440">
+                <span class="prod-tag">YASKAWA</span>
+              </div>
+              <div class="product-info">
+                <span class="prod-code">CODE: YASKAWA-AR1440</span>
+                <h3 class="prod-title">Cánh Tay Robot Hàn Công Nghiệp Yaskawa AR1440</h3>
+                <div class="prod-specs">
+                  <div class="spec-item"><span class="spec-key">Số trục:</span><span class="spec-val">6 Trục tự do</span></div>
+                  <div class="spec-item"><span class="spec-key">Bán kính:</span><span class="spec-val">1440 mm</span></div>
+                </div>
+                <div class="prod-action">
+                  <a href="san-pham-chi-tiet.html" class="btn btn-secondary btn-sm" style="width: 100%;">Xem Chi Tiết</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="product-card">
+              <div class="product-thumb">
+                <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=500&q=80" alt="Nguồn Hàn Megmeet Artsen PM500">
+                <span class="prod-tag">MEGMEET</span>
+              </div>
+              <div class="product-info">
+                <span class="prod-code">CODE: MEG-ARTSEN-500</span>
+                <h3 class="prod-title">Nguồn Hàn Xung Số Hoá Megmeet Artsen PM500A</h3>
+                <div class="prod-specs">
+                  <div class="spec-item"><span class="spec-key">Công nghệ:</span><span class="spec-val">Digital Pulse MIG</span></div>
+                  <div class="spec-item"><span class="spec-key">Dòng ra:</span><span class="spec-val">500A (100%)</span></div>
+                </div>
+                <div class="prod-action">
+                  <a href="san-pham-chi-tiet.html" class="btn btn-secondary btn-sm" style="width: 100%;">Xem Chi Tiết</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 7 -->
+            <div class="product-card">
+              <div class="product-thumb">
+                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=500&q=80" alt="Máy Cắt Ống Laser 3D CNC">
+                <span class="prod-tag">LASER TUBE</span>
+              </div>
+              <div class="product-info">
+                <span class="prod-code">CODE: CTW-TUBE3D</span>
+                <h3 class="prod-title">Máy Cắt Ống Thép Laser Fiber 3D Tự Động Nạp Phôi</h3>
+                <div class="prod-specs">
+                  <div class="spec-item"><span class="spec-key">Đường kính ống:</span><span class="spec-val">Ø20 - Ø220 mm</span></div>
+                  <div class="spec-item"><span class="spec-key">Chiều dài ống:</span><span class="spec-val">6000 mm</span></div>
+                </div>
+                <div class="prod-action">
+                  <a href="san-pham-chi-tiet.html" class="btn btn-secondary btn-sm" style="width: 100%;">Xem Chi Tiết</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 8 -->
+            <div class="product-card">
+              <div class="product-thumb">
+                <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=500&q=80" alt="Tổ Hợp Máy Hàn Cần Cột H-Beam">
+                <span class="prod-tag">H-BEAM</span>
+              </div>
+              <div class="product-info">
+                <span class="prod-code">CODE: CTW-COL-SAW</span>
+                <h3 class="prod-title">Tổ Hợp Máy Hàn Cần Cột Dầm H Tự Động SAW</h3>
+                <div class="prod-specs">
+                  <div class="spec-item"><span class="spec-key">Hành trình cột:</span><span class="spec-val">6000 x 6000 mm</span></div>
+                  <div class="spec-item"><span class="spec-key">Nguồn hàn:</span><span class="spec-val">1000A / 1250A</span></div>
+                </div>
+                <div class="prod-action">
+                  <a href="san-pham-chi-tiet.html" class="btn btn-secondary btn-sm" style="width: 100%;">Xem Chi Tiết</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 9 -->
+            <div class="product-card">
+              <div class="product-thumb">
+                <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=500&q=80" alt="Robot Hàn Fanuc ARC Mate">
+                <span class="prod-tag">FANUC</span>
+              </div>
+              <div class="product-info">
+                <span class="prod-code">CODE: FANUC-ARC-120ID</span>
+                <h3 class="prod-title">Robot Hàn Kết Cấu Thép Fanuc ARC Mate 120iD</h3>
+                <div class="prod-specs">
+                  <div class="spec-item"><span class="spec-key">Tải trọng tay:</span><span class="spec-val">25 kg</span></div>
+                  <div class="spec-item"><span class="spec-key">Bán kính với:</span><span class="spec-val">1831 mm</span></div>
+                </div>
+                <div class="prod-action">
+                  <a href="san-pham-chi-tiet.html" class="btn btn-secondary btn-sm" style="width: 100%;">Xem Chi Tiết</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 10 -->
+            <div class="product-card">
+              <div class="product-thumb">
+                <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=500&q=80" alt="Máy Đính Gá Dầm H Tự Động">
+                <span class="prod-tag">ĐÍNH GÁ</span>
+              </div>
+              <div class="product-info">
+                <span class="prod-code">CODE: CTW-ASM-H2000</span>
+                <h3 class="prod-title">Máy Đính Gá Dầm H Tự Động Đai Thủy Lực</h3>
+                <div class="prod-specs">
+                  <div class="spec-item"><span class="spec-key">Chiều cao dầm:</span><span class="spec-val">200 - 2000 mm</span></div>
+                  <div class="spec-item"><span class="spec-key">Độ dày cánh:</span><span class="spec-val">6 - 40 mm</span></div>
+                </div>
+                <div class="prod-action">
+                  <a href="san-pham-chi-tiet.html" class="btn btn-secondary btn-sm" style="width: 100%;">Xem Chi Tiết</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 11 -->
+            <div class="product-card">
+              <div class="product-thumb">
+                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=500&q=80" alt="Nguồn Laser Fiber Raycus 20kW">
+                <span class="prod-tag">RAYCUS</span>
+              </div>
+              <div class="product-info">
+                <span class="prod-code">CODE: RAYCUS-FL20000W</span>
+                <h3 class="prod-title">Nguồn Laser Fiber Raycus 20000W Siêu Công Suất</h3>
+                <div class="prod-specs">
+                  <div class="spec-item"><span class="spec-key">Công suất:</span><span class="spec-val">20.000 Watts</span></div>
+                  <div class="spec-item"><span class="spec-key">Cắt inox:</span><span class="spec-val">Max 80 mm</span></div>
+                </div>
+                <div class="prod-action">
+                  <a href="san-pham-chi-tiet.html" class="btn btn-secondary btn-sm" style="width: 100%;">Xem Chi Tiết</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 12 -->
+            <div class="product-card">
+              <div class="product-thumb">
+                <img src="https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2?auto=format&fit=crop&w=500&q=80" alt="Đồ Gá Thủy Lực Jig Kẹp">
+                <span class="prod-tag">JIG KẸP</span>
+              </div>
+              <div class="product-info">
+                <span class="prod-code">CODE: CTW-JIG-HYD01</span>
+                <h3 class="prod-title">Đồ Gá Thủy Lực Jig Kẹp Tự Động Khung Dầm</h3>
+                <div class="prod-specs">
+                  <div class="spec-item"><span class="spec-key">Áp suất kẹp:</span><span class="spec-val">16 MPa</span></div>
+                  <div class="spec-item"><span class="spec-key">Độ chính xác:</span><span class="spec-val">±0.2 mm</span></div>
+                </div>
+                <div class="prod-action">
+                  <a href="san-pham-chi-tiet.html" class="btn btn-secondary btn-sm" style="width: 100%;">Xem Chi Tiết</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <div class="pagination">
+            <a href="#" class="page-num active">1</a>
+            <a href="#" class="page-num">2</a>
+            <a href="#" class="page-num">3</a>
+            <a href="#" class="page-num">4</a>
+            <span style="align-self: center; color: var(--color-text-muted);">...</span>
+            <a href="#" class="page-num">16</a>
+            <a href="#" class="page-num" style="width: auto; padding: 0 14px;">Trang Tiếp <i class="fas fa-chevron-right"></i></a>
+          </div>
+        </main>
       </div>
 
-      <!-- Products Grid -->
-      <div class="products-grid">
-        <!-- Item 1 -->
-        <div class="product-card" data-category="robot">
-          <div class="product-thumb">
-            <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=500&q=80" alt="Cobot Estun CO-ARC 350">
-            <span class="prod-tag">ESTUN</span>
-          </div>
-          <div class="product-info">
-            <span class="prod-code">CODE: ESTUN-CO-ARC350</span>
-            <h3 class="prod-title">Robot Hàn Cộng Tác Cobot Estun CO-ARC 350</h3>
-            <div class="prod-specs">
-              <div class="spec-item"><span class="spec-key">Bán kính với:</span><span class="spec-val">1400 mm</span></div>
-              <div class="spec-item"><span class="spec-key">Nguồn hàn:</span><span class="spec-val">Megmeet Artsen II</span></div>
-            </div>
-            <div class="prod-action">
-              <a href="san-pham-chi-tiet.html" class="btn btn-secondary btn-sm" style="width: 100%;">Xem Chi Tiết Cấp 2</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Item 2 -->
-        <div class="product-card" data-category="ket-cau-thep">
-          <div class="product-thumb">
-            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=500&q=80" alt="Máy Hàn Hồ Quang Chìm SAW-1250">
-            <span class="prod-tag">SAW</span>
-          </div>
-          <div class="product-info">
-            <span class="prod-code">CODE: CTW-SAW1250D</span>
-            <h3 class="prod-title">Máy Hàn Hồ Quang Chìm SAW-1250 2 Mỏ Cổng Cán</h3>
-            <div class="prod-specs">
-              <div class="spec-item"><span class="spec-key">Dòng hàn:</span><span class="spec-val">1250A (100%)</span></div>
-              <div class="spec-item"><span class="spec-key">Khổ dầm:</span><span class="spec-val">2000 x 800 mm</span></div>
-            </div>
-            <div class="prod-action">
-              <a href="san-pham-chi-tiet.html" class="btn btn-secondary btn-sm" style="width: 100%;">Xem Chi Tiết Cấp 2</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Item 3 -->
-        <div class="product-card" data-category="cat-cnc">
-          <div class="product-thumb">
-            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=500&q=80" alt="Máy Cắt Laser Fiber 12kW">
-            <span class="prod-tag">LASER</span>
-          </div>
-          <div class="product-info">
-            <span class="prod-code">CODE: CTW-FL12000W</span>
-            <h3 class="prod-title">Máy Cắt Laser Fiber 12000W Bàn Đôi Song Song</h3>
-            <div class="prod-specs">
-              <div class="spec-item"><span class="spec-key">Nguồn Laser:</span><span class="spec-val">12kW Raycus</span></div>
-              <div class="spec-item"><span class="spec-key">Bàn cắt:</span><span class="spec-val">6000 x 2500 mm</span></div>
-            </div>
-            <div class="prod-action">
-              <a href="san-pham-chi-tiet.html" class="btn btn-secondary btn-sm" style="width: 100%;">Xem Chi Tiết Cấp 2</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Item 4 -->
-        <div class="product-card" data-category="ket-cau-thep">
-          <div class="product-thumb">
-            <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=500&q=80" alt="Máy Nắn Thẳng Dầm H 1000T">
-            <span class="prod-tag">THUỶ LỰC</span>
-          </div>
-          <div class="product-info">
-            <span class="prod-code">CODE: CTW-HYD1000T</span>
-            <h3 class="prod-title">Máy Nắn Thẳng Dầm H Thuỷ Lực 1000 Tấn</h3>
-            <div class="prod-specs">
-              <div class="spec-item"><span class="spec-key">Lực nắn:</span><span class="spec-val">1000 Tấn</span></div>
-              <div class="spec-item"><span class="spec-key">Chiều dày cánh:</span><span class="spec-val">Max 60 mm</span></div>
-            </div>
-            <div class="prod-action">
-              <a href="san-pham-chi-tiet.html" class="btn btn-secondary btn-sm" style="width: 100%;">Xem Chi Tiết Cấp 2</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Item 5 -->
-        <div class="product-card" data-category="robot">
-          <div class="product-thumb">
-            <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=500&q=80" alt="Cánh Tay Robot Hàn Yaskawa AR1440">
-            <span class="prod-tag">YASKAWA</span>
-          </div>
-          <div class="product-info">
-            <span class="prod-code">CODE: YASKAWA-AR1440</span>
-            <h3 class="prod-title">Cánh Tay Robot Hàn Công Nghiệp Yaskawa AR1440</h3>
-            <div class="prod-specs">
-              <div class="spec-item"><span class="spec-key">Số trục:</span><span class="spec-val">6 Trục tự do</span></div>
-              <div class="spec-item"><span class="spec-key">Bán kính:</span><span class="spec-val">1440 mm</span></div>
-            </div>
-            <div class="prod-action">
-              <a href="san-pham-chi-tiet.html" class="btn btn-secondary btn-sm" style="width: 100%;">Xem Chi Tiết Cấp 2</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Item 6 -->
-        <div class="product-card" data-category="thiet-bi-han">
-          <div class="product-thumb">
-            <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=500&q=80" alt="Nguồn Hàn Megmeet Artsen PM500">
-            <span class="prod-tag">MEGMEET</span>
-          </div>
-          <div class="product-info">
-            <span class="prod-code">CODE: MEG-ARTSEN-500</span>
-            <h3 class="prod-title">Nguồn Hàn Xung Số Hoá Megmeet Artsen PM500A</h3>
-            <div class="prod-specs">
-              <div class="spec-item"><span class="spec-key">Công nghệ:</span><span class="spec-val">Digital Pulse MIG</span></div>
-              <div class="spec-item"><span class="spec-key">Dòng ra:</span><span class="spec-val">500A (100%)</span></div>
-            </div>
-            <div class="prod-action">
-              <a href="san-pham-chi-tiet.html" class="btn btn-secondary btn-sm" style="width: 100%;">Xem Chi Tiết Cấp 2</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Item 7 -->
-        <div class="product-card" data-category="cat-cnc">
-          <div class="product-thumb">
-            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=500&q=80" alt="Máy Cắt Ống Laser 3D CNC">
-            <span class="prod-tag">LASER TUBE</span>
-          </div>
-          <div class="product-info">
-            <span class="prod-code">CODE: CTW-TUBE3D</span>
-            <h3 class="prod-title">Máy Cắt Ống Thép Laser Fiber 3D Tự Động Nạp Phôi</h3>
-            <div class="prod-specs">
-              <div class="spec-item"><span class="spec-key">Đường kính ống:</span><span class="spec-val">Ø20 - Ø220 mm</span></div>
-              <div class="spec-item"><span class="spec-key">Chiều dài ống:</span><span class="spec-val">6000 mm</span></div>
-            </div>
-            <div class="prod-action">
-              <a href="san-pham-chi-tiet.html" class="btn btn-secondary btn-sm" style="width: 100%;">Xem Chi Tiết Cấp 2</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Item 8 -->
-        <div class="product-card" data-category="thiet-bi-han">
-          <div class="product-thumb">
-            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=500&q=80" alt="Bộ Đồ Gá Xoay 20 Tấn">
-            <span class="prod-tag">GÁ HÀN</span>
-          </div>
-          <div class="product-info">
-            <span class="prod-code">CODE: CTW-POS20T</span>
-            <h3 class="prod-title">Bộ Đĩa Quay Gá Hàn Bồn Bể Tải Trọng 20 Tấn</h3>
-            <div class="prod-specs">
-              <div class="spec-item"><span class="spec-key">Tải trọng quay:</span><span class="spec-val">20.000 kg</span></div>
-              <div class="spec-item"><span class="spec-key">Góc nghiêng:</span><span class="spec-val">0 - 90 độ</span></div>
-            </div>
-            <div class="prod-action">
-              <a href="san-pham-chi-tiet.html" class="btn btn-secondary btn-sm" style="width: 100%;">Xem Chi Tiết Cấp 2</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Pagination -->
-      <div class="pagination">
-        <a href="#" class="page-num active">1</a>
-        <a href="#" class="page-num">2</a>
-        <a href="#" class="page-num">3</a>
-        <a href="#" class="page-num"><i class="fas fa-chevron-right"></i></a>
-      </div>
     </div>
   </section>
 
