@@ -1402,6 +1402,89 @@ button {
 }
 
 /* ==========================================================================
+   SUBPAGE CONNECT WITH US CTA SECTION (ABOVE FOOTER)
+   ========================================================================== */
+.connect-section {
+  padding: 48px 0;
+  background-color: var(--color-bg-light);
+  border-top: 1px solid var(--color-border);
+}
+
+.connect-card {
+  background: var(--color-bg-white);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  padding: 32px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 36px;
+  box-shadow: var(--shadow-sm);
+}
+
+.connect-title {
+  font-family: var(--font-heading);
+  font-size: 1.85rem;
+  font-weight: 600;
+  color: var(--color-text-heading);
+  margin-bottom: 6px;
+}
+
+.connect-desc {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+}
+
+.connect-action {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  min-width: 480px;
+}
+
+.connect-form {
+  display: flex;
+  width: 100%;
+  gap: 8px;
+}
+
+.connect-input {
+  flex-grow: 1;
+  padding: 12px 18px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  font-size: 0.9rem;
+  background: var(--color-bg-light);
+  color: var(--color-text-heading);
+}
+
+.connect-input:focus {
+  border-color: var(--color-brand-orange);
+  outline: none;
+  background: var(--color-bg-white);
+}
+
+.connect-hotline {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+.connect-hotline i {
+  color: var(--color-brand-orange);
+  font-size: 1rem;
+}
+
+.connect-hotline strong {
+  color: var(--color-brand-orange);
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+}
+
+/* ==========================================================================
    9. FOOTER (CLEAN LOGO NO BACKGROUND NO SHADOW)
    ========================================================================== */
 .main-footer {
