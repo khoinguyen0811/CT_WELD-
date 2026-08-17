@@ -963,12 +963,12 @@ button {
 
 .pillar-card-title {
   font-family: var(--font-main); /* Gilroy font as requested by user */
-  font-size: 1.2rem;
+  font-size: 20px; /* Reduced to 20px as requested by user */
   font-weight: 700;
   color: var(--color-text-heading);
   margin-bottom: 12px;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: none; /* No uppercase as requested by user */
   width: 100%;
 }
 
