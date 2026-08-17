@@ -901,7 +901,7 @@ button {
 }
 
 /* ==========================================================================
-   4 PILLARS CORE VALUES SECTION (NO SECTION BG, CENTER ICON & TITLE, JUSTIFIED TEXT)
+   3 PILLARS SECTION: TẦM NHÌN - SỨ MỆNH - GIÁ TRỊ CỐT LÕI (3 CARDS)
    ========================================================================== */
 .pillars-section-box {
   background: transparent;
@@ -926,13 +926,13 @@ button {
 
 .pillars-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
 }
 
 .pillar-card {
   background: var(--color-bg-white);
-  padding: 28px 24px;
+  padding: 32px 28px;
   border-radius: var(--radius-md);
   border: 1px solid var(--color-border);
   transition: transform var(--transition-fast);
@@ -948,22 +948,22 @@ button {
 }
 
 .pillar-icon-box {
-  width: 52px;
-  height: 52px;
+  width: 56px;
+  height: 56px;
   background: var(--color-orange-subtle); /* #FFF5EE - Nền màu nhạt */
   border-radius: 4px; /* Radius 4px */
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--color-brand-orange);
-  font-size: 1.4rem;
-  margin-bottom: 16px;
+  font-size: 1.5rem;
+  margin-bottom: 18px;
   border: 1px solid var(--color-border-orange);
 }
 
 .pillar-card-title {
   font-family: var(--font-main); /* Gilroy font as requested by user */
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: var(--color-text-heading);
   margin-bottom: 12px;
