@@ -296,99 +296,95 @@
     </div>
   </section>
 
-  <!-- HISTORY TIMELINE SECTION (QUÁ TRÌNH HÌNH THÀNH CTWELD - AUTO SCROLL ON VIEW) -->
-  <section class="history-section" id="history-timeline">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">QUÁ TRÌNH HÌNH THÀNH CỦA CTWELD</h2>
-        <p class="section-subtitle">CTWELD đặt mục tiêu trở thành đơn vị số 1 trên thị trường về chất lượng sản phẩm và dịch vụ hậu mãi. Chúng tôi cam kết<br>xây dựng mối quan hệ với khách hàng bằng sự tin cậy, nhiệt tình và tinh thần trách nhiệm cao nhất</p>
+  <!-- STICKY SCROLL HORIZONTAL TIMELINE SECTION (QUÁ TRÌNH HÌNH THÀNH CTWELD) -->
+  <section class="history-sticky-section" id="history-sticky-section">
+    <div class="history-sticky-container">
+      <div class="container">
+        <div class="section-header" style="margin-bottom: 20px;">
+          <h2 class="section-title">QUÁ TRÌNH HÌNH THÀNH CỦA CTWELD</h2>
+          <p class="section-subtitle">CTWELD đặt mục tiêu trở thành đơn vị số 1 trên thị trường về chất lượng sản phẩm và dịch vụ hậu mãi. Chúng tôi cam kết<br>xây dựng mối quan hệ với khách hàng bằng sự tin cậy, nhiệt tình và tinh thần trách nhiệm cao nhất</p>
+        </div>
       </div>
 
-      <div class="timeline-outer-wrapper">
-        <!-- Navigation Buttons -->
-        <button class="timeline-nav-btn timeline-prev-btn" id="timelinePrev" title="Lùi lại"><i class="fas fa-chevron-left"></i></button>
-        <button class="timeline-nav-btn timeline-next-btn" id="timelineNext" title="Tiếp theo"><i class="fas fa-chevron-right"></i></button>
+      <!-- Horizontal Timeline Viewport -->
+      <div class="timeline-viewport">
+        <button class="timeline-arrow prev" id="tlPrev"><i class="fas fa-chevron-left"></i></button>
+        <button class="timeline-arrow next" id="tlNext"><i class="fas fa-chevron-right"></i></button>
 
-        <div class="timeline-track-container" id="timelineScrollContainer">
-          <div class="timeline-items-flex">
-            <!-- Background Line -->
-            <div class="timeline-center-line">
-              <div class="timeline-progress-line" id="timelineProgress"></div>
+        <div class="timeline-track" id="tlTrack">
+          <div class="timeline-line-bg">
+            <div class="timeline-line-active" id="tlLineActive"></div>
+          </div>
+
+          <!-- Node 1 -->
+          <div class="timeline-col">
+            <div class="slot-top">
+              <div class="date-text">06.2020</div>
+              <div class="desc-text">Thành lập CTWELD & mở văn phòng kỹ thuật tại Hà Nội</div>
             </div>
-
-            <!-- Milestone 1 (06.2020) - Card Bottom -->
-            <div class="timeline-milestone active" data-index="0">
-              <div class="milestone-box-top"></div>
-              <div class="milestone-node"></div>
-              <div class="milestone-box-bottom">
-                <div class="milestone-card">
-                  <div class="milestone-date">06.2020</div>
-                  <p class="milestone-text">Thành lập CTWELD & mở văn phòng kỹ thuật tại Hà Nội chuyên tư vấn giải pháp hàn tự động.</p>
-                </div>
-              </div>
+            <div class="node-circle active"><div class="node-inner"></div></div>
+            <div class="slot-bottom">
+              <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=600&q=80" alt="Hà Nội" class="timeline-img">
             </div>
+          </div>
 
-            <!-- Milestone 2 (10.2021) - Card Top -->
-            <div class="timeline-milestone" data-index="1">
-              <div class="milestone-box-top">
-                <div class="milestone-card">
-                  <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=600&q=80" alt="Nhà máy Bắc Ninh" class="milestone-img">
-                  <div class="milestone-date">10.2021</div>
-                  <p class="milestone-text">Xây dựng Trung Tâm Demo Công Nghệ & Trạm Thực Nghiệm Robot số 1 tại Bắc Ninh.</p>
-                </div>
-              </div>
-              <div class="milestone-node"></div>
-              <div class="milestone-box-bottom"></div>
+          <!-- Node 2 -->
+          <div class="timeline-col">
+            <div class="slot-top">
+              <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" alt="Bắc Ninh" class="timeline-img">
             </div>
-
-            <!-- Milestone 3 (06.2022) - Card Bottom -->
-            <div class="timeline-milestone" data-index="2">
-              <div class="milestone-box-top"></div>
-              <div class="milestone-node"></div>
-              <div class="milestone-box-bottom">
-                <div class="milestone-card">
-                  <div class="milestone-date">06.2022</div>
-                  <p class="milestone-text">Mở rộng chi nhánh & Trung Tâm Demo Công Nghệ Robot tại TP. Hồ Chí Minh.</p>
-                </div>
-              </div>
+            <div class="node-circle"><div class="node-inner"></div></div>
+            <div class="slot-bottom">
+              <div class="date-text">10.2021</div>
+              <div class="desc-text">Xây dựng nhà máy sản xuất số 1 tại Bắc Ninh</div>
             </div>
+          </div>
 
-            <!-- Milestone 4 (05.2023) - Card Top -->
-            <div class="timeline-milestone" data-index="3">
-              <div class="milestone-box-top">
-                <div class="milestone-card">
-                  <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" alt="Trung tâm DEMO" class="milestone-img">
-                  <div class="milestone-date">05.2023</div>
-                  <p class="milestone-text">Khánh thành Trung Tâm DEMO & Kho Phụ Tùng Linh Kiện Quy Mô 5.000m² tại Bắc Ninh.</p>
-                </div>
-              </div>
-              <div class="milestone-node"></div>
-              <div class="milestone-box-bottom"></div>
+          <!-- Node 3 -->
+          <div class="timeline-col">
+            <div class="slot-top">
+              <div class="date-text">06.2022</div>
+              <div class="desc-text">Xây dựng Trung Tâm Demo tại TP. Hồ Chí Minh</div>
             </div>
-
-            <!-- Milestone 5 (12.2024) - Card Bottom -->
-            <div class="timeline-milestone" data-index="4">
-              <div class="milestone-box-top"></div>
-              <div class="milestone-node"></div>
-              <div class="milestone-box-bottom">
-                <div class="milestone-card">
-                  <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=600&q=80" alt="Dây chuyền Laser" class="milestone-img">
-                  <div class="milestone-date">12.2024</div>
-                  <p class="milestone-text">Hợp tác chiến lược chính thức phân phối dòng máy cắt CNC Laser Fiber 20kW.</p>
-                </div>
-              </div>
+            <div class="node-circle"><div class="node-inner"></div></div>
+            <div class="slot-bottom">
+              <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=600&q=80" alt="TP. HCM" class="timeline-img">
             </div>
+          </div>
 
-            <!-- Milestone 6 (2026) - Card Top -->
-            <div class="timeline-milestone" data-index="5">
-              <div class="milestone-box-top">
-                <div class="milestone-card">
-                  <div class="milestone-date">2026</div>
-                  <p class="milestone-text">Khẳng định vị thế Đơn Vị Số 1 Chuyển Giao Công Nghệ Hàn Kết Cấu Thép Việt Nam.</p>
-                </div>
-              </div>
-              <div class="milestone-node"></div>
-              <div class="milestone-box-bottom"></div>
+          <!-- Node 4 -->
+          <div class="timeline-col">
+            <div class="slot-top">
+              <img src="https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2?auto=format&fit=crop&w=600&q=80" alt="Bắc Ninh DEMO" class="timeline-img">
+            </div>
+            <div class="node-circle"><div class="node-inner"></div></div>
+            <div class="slot-bottom">
+              <div class="date-text">05.2023</div>
+              <div class="desc-text">Xây dựng trung tâm DEMO 5.000m² tại Bắc Ninh</div>
+            </div>
+          </div>
+
+          <!-- Node 5 -->
+          <div class="timeline-col">
+            <div class="slot-top">
+              <div class="date-text">12.2024</div>
+              <div class="desc-text">Phân phối Dây Chuyền Laser Fiber 20kW Raycus</div>
+            </div>
+            <div class="node-circle"><div class="node-inner"></div></div>
+            <div class="slot-bottom">
+              <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=600&q=80" alt="Laser Fiber" class="timeline-img">
+            </div>
+          </div>
+
+          <!-- Node 6 -->
+          <div class="timeline-col">
+            <div class="slot-top">
+              <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=600&q=80" alt="Top 1 Vietnam" class="timeline-img">
+            </div>
+            <div class="node-circle"><div class="node-inner"></div></div>
+            <div class="slot-bottom">
+              <div class="date-text">2026</div>
+              <div class="desc-text">Trở thành Đơn Vị Số 1 Chuyển Giao Công Nghệ Hàn Việt Nam</div>
             </div>
           </div>
         </div>
@@ -497,81 +493,89 @@
   <script src="js/main.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      const track = document.getElementById('timelineScrollContainer');
-      const prevBtn = document.getElementById('timelinePrev');
-      const nextBtn = document.getElementById('timelineNext');
-      const milestones = document.querySelectorAll('.timeline-milestone');
-      const progressLine = document.getElementById('timelineProgress');
+      const stickySection = document.getElementById('history-sticky-section');
+      const track = document.getElementById('tlTrack');
+      const lineActive = document.getElementById('tlLineActive');
+      const cols = document.querySelectorAll('.timeline-col');
+      const prevBtn = document.getElementById('tlPrev');
+      const nextBtn = document.getElementById('tlNext');
 
-      if (!track) return;
+      if (!stickySection || !track) return;
 
-      // Scroll Button clicks
-      if (prevBtn) {
-        prevBtn.addEventListener('click', () => {
-          track.scrollBy({ left: -320, behavior: 'smooth' });
-        });
-      }
-      if (nextBtn) {
-        nextBtn.addEventListener('click', () => {
-          track.scrollBy({ left: 320, behavior: 'smooth' });
-        });
-      }
+      function updateStickyTimeline() {
+        const rect = stickySection.getBoundingClientRect();
+        const sectionHeight = stickySection.offsetHeight;
+        const viewportHeight = window.innerHeight;
 
-      // Update progress line and active node highlights on scroll
-      function updateTimelineState() {
-        const scrollLeft = track.scrollLeft;
-        const maxScroll = track.scrollWidth - track.clientWidth;
-        const scrollPercent = maxScroll > 0 ? (scrollLeft / maxScroll) * 100 : 0;
-        
-        if (progressLine) {
-          progressLine.style.width = Math.min(scrollPercent + 15, 100) + '%';
+        const scrolled = -rect.top;
+        const maxScroll = sectionHeight - viewportHeight;
+
+        if (maxScroll <= 0) return;
+
+        let progress = scrolled / maxScroll;
+        progress = Math.max(0, Math.min(1, progress));
+
+        const trackWidth = track.scrollWidth;
+        const viewportWidth = window.innerWidth;
+        const maxTranslate = Math.max(0, trackWidth - viewportWidth + 140);
+
+        const translateX = progress * maxTranslate;
+        track.style.transform = `translateX(-${translateX}px)`;
+
+        if (lineActive) {
+          lineActive.style.width = `${Math.min(progress * 100 + 10, 100)}%`;
         }
 
-        const centerPos = scrollLeft + (track.clientWidth / 2);
-        milestones.forEach((item) => {
-          const itemLeft = item.offsetLeft;
-          const itemWidth = item.clientWidth;
-          if (centerPos >= (itemLeft - 80) && centerPos <= (itemLeft + itemWidth + 80)) {
-            milestones.forEach(m => m.classList.remove('active'));
-            item.classList.add('active');
+        const activeIndex = Math.min(
+          cols.length - 1,
+          Math.floor(progress * cols.length * 1.1)
+        );
+
+        cols.forEach((col, idx) => {
+          const circle = col.querySelector('.node-circle');
+          if (circle) {
+            if (idx <= activeIndex) {
+              circle.classList.add('active');
+            } else {
+              circle.classList.remove('active');
+            }
           }
         });
       }
 
-      track.addEventListener('scroll', updateTimelineState);
+      window.addEventListener('scroll', updateStickyTimeline, { passive: true });
+      window.addEventListener('resize', updateStickyTimeline);
+      updateStickyTimeline();
 
-      // Auto-slide effect when scrolled into view
-      let hasAutoSlid = false;
+      // Manual Arrow buttons navigation
+      let currentProgressStep = 0;
+      const totalSteps = cols.length;
 
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting && !hasAutoSlid) {
-            hasAutoSlid = true;
-            const targetScroll = track.scrollWidth - track.clientWidth;
-            const startTime = performance.now();
-            const duration = 4000; // 4 seconds smooth auto slide
-
-            function step(currentTime) {
-              const elapsed = currentTime - startTime;
-              const progress = Math.min(elapsed / duration, 1);
-              const easeProgress = progress < 0.5 
-                ? 2 * progress * progress 
-                : 1 - Math.pow(-2 * progress + 2, 2) / 2;
-
-              track.scrollLeft = easeProgress * targetScroll;
-
-              if (progress < 1) {
-                requestAnimationFrame(step);
-              }
-            }
-
-            requestAnimationFrame(step);
-          }
+      if (prevBtn) {
+        prevBtn.addEventListener('click', () => {
+          currentProgressStep = Math.max(0, currentProgressStep - 1);
+          scrollToStep(currentProgressStep);
         });
-      }, { threshold: 0.25 });
+      }
 
-      const historySec = document.getElementById('history-timeline');
-      if (historySec) observer.observe(historySec);
+      if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+          currentProgressStep = Math.min(totalSteps - 1, currentProgressStep + 1);
+          scrollToStep(currentProgressStep);
+        });
+      }
+
+      function scrollToStep(stepIndex) {
+        const sectionHeight = stickySection.offsetHeight;
+        const viewportHeight = window.innerHeight;
+        const maxScroll = sectionHeight - viewportHeight;
+        const targetScrollTop = stickySection.offsetTop + (stepIndex / (totalSteps - 1)) * maxScroll;
+
+        window.scrollTo({
+          top: targetScrollTop,
+          behavior: 'smooth'
+        });
+      }
     });
   </script>
 </body>
