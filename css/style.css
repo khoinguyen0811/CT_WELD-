@@ -1655,24 +1655,26 @@ button {
 .timeline-arrow.next { right: 24px; }
 
 /* ==========================================================================
-   SUBPAGE CONNECT WITH US CTA SECTION (ABOVE FOOTER)
+   SUBPAGE CONNECT WITH US CTA SECTION (DIAGONAL 50/50 SPLIT ORANGE & LIGHT BG)
    ========================================================================== */
 .connect-section {
-  padding: 48px 0;
-  background-color: var(--color-bg-light);
+  padding: 56px 0;
+  background: linear-gradient(110deg, var(--color-brand-orange) 50%, var(--color-bg-light) 50.1%);
   border-top: 1px solid var(--color-border);
+  position: relative;
+  overflow: hidden;
 }
 
 .connect-card {
   background: var(--color-bg-white);
   border-radius: var(--radius-lg);
   border: 1px solid var(--color-border);
-  padding: 32px 40px;
+  padding: 36px 44px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 36px;
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 12px 36px rgba(15, 23, 42, 0.12);
 }
 
 .connect-title {
