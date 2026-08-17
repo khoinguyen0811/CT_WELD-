@@ -901,7 +901,7 @@ button {
 }
 
 /* ==========================================================================
-   3 PILLARS SECTION: TẦM NHÌN - SỨ MỆNH - GIÁ TRỊ CỐT LÕI (3 CARDS)
+   3 PILLARS SECTION: TẦM NHÌN - SỨ MỆNH - GIÁ TRỊ CỐT LÕI (3 CARDS WITH ALWAYS ON BOX-SHADOW)
    ========================================================================== */
 .pillars-section-box {
   background: transparent;
@@ -934,9 +934,9 @@ button {
   background: var(--color-bg-white);
   padding: 32px 28px;
   border-radius: var(--radius-md);
-  border: none; /* Removed border as requested by user */
-  box-shadow: 0 0 126px -92px rgba(0, 0, 0, 0.25); /* Custom box-shadow added as requested */
-  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  border: none; /* No border as requested */
+  box-shadow: 0 0 126px -92px rgba(0, 0, 0, 0.35); /* Persistent box-shadow always visible without hover */
+  transition: transform var(--transition-fast);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -945,7 +945,7 @@ button {
 .pillar-card:hover {
   transform: translateY(-2px);
   border: none;
-  box-shadow: 0 0 126px -80px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0 126px -92px rgba(0, 0, 0, 0.35); /* Keeps exact same shadow on hover */
 }
 
 .pillar-icon-box {
