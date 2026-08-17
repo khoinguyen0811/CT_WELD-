@@ -1,6 +1,6 @@
 /* ==========================================================================
    CTWELD - MAIN JAVASCRIPT LOGIC
-   Includes: Manual Hero Slider, Projects Slider, News 4-Card Autoplay Slider,
+   Includes: Manual Hero Slider, Projects 3.5-Card Slider, News 3.5-Card Autoplay Slider,
    Consultation Modal Form, & Mobile Navigation Toggle.
    ========================================================================== */
 
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // 2. FEATURED PROJECTS CAROUSEL (MANUAL SLIDER)
+  // 2. FEATURED PROJECTS CAROUSEL (3.5 CARDS PER VIEW)
   const projTrack = document.querySelector('.projects-track');
   const projPrev = document.querySelector('.proj-prev');
   const projNext = document.querySelector('.proj-next');
@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
-  // 3. NEWS CAROUSEL (4 CARDS PER VIEW, AUTOMATIC AUTOPLAY SLIDER WITH PREV/NEXT BUTTONS)
+  // 3. NEWS CAROUSEL (3.5 CARDS PER VIEW, MATCHED WITH PROJECTS SLIDER)
   const newsTrack = document.querySelector('.news-track');
   const newsPrev = document.querySelector('.news-prev');
   const newsNext = document.querySelector('.news-next');
@@ -88,8 +88,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
   if (newsTrack && newsPrev && newsNext) {
     const newsCards = newsTrack.querySelectorAll('.news-card');
-    // Show 4 cards per view: max index = newsCards.length - 4
-    const maxNewsIndex = Math.max(0, newsCards.length - 4);
+    // Matched with project slider: 3.5 cards per view, max index = newsCards.length - 3
+    const maxNewsIndex = Math.max(0, newsCards.length - 3);
 
     function updateNewsSlider() {
       if (!newsCards.length) return;
