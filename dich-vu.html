@@ -134,62 +134,50 @@
     </nav>
   </header>
 
-  <!-- PAGE BANNER -->
-  <section class="page-banner">
+  <!-- BREADCRUMB BAR -->
+  <div class="breadcrumb-bar">
     <div class="container">
-      <div class="breadcrumb">
-        <a href="index.html">Trang Chủ</a> / <span>Dịch Vụ Kỹ Thuật</span>
+      <div class="breadcrumb"><a href="index.html">Trang Chủ</a> / <span>Dịch Vụ</span></div>
+    </div>
+  </div>
+
+  <!-- LEVEL-1 ARCHIVE (theo mockup p5-7-9-cap1-D: tiêu đề canh giữa + intro + grid 3 cột ảnh, chú thích in hoa) -->
+  <section class="archive-section">
+    <div class="container">
+      <h1 class="archive-page-title">DỊCH VỤ</h1>
+
+      <div class="archive-intro">
+        <h2 class="section-title-underline">Dịch vụ của chúng tôi</h2>
+        <p>CTWELD cung cấp đa dạng dịch vụ kỹ thuật trong lĩnh vực cơ khí và hàn tự động, từ tư vấn – thiết kế giải pháp, lắp đặt dây chuyền, đến bảo trì – bảo hành và đào tạo chuyển giao công nghệ. Mỗi dịch vụ đều được thực hiện bởi đội ngũ kỹ sư giàu kinh nghiệm, đảm bảo tiến độ, chất lượng và hiệu quả vận hành lâu dài cho khách hàng.</p>
       </div>
-      <h1 class="page-title">Dịch Vụ Kỹ Thuật & <span class="text-orange">Bảo Dưỡng Nhà Máy</span></h1>
-      <p style="color: rgba(255, 255, 255, 0.92); max-width: 760px;">Đội ngũ kỹ sư CTWELD sẵn sàng ứng cứu sự cố máy hàn CNC, bảo dưỡng định kỳ và cung cấp phụ tùng tiêu hao chính hãng 24/7.</p>
+
+      <div class="grid3">
+        <a class="grid3-card" href="dich-vu-chi-tiet.html">
+          <div class="grid3-thumb"><img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=700&q=80" alt="SỬA CHỮA THIẾT BỊ"></div>
+          <h3 class="grid3-caption">SỬA CHỮA THIẾT BỊ</h3>
+        </a>
+
+        <a class="grid3-card" href="dich-vu-chi-tiet.html">
+          <div class="grid3-thumb"><img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=700&q=80" alt="BẢO DƯỠNG ĐỊNH KỲ"></div>
+          <h3 class="grid3-caption">BẢO DƯỠNG ĐỊNH KỲ</h3>
+        </a>
+
+        <a class="grid3-card" href="dich-vu-chi-tiet.html">
+          <div class="grid3-thumb"><img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=700&q=80" alt="CUNG CẤP VẬT TƯ TIÊU HAO"></div>
+          <h3 class="grid3-caption">CUNG CẤP VẬT TƯ TIÊU HAO</h3>
+        </a>
+
+        <a class="grid3-card" href="dich-vu-chi-tiet.html">
+          <div class="grid3-thumb"><img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=700&q=80" alt="CUNG CẤP PHỤ TÙNG THAY THẾ"></div>
+          <h3 class="grid3-caption">CUNG CẤP PHỤ TÙNG THAY THẾ</h3>
+        </a>
+
+      </div>
     </div>
   </section>
 
-  <!-- SERVICES LIST -->
-  <section style="padding: 80px 0; background: var(--color-bg-light);">
+  <section class="archive-form-section">
     <div class="container">
-      <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; margin-bottom: 60px;">
-        <!-- Service 1 -->
-        <div id="sua-chua" style="background: var(--color-bg-white); border-radius: var(--radius-md); padding: 32px; border: 1px solid var(--color-border);">
-          <i class="fas fa-wrench" style="font-size: 2.5rem; color: var(--color-brand-orange); margin-bottom: 16px;"></i>
-          <h3 style="font-size: 1.4rem; font-weight: 800; color: var(--color-text-heading); margin-bottom: 12px;">5.1. Sửa Chữa Thiết Bị Hàn & CNC</h3>
-          <p style="color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: 16px;">
-            Khắc phục lỗi bo mạch bo công suất nguồn hàn IGBT, cân chỉnh góc lệch Robot hàn, sửa chữa hệ thống điều khiển chiều cao đầu cắt THC máy Plasma CNC.
-          </p>
-          <a href="#form-dich-vu" class="btn btn-outline btn-sm">Yêu Cầu Sửa Chữa <i class="fas fa-arrow-right"></i></a>
-        </div>
-
-        <!-- Service 2 -->
-        <div id="bao-duong" style="background: var(--color-bg-white); border-radius: var(--radius-md); padding: 32px; border: 1px solid var(--color-border);">
-          <i class="fas fa-clipboard-check" style="font-size: 2.5rem; color: var(--color-brand-orange); margin-bottom: 16px;"></i>
-          <h3 style="font-size: 1.4rem; font-weight: 800; color: var(--color-text-heading); margin-bottom: 12px;">5.2. Bảo Dưỡng Định Kỳ Nhà Máy</h3>
-          <p style="color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: 16px;">
-            Gói bảo trì 3 tháng / 6 tháng / 1 năm cho toàn bộ hệ thống máy đính dầm, máy nắn dầm, cổng hàn SAW giúp phòng ngừa hỏng hóc đột xuất.
-          </p>
-          <a href="#form-dich-vu" class="btn btn-outline btn-sm">Yêu Cầu Bảo Dưỡng <i class="fas fa-arrow-right"></i></a>
-        </div>
-
-        <!-- Service 3 -->
-        <div id="vat-tu" style="background: var(--color-bg-white); border-radius: var(--radius-md); padding: 32px; border: 1px solid var(--color-border);">
-          <i class="fas fa-boxes" style="font-size: 2.5rem; color: var(--color-brand-orange); margin-bottom: 16px;"></i>
-          <h3 style="font-size: 1.4rem; font-weight: 800; color: var(--color-text-heading); margin-bottom: 12px;">5.3. Cung Cấp Vật Tư Tiêu Hao</h3>
-          <p style="color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: 16px;">
-            Phân phối bép cắt Laser Raytools/Precitec, chụp bảo vệ, kính bảo vệ thấu kính, dây hàn CO2/MAG, thuốc hàn hồ quang chìm SJ101/SJ301.
-          </p>
-          <a href="#form-dich-vu" class="btn btn-outline btn-sm">Báo Giá Vật Tư <i class="fas fa-arrow-right"></i></a>
-        </div>
-
-        <!-- Service 4 -->
-        <div id="phu-tung" style="background: var(--color-bg-white); border-radius: var(--radius-md); padding: 32px; border: 1px solid var(--color-border);">
-          <i class="fas fa-cogs" style="font-size: 2.5rem; color: var(--color-brand-orange); margin-bottom: 16px;"></i>
-          <h3 style="font-size: 1.4rem; font-weight: 800; color: var(--color-text-heading); margin-bottom: 12px;">5.4. Cung Cấp Phụ Tùng Thay Thế</h3>
-          <p style="color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: 16px;">
-            Sẵn kho bánh xe miết dầm H, động cơ Servo Yaskawa/Panasonic, biến tần Yaskawa, bo mạch điều khiển Megmeet, béc hàn công nghiệp.
-          </p>
-          <a href="#form-dich-vu" class="btn btn-outline btn-sm">Đặt Phụ Tùng <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
-
       <!-- FORM ĐĂNG KÝ TƯ VẤN CUỐI TRANG DỊCH VỤ CHI TIẾT -->
       <div id="form-dich-vu" style="background: var(--color-bg-subtle); color: var(--color-text-heading); padding: 48px; border-radius: var(--radius-lg); border: 1px solid var(--color-border);">
         <div style="max-width: 640px; margin: 0 auto; text-align: center;">
@@ -316,6 +304,84 @@
       </div>
     </div>
   </footer>
+
+
+  <!-- MOBILE DRAWER MENU (theo mockup home-M-1.0: drawer trượt từ trái, nền tối, accordion) -->
+  <div class="mobile-drawer-overlay"></div>
+  <nav class="mobile-drawer" aria-label="Menu di động">
+    <div class="mobile-drawer-head">
+      <span>MENU</span>
+      <button class="mobile-drawer-close" aria-label="Đóng menu"><i class="fas fa-times"></i></button>
+    </div>
+
+    <ul class="mobile-nav">
+      <li><div class="mobile-nav-row"><a href="index.html">Trang chủ</a></div></li>
+      <li><div class="mobile-nav-row"><a href="ve-chung-toi.html">Về chúng tôi</a></div></li>
+
+      <li>
+        <div class="mobile-nav-row">
+          <a href="san-pham.html">Sản phẩm</a>
+          <button class="mobile-sub-toggle" aria-label="Mở danh mục con"><i class="fas fa-chevron-down"></i></button>
+        </div>
+        <ul class="mobile-subnav">
+          <li><a href="san-pham.html?cat=ket-cau-thep">Dây chuyền kết cấu thép</a></li>
+          <li><a href="san-pham.html?cat=robot">Robot công nghiệp</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <div class="mobile-nav-row">
+          <a href="giai-phap.html">Giải pháp</a>
+          <button class="mobile-sub-toggle" aria-label="Mở danh mục con"><i class="fas fa-chevron-down"></i></button>
+        </div>
+        <ul class="mobile-subnav">
+          <li><a href="giai-phap.html#ket-cau-thep">Giải pháp gia công kết cấu thép</a></li>
+          <li><a href="giai-phap.html#tu-dong-hoa">Giải pháp tự động hoá</a></li>
+          <li><a href="giai-phap.html#xay-dung">Giải pháp công nghiệp xây dựng</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <div class="mobile-nav-row">
+          <a href="dich-vu.html">Dịch vụ</a>
+          <button class="mobile-sub-toggle" aria-label="Mở danh mục con"><i class="fas fa-chevron-down"></i></button>
+        </div>
+        <ul class="mobile-subnav">
+          <li><a href="dich-vu.html#sua-chua">Sửa chữa thiết bị</a></li>
+          <li><a href="dich-vu.html#bao-duong">Bảo dưỡng định kỳ</a></li>
+          <li><a href="dich-vu.html#vat-tu">Cung cấp vật tư tiêu hao</a></li>
+          <li><a href="dich-vu.html#phu-tung">Cung cấp phụ tùng thay thế</a></li>
+        </ul>
+      </li>
+
+      <li><div class="mobile-nav-row"><a href="du-an.html">Dự án</a></div></li>
+
+      <li>
+        <div class="mobile-nav-row">
+          <a href="tin-tuc.html">Tin tức</a>
+          <button class="mobile-sub-toggle" aria-label="Mở danh mục con"><i class="fas fa-chevron-down"></i></button>
+        </div>
+        <ul class="mobile-subnav">
+          <li><a href="tin-tuc.html#doanh-nghiep">Tin tức doanh nghiệp</a></li>
+          <li><a href="tin-tuc.html#nganh">Tin tức ngành</a></li>
+          <li><a href="tin-tuc.html#bao-chi">Thông cáo báo chí</a></li>
+        </ul>
+      </li>
+
+      <li><div class="mobile-nav-row"><a href="lien-he.html">Liên hệ</a></div></li>
+    </ul>
+
+    <div class="mobile-drawer-lang">
+      <button class="active">VN</button>
+      <button>EN</button>
+    </div>
+  </nav>
+
+  <!-- LIGHTBOX XEM ẢNH LỚN -->
+  <div class="img-lightbox">
+    <button class="img-lightbox-close" aria-label="Đóng"><i class="fas fa-times"></i></button>
+    <img src="" alt="">
+  </div>
 
   <script src="js/main.js"></script>
 </body>

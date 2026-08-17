@@ -4,57 +4,193 @@
     "layout_reference_level1": "https://automech.vn/tin-tuc/",
     "layout_reference_level2": "https://automech.vn/automech-va-fusheng-vietnam-ky-ket-hop-tac-chien-luoc/"
   },
-
   "archive": {
     "title": "Tin tức",
     "spec": "Chia cấu trúc hiển thị theo 3 cột x 4 hàng trên 1 trang, áp dụng tương tự cho các danh mục con.",
-    "layout": { "columns": 3, "rows": 4, "per_page": 12, "pagination": true },
-    "detail_page_spec": "Trang tin tức cấp 2 hiển thị giống nguồn tham khảo, không bổ sung gì thêm (KHÔNG cần form đăng ký tư vấn — khác với sản phẩm/giải pháp/dịch vụ/dự án).",
+    "layout": {
+      "columns": 3,
+      "rows": 4,
+      "per_page": 12,
+      "pagination": true
+    },
+    "detail_page_spec": "Trang tin tức cấp 2 (mockup p14-tintuc-c2-D): \"BÀI VIẾT\" canh giữa → tiêu đề bài in hoa → badge ngày canh giữa trên đường kẻ → hàng meta \"Tác giả\" bên trái + \"Share post\" bên phải → sapo → ảnh + caption. KHÔNG có form tư vấn (khác sản phẩm/giải pháp/dịch vụ/dự án).",
     "sapo_status": "missing — Excel không có Google Docs SAPO cho trang tin tức"
   },
-
   "homepage_section": {
     "cards_per_view": 3.5,
     "carousel": true,
     "autoplay": true,
-    "cta": { "label": "Xem Tất Cả Bài Viết Tin Tức", "url": "tin-tuc.html" }
+    "cta": {
+      "label": "Xem Tất Cả Bài Viết Tin Tức",
+      "url": "tin-tuc.html"
+    }
   },
-
   "categories": [
-    { "menu_order": "7.1", "name": "Tin tức doanh nghiệp", "slug": "tin-tuc-doanh-nghiep", "anchor": "doanh-nghiep", "badge_in_demo": "DOANH NGHIỆP" },
-    { "menu_order": "7.2", "name": "Tin tức ngành", "slug": "tin-tuc-nganh", "anchor": "nganh", "badge_in_demo": "TIN NGÀNH" },
-    { "menu_order": "7.3", "name": "Thông cáo báo chí", "slug": "thong-cao-bao-chi", "anchor": "bao-chi", "badge_in_demo": "THÔNG CÁO BÁO CHÍ" }
+    {
+      "menu_order": "7.1",
+      "name": "Tin tức doanh nghiệp",
+      "slug": "tin-tuc-doanh-nghiep",
+      "anchor": "doanh-nghiep",
+      "badge_in_demo": "DOANH NGHIỆP"
+    },
+    {
+      "menu_order": "7.2",
+      "name": "Tin tức ngành",
+      "slug": "tin-tuc-nganh",
+      "anchor": "nganh",
+      "badge_in_demo": "TIN NGÀNH"
+    },
+    {
+      "menu_order": "7.3",
+      "name": "Thông cáo báo chí",
+      "slug": "thong-cao-bao-chi",
+      "anchor": "bao-chi",
+      "badge_in_demo": "THÔNG CÁO BÁO CHÍ"
+    }
   ],
-  "categories_note": "Demo còn dùng thêm nhãn \"TIN KỸ THUẬT\" chưa có trong 3 chuyên mục Excel chốt. Cần quyết định: gộp vào \"Tin tức ngành\" hay mở thêm chuyên mục 7.4.",
-
+  "categories_note": "Mockup thẻ tin tức CHỈ hiện ngày, không hiện nhãn chuyên mục — đã bỏ nhãn \"TIN KỸ THUẬT\" khỏi thẻ. Chuyên mục vẫn giữ ở bộ lọc pill. Câu hỏi gộp \"TIN KỸ THUẬT\" vào \"Tin tức ngành\" hay mở chuyên mục 7.4 vẫn cần khách hàng chốt.",
   "sidebar": {
-    "_spec": "Bổ sung ở bản demo tin-tuc.html — không có trong Excel, cần khách hàng xác nhận giữ hay bỏ",
-    "widgets": [
-      { "type": "search", "placeholder": "Tìm kiếm bài viết..." },
-      { "type": "categories", "heading": "Chuyên mục", "data_ref": "news.json → categories" },
-      { "type": "recent_posts", "heading": "Bài viết gần đây", "limit": 5 }
-    ]
+    "_spec": "ĐÃ BỎ. Mockup p13-tintuc-c1-D không có sidebar, Excel cũng chỉ ghi \"3 cột 4 hàng\".",
+    "status": "removed",
+    "replaced_by": "Bộ lọc chuyên mục dạng pill canh giữa phía trên grid (.cat-pills)"
   },
-
   "content_status": "placeholder — toàn bộ bài viết bên dưới là dữ liệu demo dựng giao diện, chưa có nội dung bài viết thật.",
-
   "posts": [
-    { "id": 1, "date": "2026-08-14", "date_display": "14/08/2026", "category": "TIN KỸ THUẬT", "title": "Quy Trình Kiểm Soát Biến Dạng Hàn Khi Hàn Dầm H Khổ Lớn", "slug": "quy-trinh-kiem-soat-bien-dang-han-khi-han-dam-h-kho-lon", "excerpt": "Phân tích nguyên nhân vênh cánh dầm và cài đặt thông số dòng hàn SAW phù hợp." },
-    { "id": 2, "date": "2026-08-02", "date_display": "02/08/2026", "category": "DOANH NGHIỆP", "title": "CTWELD Bàn Giao Lô Robot Hàn Estun Cho Nhà Máy Ô Tô", "slug": "ctweld-ban-giao-lo-robot-han-estun-cho-nha-may-o-to", "excerpt": "Lễ ký kết bàn giao và đào tạo vận hành trạm hàn Robot cho 20 kỹ sư." },
-    { "id": 3, "date": "2026-07-25", "date_display": "25/07/2026", "category": "THÔNG CÁO BÁO CHÍ", "title": "Thay Thế Cắt Plasma Bằng Laser Fiber Công Suất 15kW", "slug": "thay-the-cat-plasma-bang-laser-fiber-cong-suat-15kw", "excerpt": "So sánh hiệu quả kinh tế và độ nhẵn vát mép cắt bản mã thép dày 30mm." },
-    { "id": 4, "date": "2026-07-18", "date_display": "18/07/2026", "category": "TIN KỸ THUẬT", "title": "Kỹ Thuật Hàn Gá Thuốc Hồ Quang Chìm SJ101 Chuẩn AWS", "slug": "ky-thuat-han-ga-thuoc-ho-quang-chim-sj101-chuan-aws", "excerpt": "Hướng dẫn sấy thuốc hàn và cài đặt điện áp hàn SAW dầm kết cấu thép." },
-    { "id": 5, "date": "2026-07-10", "date_display": "10/07/2026", "category": "DOANH NGHIỆP", "title": "Hội Thảo Công Nghệ Hàn Tự Động Hoá Khai Sơn Town", "slug": "hoi-thao-cong-nghe-han-tu-dong-hoa-khai-son-town", "excerpt": "CTWELD đón tiếp hơn 50 chủ doanh nghiệp cơ khí tham quan showroom gá thử." },
-    { "id": 6, "date": "2026-06-28", "date_display": "28/06/2026", "category": "TIN NGÀNH", "title": "Ứng Dụng Cobot Hàn Cộng Tác Trong Sản Xuất Giàn Giáo", "slug": "ung-dung-cobot-han-cong-tac-trong-san-xuat-gian-giao", "excerpt": "Giải pháp nâng cao năng suất hàn mối tròn đĩa giàn giáo ringlock gấp 4 lần." },
-    { "id": 7, "date": "2026-06-15", "date_display": "15/06/2026", "category": "TIN KỸ THUẬT", "title": "Cách Tính Chi Phí Khí Bảo Vệ CO2/Ar Cho Trạm Hàn MIG", "slug": "cach-tinh-chi-phi-khi-bao-ve-co2-ar-cho-tram-han-mig", "excerpt": "Bảng tính lưu lượng khí thổi thích hợp giảm tiêu hao khí bảo vệ 20% mỗi tháng." },
-    { "id": 8, "date": "2026-06-05", "date_display": "05/06/2026", "category": "THÔNG CÁO BÁO CHÍ", "title": "CTWELD Ký Kết Hợp Tác Phân Phối Nguồn Hàn Megmeet", "slug": "ctweld-ky-ket-hop-tac-phan-phoi-nguon-han-megmeet", "excerpt": "Trở thành đối tác dịch vụ ủy quyền bảo hành nguồn hàn Artsen PM500 tại Việt Nam." },
-    { "id": 9, "date": "2026-05-20", "date_display": "20/05/2026", "category": "TIN KỸ THUẬT", "title": "Xử Lý Lỗi Bọt Khí Mối Hàn Hồ Quang Chìm Dầm H", "slug": "xu-ly-loi-bot-khi-moi-han-ho-quang-chim-dam-h", "excerpt": "Các bước làm sạch dầu mỡ đường hàn và kiểm soát độ ẩm phôi trước khi hàn đính." },
-    { "id": 10, "date": "2026-05-10", "date_display": "10/05/2026", "category": "DOANH NGHIỆP", "title": "Chương Trình Đào Tạo Kỹ Sư Hàn Chuẩn Quốc Tế CTWELD", "slug": "chuong-trinh-dao-tao-ky-su-han-chuan-quoc-te-ctweld", "excerpt": "Khóa đào tạo lập trình Robot Yaskawa/Estun cho kỹ sư các nhà máy đối tác." },
-    { "id": 11, "date": "2026-05-01", "date_display": "01/05/2026", "category": "TIN NGÀNH", "title": "Tổng Quan Thị Trường Kết Cấu Thép Nhà Xưởng 2026", "slug": "tong-quan-thi-truong-ket-cau-thep-nha-xuong-2026", "excerpt": "Dự báo nhu cầu gia công dầm H cho các dự án KCN hạ tầng miền Bắc." },
-    { "id": 12, "date": "2026-04-20", "date_display": "20/04/2026", "category": "TIN KỸ THUẬT", "title": "Ứng Dụng Kính Bảo Vệ Laser Fiber Raytools Chính Hãng", "slug": "ung-dung-kinh-bao-ve-laser-fiber-raytools-chinh-hang", "excerpt": "Bảo vệ thấu kính hội tụ khỏi bám bụi bẩn và xỉ phản xạ khi cắt thép dày." }
+    {
+      "id": 1,
+      "date": "2026-08-14",
+      "date_display": "14/08/2026",
+      "category": "TIN KỸ THUẬT",
+      "title": "Quy Trình Kiểm Soát Biến Dạng Hàn Khi Hàn Dầm H Khổ Lớn",
+      "slug": "quy-trinh-kiem-soat-bien-dang-han-khi-han-dam-h-kho-lon",
+      "excerpt": "Phân tích nguyên nhân vênh cánh dầm và cài đặt thông số dòng hàn SAW phù hợp.",
+      "author": "Kỹ sư CTWELD"
+    },
+    {
+      "id": 2,
+      "date": "2026-08-02",
+      "date_display": "02/08/2026",
+      "category": "DOANH NGHIỆP",
+      "title": "CTWELD Bàn Giao Lô Robot Hàn Estun Cho Nhà Máy Ô Tô",
+      "slug": "ctweld-ban-giao-lo-robot-han-estun-cho-nha-may-o-to",
+      "excerpt": "Lễ ký kết bàn giao và đào tạo vận hành trạm hàn Robot cho 20 kỹ sư.",
+      "author": "Kỹ sư CTWELD"
+    },
+    {
+      "id": 3,
+      "date": "2026-07-25",
+      "date_display": "25/07/2026",
+      "category": "THÔNG CÁO BÁO CHÍ",
+      "title": "Thay Thế Cắt Plasma Bằng Laser Fiber Công Suất 15kW",
+      "slug": "thay-the-cat-plasma-bang-laser-fiber-cong-suat-15kw",
+      "excerpt": "So sánh hiệu quả kinh tế và độ nhẵn vát mép cắt bản mã thép dày 30mm.",
+      "author": "Kỹ sư CTWELD"
+    },
+    {
+      "id": 4,
+      "date": "2026-07-18",
+      "date_display": "18/07/2026",
+      "category": "TIN KỸ THUẬT",
+      "title": "Kỹ Thuật Hàn Gá Thuốc Hồ Quang Chìm SJ101 Chuẩn AWS",
+      "slug": "ky-thuat-han-ga-thuoc-ho-quang-chim-sj101-chuan-aws",
+      "excerpt": "Hướng dẫn sấy thuốc hàn và cài đặt điện áp hàn SAW dầm kết cấu thép.",
+      "author": "Kỹ sư CTWELD"
+    },
+    {
+      "id": 5,
+      "date": "2026-07-10",
+      "date_display": "10/07/2026",
+      "category": "DOANH NGHIỆP",
+      "title": "Hội Thảo Công Nghệ Hàn Tự Động Hoá Khai Sơn Town",
+      "slug": "hoi-thao-cong-nghe-han-tu-dong-hoa-khai-son-town",
+      "excerpt": "CTWELD đón tiếp hơn 50 chủ doanh nghiệp cơ khí tham quan showroom gá thử.",
+      "author": "Kỹ sư CTWELD"
+    },
+    {
+      "id": 6,
+      "date": "2026-06-28",
+      "date_display": "28/06/2026",
+      "category": "TIN NGÀNH",
+      "title": "Ứng Dụng Cobot Hàn Cộng Tác Trong Sản Xuất Giàn Giáo",
+      "slug": "ung-dung-cobot-han-cong-tac-trong-san-xuat-gian-giao",
+      "excerpt": "Giải pháp nâng cao năng suất hàn mối tròn đĩa giàn giáo ringlock gấp 4 lần.",
+      "author": "Kỹ sư CTWELD"
+    },
+    {
+      "id": 7,
+      "date": "2026-06-15",
+      "date_display": "15/06/2026",
+      "category": "TIN KỸ THUẬT",
+      "title": "Cách Tính Chi Phí Khí Bảo Vệ CO2/Ar Cho Trạm Hàn MIG",
+      "slug": "cach-tinh-chi-phi-khi-bao-ve-co2-ar-cho-tram-han-mig",
+      "excerpt": "Bảng tính lưu lượng khí thổi thích hợp giảm tiêu hao khí bảo vệ 20% mỗi tháng.",
+      "author": "Kỹ sư CTWELD"
+    },
+    {
+      "id": 8,
+      "date": "2026-06-05",
+      "date_display": "05/06/2026",
+      "category": "THÔNG CÁO BÁO CHÍ",
+      "title": "CTWELD Ký Kết Hợp Tác Phân Phối Nguồn Hàn Megmeet",
+      "slug": "ctweld-ky-ket-hop-tac-phan-phoi-nguon-han-megmeet",
+      "excerpt": "Trở thành đối tác dịch vụ ủy quyền bảo hành nguồn hàn Artsen PM500 tại Việt Nam.",
+      "author": "Kỹ sư CTWELD"
+    },
+    {
+      "id": 9,
+      "date": "2026-05-20",
+      "date_display": "20/05/2026",
+      "category": "TIN KỸ THUẬT",
+      "title": "Xử Lý Lỗi Bọt Khí Mối Hàn Hồ Quang Chìm Dầm H",
+      "slug": "xu-ly-loi-bot-khi-moi-han-ho-quang-chim-dam-h",
+      "excerpt": "Các bước làm sạch dầu mỡ đường hàn và kiểm soát độ ẩm phôi trước khi hàn đính.",
+      "author": "Kỹ sư CTWELD"
+    },
+    {
+      "id": 10,
+      "date": "2026-05-10",
+      "date_display": "10/05/2026",
+      "category": "DOANH NGHIỆP",
+      "title": "Chương Trình Đào Tạo Kỹ Sư Hàn Chuẩn Quốc Tế CTWELD",
+      "slug": "chuong-trinh-dao-tao-ky-su-han-chuan-quoc-te-ctweld",
+      "excerpt": "Khóa đào tạo lập trình Robot Yaskawa/Estun cho kỹ sư các nhà máy đối tác.",
+      "author": "Kỹ sư CTWELD"
+    },
+    {
+      "id": 11,
+      "date": "2026-05-01",
+      "date_display": "01/05/2026",
+      "category": "TIN NGÀNH",
+      "title": "Tổng Quan Thị Trường Kết Cấu Thép Nhà Xưởng 2026",
+      "slug": "tong-quan-thi-truong-ket-cau-thep-nha-xuong-2026",
+      "excerpt": "Dự báo nhu cầu gia công dầm H cho các dự án KCN hạ tầng miền Bắc.",
+      "author": "Kỹ sư CTWELD"
+    },
+    {
+      "id": 12,
+      "date": "2026-04-20",
+      "date_display": "20/04/2026",
+      "category": "TIN KỸ THUẬT",
+      "title": "Ứng Dụng Kính Bảo Vệ Laser Fiber Raytools Chính Hãng",
+      "slug": "ung-dung-kinh-bao-ve-laser-fiber-raytools-chinh-hang",
+      "excerpt": "Bảo vệ thấu kính hội tụ khỏi bám bụi bẩn và xỉ phản xạ khi cắt thép dày.",
+      "author": "Kỹ sư CTWELD"
+    }
   ],
-
   "open_issues": [
     "Chưa có bài viết thật — 12 bài hiện tại chỉ có tiêu đề + mô tả ngắn, không có nội dung chi tiết.",
     "Cần thống nhất chuyên mục \"TIN KỸ THUẬT\" (đang dùng ở demo) so với 3 chuyên mục chốt trong Excel."
-  ]
+  ],
+  "post_fields_required": [
+    "title",
+    "slug",
+    "date",
+    "category",
+    "excerpt",
+    "thumbnail",
+    "author",
+    "content",
+    "share_buttons"
+  ],
+  "posts_author_status": "placeholder — cần tên tác giả thật cho từng bài"
 }

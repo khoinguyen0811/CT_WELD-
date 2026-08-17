@@ -182,305 +182,137 @@
     </header>
 
     <!-- PAGE BANNER -->
-    <section class="page-banner">
+    <!-- BREADCRUMB BAR -->
+    <div class="breadcrumb-bar">
       <div class="container">
-        <div class="breadcrumb">
-          <a href="index.html">Trang Chủ</a> / <span>Tin Tức</span>
-        </div>
-        <h1 class="page-title">Tin Tức & <span class="text-orange">Kiến Thức Kỹ Thuật</span></h1>
-        <p style="color: rgba(255, 255, 255, 0.92); max-width: 760px">
-          Cập nhật bài viết chuyên sâu về kỹ thuật hàn, công nghệ gia công kim
-          loại và các hoạt động doanh nghiệp CTWELD
-        </p>
+        <div class="breadcrumb"><a href="index.html">Trang Chủ</a> / <span>Tin Tức</span></div>
       </div>
-    </section>
+    </div>
 
-    <!-- NEWS SECTION WITH RIGHT SIDEBAR (MATCHING REFERENCE SPEC) -->
-    <section style="padding: 60px 0; background: var(--color-bg-light)">
+    <!-- LEVEL-1 ARCHIVE — grid 3 cột x 4 hàng, KHÔNG sidebar (theo mockup p13-tintuc-c1-D) -->
+    <section class="archive-section">
       <div class="container">
-        <div class="news-page-layout">
-          <!-- LEFT MAIN NEWS CONTENT -->
-          <main class="news-main-content">
-            <div class="news-main-grid">
-              <!-- Row 1: Article 1 -->
-              <article class="news-card" style="flex: none; min-width: 0">
-                <div class="news-thumb">
-                  <img
-                    src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=500&q=80"
-                    alt="Biến dạng hàn"
-                  />
-                </div>
-                <div class="news-body">
-                  <span class="news-date">14/08/2026 | TIN KỸ THUẬT</span>
-                  <h3 class="news-title">
-                    Quy Trình Kiểm Soát Biến Dạng Hàn Khi Hàn Dầm H Khổ Lớn
-                  </h3>
-                  <p class="news-excerpt">
-                    Phân tích nguyên nhân vênh cánh dầm và cài đặt thông số dòng
-                    hàn SAW phù hợp.
-                  </p>
-                  <a href="#" class="news-link"
-                    >Đọc Bài Viết <i class="fas fa-arrow-right"></i
-                  ></a>
-                </div>
-              </article>
+        <h1 class="archive-page-title">TIN TỨC</h1>
 
-              <!-- Row 1: Article 2 -->
-              <article class="news-card" style="flex: none; min-width: 0">
-                <div class="news-thumb">
-                  <img
-                    src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=500&q=80"
-                    alt="Robot hàn Estun"
-                  />
-                </div>
-                <div class="news-body">
-                  <span class="news-date">02/08/2026 | DOANH NGHIỆP</span>
-                  <h3 class="news-title">
-                    CTWELD Bàn Giao Lô Robot Hàn Estun Cho Nhà Máy Ô Tô
-                  </h3>
-                  <p class="news-excerpt">
-                    Lễ ký kết bàn giao và đào tạo vận hành trạm hàn Robot cho 20
-                    kỹ sư.
-                  </p>
-                  <a href="#" class="news-link"
-                    >Đọc Bài Viết <i class="fas fa-arrow-right"></i
-                  ></a>
-                </div>
-              </article>
+        <!-- Bộ lọc chuyên mục thay cho sidebar đã bỏ -->
+        <div class="cat-pills">
+          <a href="tin-tuc.html" class="cat-pill active">Tất cả</a>
+          <a href="tin-tuc.html#doanh-nghiep" class="cat-pill">Tin tức doanh nghiệp</a>
+          <a href="tin-tuc.html#nganh" class="cat-pill">Tin tức ngành</a>
+          <a href="tin-tuc.html#bao-chi" class="cat-pill">Thông cáo báo chí</a>
+        </div>
 
-              <!-- Row 1: Article 3 -->
-              <article class="news-card" style="flex: none; min-width: 0">
-                <div class="news-thumb">
-                  <img
-                    src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=500&q=80"
-                    alt="Laser Fiber 15kW"
-                  />
-                </div>
-                <div class="news-body">
-                  <span class="news-date">25/07/2026 | THÔNG CÁO BÁO CHÍ</span>
-                  <h3 class="news-title">
-                    Thay Thế Cắt Plasma Bằng Laser Fiber Công Suất 15kW
-                  </h3>
-                  <p class="news-excerpt">
-                    So sánh hiệu quả kinh tế và độ nhẵn vát mép cắt bản mã thép
-                    dày 30mm.
-                  </p>
-                  <a href="#" class="news-link"
-                    >Đọc Bài Viết <i class="fas fa-arrow-right"></i
-                  ></a>
-                </div>
-              </article>
-
-              <!-- Row 2: Article 4 -->
-              <article class="news-card" style="flex: none; min-width: 0">
-                <div class="news-thumb">
-                  <img
-                    src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=500&q=80"
-                    alt="Thuốc hàn SAW"
-                  />
-                </div>
-                <div class="news-body">
-                  <span class="news-date">18/07/2026 | TIN KỸ THUẬT</span>
-                  <h3 class="news-title">
-                    Kỹ Thuật Hàn Gá Thuốc Hồ Quang Chìm SJ101 Chuẩn AWS
-                  </h3>
-                  <p class="news-excerpt">
-                    Hướng dẫn sấy thuốc hàn và cài đặt điện áp hàn SAW dầm kết
-                    cấu thép.
-                  </p>
-                  <a href="#" class="news-link"
-                    >Đọc Bài Viết <i class="fas fa-arrow-right"></i
-                  ></a>
-                </div>
-              </article>
-
-              <!-- Row 2: Article 5 -->
-              <article class="news-card" style="flex: none; min-width: 0">
-                <div class="news-thumb">
-                  <img
-                    src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=500&q=80"
-                    alt="Hội thảo hàn"
-                  />
-                </div>
-                <div class="news-body">
-                  <span class="news-date">10/07/2026 | DOANH NGHIỆP</span>
-                  <h3 class="news-title">
-                    Hội Thảo Công Nghệ Hàn Tự Động Hoá Khai Sơn Town
-                  </h3>
-                  <p class="news-excerpt">
-                    CTWELD đón tiếp hơn 50 chủ doanh nghiệp cơ khí tham quan
-                    showroom gá thử.
-                  </p>
-                  <a href="#" class="news-link"
-                    >Đọc Bài Viết <i class="fas fa-arrow-right"></i
-                  ></a>
-                </div>
-              </article>
-
-              <!-- Row 2: Article 6 -->
-              <article class="news-card" style="flex: none; min-width: 0">
-                <div class="news-thumb">
-                  <img
-                    src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=500&q=80"
-                    alt="Cobot giàn giáo"
-                  />
-                </div>
-                <div class="news-body">
-                  <span class="news-date">28/06/2026 | TIN NGÀNH</span>
-                  <h3 class="news-title">
-                    Ứng Dụng Cobot Hàn Cộng Tác Trong Sản Xuất Giàn Giáo
-                  </h3>
-                  <p class="news-excerpt">
-                    Giải pháp nâng cao năng suất hàn mối tròn đĩa giàn giáo
-                    ringlock gấp 4 lần.
-                  </p>
-                  <a href="#" class="news-link"
-                    >Đọc Bài Viết <i class="fas fa-arrow-right"></i
-                  ></a>
-                </div>
-              </article>
-
-              <!-- Row 3: Article 7 -->
-              <article class="news-card" style="flex: none; min-width: 0">
-                <div class="news-thumb">
-                  <img
-                    src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=500&q=80"
-                    alt="Chi phí khí"
-                  />
-                </div>
-                <div class="news-body">
-                  <span class="news-date">15/06/2026 | TIN KỸ THUẬT</span>
-                  <h3 class="news-title">
-                    Cách Tính Chi Phí Khí Bảo Vệ CO2/Ar Cho Trạm Hàn MIG
-                  </h3>
-                  <p class="news-excerpt">
-                    Bảng tính lưu lượng khí thổi thích hợp giảm tiêu hao khí bảo
-                    vệ 20% mỗi tháng.
-                  </p>
-                  <a href="#" class="news-link"
-                    >Đọc Bài Viết <i class="fas fa-arrow-right"></i
-                  ></a>
-                </div>
-              </article>
-
-              <!-- Row 3: Article 8 -->
-              <article class="news-card" style="flex: none; min-width: 0">
-                <div class="news-thumb">
-                  <img
-                    src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=500&q=80"
-                    alt="Phân phối Megmeet"
-                  />
-                </div>
-                <div class="news-body">
-                  <span class="news-date">05/06/2026 | THÔNG CÁO BÁO CHÍ</span>
-                  <h3 class="news-title">
-                    CTWELD Ký Kết Hợp Tác Phân Phối Nguồn Hàn Megmeet
-                  </h3>
-                  <p class="news-excerpt">
-                    Trở thành đối tác dịch vụ ủy quyền bảo hành nguồn hàn Artsen
-                    PM500 tại Việt Nam.
-                  </p>
-                  <a href="#" class="news-link"
-                    >Đọc Bài Viết <i class="fas fa-arrow-right"></i
-                  ></a>
-                </div>
-              </article>
-
-              <!-- Row 3: Article 9 -->
-              <article class="news-card" style="flex: none; min-width: 0">
-                <div class="news-thumb">
-                  <img
-                    src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=500&q=80"
-                    alt="Lỗi bọt khí"
-                  />
-                </div>
-                <div class="news-body">
-                  <span class="news-date">20/05/2026 | TIN KỸ THUẬT</span>
-                  <h3 class="news-title">
-                    Xử Lý Lỗi Bọt Khí Mối Hàn Hồ Quang Chìm Dầm H
-                  </h3>
-                  <p class="news-excerpt">
-                    Các bước làm sạch dầu mỡ đường hàn và kiểm soát độ ẩm phôi
-                    trước khi hàn đính.
-                  </p>
-                  <a href="#" class="news-link"
-                    >Đọc Bài Viết <i class="fas fa-arrow-right"></i
-                  ></a>
-                </div>
-              </article>
-
-              <!-- Row 4: Article 10 -->
-              <article class="news-card" style="flex: none; min-width: 0">
-                <div class="news-thumb">
-                  <img
-                    src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=500&q=80"
-                    alt="Đào tạo kỹ sư"
-                  />
-                </div>
-                <div class="news-body">
-                  <span class="news-date">10/05/2026 | DOANH NGHIỆP</span>
-                  <h3 class="news-title">
-                    Chương Trình Đào Tạo Kỹ Sư Hàn Chuẩn Quốc Tế CTWELD
-                  </h3>
-                  <p class="news-excerpt">
-                    Khóa đào tạo lập trình Robot Yaskawa/Estun cho kỹ sư các nhà
-                    máy đối tác.
-                  </p>
-                  <a href="#" class="news-link"
-                    >Đọc Bài Viết <i class="fas fa-arrow-right"></i
-                  ></a>
-                </div>
-              </article>
-
-              <!-- Row 4: Article 11 -->
-              <article class="news-card" style="flex: none; min-width: 0">
-                <div class="news-thumb">
-                  <img
-                    src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=500&q=80"
-                    alt="Thị trường kết cấu thép"
-                  />
-                </div>
-                <div class="news-body">
-                  <span class="news-date">01/05/2026 | TIN NGÀNH</span>
-                  <h3 class="news-title">
-                    Tổng Quan Thị Trường Kết Cấu Thép Nhà Xưởng 2026
-                  </h3>
-                  <p class="news-excerpt">
-                    Dự báo nhu cầu gia công dầm H cho các dự án KCN hạ tầng miền
-                    Bắc.
-                  </p>
-                  <a href="#" class="news-link"
-                    >Đọc Bài Viết <i class="fas fa-arrow-right"></i
-                  ></a>
-                </div>
-              </article>
-
-              <!-- Row 4: Article 12 -->
-              <article class="news-card" style="flex: none; min-width: 0">
-                <div class="news-thumb">
-                  <img
-                    src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=500&q=80"
-                    alt="Kính bảo vệ laser"
-                  />
-                </div>
-                <div class="news-body">
-                  <span class="news-date">20/04/2026 | TIN KỸ THUẬT</span>
-                  <h3 class="news-title">
-                    Ứng Dụng Kính Bảo Vệ Laser Fiber Raytools Chính Hãng
-                  </h3>
-                  <p class="news-excerpt">
-                    Bảo vệ thấu kính hội tụ khỏi bám bụi bẩn và xỉ phản xạ khi
-                    cắt thép dày.
-                  </p>
-                  <a href="#" class="news-link"
-                    >Đọc Bài Viết <i class="fas fa-arrow-right"></i
-                  ></a>
-                </div>
-              </article>
+        <div class="news-grid-3">
+          <article class="news-card">
+            <div class="news-thumb"><img src="images/su-menh.jpg" alt="Quy trình kiểm soát biến dạng hàn khi hàn dầm H khổ lớn"></div>
+            <div class="news-body">
+              <span class="news-date">14/08/2026</span>
+              <h3 class="news-title"><a href="tin-tuc-chi-tiet.html">Quy trình kiểm soát biến dạng hàn khi hàn dầm H khổ lớn</a></h3>
+              <a href="tin-tuc-chi-tiet.html" class="news-link">Xem chi tiết <i class="fas fa-arrow-right"></i></a>
             </div>
+          </article>
 
-            <!-- Pagination -->
-            <div class="pagination" style="margin-top: 40px">
+          <article class="news-card">
+            <div class="news-thumb"><img src="images/han-3-trong-1.png" alt="CTWELD bàn giao lô Robot hàn Estun cho nhà máy ô tô"></div>
+            <div class="news-body">
+              <span class="news-date">02/08/2026</span>
+              <h3 class="news-title"><a href="tin-tuc-chi-tiet.html">CTWELD bàn giao lô Robot hàn Estun cho nhà máy ô tô</a></h3>
+              <a href="tin-tuc-chi-tiet.html" class="news-link">Xem chi tiết <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-thumb"><img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=700&q=80" alt="Thay thế cắt Plasma bằng Laser Fiber công suất 15kW"></div>
+            <div class="news-body">
+              <span class="news-date">25/07/2026</span>
+              <h3 class="news-title"><a href="tin-tuc-chi-tiet.html">Thay thế cắt Plasma bằng Laser Fiber công suất 15kW</a></h3>
+              <a href="tin-tuc-chi-tiet.html" class="news-link">Xem chi tiết <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-thumb"><img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=700&q=80" alt="Kỹ thuật hàn gá thuốc hồ quang chìm SJ101 chuẩn AWS"></div>
+            <div class="news-body">
+              <span class="news-date">18/07/2026</span>
+              <h3 class="news-title"><a href="tin-tuc-chi-tiet.html">Kỹ thuật hàn gá thuốc hồ quang chìm SJ101 chuẩn AWS</a></h3>
+              <a href="tin-tuc-chi-tiet.html" class="news-link">Xem chi tiết <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-thumb"><img src="images/tam-nhin.jpg" alt="Hội thảo công nghệ hàn tự động hoá tại Khai Sơn Town"></div>
+            <div class="news-body">
+              <span class="news-date">10/07/2026</span>
+              <h3 class="news-title"><a href="tin-tuc-chi-tiet.html">Hội thảo công nghệ hàn tự động hoá tại Khai Sơn Town</a></h3>
+              <a href="tin-tuc-chi-tiet.html" class="news-link">Xem chi tiết <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-thumb"><img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=700&q=80" alt="Ứng dụng Cobot hàn cộng tác trong sản xuất giàn giáo"></div>
+            <div class="news-body">
+              <span class="news-date">28/06/2026</span>
+              <h3 class="news-title"><a href="tin-tuc-chi-tiet.html">Ứng dụng Cobot hàn cộng tác trong sản xuất giàn giáo</a></h3>
+              <a href="tin-tuc-chi-tiet.html" class="news-link">Xem chi tiết <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-thumb"><img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=700&q=80" alt="Cách tính chi phí khí bảo vệ CO2/Ar cho trạm hàn MIG"></div>
+            <div class="news-body">
+              <span class="news-date">15/06/2026</span>
+              <h3 class="news-title"><a href="tin-tuc-chi-tiet.html">Cách tính chi phí khí bảo vệ CO2/Ar cho trạm hàn MIG</a></h3>
+              <a href="tin-tuc-chi-tiet.html" class="news-link">Xem chi tiết <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-thumb"><img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=700&q=80" alt="CTWELD ký kết hợp tác phân phối nguồn hàn Megmeet"></div>
+            <div class="news-body">
+              <span class="news-date">05/06/2026</span>
+              <h3 class="news-title"><a href="tin-tuc-chi-tiet.html">CTWELD ký kết hợp tác phân phối nguồn hàn Megmeet</a></h3>
+              <a href="tin-tuc-chi-tiet.html" class="news-link">Xem chi tiết <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-thumb"><img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=700&q=80" alt="Xử lý lỗi bọt khí mối hàn hồ quang chìm dầm H"></div>
+            <div class="news-body">
+              <span class="news-date">20/05/2026</span>
+              <h3 class="news-title"><a href="tin-tuc-chi-tiet.html">Xử lý lỗi bọt khí mối hàn hồ quang chìm dầm H</a></h3>
+              <a href="tin-tuc-chi-tiet.html" class="news-link">Xem chi tiết <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-thumb"><img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=700&q=80" alt="Chương trình đào tạo kỹ sư hàn chuẩn quốc tế CTWELD"></div>
+            <div class="news-body">
+              <span class="news-date">10/05/2026</span>
+              <h3 class="news-title"><a href="tin-tuc-chi-tiet.html">Chương trình đào tạo kỹ sư hàn chuẩn quốc tế CTWELD</a></h3>
+              <a href="tin-tuc-chi-tiet.html" class="news-link">Xem chi tiết <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-thumb"><img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=700&q=80" alt="Tổng quan thị trường kết cấu thép nhà xưởng 2026"></div>
+            <div class="news-body">
+              <span class="news-date">01/05/2026</span>
+              <h3 class="news-title"><a href="tin-tuc-chi-tiet.html">Tổng quan thị trường kết cấu thép nhà xưởng 2026</a></h3>
+              <a href="tin-tuc-chi-tiet.html" class="news-link">Xem chi tiết <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-thumb"><img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=700&q=80" alt="Ứng dụng kính bảo vệ Laser Fiber Raytools chính hãng"></div>
+            <div class="news-body">
+              <span class="news-date">20/04/2026</span>
+              <h3 class="news-title"><a href="tin-tuc-chi-tiet.html">Ứng dụng kính bảo vệ Laser Fiber Raytools chính hãng</a></h3>
+              <a href="tin-tuc-chi-tiet.html" class="news-link">Xem chi tiết <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+        </div>
+        <div class="pagination" style="margin-top: 40px">
               <a href="#" class="page-num active">1</a>
               <a href="#" class="page-num">2</a>
               <a href="#" class="page-num">3</a>
@@ -492,115 +324,10 @@
               <a href="#" class="page-num" style="width: auto; padding: 0 14px"
                 >Trang Tiếp <i class="fas fa-chevron-right"></i
               ></a>
-            </div>
-          </main>
-
-          <!-- RIGHT SIDEBAR (3 REAL DROPDOWN CATEGORIES & SEARCH & RECENT ARTICLES) -->
-          <aside class="news-sidebar">
-            <!-- Widget 1: Search Input Card -->
-            <div class="sidebar-search-card">
-              <div class="sidebar-search-box">
-                <input
-                  type="text"
-                  placeholder="Nhập từ khóa..."
-                  class="sidebar-search-input"
-                />
-                <button class="sidebar-search-btn" aria-label="Search">
-                  <i class="fas fa-search"></i>
-                </button>
-              </div>
-            </div>
-
-            <!-- Widget 2: Chuyên mục (3 Dropdown Items Only) -->
-            <div class="sidebar-card">
-              <h3 class="sidebar-title-bar">Chuyên mục</h3>
-              <ul class="news-cat-list">
-                <li class="news-cat-item">
-                  <a href="tin-tuc.html#doanh-nghiep">Tin tức doanh nghiệp</a>
-                  <span class="news-cat-badge">18</span>
-                </li>
-                <li class="news-cat-item">
-                  <a href="tin-tuc.html#nganh">Tin tức ngành</a>
-                  <span class="news-cat-badge">24</span>
-                </li>
-                <li class="news-cat-item">
-                  <a href="tin-tuc.html#bao-chi">Thông cáo báo chí</a>
-                  <span class="news-cat-badge">12</span>
-                </li>
-              </ul>
-            </div>
-
-            <!-- Widget 3: Bài viết gần đây -->
-            <div class="sidebar-card">
-              <h3 class="sidebar-title-bar">Bài viết gần đây</h3>
-              <div class="recent-articles-list">
-                <!-- Article 1 -->
-                <a href="#" class="recent-article-item">
-                  <div class="recent-article-thumb">
-                    <img
-                      src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=200&q=80"
-                      alt="Kỹ sư Tự động hóa"
-                    />
-                  </div>
-                  <div class="recent-article-info">
-                    <h4 class="recent-article-title">Kỹ sư Tự động hóa</h4>
-                    <span class="recent-article-date">08/08/2026</span>
-                  </div>
-                </a>
-
-                <!-- Article 2 -->
-                <a href="#" class="recent-article-item">
-                  <div class="recent-article-thumb">
-                    <img
-                      src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=200&q=80"
-                      alt="Nhân viên Kinh doanh Kỹ thuật"
-                    />
-                  </div>
-                  <div class="recent-article-info">
-                    <h4 class="recent-article-title">
-                      Nhân viên Kinh doanh Kỹ thuật
-                    </h4>
-                    <span class="recent-article-date">08/08/2026</span>
-                  </div>
-                </a>
-
-                <!-- Article 3 -->
-                <a href="#" class="recent-article-item">
-                  <div class="recent-article-thumb">
-                    <img
-                      src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=200&q=80"
-                      alt="Kỹ thuật viên Lắp đặt & Bảo trì"
-                    />
-                  </div>
-                  <div class="recent-article-info">
-                    <h4 class="recent-article-title">
-                      Kỹ thuật viên Lắp đặt & Bảo trì
-                    </h4>
-                    <span class="recent-article-date">08/08/2026</span>
-                  </div>
-                </a>
-
-                <!-- Article 4 -->
-                <a href="#" class="recent-article-item">
-                  <div class="recent-article-thumb">
-                    <img
-                      src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=200&q=80"
-                      alt="Quy Trình Kiểm Soát Biến Dạng Hàn"
-                    />
-                  </div>
-                  <div class="recent-article-info">
-                    <h4 class="recent-article-title">
-                      Quy Trình Kiểm Soát Biến Dạng Hàn Dầm H
-                    </h4>
-                    <span class="recent-article-date">14/08/2026</span>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </aside>
         </div>
       </div>
     </section>
+
 
     <!-- FOOTER -->
     <!-- 9. FOOTER (EXACT STRUCTURE AS REFERENCE IMAGE - LOGO CARD, DASHED LINKS, MAP COLUMN) -->
@@ -750,6 +477,84 @@
       </div>
     </footer>
 
-    <script src="js/main.js"></script>
+  
+  <!-- MOBILE DRAWER MENU (theo mockup home-M-1.0: drawer trượt từ trái, nền tối, accordion) -->
+  <div class="mobile-drawer-overlay"></div>
+  <nav class="mobile-drawer" aria-label="Menu di động">
+    <div class="mobile-drawer-head">
+      <span>MENU</span>
+      <button class="mobile-drawer-close" aria-label="Đóng menu"><i class="fas fa-times"></i></button>
+    </div>
+
+    <ul class="mobile-nav">
+      <li><div class="mobile-nav-row"><a href="index.html">Trang chủ</a></div></li>
+      <li><div class="mobile-nav-row"><a href="ve-chung-toi.html">Về chúng tôi</a></div></li>
+
+      <li>
+        <div class="mobile-nav-row">
+          <a href="san-pham.html">Sản phẩm</a>
+          <button class="mobile-sub-toggle" aria-label="Mở danh mục con"><i class="fas fa-chevron-down"></i></button>
+        </div>
+        <ul class="mobile-subnav">
+          <li><a href="san-pham.html?cat=ket-cau-thep">Dây chuyền kết cấu thép</a></li>
+          <li><a href="san-pham.html?cat=robot">Robot công nghiệp</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <div class="mobile-nav-row">
+          <a href="giai-phap.html">Giải pháp</a>
+          <button class="mobile-sub-toggle" aria-label="Mở danh mục con"><i class="fas fa-chevron-down"></i></button>
+        </div>
+        <ul class="mobile-subnav">
+          <li><a href="giai-phap.html#ket-cau-thep">Giải pháp gia công kết cấu thép</a></li>
+          <li><a href="giai-phap.html#tu-dong-hoa">Giải pháp tự động hoá</a></li>
+          <li><a href="giai-phap.html#xay-dung">Giải pháp công nghiệp xây dựng</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <div class="mobile-nav-row">
+          <a href="dich-vu.html">Dịch vụ</a>
+          <button class="mobile-sub-toggle" aria-label="Mở danh mục con"><i class="fas fa-chevron-down"></i></button>
+        </div>
+        <ul class="mobile-subnav">
+          <li><a href="dich-vu.html#sua-chua">Sửa chữa thiết bị</a></li>
+          <li><a href="dich-vu.html#bao-duong">Bảo dưỡng định kỳ</a></li>
+          <li><a href="dich-vu.html#vat-tu">Cung cấp vật tư tiêu hao</a></li>
+          <li><a href="dich-vu.html#phu-tung">Cung cấp phụ tùng thay thế</a></li>
+        </ul>
+      </li>
+
+      <li><div class="mobile-nav-row"><a href="du-an.html">Dự án</a></div></li>
+
+      <li>
+        <div class="mobile-nav-row">
+          <a href="tin-tuc.html">Tin tức</a>
+          <button class="mobile-sub-toggle" aria-label="Mở danh mục con"><i class="fas fa-chevron-down"></i></button>
+        </div>
+        <ul class="mobile-subnav">
+          <li><a href="tin-tuc.html#doanh-nghiep">Tin tức doanh nghiệp</a></li>
+          <li><a href="tin-tuc.html#nganh">Tin tức ngành</a></li>
+          <li><a href="tin-tuc.html#bao-chi">Thông cáo báo chí</a></li>
+        </ul>
+      </li>
+
+      <li><div class="mobile-nav-row"><a href="lien-he.html">Liên hệ</a></div></li>
+    </ul>
+
+    <div class="mobile-drawer-lang">
+      <button class="active">VN</button>
+      <button>EN</button>
+    </div>
+  </nav>
+
+  <!-- LIGHTBOX XEM ẢNH LỚN -->
+  <div class="img-lightbox">
+    <button class="img-lightbox-close" aria-label="Đóng"><i class="fas fa-times"></i></button>
+    <img src="" alt="">
+  </div>
+
+  <script src="js/main.js"></script>
   </body>
 </html>

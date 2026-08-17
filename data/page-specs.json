@@ -2,20 +2,32 @@
   "_source": "1_Cấu trúc Website _ CT WELD.xlsx — Sheet 3 \"Cấu trúc trang danh mục\" (13 dòng)",
   "_purpose": "Bảng yêu cầu gốc cho từng trang danh mục, giữ nguyên STT trong Excel để đối chiếu khi dựng WordPress.",
   "_note_stt": "STT trong Excel nhảy cách (1, 2, 3, 5, 6, 8, 9, 11, 12, 13, 14, 15) — thiếu 4, 7, 10. Đây là lỗi đánh số trong file gốc, không thiếu nội dung.",
-
   "pages": [
     {
       "stt": "1.0",
       "name": "Về chúng tôi",
       "level": 1,
-      "requirements": ["Hiển thị bài viết trong danh mục Về chúng tôi dưới dạng bài viết thông tin"],
+      "requirements": [
+        "Hiển thị bài viết trong danh mục Về chúng tôi dưới dạng bài viết thông tin"
+      ],
       "content_source": "https://docs.google.com/document/d/1JKgajDPU4MGS6AJQ2uh0kzHDqn5YLH5ryfNAkFCplvk/edit?tab=t.0#heading=h.3prulaazym1k",
       "content_access": "DENIED (HTTP 401)",
       "resource_source": "https://drive.google.com/drive/folders/1ToiKa8gyeelpC1-7tMlCZ4V_xWNKn860",
       "resource_access": "OK — 2 ảnh (1_Tầm nhìn, 2_Sứ mệnh)",
       "reference_url": null,
       "data_ref": "about.json",
-      "demo_file": "ve-chung-toi.html"
+      "demo_file": "ve-chung-toi.html",
+      "mockup": {
+        "desktop": [
+          "docs/mockup/p1-vechungtoi-D-a-intro.png",
+          "docs/mockup/p1-vechungtoi-D-b-tamnhin.png",
+          "docs/mockup/p1-vechungtoi-D-c-sumenh.png",
+          "docs/mockup/p1-vechungtoi-D-d-giatricotloi.png",
+          "docs/mockup/p1-vechungtoi-D-e-nhacungcap.png"
+        ],
+        "mobile": []
+      },
+      "demo_status": "đã cập nhật khớp mockup 17/08/2026"
     },
     {
       "stt": "2.0",
@@ -32,7 +44,20 @@
       "resource_access": "OK — 1 ảnh (hàn 3 trong 1)",
       "reference_url": "https://automech.vn/san-pham/",
       "data_ref": "products.json → archive, product-categories.json",
-      "demo_file": "san-pham.html"
+      "demo_file": "san-pham.html",
+      "mockup": {
+        "desktop": [
+          "docs/mockup/p2-sanpham-c1-D-a.png",
+          "docs/mockup/p2-sanpham-c1-D-b.png",
+          "docs/mockup/p2-sanpham-c1-D-c.png"
+        ],
+        "mobile": [
+          "docs/mockup/p2-sanpham-c1-M-a.png",
+          "docs/mockup/p2-sanpham-c1-M-b.png",
+          "docs/mockup/p2-sanpham-c1-M-c.png"
+        ]
+      },
+      "demo_status": "đã cập nhật khớp mockup 17/08/2026"
     },
     {
       "stt": "3.0",
@@ -46,18 +71,40 @@
       "content_access": "OK — 2 tài liệu sản phẩm đầy đủ",
       "reference_url": "https://automech.vn/cobot-estun-co-arc-350/",
       "data_ref": "products.json → products[]",
-      "demo_file": "san-pham-chi-tiet.html"
+      "demo_file": "san-pham-chi-tiet.html",
+      "mockup": {
+        "desktop": [
+          "docs/mockup/p3-sanpham-c2-D-a.png",
+          "docs/mockup/p3-sanpham-c2-D-b.png"
+        ],
+        "mobile": [
+          "docs/mockup/p3-sanpham-c2-M-a.png",
+          "docs/mockup/p3-sanpham-c2-M-b.png"
+        ]
+      },
+      "demo_status": "đã cập nhật khớp mockup 17/08/2026"
     },
     {
       "stt": "5.0",
       "name": "Trang giải pháp cấp 1",
       "level": 1,
-      "requirements": ["Cấu trúc hiển thị bao gồm danh sách các giải pháp doanh nghiệp cung ứng"],
+      "requirements": [
+        "Cấu trúc hiển thị bao gồm danh sách các giải pháp doanh nghiệp cung ứng"
+      ],
       "content_source": "https://docs.google.com/document/d/1VBRd2lBAot1leA6fn0N1w2CKKrkYqRenyMMelxqHnrM/edit",
       "content_access": "OK — đã lấy SAPO",
       "reference_url": "https://automech.vn/giai-phap/",
       "data_ref": "solutions.json",
-      "demo_file": "giai-phap.html"
+      "demo_file": "giai-phap.html",
+      "mockup": {
+        "desktop": [
+          "docs/mockup/p5-7-9-cap1-D.png"
+        ],
+        "mobile": [
+          "docs/mockup/p5-7-9-cap1-M.png"
+        ]
+      },
+      "demo_status": "đã cập nhật khớp mockup 17/08/2026"
     },
     {
       "stt": "6.0",
@@ -71,18 +118,38 @@
       "content_access": "MISSING — chưa có tài liệu nội dung",
       "reference_url": "https://automech.vn/phu-tro-o-to/",
       "data_ref": "solutions.json → solutions[]",
-      "demo_file": null
+      "demo_file": "giai-phap-chi-tiet.html",
+      "mockup": {
+        "desktop": [
+          "docs/mockup/p6-8-10-cap2-D.png"
+        ],
+        "mobile": [
+          "docs/mockup/p6-8-10-cap2-M.png"
+        ]
+      },
+      "demo_status": "template đã dựng theo mockup; nội dung là draft, chờ tài liệu chính thức"
     },
     {
       "stt": "8.0",
       "name": "Trang dịch vụ cấp 1",
       "level": 1,
-      "requirements": ["Cấu trúc hiển thị tương tự trang giải pháp cấp 1"],
+      "requirements": [
+        "Cấu trúc hiển thị tương tự trang giải pháp cấp 1"
+      ],
       "content_source": "https://docs.google.com/document/d/1hetkjJ-rDB8mp_krHKSxL5gK9amOO8Q_RmvW-9kWP2s/edit",
       "content_access": "OK — đã lấy SAPO",
       "reference_url": "https://automech.vn/giai-phap/",
       "data_ref": "services.json",
-      "demo_file": "dich-vu.html"
+      "demo_file": "dich-vu.html",
+      "mockup": {
+        "desktop": [
+          "docs/mockup/p5-7-9-cap1-D.png"
+        ],
+        "mobile": [
+          "docs/mockup/p5-7-9-cap1-M.png"
+        ]
+      },
+      "demo_status": "đã cập nhật khớp mockup 17/08/2026"
     },
     {
       "stt": "9.0",
@@ -96,18 +163,38 @@
       "content_access": "MISSING — chưa có tài liệu nội dung",
       "reference_url": "https://automech.vn/phu-tro-o-to/",
       "data_ref": "services.json → services[]",
-      "demo_file": null
+      "demo_file": "dich-vu-chi-tiet.html",
+      "mockup": {
+        "desktop": [
+          "docs/mockup/p6-8-10-cap2-D.png"
+        ],
+        "mobile": [
+          "docs/mockup/p6-8-10-cap2-M.png"
+        ]
+      },
+      "demo_status": "template đã dựng theo mockup; nội dung là draft, chờ tài liệu chính thức"
     },
     {
       "stt": "11.0",
       "name": "Trang dự án cấp 1",
       "level": 1,
-      "requirements": ["Cấu trúc hiển thị tương tự trang giải pháp cấp 1"],
+      "requirements": [
+        "Cấu trúc hiển thị tương tự trang giải pháp cấp 1"
+      ],
       "content_source": "https://docs.google.com/document/d/1Ku953wE3zibbqnAVc_wUvhwkQ1MkVETx1_OQpLBHcoU/edit",
       "content_access": "OK — đã lấy SAPO",
       "reference_url": "https://automech.vn/giai-phap/",
       "data_ref": "projects.json",
-      "demo_file": "du-an.html"
+      "demo_file": "du-an.html",
+      "mockup": {
+        "desktop": [
+          "docs/mockup/p5-7-9-cap1-D.png"
+        ],
+        "mobile": [
+          "docs/mockup/p5-7-9-cap1-M.png"
+        ]
+      },
+      "demo_status": "đã cập nhật khớp mockup 17/08/2026"
     },
     {
       "stt": "12.0",
@@ -121,47 +208,98 @@
       "content_access": "MISSING — chưa có tài liệu nội dung",
       "reference_url": "https://automech.vn/phu-tro-o-to/",
       "data_ref": "projects.json → projects[]",
-      "demo_file": null
+      "demo_file": "du-an-chi-tiet.html",
+      "mockup": {
+        "desktop": [
+          "docs/mockup/p6-8-10-cap2-D.png"
+        ],
+        "mobile": [
+          "docs/mockup/p6-8-10-cap2-M.png"
+        ]
+      },
+      "demo_status": "template đã dựng theo mockup; nội dung là draft, chờ tài liệu chính thức"
     },
     {
       "stt": "13.0",
       "name": "Trang tin tức cấp 1",
       "level": 1,
-      "requirements": ["Chia cấu trúc hiển thị theo 3 cột x 4 hàng trên 1 trang, tương tự cho các danh mục nhỏ hơn"],
+      "requirements": [
+        "Chia cấu trúc hiển thị theo 3 cột x 4 hàng trên 1 trang, tương tự cho các danh mục nhỏ hơn"
+      ],
       "content_source": null,
       "content_access": "MISSING — không có Google Docs SAPO cho trang tin tức",
       "reference_url": "https://automech.vn/tin-tuc/",
       "data_ref": "news.json",
-      "demo_file": "tin-tuc.html"
+      "demo_file": "tin-tuc.html",
+      "mockup": {
+        "desktop": [
+          "docs/mockup/p13-tintuc-c1-D.png"
+        ],
+        "mobile": [
+          "docs/mockup/p13-tintuc-c1-M.png"
+        ]
+      },
+      "demo_status": "đã cập nhật khớp mockup 17/08/2026"
     },
     {
       "stt": "14.0",
       "name": "Trang tin tức cấp 2",
       "level": 2,
-      "requirements": ["Cấu trúc bài viết hiển thị tương tự nguồn tham khảo, không bổ sung gì thêm"],
+      "requirements": [
+        "Cấu trúc bài viết hiển thị tương tự nguồn tham khảo, không bổ sung gì thêm"
+      ],
       "content_source": null,
       "content_access": "MISSING — chưa có nội dung bài viết thật",
       "reference_url": "https://automech.vn/automech-va-fusheng-vietnam-ky-ket-hop-tac-chien-luoc/",
       "data_ref": "news.json → posts[]",
-      "demo_file": null
+      "demo_file": "tin-tuc-chi-tiet.html",
+      "mockup": {
+        "desktop": [
+          "docs/mockup/p14-tintuc-c2-D-a.png",
+          "docs/mockup/p14-tintuc-c2-D-b.png"
+        ],
+        "mobile": [
+          "docs/mockup/p14-tintuc-c2-M-a.png",
+          "docs/mockup/p14-tintuc-c2-M-b.png"
+        ]
+      },
+      "demo_status": "template đã dựng theo mockup; nội dung là draft, chờ tài liệu chính thức"
     },
     {
       "stt": "15.0",
       "name": "Liên hệ",
       "level": 1,
-      "requirements": ["Cấu trúc hiển thị tương tự nguồn tham khảo, không bổ sung gì thêm"],
+      "requirements": [
+        "Cấu trúc hiển thị tương tự nguồn tham khảo, không bổ sung gì thêm"
+      ],
       "content_source": null,
       "content_access": "N/A — dùng thông tin công ty ở site.json",
       "reference_url": "https://automech.vn/lien-he/",
       "data_ref": "site.json → company, forms.json → consultation",
-      "demo_file": "lien-he.html"
+      "demo_file": "lien-he.html",
+      "mockup": {
+        "desktop": [
+          "docs/mockup/p15-lienhe-D-a.png",
+          "docs/mockup/p15-lienhe-D-b.png",
+          "docs/mockup/p15-lienhe-D-c.png"
+        ],
+        "mobile": [
+          "docs/mockup/p15-lienhe-M-a.png",
+          "docs/mockup/p15-lienhe-M-b.png",
+          "docs/mockup/p15-lienhe-M-c.png"
+        ]
+      },
+      "demo_status": "đã cập nhật khớp mockup 17/08/2026"
     }
   ],
-
   "summary": {
     "total_pages_specified": 12,
     "content_ready": 5,
     "content_missing": 6,
-    "content_access_denied": 1
-  }
+    "content_access_denied": 1,
+    "templates_built": 13,
+    "templates_missing": 0
+  },
+  "_mockup_note": "Cột G/H của Sheet 3 chứa 24 ảnh mockup đã giải nén ra docs/mockup/. Kết quả đối chiếu demo vs mockup: docs/audit-mockup.md. Lưu ý các trang cấp 1 (5.0/8.0/11.0) dùng CHUNG 1 mockup, các trang cấp 2 (6.0/9.0/12.0) cũng dùng CHUNG 1 mockup.",
+  "_mockup_compliance": "Toàn bộ 12 trang trong Sheet 3 đã có template và đã đối chiếu với ảnh mockup. Chi tiết: docs/audit-mockup.md"
 }

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Giải Pháp Gia Công Kết Cấu Thép & Tự Động Hoá | CTWELD</title>
-  <meta name="description" content="Giải pháp toàn diện gia công kết cấu thép dầm H/I/BOX, tự động hoá hàn Robot và giải pháp công nghiệp xây dựng từ CTWELD.">
+  <title>Quy Trình Kiểm Soát Biến Dạng Hàn Khi Hàn Dầm H Khổ Lớn | CTWELD</title>
+  <meta name="description" content="Phân tích nguyên nhân vênh cánh, cong bụng dầm H và cách cài đặt thông số dòng hàn SAW phù hợp để giảm khối lượng nắn thẳng sau hàn.">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -89,7 +89,7 @@
           </li>
 
           <!-- IV. Giải pháp with Dropdown -->
-          <li class="has-dropdown active">
+          <li class="has-dropdown ">
             <a href="giai-phap.html">Giải pháp <i class="fas fa-chevron-down nav-arrow"></i></a>
             <ul class="dropdown-menu">
               <li><a href="giai-phap.html#gia-cong-kct">Giải pháp gia công kết cấu thép</a></li>
@@ -109,7 +109,7 @@
             </ul>
           </li>
 
-          <li class=""><a href="du-an.html">Dự án</a></li>
+          <li class="active"><a href="du-an.html">Dự án</a></li>
 
           <!-- VII. Tin tức with Dropdown -->
           <li class="has-dropdown ">
@@ -137,61 +137,40 @@
   <!-- BREADCRUMB BAR -->
   <div class="breadcrumb-bar">
     <div class="container">
-      <div class="breadcrumb"><a href="index.html">Trang Chủ</a> / <span>Giải Pháp</span></div>
+      <div class="breadcrumb"><a href="index.html">Trang Chủ</a> / <a href="tin-tuc.html">Tin Tức</a> / <span>Kiểm Soát Biến Dạng Hàn Dầm H</span></div>
     </div>
   </div>
 
-  <!-- LEVEL-1 ARCHIVE (theo mockup p5-7-9-cap1-D: tiêu đề canh giữa + intro + grid 3 cột ảnh, chú thích in hoa) -->
-  <section class="archive-section">
-    <div class="container">
-      <h1 class="archive-page-title">GIẢI PHÁP</h1>
+  <!-- LEVEL-2 ARTICLE (theo mockup p14-tintuc-c2-D) -->
+  <section class="article-section">
+    <div class="container container-narrow">
+      <h1 class="article-page-title">QUY TRÌNH KIỂM SOÁT BIẾN DẠNG HÀN KHI HÀN DẦM H KHỔ LỚN</h1>
 
-      <div class="archive-intro">
-        <h2 class="section-title-underline">Giải pháp của chúng tôi</h2>
-        <p>CTWELD mang đến các giải pháp cơ khí và tự động hóa toàn diện, từ tư vấn thiết kế, gia công cơ khí chính xác đến hệ thống kết cấu thép và hàn tự động ứng dụng công nghệ tiên tiến. Mỗi giải pháp được xây dựng dựa trên nhu cầu thực tế của từng doanh nghiệp, giúp tối ưu quy trình sản xuất, nâng cao năng suất và độ chính xác.</p>
-      </div>
-
-      <div class="grid3">
-        <a class="grid3-card" href="giai-phap-chi-tiet.html">
-          <div class="grid3-thumb"><img src="images/han-3-trong-1.png" alt="GIA CÔNG KẾT CẤU THÉP"></div>
-          <h3 class="grid3-caption">GIA CÔNG KẾT CẤU THÉP</h3>
-        </a>
-
-        <a class="grid3-card" href="giai-phap-chi-tiet.html">
-          <div class="grid3-thumb"><img src="images/su-menh.jpg" alt="TỰ ĐỘNG HOÁ HÀN"></div>
-          <h3 class="grid3-caption">TỰ ĐỘNG HOÁ HÀN</h3>
-        </a>
-
-        <a class="grid3-card" href="giai-phap-chi-tiet.html">
-          <div class="grid3-thumb"><img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=700&q=80" alt="CÔNG NGHIỆP XÂY DỰNG"></div>
-          <h3 class="grid3-caption">CÔNG NGHIỆP XÂY DỰNG</h3>
-        </a>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="archive-form-section">
-    <div class="container">
-      <!-- FORM ĐĂNG KÝ TƯ VẤN CUỐI TRANG GIẢI PHÁP CHI TIẾT (CLEAN LIGHT THEME) -->
-      <div id="form-tu-van-gp" style="background: var(--color-bg-subtle); color: var(--color-text-heading); padding: 48px; border-radius: var(--radius-lg); border: 1px solid var(--color-border);">
-        <div style="max-width: 640px; margin: 0 auto; text-align: center;">
-          <div class="section-header" style="margin-bottom: 12px;">
-            <h2 class="section-title" style="font-size: 2rem;">Đăng Ký Nhận <span class="text-orange">Giải Pháp Kỹ Thuật Tối Ưu</span></h2>
-          </div>
-          <p style="color: var(--color-text-muted); margin-bottom: 24px;">Nhận bản khảo sát mặt bằng và bài toán kinh tế tính điểm hòa vốn đầu tư từ CTWELD.</p>
-
-          <form id="solutionForm">
-            <div class="form-group"><input type="text" class="form-input" placeholder="Họ và tên của bạn *" required></div>
-            <div class="form-group"><input type="tel" class="form-input" placeholder="Số điện thoại / Zalo *" required></div>
-            <div class="form-group"><input type="text" class="form-input" placeholder="Tên Doanh Nghiệp / Mô hình xưởng"></div>
-            <div class="form-group">
-              <textarea class="form-textarea" rows="3" placeholder="Mô tả nhu cầu giải pháp cần khảo sát..."></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary" style="width: 100%;"><i class="fas fa-paper-plane"></i> Gửi Yêu Cầu Tư Vấn Giải Pháp</button>
-          </form>
+      <div class="article-date-badge"><span>Th8 14, 2026</span></div>
+      <div class="article-meta-row">
+        <div class="article-author"><i class="fas fa-user"></i> <strong>Tác giả:</strong> Kỹ sư CTWELD</div>
+        <div class="article-share">
+          <span>Share post:</span>
+          <a href="#" aria-label="Chia sẻ Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Chia sẻ Zalo"><i class="fas fa-comment-dots"></i></a>
+          <a href="#" aria-label="Chia sẻ Twitter"><i class="fab fa-twitter"></i></a>
         </div>
       </div>
+
+      <p>Biến dạng sau hàn là vấn đề kinh điển khi gia công dầm chữ H khổ lớn. Nhiệt lượng tập trung dọc đường hàn làm kim loại giãn nở rồi co lại không đều, sinh ra ứng suất dư khiến cánh dầm bị vênh và bụng dầm bị cong. Hệ quả là khối lượng nắn thẳng sau hàn tăng lên, kéo theo thời gian và chi phí.</p>
+
+      <p>Có ba nhóm nguyên nhân chính. Thứ nhất là <strong>năng lượng đường hàn quá cao</strong> — dòng hàn lớn kết hợp tốc độ hàn chậm làm vùng ảnh hưởng nhiệt mở rộng. Thứ hai là <strong>trình tự hàn không đối xứng</strong>, khiến co ngót dồn về một phía. Thứ ba là <strong>gá kẹp không đủ cứng</strong> hoặc lực kẹp không đều trên toàn chiều dài dầm.</p>
+
+      <p>Với hàn ngập dây dưới lớp thuốc (SAW), cách hiệu quả nhất là cân bằng lại bộ ba dòng hàn – điện áp – tốc độ hàn thay vì chỉ hạ dòng. Hạ dòng đơn thuần sẽ làm mối hàn không ngấu đủ chiều sâu, không đạt kiểm định siêu âm. Thực tế cho thấy nên giữ dòng ở mức đủ ngấu rồi tăng tốc độ hàn để giảm năng lượng đường, đồng thời chia thành nhiều lớp mỏng thay vì một lớp dày.</p>
+
+      <p>Về trình tự, nên hàn đối xứng luân phiên hai bên bụng dầm để co ngót triệt tiêu lẫn nhau, và hàn từ giữa dầm ra hai đầu thay vì hàn liên tục theo một chiều. Cụm kẹp bụng dầm cần đảm bảo lực kẹp đều — đây là lý do thiết kế truyền động 8 lô kẹp qua một trục vít me thuỷ lực chính cho kết quả ổn định hơn so với các cụm kẹp độc lập.</p>
+
+      <p>Cuối cùng, việc lưu lại thông số hàn theo từng ca và từng người vận hành cho phép truy ngược khi phát hiện lô dầm biến dạng bất thường. Đây là dữ liệu quản lý chất lượng mà các trạm hàn tích hợp có hệ giám sát kết nối Ethernet cung cấp được, còn hàn bán tự động thì không.</p>
+
+      <figure class="article-figure">
+        <img src="images/su-menh.jpg" alt="Hàn dầm chữ H trên dây chuyền tự động — kiểm soát năng lượng đường hàn để giảm biến dạng">
+        <figcaption>Hàn dầm chữ H trên dây chuyền tự động — kiểm soát năng lượng đường hàn để giảm biến dạng</figcaption>
+      </figure>
     </div>
   </section>
 

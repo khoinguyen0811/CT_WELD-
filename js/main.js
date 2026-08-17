@@ -1,7 +1,8 @@
 /* ==========================================================================
    CTWELD - MAIN JAVASCRIPT LOGIC
-   Includes: Hero Slider (autoplay 8s), Projects 3.5-Card Slider, News 3.5-Card Autoplay Slider,
-   About Us Media Gallery Thumbnails, Consultation Modal Form, & Mobile Navigation.
+   Includes: Hero Slider (autoplay 8s), Featured-Products Carousel, Projects 3.5-Card Slider
+   + Tab Switcher, Partner Marquee Arrows, Consultation Modal Form, Image Lightbox,
+   & Mobile Drawer Menu (accordion).
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -77,131 +78,54 @@ document.addEventListener('DOMContentLoaded', function() {
     startHeroAutoplay();
   }
 
-  // 2. FEATURED PROJECTS CAROUSEL (3.5 CARDS PER VIEW)
+  // 2. FEATURED PROJECTS CAROUSEL (3.5 thẻ/khung desktop — mockup home-D-6.0)
   const projTrack = document.querySelector('.projects-track');
   const projPrev = document.querySelector('.proj-prev');
   const projNext = document.querySelector('.proj-next');
   let projIndex = 0;
 
   if (projTrack && projPrev && projNext) {
-    const projCards = projTrack.querySelectorAll('.project-card');
-    const maxProjIndex = Math.max(0, projCards.length - 3);
+    const projCards = projTrack.querySelectorAll('.proj-card');
+
+    function projPerView() {
+      if (window.innerWidth <= 768) return 1;
+      if (window.innerWidth <= 1024) return 2;
+      return 3;
+    }
+
+    function updateProjSlider() {
+      if (!projCards.length) return;
+      const maxIdx = Math.max(0, projCards.length - projPerView());
+      if (projIndex > maxIdx) projIndex = maxIdx;
+      if (projIndex < 0) projIndex = 0;
+
+      const gap = parseFloat(getComputedStyle(projTrack).gap) || 0;
+      const cardW = projCards[0].getBoundingClientRect().width;
+      projTrack.style.transform = `translateX(-${projIndex * (cardW + gap)}px)`;
+
+      projPrev.disabled = projIndex === 0;
+      projNext.disabled = projIndex === maxIdx;
+    }
 
     projNext.addEventListener('click', () => {
-      if (projIndex < maxProjIndex) {
-        projIndex++;
-      } else {
-        projIndex = 0;
-      }
+      const maxIdx = Math.max(0, projCards.length - projPerView());
+      projIndex = projIndex < maxIdx ? projIndex + 1 : 0;
       updateProjSlider();
     });
 
     projPrev.addEventListener('click', () => {
-      if (projIndex > 0) {
-        projIndex--;
-      } else {
-        projIndex = maxProjIndex;
-      }
+      const maxIdx = Math.max(0, projCards.length - projPerView());
+      projIndex = projIndex > 0 ? projIndex - 1 : maxIdx;
       updateProjSlider();
     });
 
-    function updateProjSlider() {
-      const cardWidth = projCards[0].offsetWidth + 24;
-      projTrack.style.transform = `translateX(-${projIndex * cardWidth}px)`;
-    }
+    window.addEventListener('resize', updateProjSlider);
+    updateProjSlider();
   }
 
-  // 3. NEWS CAROUSEL (3.5 CARDS PER VIEW, MATCHED WITH PROJECTS SLIDER)
-  const newsTrack = document.querySelector('.news-track');
-  const newsPrev = document.querySelector('.news-prev');
-  const newsNext = document.querySelector('.news-next');
-  let newsIndex = 0;
-  let newsAutoPlayTimer = null;
-
-  if (newsTrack && newsPrev && newsNext) {
-    const newsCards = newsTrack.querySelectorAll('.news-card');
-    const maxNewsIndex = Math.max(0, newsCards.length - 3);
-
-    function updateNewsSlider() {
-      if (!newsCards.length) return;
-      const cardWidth = newsCards[0].offsetWidth + 24;
-      newsTrack.style.transform = `translateX(-${newsIndex * cardWidth}px)`;
-    }
-
-    function nextNews() {
-      if (newsIndex < maxNewsIndex) {
-        newsIndex++;
-      } else {
-        newsIndex = 0;
-      }
-      updateNewsSlider();
-    }
-
-    function prevNews() {
-      if (newsIndex > 0) {
-        newsIndex--;
-      } else {
-        newsIndex = maxNewsIndex;
-      }
-      updateNewsSlider();
-    }
-
-    newsNext.addEventListener('click', () => {
-      nextNews();
-      resetNewsAutoplay();
-    });
-
-    newsPrev.addEventListener('click', () => {
-      prevNews();
-      resetNewsAutoplay();
-    });
-
-    function startNewsAutoplay() {
-      stopNewsAutoplay();
-      newsAutoPlayTimer = setInterval(nextNews, 4000);
-    }
-
-    function stopNewsAutoplay() {
-      if (newsAutoPlayTimer) {
-        clearInterval(newsAutoPlayTimer);
-        newsAutoPlayTimer = null;
-      }
-    }
-
-    function resetNewsAutoplay() {
-      startNewsAutoplay();
-    }
-
-    const newsWrapper = document.querySelector('.news-slider-wrapper');
-    if (newsWrapper) {
-      newsWrapper.addEventListener('mouseenter', stopNewsAutoplay);
-      newsWrapper.addEventListener('mouseleave', startNewsAutoplay);
-    }
-
-    startNewsAutoplay();
-  }
-
-  // 4. ABOUT US INTERACTIVE MEDIA GALLERY (PRODUCT DETAIL STYLE THUMBNAIL GALLERY)
-  const aboutThumbs = document.querySelectorAll('.about-thumb');
-  const aboutMainImg = document.getElementById('aboutMainImg');
-
-  if (aboutThumbs.length && aboutMainImg) {
-    aboutThumbs.forEach(thumb => {
-      thumb.addEventListener('click', function() {
-        const newImgSrc = this.getAttribute('data-img');
-        if (newImgSrc && aboutMainImg.src !== newImgSrc) {
-          aboutMainImg.style.opacity = '0.2';
-          setTimeout(() => {
-            aboutMainImg.src = newImgSrc;
-            aboutMainImg.style.opacity = '1';
-          }, 150);
-        }
-
-        aboutThumbs.forEach(t => t.classList.remove('active'));
-        this.classList.add('active');
-      });
-    });
-  }
+  // (Đã bỏ) News carousel + About thumbnail gallery:
+  // Mục 8.0 trang chủ chuyển sang grid 3 thẻ và mục 3.0 dùng 1 ảnh đơn theo mockup,
+  // nên không còn phần tử .news-track / .about-thumb trên bất kỳ trang nào.
 
   // 5. CONSULTATION MODAL FORM LOGIC
   const modalOverlay = document.querySelector('.modal-overlay');
@@ -241,14 +165,148 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // 6. MOBILE NAVIGATION TOGGLE
+  // 6. MOBILE DRAWER MENU (drawer trượt từ trái + accordion danh mục con)
   const mobileToggle = document.querySelector('.mobile-toggle');
-  const navLinks = document.querySelector('.nav-links-list');
+  const drawer = document.querySelector('.mobile-drawer');
+  const drawerOverlay = document.querySelector('.mobile-drawer-overlay');
+  const drawerClose = document.querySelector('.mobile-drawer-close');
 
-  if (mobileToggle && navLinks) {
-    mobileToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
+  function openDrawer() {
+    if (!drawer) return;
+    drawer.classList.add('open');
+    drawerOverlay.classList.add('open');
+    document.body.classList.add('drawer-open');
+  }
+
+  function closeDrawer() {
+    if (!drawer) return;
+    drawer.classList.remove('open');
+    drawerOverlay.classList.remove('open');
+    document.body.classList.remove('drawer-open');
+  }
+
+  if (mobileToggle) mobileToggle.addEventListener('click', openDrawer);
+  if (drawerClose) drawerClose.addEventListener('click', closeDrawer);
+  if (drawerOverlay) drawerOverlay.addEventListener('click', closeDrawer);
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeDrawer();
+  });
+
+  // Accordion: mở/đóng danh mục con, mỗi lần chỉ mở 1 mục
+  document.querySelectorAll('.mobile-sub-toggle').forEach(btn => {
+    btn.addEventListener('click', function () {
+      const li = this.closest('li');
+      const wasOpen = li.classList.contains('open');
+      li.parentElement.querySelectorAll(':scope > li.open').forEach(o => o.classList.remove('open'));
+      if (!wasOpen) li.classList.add('open');
     });
+  });
+
+  // 7. CAROUSEL DÒNG MÁY NỔI BẬT (3 thẻ/khung desktop, tự tính lại khi resize)
+  const prodTrack = document.querySelector('.prod-carousel-track');
+  const prodPrev = document.querySelector('.carousel-prev');
+  const prodNext = document.querySelector('.carousel-next');
+  const prodDots = document.getElementById('prodDots');
+
+  if (prodTrack && prodPrev && prodNext) {
+    const cards = prodTrack.querySelectorAll('.prod-card');
+    let prodPage = 0;
+
+    function perView() {
+      if (window.innerWidth <= 768) return 1;
+      if (window.innerWidth <= 1024) return 2;
+      return 3;
+    }
+
+    function pageCount() {
+      return Math.max(1, Math.ceil(cards.length / perView()));
+    }
+
+    function renderDots() {
+      if (!prodDots) return;
+      prodDots.innerHTML = '';
+      for (let i = 0; i < pageCount(); i++) {
+        const b = document.createElement('button');
+        b.setAttribute('aria-label', 'Trang ' + (i + 1));
+        if (i === prodPage) b.classList.add('active');
+        b.addEventListener('click', () => { prodPage = i; updateProd(); });
+        prodDots.appendChild(b);
+      }
+    }
+
+    function updateProd() {
+      const n = perView();
+      const max = pageCount() - 1;
+      if (prodPage > max) prodPage = max;
+      if (prodPage < 0) prodPage = 0;
+
+      // dịch chuyển theo số thẻ đã đi qua, tính cả gap
+      const gap = parseFloat(getComputedStyle(prodTrack).gap) || 0;
+      const cardW = cards[0].getBoundingClientRect().width;
+      prodTrack.style.transform = `translateX(-${prodPage * n * (cardW + gap)}px)`;
+
+      prodPrev.disabled = prodPage === 0;
+      prodNext.disabled = prodPage === max;
+      renderDots();
+    }
+
+    prodPrev.addEventListener('click', () => { prodPage--; updateProd(); });
+    prodNext.addEventListener('click', () => { prodPage++; updateProd(); });
+    window.addEventListener('resize', updateProd);
+    updateProd();
+  }
+
+  // 8. TAB DỰ ÁN / KHUYẾN MẠI
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', function () {
+      const key = this.getAttribute('data-tab');
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      document.querySelectorAll('.tab-panel').forEach(p => {
+        p.classList.toggle('active', p.getAttribute('data-panel') === key);
+      });
+    });
+  });
+
+  // 9. MŨI TÊN BĂNG LOGO NHÀ CUNG CẤP (tạm dừng chạy tự động khi bấm)
+  const marqueeViewport = document.querySelector('.marquee-viewport');
+  if (marqueeViewport) {
+    const contents = marqueeViewport.querySelectorAll('.marquee-content');
+    document.querySelectorAll('.marquee-arrow').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const dir = btn.classList.contains('marquee-next') ? 1 : -1;
+        contents.forEach(c => { c.style.animationPlayState = 'paused'; });
+        marqueeViewport.scrollBy({ left: dir * 240, behavior: 'smooth' });
+      });
+    });
+  }
+
+  // 10. LIGHTBOX XEM ẢNH LỚN (ảnh sản phẩm cấp 2)
+  const lightbox = document.querySelector('.img-lightbox');
+  if (lightbox) {
+    const lbImg = lightbox.querySelector('img');
+    const lbClose = lightbox.querySelector('.img-lightbox-close');
+
+    document.querySelectorAll('.prod-zoom-btn').forEach(btn => {
+      btn.addEventListener('click', function () {
+        const main = this.closest('.prod-gallery-main').querySelector('img');
+        if (!main) return;
+        lbImg.src = main.src;
+        lbImg.alt = main.alt || '';
+        lightbox.classList.add('open');
+        document.body.classList.add('drawer-open');
+      });
+    });
+
+    function closeLightbox() {
+      lightbox.classList.remove('open');
+      document.body.classList.remove('drawer-open');
+    }
+
+    lbClose.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
   }
 
 });

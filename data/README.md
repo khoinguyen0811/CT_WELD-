@@ -4,6 +4,11 @@ Toàn bộ phần "data" của bản demo được tách ra thành JSON tại th
 
 Nguồn: `1_Cấu trúc Website _ CT WELD.xlsx` (3 sheet) + các Google Docs / Google Drive được liên kết trong file đó.
 
+> **Cập nhật 17/08/2026:** đã đối chiếu demo với **39 ảnh mockup** nhúng trong file Excel và sửa toàn bộ
+> 16 hạng mục lệch, gồm cả việc bổ sung **responsive** (trước đó CSS không có `@media` nào) và **4 template
+> trang cấp 2** còn thiếu. Chi tiết: [docs/audit-mockup.md](../docs/audit-mockup.md).
+> Ảnh mockup gốc: [docs/mockup/](../docs/mockup/).
+
 ## Danh sách file
 
 | File | Nội dung | Map sang WordPress |
@@ -44,9 +49,11 @@ Mỗi khối dữ liệu đều có trường `content_status`:
 
 | File | Kích thước | Nội dung thực tế | Đang dùng ở |
 |---|---|---|---|
-| `images/tam-nhin.jpg` | 2752×1536 | Ảnh chụp **trụ sở CTWELD** (biển hiệu Khai Sơn Town) | `ve-chung-toi.html` khối giới thiệu, `index.html` thumb 3 |
-| `images/su-menh.jpg` | 1000×632 | Ảnh chụp **dây chuyền robot hàn** trong nhà máy | `index.html` ảnh chính khối Về chúng tôi + thumb 1 |
-| `images/han-3-trong-1.png` | 1126×586 | Ảnh render **máy hàn dầm H 3 trong 1 PHJ-0618CT2M** | `index.html` thumb 2 |
+| `images/tam-nhin.jpg` | 2752×1536 | Ảnh chụp **trụ sở CTWELD** (biển hiệu Khai Sơn Town) | `ve-chung-toi.html` khối **TẦM NHÌN**, `index.html` mục 3.0, `lien-he.html` hero |
+| `images/su-menh.jpg` | 1000×632 | Ảnh chụp **dây chuyền robot hàn** trong nhà máy | `ve-chung-toi.html` khối **SỨ MỆNH**, `index.html` mục 4.0, các trang archive |
+| `images/han-3-trong-1.png` | 1126×586 | Ảnh render **máy hàn dầm H 3 trong 1 PHJ-0618CT2M** | `index.html` mục 4.0 + 5.0, `san-pham.html`, `giai-phap.html` |
+
+Vị trí dùng 2 ảnh Tầm nhìn / Sứ mệnh là **đúng theo mockup** — chúng là 2 ảnh lớn cho 2 khối zig-zag ở section "Tầm Nhìn Sứ Mệnh" trang Về chúng tôi.
 
 > Lưu ý: 2 file trên Drive đặt tên "Tầm nhìn" / "Sứ mệnh" nhưng nội dung là ảnh trụ sở và ảnh dây chuyền — không phải đồ hoạ minh hoạ tầm nhìn/sứ mệnh. Ảnh trụ sở còn hiển thị số điện thoại `0789.6?6.444` trên biển hiệu, khác cả 2 số đang dùng — cần hỏi lại khách hàng.
 
@@ -80,10 +87,23 @@ Cách gộp danh mục sản phẩm:
 - `thiet-bi-han` (Vật Tư & Phụ Tùng) → tách đôi: đồ gá Jig về **Dây chuyền kết cấu thép**, nguồn hàn Megmeet về **Robot công nghiệp**. Phần vật tư tiêu hao / phụ tùng thay thế thuộc **Dịch vụ 5.3 và 5.4**, không phải danh mục sản phẩm.
 - Cần khai báo redirect 301 khi lên WordPress — URL cũ đã ghi trong `merged_categories`.
 
+### Đã sửa vòng 2 — sau khi đọc 39 ảnh mockup (17/08/2026)
+
+| Hạng mục | Đã làm |
+|---|---|
+| **Responsive** | Thêm 6 khối `@media` + drawer mobile thật (trượt từ trái, accordion, khoá scroll, đóng bằng Esc) trên cả 13 trang |
+| **4 template thiếu** | `giai-phap-chi-tiet.html`, `dich-vu-chi-tiet.html`, `du-an-chi-tiet.html`, `tin-tuc-chi-tiet.html` |
+| **Trang Về chúng tôi** | Dựng lại đúng 4 section mockup; 2 ảnh Drive dùng đúng chỗ (2 khối zig-zag Tầm nhìn / Sứ mệnh) |
+| **Trang chủ** | Sửa cả 6 mục 3.0 → 8.0 (xem bảng chi tiết trong audit) |
+| **Sidebar tin tức** | **Bỏ** — mockup đã trả lời câu hỏi treo. Thay bằng bộ lọc pill |
+| **Form** | Chỉ còn 2 field bắt buộc (họ tên + SĐT) thay vì 8 |
+| **Trang sản phẩm** | Nhóm theo danh mục; thẻ đổi sang Hãng sản xuất/Model; cấp 2 có nút zoom + bảng 2 cột |
+
 ### Còn treo, chờ khách hàng chốt
 
-| Điểm | Excel | Demo | Ghi chú |
-|---|---|---|---|
-| Chuyên mục tin tức | 3 chuyên mục | Có thêm nhãn "TIN KỸ THUẬT" | Gộp vào "Tin tức ngành" hay mở thêm chuyên mục 7.4? |
-| Sidebar tin tức | Không đề cập | Demo có thêm sidebar | Giữ hay bỏ? |
-| SĐT trên biển hiệu | — | `0789.6?6.444` trong ảnh trụ sở | Số thứ ba, khác cả 2 số đang dùng |
+| Điểm | Ghi chú |
+|---|---|
+| Chuyên mục "TIN KỸ THUẬT" | Gộp vào "Tin tức ngành" hay mở thêm chuyên mục 7.4? |
+| Tab "Khuyến mại và sự kiện" | Có trong mockup mục 6.0, không có trong text Excel. Đang để trạng thái rỗng — cần nội dung hoặc bỏ tab |
+| SĐT trên biển hiệu | `0789.6?6.444` trong ảnh trụ sở — số thứ ba, khác cả 2 số đang dùng |
+| Nội dung draft cần duyệt | 5 giá trị cốt lõi; nội dung 4 template cấp 2; giải pháp 4.3 |

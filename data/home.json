@@ -11,7 +11,15 @@
         "sticky": true,
         "desktop": "Ghim ở đầu trang, chạy lăn theo con trỏ chuột",
         "mobile": "Chỉ hiển thị Logo + nút hamburger, mở ra toàn bộ menu bao gồm danh mục con"
-      }
+      },
+      "mockup": {
+        "desktop": null,
+        "mobile": [
+          "docs/mockup/home-M-1.0-menu-a.png",
+          "docs/mockup/home-M-1.0-menu-b.png"
+        ]
+      },
+      "mockup_compliance": "done — thêm drawer mobile trượt từ trái + accordion (mockup home-M-1.0)"
     },
     {
       "stt": "2.0",
@@ -54,7 +62,12 @@
           "placeholder": true
         }
       ],
-      "content_status": "placeholder — cần ảnh banner thật của CTWELD"
+      "content_status": "placeholder — cần ảnh banner thật của CTWELD",
+      "mockup": {
+        "desktop": "docs/mockup/home-D-2.0-banner.png",
+        "mobile": []
+      },
+      "mockup_compliance": "done — autoplay 8s"
     },
     {
       "stt": "3.0",
@@ -112,7 +125,15 @@
           }
         ],
         "content_status": "official — đã thay bằng 3 ảnh thật tải từ Google Drive của khách hàng"
-      }
+      },
+      "mockup": {
+        "desktop": "docs/mockup/home-D-3.0-ve-chung-toi.png",
+        "mobile": [
+          "docs/mockup/home-M-3.0-ve-chung-toi-a.png",
+          "docs/mockup/home-M-3.0-ve-chung-toi-b.png"
+        ]
+      },
+      "mockup_compliance": "done — 4 ô số liệu 2x2 (nhãn trên, kẻ ngang, số lớn dưới), ảnh đơn thay gallery, nút viền tròn canh giữa"
     },
     {
       "stt": "4.0",
@@ -123,7 +144,15 @@
       "heading_highlight": "Dây Chuyền Công Nghiệp",
       "subtitle": "Phân loại danh mục theo nhóm sản phẩm tiêu chuẩn phục vụ cho các nhà máy gia công kết cấu thép & tự động hoá chế tạo.",
       "data_ref": "product-categories.json",
-      "internal_note": "Đã gộp về 2 danh mục theo Excel (3.1, 3.2). Vẫn cần bổ sung đủ thông tin sản phẩm để chia danh mục con chính xác."
+      "internal_note": "Đã gộp về 2 danh mục theo Excel (3.1, 3.2). Vẫn cần bổ sung đủ thông tin sản phẩm để chia danh mục con chính xác.",
+      "mockup": {
+        "desktop": "docs/mockup/home-D-4.0-danh-muc-sp.png",
+        "mobile": [
+          "docs/mockup/home-M-4.0-danh-muc-a.png",
+          "docs/mockup/home-M-4.0-danh-muc-b.png"
+        ]
+      },
+      "mockup_compliance": "done — card có danh sách sản phẩm bên trong + \"Xem thêm +\""
     },
     {
       "stt": "5.0",
@@ -143,7 +172,14 @@
         "label": "Xem Tất Cả Sản Phẩm",
         "url": "san-pham.html"
       },
-      "internal_note": "Cần bổ sung tất cả thông tin sản phẩm để chia danh mục phù hợp"
+      "internal_note": "Cần bổ sung tất cả thông tin sản phẩm để chia danh mục phù hợp",
+      "mockup": {
+        "desktop": "docs/mockup/home-D-5.0-dong-may-noi-bat.png",
+        "mobile": [
+          "docs/mockup/home-M-5.0-6.0-may-duan.png"
+        ]
+      },
+      "mockup_compliance": "done — carousel 3 thẻ, mũi tên tròn đè hai bên + dot, thẻ hiện Hãng sản xuất/Model"
     },
     {
       "stt": "6.0",
@@ -172,7 +208,14 @@
         "url": "du-an.html"
       },
       "reference_url": "https://weldcom.vn/",
-      "internal_note": "Cần bổ sung thông tin các dự án đã triển khai"
+      "internal_note": "Cần bổ sung thông tin các dự án đã triển khai",
+      "mockup": {
+        "desktop": "docs/mockup/home-D-6.0-du-an-noi-bat.png",
+        "mobile": [
+          "docs/mockup/home-M-5.0-6.0-may-duan.png"
+        ]
+      },
+      "mockup_compliance": "done — tab \"Dự án | Khuyến mại và sự kiện\", điều khiển góc trên phải, thẻ bỏ badge/địa điểm"
     },
     {
       "stt": "7.0",
@@ -189,7 +232,14 @@
       },
       "data_ref": "partners.json",
       "reference_url": "https://weldcom.vn/",
-      "internal_note": "Cần bổ sung thông tin danh sách các nhà cung cấp"
+      "internal_note": "Cần bổ sung thông tin danh sách các nhà cung cấp",
+      "mockup": {
+        "desktop": "docs/mockup/home-D-7.0-nha-cung-cap.png",
+        "mobile": [
+          "docs/mockup/home-D-7.0-nha-cung-cap.png"
+        ]
+      },
+      "mockup_compliance": "done — thêm mũi tên hai bên băng logo"
     },
     {
       "stt": "8.0",
@@ -216,24 +266,35 @@
       "cta": {
         "label": "Xem Tất Cả Bài Viết Tin Tức",
         "url": "tin-tuc.html"
-      }
+      },
+      "mockup": {
+        "desktop": "docs/mockup/home-D-8.0-tin-tuc.png",
+        "mobile": [
+          "docs/mockup/home-M-8.0-tin-tuc.png"
+        ]
+      },
+      "mockup_compliance": "done — grid 3 thẻ, CTA góc trên phải, thẻ chỉ hiện ngày"
     },
     {
       "stt": "9.0",
       "key": "footer",
       "name": "Footer",
       "data_ref": "site.json → footer / company / social_links / policies",
-      "internal_note": "Bổ sung file logo thương hiệu (bản vector/PNG nền trong độ phân giải cao)"
+      "internal_note": "Bổ sung file logo thương hiệu (bản vector/PNG nền trong độ phân giải cao)",
+      "mockup_compliance": "không đổi"
     },
     {
       "stt": "10.0",
       "key": "extra_features",
       "name": "Tính năng bổ sung",
-      "data_ref": "site.json → quick_contact_bar / languages"
+      "data_ref": "site.json → quick_contact_bar / languages",
+      "mockup_compliance": "không đổi"
     }
   ],
   "reference_urls": {
     "layout_reference": "https://automech.vn/",
     "projects_partners_reference": "https://weldcom.vn/"
-  }
+  },
+  "_mockup_note": "Cột F của Sheet 1 & 2 chứa 15 ảnh mockup đã giải nén ra docs/mockup/. Kết quả đối chiếu: docs/audit-mockup.md",
+  "_responsive_status": "ĐÃ TRIỂN KHAI — css/style.css có 6 khối @media (1280 / 1024 / 768 / 480 / print). Menu mobile là drawer thật, không còn toggle rỗng."
 }

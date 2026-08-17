@@ -149,8 +149,9 @@
       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 48px; margin-bottom: 60px;">
         <!-- Left Product Gallery -->
         <div>
-          <div style="border: 1px solid var(--color-border); border-radius: var(--radius-md); overflow: hidden; margin-bottom: 16px;">
-            <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80" alt="Estun CO-ARC 350" style="width: 100%; aspect-ratio: 4/3; object-fit: cover;">
+          <div class="prod-gallery-main">
+            <img id="prodMainImg" src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80" alt="Estun CO-ARC 350">
+            <button class="prod-zoom-btn" aria-label="Xem ảnh lớn"><i class="fas fa-search-plus"></i></button>
           </div>
           <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px;">
             <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=200&q=80" style="border: 2px solid var(--color-brand-orange); border-radius: var(--radius-sm); cursor: pointer;">
@@ -191,27 +192,24 @@
 
       <!-- TECHNICAL SPECIFICATIONS TABLE -->
       <div style="margin-bottom: 60px;">
-        <h2 class="section-title" style="font-size: 1.5rem; text-align: left; margin-bottom: 20px;">
-          <i class="fas fa-list-alt" style="color: var(--color-brand-orange);"></i> Bảng Thông Số Kỹ Thuật Chi Tiết (Technical Specifications)
-        </h2>
+        <h2 class="prod-desc-heading">Mô tả sản phẩm</h2>
 
         <table class="specs-table">
           <thead>
             <tr>
-              <th>Hạng Mục Kỹ Thuật</th>
-              <th>Thông Số Chi Tiết</th>
-              <th>Ghi Chú Đơn Vị</th>
+              <th>Thông số</th>
+              <th>Mô tả</th>
             </tr>
           </thead>
           <tbody>
-            <tr><td><strong>Số trục tự do</strong></td><td>6 Trục (6-DOF)</td><td>Trục xoay linh hoạt</td></tr>
-            <tr><td><strong>Bán kính vươn tối đa</strong></td><td>1,400 mm</td><td>R1400 mm</td></tr>
-            <tr><td><strong>Tải trọng đầu cần</strong></td><td>5 kg (Bao gồm mỏ hàn & bộ đẩy dây)</td><td>Payload 5kg</td></tr>
-            <tr><td><strong>Độ lặp lại vị trí (Repeatability)</strong></td><td>±0.03 mm</td><td>High precision</td></tr>
-            <tr><td><strong>Chuẩn bảo vệ IP</strong></td><td>IP65 (Kháng bụi & văng bắn xỉ hàn)</td><td>Industrial IP Class</td></tr>
-            <tr><td><strong>Giao thức truyền thông</strong></td><td>EtherCAT / Modbus TCP / CANopen</td><td>Kết nối PLC/SCADA</td></tr>
-            <tr><td><strong>Nguồn điện cấp</strong></td><td>220V AC, 50/60Hz (Single phase)</td><td>Tiết kiệm điện năng</td></tr>
-            <tr><td><strong>Trọng lượng thân Robot</strong></td><td>38 kg</td><td>Dễ dàng di chuyển gá đặt</td></tr>
+            <tr><td><strong>Số trục tự do</strong></td><td>6 Trục (6-DOF)</td></tr>
+            <tr><td><strong>Bán kính vươn tối đa</strong></td><td>1,400 mm</td></tr>
+            <tr><td><strong>Tải trọng đầu cần</strong></td><td>5 kg (Bao gồm mỏ hàn & bộ đẩy dây)</td></tr>
+            <tr><td><strong>Độ lặp lại vị trí (Repeatability)</strong></td><td>±0.03 mm</td></tr>
+            <tr><td><strong>Chuẩn bảo vệ IP</strong></td><td>IP65 (Kháng bụi & văng bắn xỉ hàn)</td></tr>
+            <tr><td><strong>Giao thức truyền thông</strong></td><td>EtherCAT / Modbus TCP / CANopen</td></tr>
+            <tr><td><strong>Nguồn điện cấp</strong></td><td>220V AC, 50/60Hz (Single phase)</td></tr>
+            <tr><td><strong>Trọng lượng thân Robot</strong></td><td>38 kg</td></tr>
           </tbody>
         </table>
       </div>
@@ -227,11 +225,11 @@
           <form id="detailProductForm">
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;" class="form-group">
               <div>
-                <label class="form-label">Họ và Tên *</label>
+                <label class="form-label">Họ và Tên <span class="req">*</span></label>
                 <input type="text" class="form-input" placeholder="Nguyễn Văn A" required>
               </div>
               <div>
-                <label class="form-label">Số Điện Thoại / Zalo *</label>
+                <label class="form-label">Số Điện Thoại / Zalo <span class="req">*</span></label>
                 <input type="tel" class="form-input" placeholder="0912 345 678" required>
               </div>
             </div>
@@ -356,6 +354,84 @@
       </div>
     </div>
   </footer>
+
+
+  <!-- MOBILE DRAWER MENU (theo mockup home-M-1.0: drawer trượt từ trái, nền tối, accordion) -->
+  <div class="mobile-drawer-overlay"></div>
+  <nav class="mobile-drawer" aria-label="Menu di động">
+    <div class="mobile-drawer-head">
+      <span>MENU</span>
+      <button class="mobile-drawer-close" aria-label="Đóng menu"><i class="fas fa-times"></i></button>
+    </div>
+
+    <ul class="mobile-nav">
+      <li><div class="mobile-nav-row"><a href="index.html">Trang chủ</a></div></li>
+      <li><div class="mobile-nav-row"><a href="ve-chung-toi.html">Về chúng tôi</a></div></li>
+
+      <li>
+        <div class="mobile-nav-row">
+          <a href="san-pham.html">Sản phẩm</a>
+          <button class="mobile-sub-toggle" aria-label="Mở danh mục con"><i class="fas fa-chevron-down"></i></button>
+        </div>
+        <ul class="mobile-subnav">
+          <li><a href="san-pham.html?cat=ket-cau-thep">Dây chuyền kết cấu thép</a></li>
+          <li><a href="san-pham.html?cat=robot">Robot công nghiệp</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <div class="mobile-nav-row">
+          <a href="giai-phap.html">Giải pháp</a>
+          <button class="mobile-sub-toggle" aria-label="Mở danh mục con"><i class="fas fa-chevron-down"></i></button>
+        </div>
+        <ul class="mobile-subnav">
+          <li><a href="giai-phap.html#ket-cau-thep">Giải pháp gia công kết cấu thép</a></li>
+          <li><a href="giai-phap.html#tu-dong-hoa">Giải pháp tự động hoá</a></li>
+          <li><a href="giai-phap.html#xay-dung">Giải pháp công nghiệp xây dựng</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <div class="mobile-nav-row">
+          <a href="dich-vu.html">Dịch vụ</a>
+          <button class="mobile-sub-toggle" aria-label="Mở danh mục con"><i class="fas fa-chevron-down"></i></button>
+        </div>
+        <ul class="mobile-subnav">
+          <li><a href="dich-vu.html#sua-chua">Sửa chữa thiết bị</a></li>
+          <li><a href="dich-vu.html#bao-duong">Bảo dưỡng định kỳ</a></li>
+          <li><a href="dich-vu.html#vat-tu">Cung cấp vật tư tiêu hao</a></li>
+          <li><a href="dich-vu.html#phu-tung">Cung cấp phụ tùng thay thế</a></li>
+        </ul>
+      </li>
+
+      <li><div class="mobile-nav-row"><a href="du-an.html">Dự án</a></div></li>
+
+      <li>
+        <div class="mobile-nav-row">
+          <a href="tin-tuc.html">Tin tức</a>
+          <button class="mobile-sub-toggle" aria-label="Mở danh mục con"><i class="fas fa-chevron-down"></i></button>
+        </div>
+        <ul class="mobile-subnav">
+          <li><a href="tin-tuc.html#doanh-nghiep">Tin tức doanh nghiệp</a></li>
+          <li><a href="tin-tuc.html#nganh">Tin tức ngành</a></li>
+          <li><a href="tin-tuc.html#bao-chi">Thông cáo báo chí</a></li>
+        </ul>
+      </li>
+
+      <li><div class="mobile-nav-row"><a href="lien-he.html">Liên hệ</a></div></li>
+    </ul>
+
+    <div class="mobile-drawer-lang">
+      <button class="active">VN</button>
+      <button>EN</button>
+    </div>
+  </nav>
+
+  <!-- LIGHTBOX XEM ẢNH LỚN -->
+  <div class="img-lightbox">
+    <button class="img-lightbox-close" aria-label="Đóng"><i class="fas fa-times"></i></button>
+    <img src="" alt="">
+  </div>
 
   <script src="js/main.js"></script>
 </body>
