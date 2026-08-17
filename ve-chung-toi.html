@@ -296,6 +296,106 @@
     </div>
   </section>
 
+  <!-- HISTORY TIMELINE SECTION (QUÁ TRÌNH HÌNH THÀNH CTWELD - AUTO SCROLL ON VIEW) -->
+  <section class="history-section" id="history-timeline">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">QUÁ TRÌNH HÌNH THÀNH CỦA CTWELD</h2>
+        <p class="section-subtitle">CTWELD đặt mục tiêu trở thành đơn vị số 1 trên thị trường về chất lượng sản phẩm và dịch vụ hậu mãi. Chúng tôi cam kết<br>xây dựng mối quan hệ với khách hàng bằng sự tin cậy, nhiệt tình và tinh thần trách nhiệm cao nhất</p>
+      </div>
+
+      <div class="timeline-outer-wrapper">
+        <!-- Navigation Buttons -->
+        <button class="timeline-nav-btn timeline-prev-btn" id="timelinePrev" title="Lùi lại"><i class="fas fa-chevron-left"></i></button>
+        <button class="timeline-nav-btn timeline-next-btn" id="timelineNext" title="Tiếp theo"><i class="fas fa-chevron-right"></i></button>
+
+        <div class="timeline-track-container" id="timelineScrollContainer">
+          <div class="timeline-items-flex">
+            <!-- Background Line -->
+            <div class="timeline-center-line">
+              <div class="timeline-progress-line" id="timelineProgress"></div>
+            </div>
+
+            <!-- Milestone 1 (06.2020) - Card Bottom -->
+            <div class="timeline-milestone active" data-index="0">
+              <div class="milestone-box-top"></div>
+              <div class="milestone-node"></div>
+              <div class="milestone-box-bottom">
+                <div class="milestone-card">
+                  <div class="milestone-date">06.2020</div>
+                  <p class="milestone-text">Thành lập CTWELD & mở văn phòng kỹ thuật tại Hà Nội chuyên tư vấn giải pháp hàn tự động.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Milestone 2 (10.2021) - Card Top -->
+            <div class="timeline-milestone" data-index="1">
+              <div class="milestone-box-top">
+                <div class="milestone-card">
+                  <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=600&q=80" alt="Nhà máy Bắc Ninh" class="milestone-img">
+                  <div class="milestone-date">10.2021</div>
+                  <p class="milestone-text">Xây dựng Trung Tâm Demo Công Nghệ & Trạm Thực Nghiệm Robot số 1 tại Bắc Ninh.</p>
+                </div>
+              </div>
+              <div class="milestone-node"></div>
+              <div class="milestone-box-bottom"></div>
+            </div>
+
+            <!-- Milestone 3 (06.2022) - Card Bottom -->
+            <div class="timeline-milestone" data-index="2">
+              <div class="milestone-box-top"></div>
+              <div class="milestone-node"></div>
+              <div class="milestone-box-bottom">
+                <div class="milestone-card">
+                  <div class="milestone-date">06.2022</div>
+                  <p class="milestone-text">Mở rộng chi nhánh & Trung Tâm Demo Công Nghệ Robot tại TP. Hồ Chí Minh.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Milestone 4 (05.2023) - Card Top -->
+            <div class="timeline-milestone" data-index="3">
+              <div class="milestone-box-top">
+                <div class="milestone-card">
+                  <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" alt="Trung tâm DEMO" class="milestone-img">
+                  <div class="milestone-date">05.2023</div>
+                  <p class="milestone-text">Khánh thành Trung Tâm DEMO & Kho Phụ Tùng Linh Kiện Quy Mô 5.000m² tại Bắc Ninh.</p>
+                </div>
+              </div>
+              <div class="milestone-node"></div>
+              <div class="milestone-box-bottom"></div>
+            </div>
+
+            <!-- Milestone 5 (12.2024) - Card Bottom -->
+            <div class="timeline-milestone" data-index="4">
+              <div class="milestone-box-top"></div>
+              <div class="milestone-node"></div>
+              <div class="milestone-box-bottom">
+                <div class="milestone-card">
+                  <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=600&q=80" alt="Dây chuyền Laser" class="milestone-img">
+                  <div class="milestone-date">12.2024</div>
+                  <p class="milestone-text">Hợp tác chiến lược chính thức phân phối dòng máy cắt CNC Laser Fiber 20kW.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Milestone 6 (2026) - Card Top -->
+            <div class="timeline-milestone" data-index="5">
+              <div class="milestone-box-top">
+                <div class="milestone-card">
+                  <div class="milestone-date">2026</div>
+                  <p class="milestone-text">Khẳng định vị thế Đơn Vị Số 1 Chuyển Giao Công Nghệ Hàn Kết Cấu Thép Việt Nam.</p>
+                </div>
+              </div>
+              <div class="milestone-node"></div>
+              <div class="milestone-box-bottom"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- FOOTER -->
     <!-- 9. FOOTER (EXACT STRUCTURE AS REFERENCE IMAGE - LOGO CARD, DASHED LINKS, MAP COLUMN) -->
     <!-- CONNECT WITH US CTA SECTION (FOR SUBPAGES) -->
@@ -395,5 +495,84 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const track = document.getElementById('timelineScrollContainer');
+      const prevBtn = document.getElementById('timelinePrev');
+      const nextBtn = document.getElementById('timelineNext');
+      const milestones = document.querySelectorAll('.timeline-milestone');
+      const progressLine = document.getElementById('timelineProgress');
+
+      if (!track) return;
+
+      // Scroll Button clicks
+      if (prevBtn) {
+        prevBtn.addEventListener('click', () => {
+          track.scrollBy({ left: -320, behavior: 'smooth' });
+        });
+      }
+      if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+          track.scrollBy({ left: 320, behavior: 'smooth' });
+        });
+      }
+
+      // Update progress line and active node highlights on scroll
+      function updateTimelineState() {
+        const scrollLeft = track.scrollLeft;
+        const maxScroll = track.scrollWidth - track.clientWidth;
+        const scrollPercent = maxScroll > 0 ? (scrollLeft / maxScroll) * 100 : 0;
+        
+        if (progressLine) {
+          progressLine.style.width = Math.min(scrollPercent + 15, 100) + '%';
+        }
+
+        const centerPos = scrollLeft + (track.clientWidth / 2);
+        milestones.forEach((item) => {
+          const itemLeft = item.offsetLeft;
+          const itemWidth = item.clientWidth;
+          if (centerPos >= (itemLeft - 80) && centerPos <= (itemLeft + itemWidth + 80)) {
+            milestones.forEach(m => m.classList.remove('active'));
+            item.classList.add('active');
+          }
+        });
+      }
+
+      track.addEventListener('scroll', updateTimelineState);
+
+      // Auto-slide effect when scrolled into view
+      let hasAutoSlid = false;
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting && !hasAutoSlid) {
+            hasAutoSlid = true;
+            const targetScroll = track.scrollWidth - track.clientWidth;
+            const startTime = performance.now();
+            const duration = 4000; // 4 seconds smooth auto slide
+
+            function step(currentTime) {
+              const elapsed = currentTime - startTime;
+              const progress = Math.min(elapsed / duration, 1);
+              const easeProgress = progress < 0.5 
+                ? 2 * progress * progress 
+                : 1 - Math.pow(-2 * progress + 2, 2) / 2;
+
+              track.scrollLeft = easeProgress * targetScroll;
+
+              if (progress < 1) {
+                requestAnimationFrame(step);
+              }
+            }
+
+            requestAnimationFrame(step);
+          }
+        });
+      }, { threshold: 0.25 });
+
+      const historySec = document.getElementById('history-timeline');
+      if (historySec) observer.observe(historySec);
+    });
+  </script>
 </body>
 </html>
