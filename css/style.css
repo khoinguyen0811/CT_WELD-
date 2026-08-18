@@ -3653,31 +3653,37 @@ body.drawer-open { overflow: hidden; }
   margin-top: 2px;
 }
 
-/* Solution Tabs Navigation (Folder Tag Style) */
+/* Solution Tabs Navigation (Folder Tag Style - No Border, No Box-Shadow, No Text Drop) */
 .sol-tab-nav {
   display: flex;
   justify-content: center;
-  gap: 4px;
-  flex-wrap: wrap;
+  gap: 6px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
   margin-bottom: 0;
   position: relative;
   z-index: 2;
+  border: none !important;
+  box-shadow: none !important;
+  padding-bottom: 2px;
 }
 
 .sol-tab-btn {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 12px 22px;
+  padding: 12px 24px;
   background: #F1F5F9;
-  border: 1px solid var(--color-border);
-  border-bottom: none;
+  border: none !important;
+  box-shadow: none !important;
   border-radius: 10px 10px 0 0; /* 2 cạnh trên bo góc, 2 cạnh dưới không có */
   font-family: var(--font-main);
   font-weight: 700;
-  font-size: 0.925rem;
+  font-size: 0.95rem;
   color: var(--color-text-heading);
   cursor: pointer;
+  white-space: nowrap; /* Đứng rớt chữ */
+  flex-shrink: 0;
   transition: all var(--transition-fast);
 }
 
@@ -3687,22 +3693,20 @@ body.drawer-open { overflow: hidden; }
 }
 
 .sol-tab-btn:hover {
-  background: var(--color-bg-white);
+  background: #E2E8F0;
   color: var(--color-brand-orange);
-  border-color: var(--color-brand-orange);
 }
 
 .sol-tab-btn.active {
   background: var(--color-brand-orange);
   color: #FFFFFF;
-  border-color: var(--color-brand-orange);
 }
 
 .sol-tab-btn.active i {
   color: #FFFFFF;
 }
 
-/* Solution Tab Content Panes */
+/* Solution Tab Content Panes (No Border, No Box-Shadow) */
 .sol-tab-pane {
   display: none;
   animation: fadeIn 0.4s ease;
@@ -3719,10 +3723,10 @@ body.drawer-open { overflow: hidden; }
 
 .sol-pane-card {
   background: var(--color-bg-white);
-  border-radius: var(--radius-lg);
-  border: 1px solid var(--color-border);
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+  border: none !important;
+  box-shadow: none !important;
   padding: 40px;
-  box-shadow: var(--shadow-md);
 }
 
 .sol-pane-grid {
@@ -3759,8 +3763,8 @@ body.drawer-open { overflow: hidden; }
   position: relative;
   border-radius: var(--radius-md);
   overflow: hidden;
-  box-shadow: var(--shadow-md);
-  border: 1px solid var(--color-border);
+  border: none !important;
+  box-shadow: none !important;
 }
 
 .sol-pane-media img {
