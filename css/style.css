@@ -3062,25 +3062,129 @@ button {
    8. TRANG VỀ CHÚNG TÔI — khối zig-zag Tầm nhìn / Sứ mệnh + Giá trị cốt lõi
    -------------------------------------------------------------------------- */
 .vm-section { padding: 80px 0; background: var(--color-bg-light); }
-.vm-block {
+
+.vm-creative-card {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 56px;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 48px;
   align-items: center;
-  margin-bottom: 56px;
+  background: #FFFFFF;
+  border-radius: var(--radius-lg);
+  padding: 40px;
 }
-.vm-block:last-child { margin-bottom: 0; }
-.vm-media { border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); }
-.vm-media img { width: 100%; height: 100%; aspect-ratio: 16 / 10; object-fit: cover; display: block; }
-.vm-title {
+
+.vm-card-reverse {
+  grid-template-columns: 1.15fr 1fr;
+}
+
+.vm-media-wrap {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  height: 100%;
+  min-height: 340px;
+}
+
+.vm-media-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.vm-badge-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(243, 112, 33, 0.1);
+  color: var(--color-brand-orange);
   font-family: var(--font-heading);
-  font-size: 1.6rem;
+  font-size: 0.85rem;
   font-weight: 700;
-  letter-spacing: 0.03em;
-  color: var(--color-text-heading);
-  margin: 0 0 18px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  margin-bottom: 14px;
 }
-.vm-body p { font-size: 1rem; color: var(--color-text-muted); line-height: 1.8; margin: 0; }
+
+.vm-title-main {
+  font-family: var(--font-heading);
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--color-text-heading);
+  margin-bottom: 16px;
+}
+
+.vm-quote-box {
+  background: var(--color-bg-light);
+  border-left: 4px solid var(--color-brand-orange);
+  padding: 16px 20px;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  font-size: 0.975rem;
+  font-weight: 600;
+  color: var(--color-text-main);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.vm-desc-text {
+  font-size: 0.925rem;
+  color: var(--color-text-muted);
+  line-height: 1.65;
+}
+
+.mission-pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.mission-pillar-card {
+  background: var(--color-bg-light);
+  border-radius: var(--radius-sm);
+  padding: 18px 16px;
+  transition: background var(--transition-fast);
+}
+
+.mission-pillar-card:hover {
+  background: #F1F5F9;
+}
+
+.pillar-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--color-bg-white);
+  color: var(--color-brand-orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+
+.pillar-title {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-text-heading);
+  margin-bottom: 6px;
+}
+
+.pillar-desc {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
+@media (max-width: 992px) {
+  .vm-creative-card, .vm-card-reverse {
+    grid-template-columns: 1fr;
+    padding: 24px;
+  }
+  .mission-pillars-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 .core-values-section { padding: 80px 0; background: var(--color-bg-white); }
 .core-values-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; }
