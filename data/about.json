@@ -2,19 +2,21 @@
   "_source": {
     "page_spec": "Excel Sheet 3 — mục 1.0 (Về chúng tôi): \"Hiển thị bài viết trong danh mục về chúng tôi dưới dạng bài viết thông tin\"",
     "content_doc": "https://docs.google.com/document/d/1JKgajDPU4MGS6AJQ2uh0kzHDqn5YLH5ryfNAkFCplvk/edit?tab=t.0#heading=h.3prulaazym1k",
-    "content_doc_access": "KHÔNG MỞ ĐƯỢC — HTTP 401, tài liệu bị giới hạn quyền truy cập. Cần khách hàng đổi sang \"Anyone with the link\" hoặc cấp quyền.",
+    "content_doc_access": "OK (kiểm lại 18/08/2026) — HTTP 200 cả txt lẫn html. Hôm 17/08 trả 401; quyền chia sẻ đã được mở. Nội dung chính thức đã lấy đầy đủ.",
     "media_folder": "https://drive.google.com/drive/folders/1ToiKa8gyeelpC1-7tMlCZ4V_xWNKn860 (mở được — 2 ảnh)"
   },
-  "content_status": "partial — cấu trúc đã khớp mockup; nội dung chính thức của trang vẫn nằm trong Google Docs bị khoá quyền (HTTP 401).",
+  "content_status": "official — toàn bộ nội dung dưới đây lấy từ Google Docs của khách hàng",
   "hero": {
-    "title": "Về Chúng Tôi - Năng Lực CTWELD",
-    "subtitle": "Tìm hiểu về hành trình phát triển, năng lực công nghệ và đội ngũ chuyên gia kỹ thuật hàn cơ khí hàng đầu của CTWELD."
+    "title": "CTWELD - Giải Pháp Cơ Khí & Hàn Tự Động Hàng Đầu",
+    "subtitle": null,
+    "content_status": "official",
+    "_note": "Doc không có subtitle riêng — đoạn ngay dưới tiêu đề là intro."
   },
   "intro": {
-    "heading": "CTWELD - Tiên Phong Chuyển Giao Công Nghệ",
+    "heading": "CTWELD - Giải Pháp Cơ Khí & Hàn Tự Động Hàng Đầu",
+    "content_status": "official",
     "paragraphs": [
-      "CÔNG TY TNHH DỊCH VỤ KỸ THUẬT VÀ GIẢI PHÁP CƠ KHÍ CTWELD (MST: 0111059841) được thành lập với mục tiêu mang đến cho các doanh nghiệp cơ khí Việt Nam những công nghệ chế tạo hiện đại, chính xác và hiệu quả kinh tế cao nhất.",
-      "Với sứ mệnh \"Công nghệ dẫn lối tương lai\", CTWELD tập trung chuyên sâu vào ngành gia công kết cấu thép, hàn tự động hóa bằng Robot, công nghệ cắt Laser Fiber công suất lớn và các hệ thống đồ gá Jig kẹp thông minh."
+      "Công ty TNHH Dịch vụ Kỹ thuật và Giải pháp Cơ khí CTWELD – là đơn vị chuyên cung cấp thiết bị gia công cơ khí, hàn kết cấu thép tự động, robot hàn và phụ kiện ngành hàn tại Việt Nam. Với hơn 6 năm kinh nghiệm cùng đội ngũ sáng lập là những leader kỳ cựu từ các công ty cơ khí lớn trong nước, CTWELD không ngừng nỗ lực mang đến các giải pháp công nghệ tiên tiến, giúp doanh nghiệp Việt tối ưu hiệu suất sản xuất và tiếp cận nhanh chóng với xu hướng sản xuất hiện đại."
     ]
   },
   "sapo_homepage": {
@@ -22,12 +24,12 @@
     "text": "Công ty TNHH Dịch Vụ Kỹ Thuật và Giải Pháp Cơ Khí CTWELD là đơn vị tiên phong chuyên tư vấn, nhập khẩu và chuyển giao công nghệ máy cơ khí, dây chuyền hàn kết cấu thép và Robot công nghiệp tại Việt Nam."
   },
   "vision_mission_values": {
-    "heading": "Tầm Nhìn - Sứ Mệnh - Giá Trị Cốt Lõi",
+    "heading": "Tầm nhìn & Sứ mệnh",
     "items": [
       {
         "key": "vision",
-        "title": "Tầm Nhìn Của Chúng Tôi",
-        "body": "Trở thành đơn vị tiên phong dẫn đầu tại Việt Nam trong lĩnh vực tư vấn, nhập khẩu và chuyển giao công nghệ hàn tự động, dây chuyền kết cấu thép và Robot công nghiệp.",
+        "title": "Tầm nhìn",
+        "body": "CTWELD hướng đến trở thành đơn vị tiên phong trong lĩnh vực giải pháp cơ khí thông minh, ứng dụng công nghệ hiện đại để nâng cao chất lượng sản phẩm, tối ưu hóa quy trình sản xuất và đáp ứng nhu cầu ngày càng khắt khe của thị trường trong nước lẫn quốc tế. Chúng tôi không ngừng đổi mới nhằm khẳng định vị thế hàng đầu trong ngành cơ khí, mang đến những giải pháp bền vững và hiệu quả cho khách hàng.",
         "image": {
           "name": "1_Tầm nhìn",
           "drive_id": "1Xwq0Zpo9dEpFETMltx_5CdFx3WWPP1qA",
@@ -38,12 +40,13 @@
           "used_in_demo": "ve-chung-toi.html (khối giới thiệu) + index.html (thumb 3)",
           "drive_url": "https://drive.google.com/file/d/1Xwq0Zpo9dEpFETMltx_5CdFx3WWPP1qA/view",
           "dimensions": "2752x1536"
-        }
+        },
+        "content_status": "official"
       },
       {
         "key": "mission",
-        "title": "Sứ Mệnh Của Chúng Tôi",
-        "body": "Giúp các nhà máy cơ khí cắt giảm 50% thời gian gia công, tối ưu chi phí vận hành và đảm bảo độ bền mối hàn chuẩn kiểm định NDT cao nhất.",
+        "title": "Sứ mệnh",
+        "body": null,
         "image": {
           "name": "2_Sứ mệnh",
           "drive_id": "1lZjiJvPKuMLZcb9wAZkr0EE_8WaBSFbz",
@@ -54,86 +57,86 @@
           "used_in_demo": "index.html (ảnh chính khối Về chúng tôi + thumb 1)",
           "drive_url": "https://drive.google.com/file/d/1lZjiJvPKuMLZcb9wAZkr0EE_8WaBSFbz/view",
           "dimensions": "1000x632"
-        }
+        },
+        "bullets": [
+          "Cung cấp giải pháp cơ khí thông minh, giúp doanh nghiệp tối ưu hiệu suất vận hành và tiết kiệm chi phí.",
+          "Ứng dụng công nghệ tiên tiến, nâng cao độ chính xác, độ bền và chất lượng sản phẩm, đáp ứng các tiêu chuẩn khắt khe của ngành.",
+          "Đồng hành cùng khách hàng với dịch vụ chuyên nghiệp, tận tâm và cam kết mang lại hiệu quả tối ưu.",
+          "Góp phần phát triển ngành cơ khí Việt Nam, tạo ra giá trị bền vững, nâng tầm doanh nghiệp và thúc đẩy sự đổi mới trong sản xuất."
+        ],
+        "content_status": "official"
       },
       {
         "key": "core_values",
-        "title": "Giá Trị Cốt Lõi",
-        "body": "Lấy công nghệ tiên phong làm kim chỉ nam, cam kết thiết bị chính hãng nhập khẩu trực tiếp, kỹ thuật chuyên sâu 24/7 và đồng hành bền vững cùng khách hàng.",
+        "title": "Giá trị cốt lõi CTWELD",
+        "body": null,
         "image": null,
         "image_status": "missing — thư mục Drive chỉ có ảnh Tầm nhìn và Sứ mệnh",
-        "content_status": "draft",
-        "note": "Mockup yêu cầu 5 card, mỗi card 3 gạch đầu dòng. Site tham chiếu weldcom.vn dùng 5 giá trị riêng của họ (Biết Ơn, Trung Thực, Tuân Thủ, Tiết Kiệm, Sáng Tạo) — KHÔNG sao chép. 5 giá trị dưới đây được soạn từ nội dung CTWELD có thật (demo + 2 tài liệu sản phẩm Drive). CẦN KHÁCH HÀNG DUYỆT.",
+        "content_status": "official",
         "values": [
           {
-            "title": "Công Nghệ Tiên Phong",
+            "title": "Chất lượng hàng đầu",
+            "icon": "fas fa-award",
+            "text": "CTWELD cam kết mang đến những sản phẩm và dịch vụ đạt tiêu chuẩn cao nhất, đảm bảo độ chính xác, bền bỉ và an toàn trong từng giải pháp cơ khí."
+          },
+          {
+            "title": "Công nghệ tiên phong",
             "icon": "fas fa-microchip",
-            "points": [
-              "Lấy công nghệ làm kim chỉ nam cho mọi giải pháp.",
-              "Tự nghiên cứu bộ điều khiển và phần mềm tại Việt Nam.",
-              "Hướng tới nhà máy thông minh, kết nối dữ liệu vận hành."
-            ]
+            "text": "Luôn cập nhật và ứng dụng công nghệ hiện đại nhất để tối ưu hóa quy trình sản xuất, nâng cao hiệu suất và mang lại giải pháp cơ khí thông minh, hiệu quả."
           },
           {
-            "title": "Chính Hãng Minh Bạch",
-            "icon": "fas fa-certificate",
-            "points": [
-              "Thiết bị chính hãng, nhập khẩu trực tiếp.",
-              "Công bố rõ xuất xứ từng cụm thiết bị.",
-              "Chính sách bảo hành tách bạch, rõ ràng."
-            ]
+            "title": "Khách hàng là trung tâm",
+            "icon": "fas fa-users",
+            "text": "Lấy sự hài lòng của khách hàng làm kim chỉ nam, CTWELD không ngừng cải tiến dịch vụ, đảm bảo sự hợp tác lâu dài, bền vững."
           },
           {
-            "title": "Chuyên Sâu Kỹ Thuật",
-            "icon": "fas fa-user-gear",
-            "points": [
-              "Đội ngũ kỹ sư trực tiếp khảo sát và lắp đặt.",
-              "Thư viện thông số hàn đã kiểm nghiệm thực tế.",
-              "Hỗ trợ kỹ thuật phản ứng nhanh 24/7."
-            ]
+            "title": "Đổi mới & sáng tạo",
+            "icon": "fas fa-lightbulb",
+            "text": "Không ngừng nghiên cứu, phát triển và cải tiến sản phẩm, dịch vụ nhằm tạo ra giải pháp đột phá, giúp doanh nghiệp tối ưu chi phí và nâng cao hiệu suất."
           },
           {
-            "title": "Đồng Hành Bền Vững",
+            "title": "Trách nhiệm & uy tín",
             "icon": "fas fa-handshake",
-            "points": [
-              "Đào tạo chuyển giao vận hành tại nhà xưởng.",
-              "Bảo trì định kỳ trong suốt thời gian bảo hành.",
-              "Cam kết cung cấp phụ tùng thay thế lâu dài."
-            ]
+            "text": "Luôn giữ chữ \"Tín\" trong mọi cam kết, đảm bảo trách nhiệm với khách hàng, đối tác và xã hội, xây dựng niềm tin bền vững."
           },
           {
-            "title": "Hiệu Quả Cho Khách Hàng",
-            "icon": "fas fa-chart-line",
-            "points": [
-              "Tư vấn cấu hình theo bài toán hoàn vốn thực tế.",
-              "Tránh đầu tư dư thừa hoặc thiếu công suất.",
-              "Giảm chi phí vật tư tiêu hao khi vận hành dài hạn."
-            ]
+            "title": "Phát triển bền vững",
+            "icon": "fas fa-leaf",
+            "text": "Hướng đến một ngành cơ khí xanh, tối ưu tài nguyên, giảm thiểu tác động đến môi trường và đóng góp vào sự phát triển bền vững của ngành công nghiệp Việt Nam."
           }
-        ]
+        ],
+        "_count_note": "Doc chính thức có 6 giá trị, mockup weldcom.vn có 5 cột — đã bố trí 3 cột x 2 hàng."
       }
     ],
-    "_image_note": "Lưu ý: 2 file trên Drive đặt tên \"Tầm nhìn\" / \"Sứ mệnh\" nhưng nội dung thực tế là ảnh chụp trụ sở và ảnh dây chuyền robot hàn — không phải đồ hoạ minh hoạ tầm nhìn/sứ mệnh. Đã dùng làm ảnh thật thay ảnh stock."
+    "_image_note": "Lưu ý: 2 file trên Drive đặt tên \"Tầm nhìn\" / \"Sứ mệnh\" nhưng nội dung thực tế là ảnh chụp trụ sở và ảnh dây chuyền robot hàn — không phải đồ hoạ minh hoạ tầm nhìn/sứ mệnh. Đã dùng làm ảnh thật thay ảnh stock.",
+    "content_status": "official"
   },
   "stats": [
     {
-      "number": "12+",
-      "label": "Năm Kinh Nghiệm"
+      "number": "6+",
+      "label": "Năm Kinh Nghiệm",
+      "content_status": "official",
+      "_src": "Doc: \"hơn 6 năm kinh nghiệm\""
+    },
+    {
+      "number": "2025",
+      "label": "Năm Thành Lập",
+      "content_status": "official",
+      "_src": "Doc: \"thành lập vào năm 2025\""
     },
     {
       "number": "350+",
-      "label": "Dự Án Bàn Giao"
+      "label": "Dự Án Bàn Giao",
+      "content_status": "placeholder",
+      "_warn": "MÂU THUẪN: doanh nghiệp thành lập 2025 mà 350+ dự án là khó tin. Cần khách hàng xác nhận hoặc bỏ."
     },
     {
       "number": "99.8%",
-      "label": "Độ Chính Xác Kỹ Thuật"
-    },
-    {
-      "number": "200+",
-      "label": "Khách Hàng Doanh Nghiệp"
+      "label": "Độ Chính Xác Kỹ Thuật",
+      "content_status": "placeholder"
     }
   ],
-  "stats_status": "placeholder — mockup yêu cầu 4 ô số liệu (2x2) nên đã bổ sung ô thứ 4. Cần khách hàng xác nhận cả 4 con số.",
+  "stats_status": "2/4 ô đã có nguồn chính thức. Ô \"350+ Dự Án Bàn Giao\" mâu thuẫn với năm thành lập 2025 — cần khách hàng xác nhận.",
   "featured_projects_section": {
     "heading": "Công Trình & Dây Chuyền Đã Triển Khai",
     "subtitle": "Một số dự án tiêu biểu CTWELD đã tư vấn, chuyển giao công nghệ và đưa vào vận hành thực tế tại các nhà máy cơ khí lớn.",
@@ -166,16 +169,21 @@
     ]
   },
   "history": {
-    "heading": "Quá Trình Hình Thành Của CTWELD",
-    "body": "CTWELD đặt mục tiêu trở thành đơn vị số 1 trên thị trường về chất lượng sản phẩm và dịch vụ hậu mãi. Chúng tôi cam kết xây dựng mối quan hệ với khách hàng bằng sự tin cậy, nhiệt tình và tinh thần trách nhiệm cao nhất.",
+    "heading": "Lịch sử hình thành và phát triển",
+    "content_status": "official",
     "timeline": [],
-    "content_status": "missing — chưa có mốc thời gian lịch sử hình thành. Nội dung này nhiều khả năng nằm trong Google Docs đang bị khoá quyền."
+    "paragraphs": [
+      "CTWELD được thành lập vào năm 2025, quy tụ đội ngũ sáng lập là những nhân sự kỳ cựu, từng giữ vai trò lãnh đạo tại các công ty cơ khí lớn tại Việt Nam. Tuy là một cái tên còn khá trẻ trên thị trường, nhưng CTWELD lại được xây dựng trên nền tảng vững chắc: nhiều năm kinh nghiệm thực chiến trong ngành cơ khí, hàn kết cấu thép và tự động hóa sản xuất mà đội ngũ đã tích lũy trước khi cùng nhau khởi tạo CTWELD.",
+      "Ngay từ những ngày đầu thành lập, CTWELD xác định hướng đi rõ ràng: không chạy theo số lượng mà tập trung vào chất lượng sản phẩm, chiều sâu chuyên môn kỹ thuật và sự đồng hành sát sao với khách hàng. Nhờ vậy, dù mới ra đời, CTWELD đã nhanh chóng khẳng định được uy tín trong lĩnh vực cung cấp thiết bị hàn thông minh, robot hàn và giải pháp tự động hóa cho các doanh nghiệp cơ khí, kết cấu thép trong nước."
+    ],
+    "founded_year": 2025
   },
   "open_issues": [
-    "Google Docs \"Về chúng tôi\" trả về HTTP 401 — cần mở quyền để lấy nội dung chính thức.",
-    "5 giá trị cốt lõi là bản draft do CTWELD chưa cung cấp — cần duyệt.",
-    "Thiếu timeline quá trình hình thành.",
-    "Số liệu thống kê (12+ / 350+ / 200+ / 99.8%) là dữ liệu demo."
+    "Ô số liệu \"350+ Dự Án Bàn Giao\" mâu thuẫn với \"thành lập năm 2025\" — cần xác nhận.",
+    "Ô \"99.8% Độ Chính Xác Kỹ Thuật\" chưa có nguồn.",
+    "Doc không có mốc timeline cụ thể cho phần lịch sử — chỉ có 2 đoạn văn.",
+    "Section \"Nhà cung cấp chiến lược\" trong doc chỉ có tiêu đề, chưa có danh sách hãng + file logo.",
+    "Chưa có ảnh riêng cho từng giá trị cốt lõi (đang dùng icon)."
   ],
   "page_structure": {
     "_source": "5 ảnh mockup ô G2 Sheet 3 (docs/mockup/p1-vechungtoi-D-*.png)",
@@ -216,6 +224,16 @@
         "name": "Quá trình hình thành",
         "status": "giữ lại theo yêu cầu — không có trong mockup"
       }
+    ]
+  },
+  "doc_structure": {
+    "_note": "Cấu trúc gốc trong Google Docs — khớp đúng thứ tự 4 section của mockup",
+    "sections": [
+      "(mở đầu) CTWELD - Giải Pháp Cơ Khí & Hàn Tự Động Hàng Đầu + đoạn giới thiệu",
+      "1. Lịch sử hình thành và phát triển",
+      "2. Tầm nhìn & Sứ mệnh (2.1 / 2.2)",
+      "3. Giá trị cốt lõi CTWELD (6 giá trị)",
+      "4. Nhà cung cấp chiến lược (chỉ có tiêu đề, nội dung là băng logo)"
     ]
   }
 }

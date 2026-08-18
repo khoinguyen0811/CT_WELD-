@@ -309,4 +309,20 @@ document.addEventListener('DOMContentLoaded', function() {
     document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
   }
 
+  // 9. SOLUTION PAGE INTERACTIVE TABS
+  const solTabs = document.querySelectorAll('.sol-tab-btn');
+  const solPanes = document.querySelectorAll('.sol-tab-pane');
+  if (solTabs.length && solPanes.length) {
+    solTabs.forEach(tab => {
+      tab.addEventListener('click', function() {
+        const targetId = this.getAttribute('data-target');
+        solTabs.forEach(t => t.classList.remove('active'));
+        solPanes.forEach(p => p.classList.remove('active'));
+        this.classList.add('active');
+        const targetPane = document.getElementById(targetId);
+        if (targetPane) targetPane.classList.add('active');
+      });
+    });
+  }
+
 });
