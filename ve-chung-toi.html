@@ -695,20 +695,20 @@
           let progress = scrolled / maxScroll;
           progress = Math.max(0, Math.min(1, progress));
 
+          const viewportWidth = viewport ? viewport.clientWidth : stickySection.clientWidth;
           const trackWidth = track.scrollWidth;
-          const viewportWidth = window.innerWidth;
-          const maxTranslate = Math.max(0, trackWidth - viewportWidth + 140);
+          const maxTranslate = Math.max(0, trackWidth - viewportWidth);
 
           const translateX = progress * maxTranslate;
           track.style.transform = `translateX(-${translateX}px)`;
 
           if (lineActive) {
-            lineActive.style.width = `${Math.min(progress * 100 + 10, 100)}%`;
+            lineActive.style.width = `${Math.min(progress * 100 + 5, 100)}%`;
           }
 
           const activeIndex = Math.min(
             cols.length - 1,
-            Math.floor(progress * cols.length * 1.1)
+            Math.floor(progress * cols.length * 1.05)
           );
 
           cols.forEach((col, idx) => {

@@ -1934,7 +1934,7 @@ button {
    ========================================================================== */
 .history-sticky-section {
   position: relative;
-  height: 220vh;
+  height: 260vh;
   background-color: var(--color-bg-light);
   border-top: 1px solid var(--color-border);
 }
