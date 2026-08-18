@@ -3191,11 +3191,14 @@ button {
   padding: 80px 0;
   background: var(--color-bg-white);
   overflow: hidden;
+  position: relative;
 }
 
 .cv-timeline-viewport {
   position: relative;
-  margin-top: 40px;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 36px;
 }
 
 .cv-timeline-track {
@@ -3205,9 +3208,10 @@ button {
   scroll-behavior: smooth;
   scrollbar-width: none;
   -ms-overflow-style: none;
-  padding: 20px 0 20px 0;
-  min-height: 540px;
-  align-items: center;
+  padding: 10px 40px 10px 10px;
+  gap: 40px;
+  width: max-content;
+  user-select: none;
 }
 
 .cv-timeline-track::-webkit-scrollbar {
@@ -3218,29 +3222,47 @@ button {
   position: absolute;
   top: 50%;
   left: 0;
-  width: 2200px;
+  right: 0;
   height: 2px;
-  background: var(--color-brand-orange);
+  background: #CBD5E1;
   transform: translateY(-50%);
   z-index: 1;
 }
 
+.cv-line-active {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: var(--color-brand-orange);
+  width: 100%;
+}
+
 .cv-timeline-col {
-  flex: 0 0 340px;
+  position: relative;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
-  z-index: 2;
-  margin: 0 10px;
+  width: 320px;
+  flex-shrink: 0;
 }
 
 .cv-slot-top, .cv-slot-bottom {
   width: 100%;
-  min-height: 230px;
+  height: 210px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+}
+
+.cv-slot-top {
+  justify-content: flex-end;
+  padding-bottom: 14px;
+}
+
+.cv-slot-bottom {
+  justify-content: flex-start;
+  padding-top: 14px;
 }
 
 .cv-node-circle {
@@ -3248,11 +3270,11 @@ button {
   height: 32px;
   border-radius: 50%;
   background: #FFFFFF;
-  border: 2px solid var(--color-brand-orange);
+  border: 2.5px solid var(--color-brand-orange);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 16px 0;
+  flex-shrink: 0;
   position: relative;
   z-index: 3;
 }
@@ -3268,41 +3290,45 @@ button {
   width: 100%;
   background: #F8FAFC;
   border-radius: 16px;
-  padding: 24px 20px;
+  padding: 22px 20px;
   transition: all var(--transition-fast);
+  border: 1px solid #EEF2F6;
+  text-align: left;
 }
 
 .cv-timeline-card:hover {
-  background: #F1F5F9;
-  transform: translateY(-4px);
+  background: #FFFFFF;
+  border-color: var(--color-brand-orange);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(243, 112, 33, 0.08);
 }
 
 .cv-icon-box {
-  width: 48px;
-  height: 48px;
+  width: 44px;
+  height: 44px;
   border-radius: 12px;
-  background: #FFFFFF;
+  background: #FFF7ED;
   color: var(--color-brand-orange);
-  border: 1.5px solid var(--color-brand-orange);
+  border: 1px solid rgba(243, 112, 33, 0.2);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.2rem;
-  margin-bottom: 16px;
+  font-size: 1.15rem;
+  margin-bottom: 12px;
 }
 
 .cv-card-title {
   font-family: var(--font-main);
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: 700;
-  color: #334155;
-  margin-bottom: 8px;
+  color: #1E293B;
+  margin-bottom: 6px;
 }
 
 .cv-card-desc {
-  font-size: 0.875rem;
-  color: var(--color-text-muted);
-  line-height: 1.55;
+  font-size: 0.85rem;
+  color: #64748B;
+  line-height: 1.5;
   margin: 0;
 }
 
@@ -3311,6 +3337,7 @@ button {
   align-items: center;
   justify-content: flex-start;
   margin-top: 24px;
+  padding-left: 4px;
 }
 
 .cv-nav-btns {
@@ -3322,9 +3349,9 @@ button {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: var(--color-bg-light);
+  background: #F1F5F9;
   border: none;
-  color: var(--color-text-heading);
+  color: #334155;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3336,6 +3363,19 @@ button {
 .cv-arrow-btn:hover {
   background: var(--color-brand-orange);
   color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+  .cv-timeline-track {
+    gap: 20px;
+    padding: 10px 20px;
+  }
+  .cv-timeline-col {
+    width: 280px;
+  }
+  .cv-slot-top, .cv-slot-bottom {
+    height: 230px;
+  }
 }
 
 /* --------------------------------------------------------------------------

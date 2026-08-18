@@ -325,7 +325,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // 10. CORE VALUES SLIDER (Connecting Line + Wheel Auto Scroll)
+  // 10. CORE VALUES SLIDER (Drag, Nav Buttons, and Smart Wheel Scroll)
   const cvTrack = document.getElementById('cvTrack');
   const cvPrev = document.getElementById('cvPrev');
   const cvNext = document.getElementById('cvNext');
@@ -340,11 +340,44 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     }
 
-    // Tự động trượt ngang khi cuộn chuột (Mouse Wheel Scroll)
+    // Kéo chuột để trượt (Mouse Drag Scroll)
+    let isDown = false;
+    let startX = 0;
+    let scrollStart = 0;
+
+    cvTrack.addEventListener('mousedown', (e) => {
+      isDown = true;
+      startX = e.pageX - cvTrack.offsetLeft;
+      scrollStart = cvTrack.scrollLeft;
+      cvTrack.style.cursor = 'grabbing';
+    });
+
+    window.addEventListener('mouseup', () => {
+      if (isDown) {
+        isDown = false;
+        if (cvTrack) cvTrack.style.cursor = 'grab';
+      }
+    });
+
+    cvTrack.addEventListener('mousemove', (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - cvTrack.offsetLeft;
+      const walk = (x - startX) * 1.5;
+      cvTrack.scrollLeft = scrollStart - walk;
+    });
+
+    // Cuộn chuột mượt mà (chỉ can thiệp khi chưa cuộn hết thanh)
     cvTrack.addEventListener('wheel', (e) => {
-      if (e.deltaY !== 0) {
-        e.preventDefault();
-        cvTrack.scrollBy({ left: e.deltaY * 1.5, behavior: 'smooth' });
+      if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
+        const maxScroll = cvTrack.scrollWidth - cvTrack.clientWidth;
+        const canScrollRight = e.deltaY > 0 && cvTrack.scrollLeft < maxScroll - 10;
+        const canScrollLeft = e.deltaY < 0 && cvTrack.scrollLeft > 10;
+
+        if (canScrollRight || canScrollLeft) {
+          e.preventDefault();
+          cvTrack.scrollBy({ left: e.deltaY * 1.2, behavior: 'auto' });
+        }
       }
     }, { passive: false });
   }
