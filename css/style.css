@@ -3809,7 +3809,7 @@ body.drawer-open { overflow: hidden; }
   .container { padding-left: 18px; padding-right: 18px; }
 
   /* Giảm padding dọc, nhưng KHÔNG áp cho hero banner và bản đồ (2 khối này không có padding) */
-  section:not(.hero-slider):not(.contact-map-section):not(.partners-section) {
+  section:not(.hero-slider):not(.contact-map-section):not(.partners-section):not(.parallax-band) {
     padding-top: 48px !important;
     padding-bottom: 48px !important;
   }
@@ -4191,10 +4191,6 @@ body.drawer-open { overflow: hidden; }
     grid-column: span 1;
   }
 }
-  color: var(--color-text-muted);
-  line-height: 1.45;
-}
-
 /* ROI & Efficiency Comparison Matrix Table */
 .roi-section {
   padding: 80px 0;
@@ -4327,4 +4323,161 @@ body.drawer-open { overflow: hidden; }
 @media (max-width: 768px) {
   .core-values-grid.cv-grid-6 { grid-template-columns: 1fr; }
   .article-h2 { font-size: 1.25rem; }
+}
+
+/* ==========================================================================
+   16. PARALLAX BAND — TRANG CHỦ (18/08/2026)
+   Ảnh nền cuộn chậm hơn nội dung, tạo chiều sâu giữa mục 6.0 và 7.0.
+
+   Vì sao KHÔNG dùng `background-attachment: fixed`:
+   - iOS Safari bỏ qua hoàn toàn (render thành scroll) -> mobile mất hiệu ứng
+   - Trình duyệt phải repaint cả vùng nền mỗi frame -> giật khi cuộn
+   Thay bằng lớp ảnh riêng dịch chuyển bằng transform (GPU compositing),
+   JS chỉ chạy khi section nằm trong viewport.
+   ========================================================================== */
+
+.parallax-band {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  min-height: 520px;
+  padding: 96px 0;
+  background: #0E1216;           /* nền dự phòng khi ảnh chưa tải */
+}
+
+/* Lớp ảnh cao hơn section (overscan trên + dưới) để khi dịch chuyển
+   không bao giờ lòi mép trống ra. */
+.parallax-layer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -14%;
+  bottom: -14%;
+  z-index: -2;
+  will-change: transform;
+}
+
+.parallax-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Lớp phủ để chữ trắng luôn đủ tương phản dù ảnh sáng hay tối */
+.parallax-scrim {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(100deg, rgba(14, 18, 22, 0.94) 0%, rgba(14, 18, 22, 0.82) 42%, rgba(14, 18, 22, 0.45) 100%),
+    linear-gradient(to bottom, rgba(14, 18, 22, 0.55) 0%, transparent 30%, transparent 70%, rgba(14, 18, 22, 0.55) 100%);
+}
+
+.parallax-inner { max-width: 760px; margin-right: auto; }
+
+.parallax-kicker {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-brand-orange);
+  padding-bottom: 14px;
+  margin-bottom: 18px;
+  position: relative;
+}
+.parallax-kicker::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 56px;
+  height: 2px;
+  background: var(--color-brand-orange);
+}
+
+.parallax-title {
+  font-family: var(--font-heading);
+  font-size: 2.75rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+  margin: 0 0 20px;
+}
+
+.parallax-desc {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.82);
+  margin: 0 0 32px;
+}
+
+.parallax-actions { display: flex; flex-wrap: wrap; gap: 14px; }
+
+/* Nút viền sáng, dùng riêng trên nền tối */
+.btn-ghost-light {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 28px;
+  border: 1.5px solid rgba(255, 255, 255, 0.55);
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: #fff;
+  font-family: var(--font-main);
+  font-size: 0.925rem;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+.btn-ghost-light:hover {
+  background: #fff;
+  border-color: #fff;
+  color: var(--color-text-heading);
+}
+
+/* Divider ngay dưới dải parallax: phải có nền tối, nếu để trong suốt
+   thì phần chưa tô của SVG sẽ lòi nền trắng của body ra. */
+.section-divider-on-dark { background: #0E1216; }
+
+/* Nội dung hiện dần khi cuộn tới (một lần) */
+[data-parallax-reveal] {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+[data-parallax-reveal].is-revealed { opacity: 1; transform: none; }
+.parallax-inner [data-parallax-reveal]:nth-child(2) { transition-delay: 0.08s; }
+.parallax-inner [data-parallax-reveal]:nth-child(3) { transition-delay: 0.16s; }
+.parallax-inner [data-parallax-reveal]:nth-child(4) { transition-delay: 0.24s; }
+
+@media (max-width: 1024px) {
+  .parallax-band { min-height: 440px; padding: 72px 0; }
+  .parallax-title { font-size: 2.25rem; }
+}
+
+@media (max-width: 768px) {
+  /* Loại khỏi rule giảm padding chung để tự kiểm soát chiều cao */
+  .parallax-band { min-height: 380px; padding: 56px 0; }
+  .parallax-title { font-size: 1.75rem; }
+  .parallax-desc { font-size: 0.95rem; }
+  .parallax-actions .btn,
+  .parallax-actions .btn-ghost-light { width: 100%; justify-content: center; }
+  /* Ảnh nền nghiêng về giữa để không cắt mất phần chủ thể trên màn hẹp */
+  .parallax-img { object-position: 60% center; }
+  .parallax-scrim {
+    background: linear-gradient(to bottom, rgba(14, 18, 22, 0.86), rgba(14, 18, 22, 0.9));
+  }
+}
+
+/* Tôn trọng cài đặt giảm chuyển động của hệ điều hành:
+   tắt cả parallax lẫn hiệu ứng hiện dần, nội dung hiển thị ngay. */
+@media (prefers-reduced-motion: reduce) {
+  .parallax-layer { transform: none !important; }
+  [data-parallax-reveal] { opacity: 1; transform: none; transition: none; }
 }

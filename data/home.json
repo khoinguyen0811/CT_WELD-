@@ -228,6 +228,39 @@
       "mockup_compliance": "done — tab \"Dự án | Khuyến mại và sự kiện\", điều khiển góc trên phải, thẻ bỏ badge/địa điểm"
     },
     {
+      "stt": "6.5",
+      "key": "parallax_cta",
+      "name": "Dải parallax + CTA",
+      "_note": "KHÔNG có trong file Excel — bổ sung theo yêu cầu riêng của khách hàng (18/08/2026). Đặt giữa mục 6.0 và 7.0.",
+      "spec": "Ảnh nền cuộn chậm hơn nội dung (parallax), phủ lớp tối để chữ trắng đủ tương phản, kèm 2 nút CTA.",
+      "behavior": {
+        "type": "parallax",
+        "technique": "transform + requestAnimationFrame + IntersectionObserver",
+        "khong_dung": "background-attachment: fixed — iOS Safari bỏ qua hoàn toàn và gây giật khi cuộn",
+        "bien_do": "±12% chiều cao section; lớp ảnh overscan 14% mỗi phía nên không bao giờ lòi mép",
+        "chi_chay_khi": "section nằm trong viewport (IntersectionObserver, rootMargin 100px)",
+        "reveal": "nội dung mờ dần hiện lên, chạy 1 lần",
+        "prefers_reduced_motion": "tắt cả parallax lẫn reveal, nội dung hiện ngay"
+      },
+      "kicker": "Công nghệ dẫn lối tương lai",
+      "title": "Giải pháp cơ khí thông minh cho nhà máy Việt",
+      "desc": "Cung cấp giải pháp cơ khí thông minh, giúp doanh nghiệp tối ưu hiệu suất vận hành và tiết kiệm chi phí — ứng dụng công nghệ tiên tiến để nâng cao độ chính xác, độ bền và chất lượng sản phẩm.",
+      "text_source": "official — tôn chỉ trong Excel + sứ mệnh trong Google Docs \"Về chúng tôi\"",
+      "background_image": "images/su-menh.jpg",
+      "image_status": "official nhưng độ phân giải thấp (1000x632, phóng ~1.44x ở màn 1440px) — nên thay bằng ảnh nhà xưởng ≥2000px khi lên production",
+      "cta": [
+        {
+          "label": "Đăng ký tư vấn kỹ thuật",
+          "action": "open_modal"
+        },
+        {
+          "label": "Xem dự án đã triển khai",
+          "url": "du-an.html"
+        }
+      ],
+      "mockup_compliance": "n/a — section thêm ngoài spec Excel"
+    },
+    {
       "stt": "7.0",
       "key": "partners",
       "name": "Nhà cung cấp chiến lược",

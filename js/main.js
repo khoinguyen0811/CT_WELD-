@@ -2,7 +2,7 @@
    CTWELD - MAIN JAVASCRIPT LOGIC
    Includes: Hero Slider (autoplay 8s), Featured-Products Carousel, Projects 3.5-Card Slider
    + Tab Switcher, Partner Marquee Arrows, Consultation Modal Form, Image Lightbox,
-   & Mobile Drawer Menu (accordion).
+   Mobile Drawer Menu (accordion), & Parallax Band (transform + rAF).
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -380,6 +380,87 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       }
     }, { passive: false });
+  }
+
+  // 11. PARALLAX BAND (trang chủ)
+  // Ảnh nền dịch chuyển chậm hơn tốc độ cuộn -> tạo chiều sâu.
+  // Cố ý KHÔNG dùng background-attachment:fixed (iOS Safari không hỗ trợ,
+  // và nó buộc trình duyệt repaint mỗi frame). Ở đây chỉ đổi transform nên
+  // trình duyệt xử lý trên GPU.
+  const parallaxSections = document.querySelectorAll('[data-parallax]');
+
+  if (parallaxSections.length) {
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // --- Nội dung hiện dần khi cuộn tới (chạy 1 lần) ---
+    const revealEls = document.querySelectorAll('[data-parallax-reveal]');
+    if (reduceMotion) {
+      revealEls.forEach(el => el.classList.add('is-revealed'));
+    } else if ('IntersectionObserver' in window) {
+      const revealObserver = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-revealed');
+            obs.unobserve(entry.target);   // hiện rồi thì thôi theo dõi
+          }
+        });
+      }, { threshold: 0.25 });
+      revealEls.forEach(el => revealObserver.observe(el));
+    } else {
+      revealEls.forEach(el => el.classList.add('is-revealed'));
+    }
+
+    // --- Dịch chuyển lớp ảnh ---
+    if (!reduceMotion) {
+      // Lớp ảnh cao hơn section 14% mỗi phía (xem .parallax-layer trong CSS).
+      // Giới hạn biên độ ở 12% để luôn còn khoảng dư, không bao giờ lòi mép.
+      const MAX_SHIFT_RATIO = 0.12;
+      const active = new Set();
+      let ticking = false;
+
+      function renderParallax() {
+        ticking = false;
+        const vh = window.innerHeight;
+
+        active.forEach(section => {
+          const layer = section.querySelector('[data-parallax-layer]');
+          if (!layer) return;
+
+          const rect = section.getBoundingClientRect();
+          // progress: +1 khi section vừa ở dưới màn hình, -1 khi vừa trôi lên trên
+          const progress = (rect.top + rect.height / 2 - vh / 2) / ((vh + rect.height) / 2);
+          const clamped = Math.max(-1, Math.min(1, progress));
+          const shift = clamped * rect.height * MAX_SHIFT_RATIO;
+
+          layer.style.transform = 'translate3d(0, ' + shift.toFixed(2) + 'px, 0)';
+        });
+      }
+
+      function requestParallax() {
+        if (!ticking && active.size) {
+          ticking = true;
+          window.requestAnimationFrame(renderParallax);
+        }
+      }
+
+      if ('IntersectionObserver' in window) {
+        // Chỉ tính toán khi section đang trong (hoặc sát) viewport
+        const activeObserver = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) active.add(entry.target);
+            else active.delete(entry.target);
+          });
+          requestParallax();
+        }, { rootMargin: '100px 0px' });
+        parallaxSections.forEach(s => activeObserver.observe(s));
+      } else {
+        parallaxSections.forEach(s => active.add(s));
+      }
+
+      window.addEventListener('scroll', requestParallax, { passive: true });
+      window.addEventListener('resize', requestParallax);
+      requestParallax();
+    }
   }
 
 });
