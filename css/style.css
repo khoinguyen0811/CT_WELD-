@@ -3835,8 +3835,11 @@ body.drawer-open { overflow: hidden; }
   .proj-card { flex-basis: calc((100% - 28px) / 2.2); }
 
   /* About: xếp dọc, ảnh lên trên */
-  .about-grid { grid-template-columns: 1fr; gap: 32px; }
-  .about-media { order: -1; }
+  .about-top-grid { grid-template-columns: 1fr; gap: 36px; }
+  .about-top-grid .about-media { order: -1; }
+  .about-top-grid .media-wrapper { height: 340px; }
+  .about-title { font-size: 2.1rem; }
+  .about-stats-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
 
   /* Tầm nhìn / Sứ mệnh: xếp dọc, ảnh luôn lên trên */
   .vm-block,
@@ -3864,6 +3867,20 @@ body.drawer-open { overflow: hidden; }
     padding-bottom: 48px !important;
   }
 
+  /* About section mobile */
+  .about-top-grid { grid-template-columns: 1fr; gap: 24px; }
+  .about-top-grid .about-media { order: -1; }
+  .about-top-grid .media-wrapper { height: 240px; }
+  .about-title { font-size: 1.65rem !important; line-height: 1.3; }
+  .about-sapo { font-size: 0.95rem; padding-left: 12px; margin-bottom: 14px; }
+  .about-body { font-size: 0.9rem; line-height: 1.55; }
+  .about-stats-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 12px; }
+  .stat-box { padding: 14px 10px; }
+  .stat-number { font-size: 1.9rem; }
+  .stat-label { font-size: 0.775rem; white-space: normal; }
+  .about-cta-center { margin-top: 24px; }
+  .about-cta-center .btn { width: 100%; justify-content: center; }
+
   /* Topbar chỉ giữ cờ ngôn ngữ */
   .quick-links { display: none; }
 
@@ -3878,10 +3895,8 @@ body.drawer-open { overflow: hidden; }
   .news-grid-3,
   .grid3,
   .core-values-grid,
-  .about-stats,
   .form-row-2,
   .footer-top { grid-template-columns: 1fr; }
-  .about-stats { gap: 22px; }
 
   /* Carousel: 1 thẻ / khung; dự án 1.15 thẻ để lộ mép thẻ sau */
   .prod-carousel-track > .prod-card { flex-basis: 100%; }
@@ -3895,7 +3910,6 @@ body.drawer-open { overflow: hidden; }
   .section-title-underline { font-size: 1.5rem; }
   .archive-page-title { font-size: 1.75rem; }
   .article-page-title { font-size: 1.5rem; }
-  .stat-box .stat-number { font-size: 2.1rem; }
 
   /* Hàng tiêu đề + CTA: xếp dọc */
   .section-head-row { flex-direction: column; align-items: flex-start; gap: 18px; }
