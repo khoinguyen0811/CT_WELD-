@@ -3097,7 +3097,7 @@ button {
   gap: 8px;
   background: rgba(243, 112, 33, 0.1);
   color: var(--color-brand-orange);
-  font-family: var(--font-heading);
+  font-family: var(--font-main);
   font-size: 0.85rem;
   font-weight: 700;
   padding: 6px 14px;
@@ -3106,7 +3106,7 @@ button {
 }
 
 .vm-title-main {
-  font-family: var(--font-heading);
+  font-family: var(--font-main);
   font-size: 1.45rem;
   font-weight: 700;
   color: var(--color-text-heading);
