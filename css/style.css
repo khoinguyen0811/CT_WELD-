@@ -745,7 +745,7 @@ button {
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   align-items: center;
-  margin-bottom: 48px;
+  margin-bottom: 24px;
 }
 
 .about-text {
@@ -788,14 +788,14 @@ button {
 }
 
 .about-stats-row {
-  padding-top: 36px;
-  border-top: 1px solid var(--color-border);
+  padding-top: 0;
+  border-top: none !important;
 }
 
 .about-stats-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
+  gap: 20px;
   width: 100%;
 }
 
@@ -804,7 +804,7 @@ button {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 20px 16px;
+  padding: 16px;
   background: var(--color-bg-light);
   border-radius: var(--radius-md);
 }
