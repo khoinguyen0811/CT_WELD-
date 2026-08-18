@@ -3634,8 +3634,9 @@ button {
 .mobile-drawer-overlay {
   position: fixed;
   inset: 0;
-  z-index: 998;
-  background: rgba(15, 23, 42, 0.55);
+  z-index: 99998;
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(4px);
   opacity: 0;
   visibility: hidden;
   transition: all var(--transition-normal);
@@ -3645,43 +3646,55 @@ button {
 .mobile-drawer {
   position: fixed;
   top: 0; left: 0;
-  z-index: 999;
-  width: 300px;
-  max-width: 84vw;
-  height: 100%;
-  background: #232629;
+  z-index: 99999;
+  width: 320px;
+  max-width: 86vw;
+  height: 100vh;
+  height: 100dvh;
+  background: #181B1E;
+  box-shadow: 10px 0 35px rgba(0, 0, 0, 0.45);
   transform: translateX(-100%);
-  transition: transform var(--transition-normal);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
+  display: flex;
+  flex-direction: column;
 }
 .mobile-drawer.open { transform: translateX(0); }
+
 .mobile-drawer-head {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 18px 20px;
-  margin: 12px;
-  background: #35383c;
+  padding: 16px 20px;
+  background: #22262A;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 .mobile-drawer-head span {
   font-family: var(--font-heading);
   font-size: 1.05rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   color: #fff;
 }
 .mobile-drawer-close {
-  background: none;
+  background: rgba(255, 255, 255, 0.08);
   border: none;
-  color: #9aa0a6;
-  font-size: 1.1rem;
+  color: #cbd5e1;
+  font-size: 1.15rem;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  padding: 4px;
+  padding: 0;
+  transition: all var(--transition-fast);
 }
-.mobile-drawer-close:hover { color: var(--color-brand-orange); }
+.mobile-drawer-close:hover { background: var(--color-brand-orange); color: #fff; }
 
-.mobile-nav { list-style: none; margin: 0; padding: 0; }
+.mobile-nav { list-style: none; margin: 0; padding: 0; flex: 1; }
 .mobile-nav li { border-bottom: 1px solid rgba(255, 255, 255, 0.07); }
 .mobile-nav-row { display: flex; align-items: stretch; }
 .mobile-nav-row > a {
@@ -3734,6 +3747,7 @@ button {
   gap: 10px;
   padding: 16px 20px;
   border-top: 1px solid rgba(255, 255, 255, 0.07);
+  background: #181B1E;
 }
 .mobile-drawer-lang button {
   background: none;
@@ -3762,17 +3776,38 @@ body.drawer-open { overflow: hidden; }
   .vm-block { gap: 36px; }
 }
 
-/* ---------- ≤1024px: tablet ---------- */
+/* ---------- ≤1024px: tablet & mobile header ---------- */
 @media (max-width: 1024px) {
   html { font-size: 15px; }
 
-  /* Header: ẩn nav ngang + thanh tìm kiếm, hiện nút hamburger */
-  .main-navbar { display: none; }
-  .mobile-toggle { display: inline-flex; align-items: center; justify-content: center; }
-  .header-search-bar { display: none; }
-  .header-contact-blocks { display: none; }
-  .top-announcement-bar .announcement-left { display: none; }
-  .middle-header-bar .container { justify-content: space-between; }
+  /* Header: ẩn topbar & nav ngang, hiện logo + nút hamburger gọn gàng */
+  .top-announcement-bar { display: none !important; }
+  .main-navbar { display: none !important; }
+  .header-search-bar { display: none !important; }
+  .header-contact-blocks { display: none !important; }
+  
+  .middle-header-bar { padding: 10px 0; background: var(--color-bg-white); }
+  .middle-header-bar .container { display: flex; align-items: center; justify-content: space-between; }
+  .brand-logo .logo-img { height: 38px; width: auto; max-width: 170px; object-fit: contain; }
+  
+  .mobile-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-sm);
+    background: var(--color-orange-subtle);
+    color: var(--color-brand-orange);
+    border: 1px solid var(--color-border-orange);
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+  }
+  .mobile-toggle:hover {
+    background: var(--color-brand-orange);
+    color: #fff;
+  }
 
   /* Grid chung 3 -> 2 cột */
   .prod-grid-3,
