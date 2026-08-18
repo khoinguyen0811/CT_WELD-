@@ -750,14 +750,24 @@
         }
 
         if (prevBtn) {
-          prevBtn.addEventListener('click', () => {
+          prevBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (window.innerWidth <= 768 && viewport) {
+              viewport.scrollBy({ left: -240, behavior: 'smooth' });
+              return;
+            }
             currentProgressStep = Math.max(0, currentProgressStep - 1);
             scrollToStep(currentProgressStep);
           });
         }
 
         if (nextBtn) {
-          nextBtn.addEventListener('click', () => {
+          nextBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (window.innerWidth <= 768 && viewport) {
+              viewport.scrollBy({ left: 240, behavior: 'smooth' });
+              return;
+            }
             currentProgressStep = Math.min(totalSteps - 1, currentProgressStep + 1);
             scrollToStep(currentProgressStep);
           });

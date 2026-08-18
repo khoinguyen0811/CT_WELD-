@@ -4003,8 +4003,30 @@ body.drawer-open { overflow: hidden; }
     font-size: 0.85rem;
   }
   .timeline-arrow {
-    display: none !important;
+    display: flex !important;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    border: 1.5px solid var(--color-brand-orange);
+    color: var(--color-brand-orange);
+    box-shadow: 0 3px 10px rgba(243, 112, 33, 0.2);
+    z-index: 30;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    transition: all var(--transition-fast);
   }
+  .timeline-arrow:hover, .timeline-arrow:active {
+    background: var(--color-brand-orange);
+    color: #FFFFFF;
+  }
+  .timeline-arrow.prev { left: 4px; }
+  .timeline-arrow.next { right: 4px; }
 
   /* Carousel: 1 thẻ / khung; dự án 1.15 thẻ để lộ mép thẻ sau */
   .prod-carousel-track > .prod-card { flex-basis: 100%; }
