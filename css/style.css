@@ -3863,6 +3863,13 @@ body.drawer-open { overflow: hidden; }
   .news-page-layout { grid-template-columns: 1fr; }
   .product-sidebar { order: 2; }
 
+  /* Sticky Timeline Tablet */
+  .timeline-track { padding: 0 60px; gap: 48px; }
+  .timeline-line-bg { left: 60px; right: 60px; }
+  .timeline-col { width: 250px; }
+  .slot-top, .slot-bottom { height: 180px; }
+  .date-text { font-size: 2.2rem; }
+
   /* Footer tablet */
   .footer-top {
     grid-template-columns: 1.5fr 1fr 1fr;
@@ -3920,6 +3927,76 @@ body.drawer-open { overflow: hidden; }
   .grid3,
   .core-values-grid,
   .form-row-2 { grid-template-columns: 1fr; }
+
+  /* Sticky Timeline Mobile (Giá trị cốt lõi CTWELD) */
+  .history-sticky-section {
+    height: 200vh;
+  }
+  .history-sticky-container {
+    height: 100vh;
+    height: 100dvh;
+    padding: 16px 0;
+    justify-content: space-between;
+  }
+  .history-sticky-section .section-header {
+    margin-bottom: 8px !important;
+  }
+  .history-sticky-section .section-title {
+    font-size: 1.5rem !important;
+    margin-bottom: 6px;
+  }
+  .history-sticky-section .section-subtitle {
+    font-size: 0.825rem;
+    line-height: 1.45;
+  }
+  .timeline-viewport {
+    padding: 8px 0;
+  }
+  .timeline-track {
+    padding: 0 28px;
+    gap: 24px;
+  }
+  .timeline-line-bg {
+    left: 28px;
+    right: 28px;
+    height: 2px;
+  }
+  .timeline-col {
+    width: 220px;
+  }
+  .slot-top, .slot-bottom {
+    height: 130px;
+    padding: 6px 0;
+  }
+  .slot-top {
+    justify-content: flex-end;
+    padding-bottom: 10px;
+  }
+  .slot-bottom {
+    justify-content: flex-start;
+    padding-top: 10px;
+  }
+  .date-text {
+    font-size: 1.8rem;
+    margin-bottom: 4px;
+  }
+  .desc-text {
+    font-size: 0.825rem !important;
+    line-height: 1.35;
+    max-width: 200px;
+  }
+  .node-circle {
+    width: 36px;
+    height: 36px;
+    font-size: 0.9rem;
+  }
+  .timeline-arrow {
+    width: 34px;
+    height: 34px;
+    font-size: 0.8rem;
+  }
+  .timeline-arrow.prev { left: 6px; }
+  .timeline-arrow.next { right: 6px; }
 
   /* Carousel: 1 thẻ / khung; dự án 1.15 thẻ để lộ mép thẻ sau */
   .prod-carousel-track > .prod-card { flex-basis: 100%; }

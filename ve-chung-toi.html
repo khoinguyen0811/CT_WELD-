@@ -237,7 +237,7 @@
       <div class="container">
         <div class="section-header" style="margin-bottom: 20px; max-width: 1150px;">
           <h2 class="section-title">Giá Trị <span class="text-orange">Cốt Lõi CTWELD</span></h2>
-          <p class="section-subtitle" style="max-width: 1150px; margin: 0 auto; line-height: 1.6;">CTWELD đặt mục tiêu trở thành đơn vị số 1 trên thị trường về chất lượng sản phẩm và dịch vụ hậu mãi. Chúng tôi cam kết<br>xây dựng mối quan hệ với khách hàng bằng sự tin cậy, nhiệt tình và tinh thần trách nhiệm cao nhất</p>
+          <p class="section-subtitle" style="max-width: 1150px; margin: 0 auto; line-height: 1.6;">CTWELD đặt mục tiêu trở thành đơn vị số 1 trên thị trường về chất lượng sản phẩm và dịch vụ hậu mãi. Chúng tôi cam kết xây dựng mối quan hệ với khách hàng bằng sự tin cậy, nhiệt tình và tinh thần trách nhiệm cao nhất.</p>
         </div>
       </div>
 
@@ -661,7 +661,9 @@
 
           const trackWidth = track.scrollWidth;
           const viewportWidth = window.innerWidth;
-          const maxTranslate = Math.max(0, trackWidth - viewportWidth + 140);
+          const isMobile = window.innerWidth <= 768;
+          const paddingOffset = isMobile ? 36 : 140;
+          const maxTranslate = Math.max(0, trackWidth - viewportWidth + paddingOffset);
 
           const translateX = progress * maxTranslate;
           track.style.transform = `translateX(-${translateX}px)`;
