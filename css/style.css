@@ -825,6 +825,19 @@ button {
   white-space: nowrap;
 }
 
+.stat-box-highlight {
+  background: var(--color-brand-orange) !important;
+  color: #FFFFFF !important;
+}
+
+.stat-box-highlight .stat-number {
+  color: #FFFFFF !important;
+}
+
+.stat-box-highlight .stat-label {
+  color: rgba(255, 255, 255, 0.95) !important;
+}
+
 .about-cta-center {
   margin-top: 32px;
   text-align: center;
