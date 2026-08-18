@@ -325,18 +325,28 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // 10. CORE VALUES SLIDER
+  // 10. CORE VALUES SLIDER (Connecting Line + Wheel Auto Scroll)
   const cvTrack = document.getElementById('cvTrack');
   const cvPrev = document.getElementById('cvPrev');
   const cvNext = document.getElementById('cvNext');
 
-  if (cvTrack && cvPrev && cvNext) {
-    cvPrev.addEventListener('click', () => {
-      cvTrack.scrollBy({ left: -340, behavior: 'smooth' });
-    });
-    cvNext.addEventListener('click', () => {
-      cvTrack.scrollBy({ left: 340, behavior: 'smooth' });
-    });
+  if (cvTrack) {
+    if (cvPrev && cvNext) {
+      cvPrev.addEventListener('click', () => {
+        cvTrack.scrollBy({ left: -360, behavior: 'smooth' });
+      });
+      cvNext.addEventListener('click', () => {
+        cvTrack.scrollBy({ left: 360, behavior: 'smooth' });
+      });
+    }
+
+    // Tự động trượt ngang khi cuộn chuột (Mouse Wheel Scroll)
+    cvTrack.addEventListener('wheel', (e) => {
+      if (e.deltaY !== 0) {
+        e.preventDefault();
+        cvTrack.scrollBy({ left: e.deltaY * 1.5, behavior: 'smooth' });
+      }
+    }, { passive: false });
   }
 
 });

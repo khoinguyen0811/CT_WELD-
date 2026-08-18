@@ -231,59 +231,103 @@
     </div>
   </section>
 
-  <!-- SECTION 3: GIÁ TRỊ CỐT LÕI (SLIDER TRƯỢT NGANG TƯƠNG TỰ QUÁ TRÌNH HÌNH THÀNH) -->
-  <section class="core-values-section" style="padding: 80px 0; background: var(--color-bg-white);">
+  <!-- SECTION 3: GIÁ TRỊ CỐT LÕI (SỢI DÂY NGANG + ZIGZAG CARDS + TRƯỢT TỰ ĐỘNG KHI SCROLL) -->
+  <section class="cv-timeline-section">
     <div class="container">
       <div class="section-header">
         <h2 class="section-title">Giá Trị <span class="text-orange">Cốt Lõi CTWELD</span></h2>
         <p class="section-subtitle">6 triết lý kinh doanh kim chỉ nam giúp CTWELD khẳng định vị thế và niềm tin lâu dài với khách hàng</p>
       </div>
 
-      <div class="cv-slider-viewport">
-        <button class="cv-arrow prev" id="cvPrev" aria-label="Giá trị trước"><i class="fas fa-chevron-left"></i></button>
-        <button class="cv-arrow next" id="cvNext" aria-label="Giá trị sau"><i class="fas fa-chevron-right"></i></button>
+      <div class="cv-timeline-viewport">
+        <div class="cv-timeline-track" id="cvTrack">
+          <div class="cv-line-bg"></div>
 
-        <div class="cv-track" id="cvTrack">
-          <!-- Card 1 -->
-          <div class="cv-card">
-            <div class="cv-icon-box"><i class="fas fa-award"></i></div>
-            <h3 class="cv-card-title">Chất Lượng Hàng Đầu</h3>
-            <p class="cv-card-desc">CTWELD cam kết mang đến những sản phẩm và dịch vụ đạt tiêu chuẩn cao nhất, đảm bảo độ chính xác, bền bỉ và an toàn trong từng giải pháp cơ khí.</p>
+          <!-- Col 1: Card 1 (TOP) -->
+          <div class="cv-timeline-col">
+            <div class="cv-slot-top">
+              <div class="cv-timeline-card">
+                <div class="cv-icon-box"><i class="fas fa-award"></i></div>
+                <h3 class="cv-card-title">Chất Lượng Hàng Đầu</h3>
+                <p class="cv-card-desc">CTWELD cam kết mang đến những sản phẩm và dịch vụ đạt tiêu chuẩn cao nhất, đảm bảo độ chính xác, bền bỉ và an toàn trong từng giải pháp cơ khí.</p>
+              </div>
+            </div>
+            <div class="cv-node-circle"><div class="cv-node-inner"></div></div>
+            <div class="cv-slot-bottom"></div>
           </div>
 
-          <!-- Card 2 -->
-          <div class="cv-card">
-            <div class="cv-icon-box"><i class="fas fa-microchip"></i></div>
-            <h3 class="cv-card-title">Công Nghệ Tiên Phong</h3>
-            <p class="cv-card-desc">Luôn cập nhật và ứng dụng công nghệ hiện đại nhất để tối ưu hóa quy trình sản xuất, nâng cao hiệu suất và mang lại giải pháp cơ khí thông minh, hiệu quả.</p>
+          <!-- Col 2: Card 2 (TOP) -->
+          <div class="cv-timeline-col">
+            <div class="cv-slot-top">
+              <div class="cv-timeline-card">
+                <div class="cv-icon-box"><i class="fas fa-microchip"></i></div>
+                <h3 class="cv-card-title">Công Nghệ Tiên Phong</h3>
+                <p class="cv-card-desc">Luôn cập nhật và ứng dụng công nghệ hiện đại nhất để tối ưu hóa quy trình sản xuất, nâng cao hiệu suất và mang lại giải pháp cơ khí thông minh, hiệu quả.</p>
+              </div>
+            </div>
+            <div class="cv-node-circle"><div class="cv-node-inner"></div></div>
+            <div class="cv-slot-bottom"></div>
           </div>
 
-          <!-- Card 3 -->
-          <div class="cv-card">
-            <div class="cv-icon-box"><i class="fas fa-users"></i></div>
-            <h3 class="cv-card-title">Khách Hàng Là Trung Tâm</h3>
-            <p class="cv-card-desc">Lấy sự hài lòng của khách hàng làm kim chỉ nam, CTWELD không ngừng cải tiến dịch vụ, đảm bảo sự hợp tác lâu dài, bền vững.</p>
+          <!-- Col 3: Card 3 (BOTTOM) -->
+          <div class="cv-timeline-col">
+            <div class="cv-slot-top"></div>
+            <div class="cv-node-circle"><div class="cv-node-inner"></div></div>
+            <div class="cv-slot-bottom">
+              <div class="cv-timeline-card">
+                <div class="cv-icon-box"><i class="fas fa-users"></i></div>
+                <h3 class="cv-card-title">Khách Hàng Là Trung Tâm</h3>
+                <p class="cv-card-desc">Lấy sự hài lòng của khách hàng làm kim chỉ nam, CTWELD không ngừng cải tiến dịch vụ, đảm bảo sự hợp tác lâu dài, bền vững.</p>
+              </div>
+            </div>
           </div>
 
-          <!-- Card 4 -->
-          <div class="cv-card">
-            <div class="cv-icon-box"><i class="fas fa-lightbulb"></i></div>
-            <h3 class="cv-card-title">Đổi Mới &amp; Sáng Tạo</h3>
-            <p class="cv-card-desc">Không ngừng nghiên cứu, phát triển và cải tiến sản phẩm, dịch vụ nhằm tạo ra giải pháp đột phá, giúp doanh nghiệp tối ưu chi phí và nâng cao hiệu suất.</p>
+          <!-- Col 4: Card 4 (TOP) -->
+          <div class="cv-timeline-col">
+            <div class="cv-slot-top">
+              <div class="cv-timeline-card">
+                <div class="cv-icon-box"><i class="fas fa-lightbulb"></i></div>
+                <h3 class="cv-card-title">Đổi Mới &amp; Sáng Tạo</h3>
+                <p class="cv-card-desc">Không ngừng nghiên cứu, phát triển và cải tiến sản phẩm, dịch vụ nhằm tạo ra giải pháp đột phá, giúp doanh nghiệp tối ưu chi phí và nâng cao hiệu suất.</p>
+              </div>
+            </div>
+            <div class="cv-node-circle"><div class="cv-node-inner"></div></div>
+            <div class="cv-slot-bottom"></div>
           </div>
 
-          <!-- Card 5 -->
-          <div class="cv-card">
-            <div class="cv-icon-box"><i class="fas fa-handshake"></i></div>
-            <h3 class="cv-card-title">Trách Nhiệm &amp; Uy Tín</h3>
-            <p class="cv-card-desc">Luôn giữ chữ “Tín” trong mọi cam kết, đảm bảo trách nhiệm với khách hàng, đối tác và xã hội, xây dựng niềm tin bền vững.</p>
+          <!-- Col 5: Card 5 (TOP) -->
+          <div class="cv-timeline-col">
+            <div class="cv-slot-top">
+              <div class="cv-timeline-card">
+                <div class="cv-icon-box"><i class="fas fa-handshake"></i></div>
+                <h3 class="cv-card-title">Trách Nhiệm &amp; Uy Tín</h3>
+                <p class="cv-card-desc">Luôn giữ chữ “Tín” trong mọi cam kết, đảm bảo trách nhiệm với khách hàng, đối tác và xã hội, xây dựng niềm tin bền vững.</p>
+              </div>
+            </div>
+            <div class="cv-node-circle"><div class="cv-node-inner"></div></div>
+            <div class="cv-slot-bottom"></div>
           </div>
 
-          <!-- Card 6 -->
-          <div class="cv-card">
-            <div class="cv-icon-box"><i class="fas fa-leaf"></i></div>
-            <h3 class="cv-card-title">Phát Triển Bền Vững</h3>
-            <p class="cv-card-desc">Hướng đến một ngành cơ khí xanh, tối ưu tài nguyên, giảm thiểu tác động đến môi trường và đóng góp vào sự phát triển bền vững của ngành công nghiệp Việt Nam.</p>
+          <!-- Col 6: Card 6 (BOTTOM) -->
+          <div class="cv-timeline-col">
+            <div class="cv-slot-top"></div>
+            <div class="cv-node-circle"><div class="cv-node-inner"></div></div>
+            <div class="cv-slot-bottom">
+              <div class="cv-timeline-card">
+                <div class="cv-icon-box"><i class="fas fa-leaf"></i></div>
+                <h3 class="cv-card-title">Phát Triển Bền Vững</h3>
+                <p class="cv-card-desc">Hướng đến một ngành cơ khí xanh, tối ưu tài nguyên, giảm thiểu tác động đến môi trường và đóng góp vào sự phát triển bền vững của ngành công nghiệp Việt Nam.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Bottom Navigation Row at Start (Bottom Left) -->
+        <div class="cv-bottom-actions">
+          <div class="cv-nav-btns">
+            <button class="cv-arrow-btn" id="cvPrev" aria-label="Trước"><i class="fas fa-chevron-left"></i></button>
+            <button class="cv-arrow-btn" id="cvNext" aria-label="Sau"><i class="fas fa-chevron-right"></i></button>
           </div>
         </div>
       </div>
