@@ -2026,11 +2026,13 @@ button {
 }
 
 .node-circle {
-  width: 32px;
-  height: 32px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   border: 2px solid #CBD5E1;
   background: #FFFFFF;
+  color: #94A3B8;
+  font-size: 1.05rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2039,22 +2041,12 @@ button {
   cursor: pointer;
 }
 
-.node-inner {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: transparent;
-  transition: background 0.25s ease;
-}
-
 .node-circle.active {
   border-color: var(--color-brand-orange);
-  transform: scale(1.15);
-  box-shadow: 0 0 0 4px rgba(243, 112, 33, 0.18);
-}
-
-.node-circle.active .node-inner {
   background: var(--color-brand-orange);
+  color: #FFFFFF;
+  transform: scale(1.15);
+  box-shadow: 0 0 0 5px rgba(243, 112, 33, 0.2);
 }
 
 .timeline-arrow {
