@@ -3935,11 +3935,12 @@ body.drawer-open { overflow: hidden; }
   .history-sticky-container {
     height: 100vh;
     height: 100dvh;
-    padding: 16px 0;
-    justify-content: space-between;
+    padding: 20px 0;
+    justify-content: center !important;
+    gap: 16px;
   }
   .history-sticky-section .section-header {
-    margin-bottom: 8px !important;
+    margin-bottom: 0 !important;
   }
   .history-sticky-section .section-title {
     font-size: 1.5rem !important;
@@ -3950,7 +3951,8 @@ body.drawer-open { overflow: hidden; }
     line-height: 1.45;
   }
   .timeline-viewport {
-    padding: 8px 0;
+    padding: 6px 0;
+    margin: 0 auto;
   }
   .timeline-track {
     padding: 0 28px;
@@ -3965,20 +3967,20 @@ body.drawer-open { overflow: hidden; }
     width: 220px;
   }
   .slot-top, .slot-bottom {
-    height: 130px;
-    padding: 6px 0;
+    height: 120px;
+    padding: 4px 0;
   }
   .slot-top {
     justify-content: flex-end;
-    padding-bottom: 10px;
+    padding-bottom: 8px;
   }
   .slot-bottom {
     justify-content: flex-start;
-    padding-top: 10px;
+    padding-top: 8px;
   }
   .date-text {
-    font-size: 1.8rem;
-    margin-bottom: 4px;
+    font-size: 1.75rem;
+    margin-bottom: 2px;
   }
   .desc-text {
     font-size: 0.825rem !important;
