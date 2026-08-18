@@ -325,4 +325,18 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
+  // 10. CORE VALUES SLIDER
+  const cvTrack = document.getElementById('cvTrack');
+  const cvPrev = document.getElementById('cvPrev');
+  const cvNext = document.getElementById('cvNext');
+
+  if (cvTrack && cvPrev && cvNext) {
+    cvPrev.addEventListener('click', () => {
+      cvTrack.scrollBy({ left: -340, behavior: 'smooth' });
+    });
+    cvNext.addEventListener('click', () => {
+      cvTrack.scrollBy({ left: 340, behavior: 'smooth' });
+    });
+  }
+
 });

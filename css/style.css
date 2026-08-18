@@ -3187,28 +3187,99 @@ button {
 }
 
 .core-values-section { padding: 80px 0; background: var(--color-bg-white); }
-.core-values-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; }
-.core-value-card {
+
+.cv-slider-viewport {
+  position: relative;
+  overflow: hidden;
+  padding: 10px 4px;
+  margin-top: 36px;
+}
+
+.cv-track {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding: 12px 6px;
+}
+
+.cv-track::-webkit-scrollbar {
+  display: none;
+}
+
+.cv-card {
+  flex: 0 0 320px;
   background: var(--color-bg-light);
-  border-radius: var(--radius-md);
-  padding: 28px 22px;
+  border-radius: var(--radius-lg);
+  padding: 32px 26px;
+  transition: all var(--transition-fast);
+  display: flex;
+  flex-direction: column;
 }
-.cv-icon {
-  width: 54px; height: 54px;
-  border: 2px solid var(--color-brand-orange);
-  border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
+
+.cv-card:hover {
+  background: #F1F5F9;
+  transform: translateY(-4px);
+}
+
+.cv-icon-box {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: #FFFFFF;
   color: var(--color-brand-orange);
-  font-size: 1.2rem;
-  margin-bottom: 22px;
+  border: 1.5px solid var(--color-brand-orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  margin-bottom: 20px;
 }
-.cv-title {
-  font-family: var(--font-heading);
+
+.cv-card-title {
+  font-family: var(--font-main);
   font-size: 1.15rem;
-  font-weight: 600;
-  color: var(--color-brand-orange);
-  margin: 0 0 18px;
+  font-weight: 700;
+  color: #334155;
+  margin-bottom: 10px;
 }
+
+.cv-card-desc {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.cv-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-heading);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-md);
+  cursor: pointer;
+  z-index: 5;
+  transition: all var(--transition-fast);
+}
+
+.cv-arrow:hover {
+  background: var(--color-brand-orange);
+  color: #FFFFFF;
+  border-color: var(--color-brand-orange);
+}
+
+.cv-arrow.prev { left: 4px; }
+.cv-arrow.next { right: 4px; }
 
 /* --------------------------------------------------------------------------
    9. TRANG ARCHIVE CẤP 1 — tiêu đề canh giữa + intro + grid 3 cột ảnh
