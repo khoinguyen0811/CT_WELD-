@@ -1950,11 +1950,16 @@ button {
   padding: 30px 0;
 }
 
-.timeline-viewport {
+.timeline-slider-wrap {
   position: relative;
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
+}
+
+.timeline-viewport {
+  position: relative;
+  width: 100%;
   overflow: hidden;
   padding: 20px 0;
 }
@@ -3953,6 +3958,11 @@ body.drawer-open { overflow: hidden; }
     font-size: 0.875rem;
     line-height: 1.5;
   }
+  .timeline-slider-wrap {
+    position: relative;
+    width: 100%;
+    overflow: visible;
+  }
   .timeline-viewport {
     padding: 10px 0;
     margin: 0 auto;
@@ -3964,13 +3974,13 @@ body.drawer-open { overflow: hidden; }
     display: none;
   }
   .timeline-track {
-    padding: 0 24px;
+    padding: 0 44px;
     gap: 20px;
     width: max-content;
   }
   .timeline-line-bg {
-    left: 24px;
-    right: 24px;
+    left: 44px;
+    right: 44px;
     height: 2px;
   }
   .timeline-col {
@@ -4007,18 +4017,18 @@ body.drawer-open { overflow: hidden; }
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 36px;
-    height: 36px;
+    width: 38px;
+    height: 38px;
     border-radius: 50%;
     background: #FFFFFF;
     border: 1.5px solid var(--color-brand-orange);
     color: var(--color-brand-orange);
-    box-shadow: 0 3px 10px rgba(243, 112, 33, 0.2);
-    z-index: 30;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+    z-index: 60;
     cursor: pointer;
     align-items: center;
     justify-content: center;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     transition: all var(--transition-fast);
   }
   .timeline-arrow:hover, .timeline-arrow:active {
