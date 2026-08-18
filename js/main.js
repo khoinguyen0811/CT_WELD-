@@ -382,85 +382,90 @@ document.addEventListener('DOMContentLoaded', function() {
     }, { passive: false });
   }
 
-  // 11. PARALLAX BAND (trang chủ)
-  // Ảnh nền dịch chuyển chậm hơn tốc độ cuộn -> tạo chiều sâu.
-  // Cố ý KHÔNG dùng background-attachment:fixed (iOS Safari không hỗ trợ,
-  // và nó buộc trình duyệt repaint mỗi frame). Ở đây chỉ đổi transform nên
-  // trình duyệt xử lý trên GPU.
-  const parallaxSections = document.querySelectorAll('[data-parallax]');
-
-  if (parallaxSections.length) {
+  // 12. GLOBAL CREATIVE SCROLL REVEAL & PROGRESSIVE LOAD (ÁP DỤNG TOÀN BỘ CÁC TRANG)
+  function initGlobalScrollReveal() {
     const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-    // --- Nội dung hiện dần khi cuộn tới (chạy 1 lần) ---
-    const revealEls = document.querySelectorAll('[data-parallax-reveal]');
-    if (reduceMotion) {
-      revealEls.forEach(el => el.classList.add('is-revealed'));
-    } else if ('IntersectionObserver' in window) {
-      const revealObserver = new IntersectionObserver((entries, obs) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('is-revealed');
-            obs.unobserve(entry.target);   // hiện rồi thì thôi theo dõi
-          }
-        });
-      }, { threshold: 0.25 });
-      revealEls.forEach(el => revealObserver.observe(el));
-    } else {
-      revealEls.forEach(el => el.classList.add('is-revealed'));
+    const autoSelectors = [
+      '.section-header',
+      '.section-head-row',
+      '.prod-card',
+      '.product-card',
+      '.grid3-card',
+      '.news-card',
+      '.proj-card',
+      '.bento-card',
+      '.bento-stage-card',
+      '.process-step-card',
+      '.sol-card',
+      '.mission-pillar-card',
+      '.stat-card',
+      '.partner-logo',
+      '.connect-card',
+      '.contact-form-block',
+      '.contact-address-list li',
+      '.article-section p',
+      '.article-figure',
+      '.article-form',
+      '.sidebar-widget',
+      '.sol-metric-card',
+      '.cat-pills',
+      '.vm-content-wrap',
+      '.vm-media-wrap'
+    ];
+
+    const elements = document.querySelectorAll(autoSelectors.join(', '));
+    if (!elements.length) return;
+
+    // Tự động gán stagger index cho các card cùng cấp trong lưới/danh sách
+    const parentContainers = document.querySelectorAll('.grid3, .news-grid-3, .projects-track, .prod-track, .mission-pillars-grid, .bento-steps-grid, .sol-metrics-grid, .cat-pills, .contact-address-list');
+    parentContainers.forEach(container => {
+      const children = container.children;
+      Array.from(children).forEach((child, index) => {
+        child.style.setProperty('--stagger-i', index % 6);
+      });
+    });
+
+    if (reduceMotion || !('IntersectionObserver' in window)) {
+      elements.forEach(el => el.classList.add('is-revealed'));
+      return;
     }
 
-    // --- Dịch chuyển lớp ảnh ---
-    if (!reduceMotion) {
-      // Lớp ảnh cao hơn section 14% mỗi phía (xem .parallax-layer trong CSS).
-      // Giới hạn biên độ ở 12% để luôn còn khoảng dư, không bao giờ lòi mép.
-      const MAX_SHIFT_RATIO = 0.12;
-      const active = new Set();
-      let ticking = false;
-
-      function renderParallax() {
-        ticking = false;
-        const vh = window.innerHeight;
-
-        active.forEach(section => {
-          const layer = section.querySelector('[data-parallax-layer]');
-          if (!layer) return;
-
-          const rect = section.getBoundingClientRect();
-          // progress: +1 khi section vừa ở dưới màn hình, -1 khi vừa trôi lên trên
-          const progress = (rect.top + rect.height / 2 - vh / 2) / ((vh + rect.height) / 2);
-          const clamped = Math.max(-1, Math.min(1, progress));
-          const shift = clamped * rect.height * MAX_SHIFT_RATIO;
-
-          layer.style.transform = 'translate3d(0, ' + shift.toFixed(2) + 'px, 0)';
-        });
-      }
-
-      function requestParallax() {
-        if (!ticking && active.size) {
-          ticking = true;
-          window.requestAnimationFrame(renderParallax);
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-revealed');
+          obs.unobserve(entry.target);
         }
-      }
+      });
+    }, {
+      threshold: 0.1,
+      rootMargin: '0px 0px -40px 0px'
+    });
 
-      if ('IntersectionObserver' in window) {
-        // Chỉ tính toán khi section đang trong (hoặc sát) viewport
-        const activeObserver = new IntersectionObserver(entries => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) active.add(entry.target);
-            else active.delete(entry.target);
-          });
-          requestParallax();
-        }, { rootMargin: '100px 0px' });
-        parallaxSections.forEach(s => activeObserver.observe(s));
-      } else {
-        parallaxSections.forEach(s => active.add(s));
+    elements.forEach(el => {
+      if (!el.classList.contains('reveal-fade-up') && 
+          !el.classList.contains('reveal-scale') && 
+          !el.classList.contains('reveal-slide-left') && 
+          !el.classList.contains('reveal-slide-right') && 
+          !el.hasAttribute('data-reveal')) {
+        el.classList.add('reveal-fade-up');
       }
+      observer.observe(el);
+    });
 
-      window.addEventListener('scroll', requestParallax, { passive: true });
-      window.addEventListener('resize', requestParallax);
-      requestParallax();
-    }
+    // Hiện ngay các phần tử đã ở trong viewport khi vừa tải trang
+    requestAnimationFrame(() => {
+      elements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 20) {
+          el.classList.add('is-revealed');
+        }
+      });
+    });
   }
 
+  initGlobalScrollReveal();
+
 });
+
