@@ -2632,6 +2632,15 @@ button {
   margin-bottom: 32px;
 }
 
+/* Hàng điều hướng nằm bên dưới list card: Next/Prev bên trái, Xem tất cả bên phải */
+.slider-bottom-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 32px;
+  width: 100%;
+}
+
 /* Tiêu đề có gạch chân ngắn dưới chữ đầu (mockup automech.vn) */
 .section-title-underline {
   font-family: var(--font-heading);
