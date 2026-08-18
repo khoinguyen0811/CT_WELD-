@@ -3653,48 +3653,49 @@ body.drawer-open { overflow: hidden; }
   margin-top: 2px;
 }
 
-/* Solution Tabs Navigation */
+/* Solution Tabs Navigation (Folder Tag Style) */
 .sol-tab-nav {
   display: flex;
   justify-content: center;
-  gap: 14px;
+  gap: 4px;
   flex-wrap: wrap;
-  margin-bottom: 40px;
+  margin-bottom: 0;
+  position: relative;
+  z-index: 2;
 }
 
 .sol-tab-btn {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  padding: 14px 26px;
-  background: var(--color-bg-white);
+  gap: 8px;
+  padding: 12px 22px;
+  background: #F1F5F9;
   border: 1px solid var(--color-border);
-  border-radius: 30px;
+  border-bottom: none;
+  border-radius: 10px 10px 0 0; /* 2 cạnh trên bo góc, 2 cạnh dưới không có */
   font-family: var(--font-main);
   font-weight: 700;
-  font-size: 0.95rem;
+  font-size: 0.925rem;
   color: var(--color-text-heading);
   cursor: pointer;
-  box-shadow: var(--shadow-sm);
   transition: all var(--transition-fast);
 }
 
 .sol-tab-btn i {
   color: var(--color-brand-orange);
-  font-size: 1.1rem;
+  font-size: 1.05rem;
 }
 
 .sol-tab-btn:hover {
-  border-color: var(--color-brand-orange);
+  background: var(--color-bg-white);
   color: var(--color-brand-orange);
-  transform: translateY(-2px);
+  border-color: var(--color-brand-orange);
 }
 
 .sol-tab-btn.active {
   background: var(--color-brand-orange);
   color: #FFFFFF;
   border-color: var(--color-brand-orange);
-  box-shadow: var(--shadow-orange);
 }
 
 .sol-tab-btn.active i {
