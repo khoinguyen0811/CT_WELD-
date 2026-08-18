@@ -1,17 +1,17 @@
 {
   "_purpose": "Kết quả kiểm tra truy cập toàn bộ đường dẫn có trong file 1_Cấu trúc Website _ CT WELD.xlsx",
-  "_checked_at": "2026-08-17",
+  "_checked_at": "2026-08-18 (kiểm lại lần 2 — quét toàn bộ part trong xlsx, không chỉ hyperlink ô)",
   "_method": "Truy cập trực tiếp không đăng nhập (ẩn danh). Google Docs kiểm qua endpoint export?format=txt; Google Drive folder kiểm qua trang danh sách file.",
-
   "google_docs": [
     {
       "cell": "Sheet 3 / E2",
       "belongs_to": "Về chúng tôi",
       "url": "https://docs.google.com/document/d/1JKgajDPU4MGS6AJQ2uh0kzHDqn5YLH5ryfNAkFCplvk/edit?tab=t.0#heading=h.3prulaazym1k",
-      "status": "DENIED",
-      "http_code": 401,
-      "detail": "Tài liệu giới hạn quyền truy cập — cần đổi chia sẻ sang \"Anyone with the link → Viewer\" hoặc cấp quyền cho email của mình.",
-      "content_extracted": false
+      "status": "OK",
+      "http_code": 200,
+      "detail": "Kiểm lại 18/08/2026: mở được. Nội dung gồm intro + 1. Lịch sử hình thành + 2. Tầm nhìn & Sứ mệnh + 3. Giá trị cốt lõi (6 giá trị) + 4. Nhà cung cấp chiến lược.",
+      "content_extracted": true,
+      "saved_to": "about.json (toàn bộ) + ve-chung-toi.html + index.html (sapo, số liệu)"
     },
     {
       "cell": "Sheet 3 / E3",
@@ -54,7 +54,6 @@
       "saved_to": "projects.json → archive.sapo"
     }
   ],
-
   "google_drive_folders": [
     {
       "cell": "Sheet 3 / F2",
@@ -62,8 +61,16 @@
       "url": "https://drive.google.com/drive/folders/1ToiKa8gyeelpC1-7tMlCZ4V_xWNKn860",
       "status": "OK",
       "files": [
-        { "name": "1_Tầm nhìn", "id": "1Xwq0Zpo9dEpFETMltx_5CdFx3WWPP1qA", "mime": "image/jpeg" },
-        { "name": "2_Sứ mệnh", "id": "1lZjiJvPKuMLZcb9wAZkr0EE_8WaBSFbz", "mime": "image/jpeg" }
+        {
+          "name": "1_Tầm nhìn",
+          "id": "1Xwq0Zpo9dEpFETMltx_5CdFx3WWPP1qA",
+          "mime": "image/jpeg"
+        },
+        {
+          "name": "2_Sứ mệnh",
+          "id": "1lZjiJvPKuMLZcb9wAZkr0EE_8WaBSFbz",
+          "mime": "image/jpeg"
+        }
       ],
       "saved_to": "about.json → vision_mission_values"
     },
@@ -73,7 +80,11 @@
       "url": "https://drive.google.com/drive/folders/1G2tBupVgQcZuZW3eS7ylmInO7MfUg6zT",
       "status": "OK",
       "files": [
-        { "name": "hàn 3 trong 1", "id": "1F_JwJ5PlWU0QwVbHoyNr87lDN7l1_0SF", "mime": "image/png" }
+        {
+          "name": "hàn 3 trong 1",
+          "id": "1F_JwJ5PlWU0QwVbHoyNr87lDN7l1_0SF",
+          "mime": "image/png"
+        }
       ],
       "saved_to": "products.json → products[phj-0618ct2m].images"
     },
@@ -83,44 +94,135 @@
       "url": "https://drive.google.com/drive/folders/1zNcBZ6ODdEpfyw5EmD6j0-mXYilPyejs",
       "status": "OK",
       "files": [
-        { "name": "1_Máy Phun Bi Làm Sạch Dầm H CTWELD CT1020-10", "id": "1zuid5UFN9W2sd-S2Q9_MtcRHXc0kBopJxDWV0f3_Fiw", "mime": "application/vnd.google-apps.document", "extracted": true },
-        { "name": "2_Máy hàn dầm H tự động 3 trong 1 CTWELD PHJ-0618CT2M", "id": "1J76uNy4LVPayn1tACvQXQ5Qa6plJ0sCe75Y8Upv6G6A", "mime": "application/vnd.google-apps.document", "extracted": true }
+        {
+          "name": "1_Máy Phun Bi Làm Sạch Dầm H CTWELD CT1020-10",
+          "id": "1zuid5UFN9W2sd-S2Q9_MtcRHXc0kBopJxDWV0f3_Fiw",
+          "mime": "application/vnd.google-apps.document",
+          "extracted": true
+        },
+        {
+          "name": "2_Máy hàn dầm H tự động 3 trong 1 CTWELD PHJ-0618CT2M",
+          "id": "1J76uNy4LVPayn1tACvQXQ5Qa6plJ0sCe75Y8Upv6G6A",
+          "mime": "application/vnd.google-apps.document",
+          "extracted": true
+        }
       ],
       "saved_to": "products.json → products[]"
     }
   ],
-
   "reference_websites": [
-    { "url": "https://automech.vn/", "used_for": "Tham khảo bố cục tổng thể trang chủ, kích thước banner, sản phẩm, tin tức", "status": "OK" },
-    { "url": "https://automech.vn/san-pham/", "used_for": "Trang sản phẩm cấp 1", "status": "OK" },
-    { "url": "https://automech.vn/cobot-estun-co-arc-350/", "used_for": "Trang sản phẩm cấp 2", "status": "OK" },
-    { "url": "https://automech.vn/giai-phap/", "used_for": "Trang giải pháp / dịch vụ / dự án cấp 1", "status": "OK" },
-    { "url": "https://automech.vn/phu-tro-o-to/", "used_for": "Trang giải pháp / dịch vụ / dự án cấp 2", "status": "OK" },
-    { "url": "https://automech.vn/tin-tuc/", "used_for": "Trang tin tức cấp 1", "status": "OK" },
-    { "url": "https://automech.vn/automech-va-fusheng-vietnam-ky-ket-hop-tac-chien-luoc/", "used_for": "Trang tin tức cấp 2", "status": "OK" },
-    { "url": "https://automech.vn/lien-he/", "used_for": "Trang liên hệ", "status": "OK" },
-    { "url": "https://weldcom.vn/", "used_for": "Tham khảo section Dự án nổi bật & Nhà cung cấp chiến lược", "status": "OK" }
+    {
+      "url": "https://automech.vn/",
+      "used_for": "Tham khảo bố cục tổng thể trang chủ, kích thước banner, sản phẩm, tin tức",
+      "status": "OK"
+    },
+    {
+      "url": "https://automech.vn/san-pham/",
+      "used_for": "Trang sản phẩm cấp 1",
+      "status": "OK"
+    },
+    {
+      "url": "https://automech.vn/cobot-estun-co-arc-350/",
+      "used_for": "Trang sản phẩm cấp 2",
+      "status": "OK"
+    },
+    {
+      "url": "https://automech.vn/giai-phap/",
+      "used_for": "Trang giải pháp / dịch vụ / dự án cấp 1",
+      "status": "OK"
+    },
+    {
+      "url": "https://automech.vn/phu-tro-o-to/",
+      "used_for": "Trang giải pháp / dịch vụ / dự án cấp 2",
+      "status": "OK"
+    },
+    {
+      "url": "https://automech.vn/tin-tuc/",
+      "used_for": "Trang tin tức cấp 1",
+      "status": "OK"
+    },
+    {
+      "url": "https://automech.vn/automech-va-fusheng-vietnam-ky-ket-hop-tac-chien-luoc/",
+      "used_for": "Trang tin tức cấp 2",
+      "status": "OK"
+    },
+    {
+      "url": "https://automech.vn/lien-he/",
+      "used_for": "Trang liên hệ",
+      "status": "OK"
+    },
+    {
+      "url": "https://weldcom.vn/",
+      "used_for": "Tham khảo section Dự án nổi bật & Nhà cung cấp chiến lược",
+      "status": "OK"
+    }
   ],
-
   "social_links_in_excel": [
-    { "platform": "Facebook", "url": "https://www.facebook.com/ctweld.SME/", "status": "có" },
-    { "platform": "Youtube", "url": "https://www.youtube.com/@ctweld_SME", "status": "có" },
-    { "platform": "Pinterest", "url": "https://www.pinterest.com/ctweld_SME/", "status": "có" },
-    { "platform": "Tiktok", "url": "https://www.tiktok.com/@ctweld_sme", "status": "có" },
-    { "platform": "Messenger", "url": "https://m.me/ctweld.SME/", "status": "có" },
-    { "platform": "Zalo OA", "url": null, "status": "để trống trong Excel — cần bổ sung" },
-    { "platform": "Linkedin", "url": null, "status": "để trống trong Excel — cần bổ sung" },
-    { "platform": "Instagram", "url": null, "status": "để trống trong Excel — cần bổ sung" }
+    {
+      "platform": "Facebook",
+      "url": "https://www.facebook.com/ctweld.SME/",
+      "status": "có"
+    },
+    {
+      "platform": "Youtube",
+      "url": "https://www.youtube.com/@ctweld_SME",
+      "status": "có"
+    },
+    {
+      "platform": "Pinterest",
+      "url": "https://www.pinterest.com/ctweld_SME/",
+      "status": "có"
+    },
+    {
+      "platform": "Tiktok",
+      "url": "https://www.tiktok.com/@ctweld_sme",
+      "status": "có"
+    },
+    {
+      "platform": "Messenger",
+      "url": "https://m.me/ctweld.SME/",
+      "status": "có"
+    },
+    {
+      "platform": "Zalo OA",
+      "url": null,
+      "status": "để trống trong Excel — cần bổ sung"
+    },
+    {
+      "platform": "Linkedin",
+      "url": null,
+      "status": "để trống trong Excel — cần bổ sung"
+    },
+    {
+      "platform": "Instagram",
+      "url": null,
+      "status": "để trống trong Excel — cần bổ sung"
+    }
   ],
-
   "summary": {
-    "google_docs_ok": 4,
-    "google_docs_denied": 1,
+    "google_docs_ok": 5,
+    "google_docs_denied": 0,
     "google_drive_folders_ok": 3,
-    "google_drive_folders_denied": 0,
+    "drive_files_ok": 3,
+    "tong_tai_nguyen_google": 13,
+    "tat_ca_truy_cap_duoc": true,
     "needs_action": [
-      "Mở quyền Google Docs \"Về chúng tôi\" (1JKgajDPU4MGS6AJQ2uh0kzHDqn5YLH5ryfNAkFCplvk) — đây là link duy nhất không truy cập được.",
-      "Bổ sung link Zalo OA, Linkedin, Instagram."
+      "Bổ sung link Zalo OA, Linkedin, Instagram (Excel để trống) — đây là việc duy nhất còn lại về link."
     ]
+  },
+  "_recheck_note": "Lần 1 (17/08) doc \"Về chúng tôi\" trả HTTP 401. Kiểm lại 18/08: HTTP 200 cả txt lẫn html — quyền chia sẻ đã mở. Đã lấy đủ nội dung chính thức. TẤT CẢ 13 tài nguyên Google đều truy cập được.",
+  "_scan_coverage": {
+    "phương pháp": "Quét regex URL trên TOÀN BỘ XML part trong xlsx (sharedStrings, 3 sheet, 3 drawing, tất cả file .rels), không chỉ hyperlink gắn trên ô.",
+    "tổng URL thật tìm được": 23,
+    "trong đó Google": 8,
+    "automech.vn": 8,
+    "weldcom.vn": 1,
+    "mạng xã hội": 6,
+    "comment / threaded comment": "không có (xlsx không chứa comments.xml)",
+    "hyperlink gắn trên ảnh": "không có",
+    "dữ liệu ngoài vùng đã đọc": "không có — sheet1 hết ở dòng 11, sheet2 dòng 10, sheet3 dòng 13",
+    "ảnh nhúng": "46 file, tất cả đều được neo vào ô, đã giải nén đủ 46/46 ra docs/mockup/",
+    "link bên trong 7 Google Docs": "0 — không doc nào chứa link ngoài",
+    "thư mục con trong 3 Drive folder": "không có"
   }
 }

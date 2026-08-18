@@ -11,7 +11,7 @@
         "Hiển thị bài viết trong danh mục Về chúng tôi dưới dạng bài viết thông tin"
       ],
       "content_source": "https://docs.google.com/document/d/1JKgajDPU4MGS6AJQ2uh0kzHDqn5YLH5ryfNAkFCplvk/edit?tab=t.0#heading=h.3prulaazym1k",
-      "content_access": "DENIED (HTTP 401)",
+      "content_access": "OK (kiểm lại 18/08/2026 — trước đó 401)",
       "resource_source": "https://drive.google.com/drive/folders/1ToiKa8gyeelpC1-7tMlCZ4V_xWNKn860",
       "resource_access": "OK — 2 ảnh (1_Tầm nhìn, 2_Sứ mệnh)",
       "reference_url": null,
@@ -27,7 +27,7 @@
         ],
         "mobile": []
       },
-      "demo_status": "đã cập nhật khớp mockup 17/08/2026"
+      "demo_status": "đã áp nội dung chính thức từ Google Docs"
     },
     {
       "stt": "2.0",
@@ -294,9 +294,9 @@
   ],
   "summary": {
     "total_pages_specified": 12,
-    "content_ready": 5,
+    "content_ready": 6,
     "content_missing": 6,
-    "content_access_denied": 1,
+    "content_access_denied": 0,
     "templates_built": 13,
     "templates_missing": 0
   },

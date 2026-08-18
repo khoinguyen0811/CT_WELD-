@@ -83,20 +83,29 @@
       },
       "title": "ĐỐI TÁC KỸ THUẬT TIN CẬY",
       "title_highlight": "TRONG NGÀNH CƠ KHÍ & TỰ ĐỘNG HOÁ HÀN",
-      "sapo": "Công ty TNHH Dịch Vụ Kỹ Thuật và Giải Pháp Cơ Khí CTWELD là đơn vị tiên phong chuyên tư vấn, nhập khẩu và chuyển giao công nghệ máy cơ khí, dây chuyền hàn kết cấu thép và Robot công nghiệp tại Việt Nam.",
-      "body": "Với phương châm \"Công nghệ dẫn lối tương lai\", CTWELD mang đến cho các nhà máy giải pháp tổng thể từ khâu cắt phôi CNC, đính gá, hàn tự động đến kiểm tra NDT bề mặt mồi hàn.",
+      "sapo": "Công ty TNHH Dịch vụ Kỹ thuật và Giải pháp Cơ khí CTWELD là đơn vị chuyên cung cấp thiết bị gia công cơ khí, hàn kết cấu thép tự động, robot hàn và phụ kiện ngành hàn tại Việt Nam.",
+      "body": "Với hơn 6 năm kinh nghiệm cùng đội ngũ sáng lập là những leader kỳ cựu từ các công ty cơ khí lớn trong nước, CTWELD mang đến các giải pháp công nghệ tiên tiến giúp doanh nghiệp Việt tối ưu hiệu suất sản xuất.",
       "stats": [
         {
-          "number": "12+",
-          "label": "Năm Kinh Nghiệm"
+          "number": "6+",
+          "label": "Năm Kinh Nghiệm",
+          "content_status": "official"
+        },
+        {
+          "number": "2025",
+          "label": "Năm Thành Lập",
+          "content_status": "official"
         },
         {
           "number": "350+",
-          "label": "Dự Án Bàn Giao"
+          "label": "Dự Án Bàn Giao",
+          "content_status": "placeholder",
+          "_warn": "mâu thuẫn với năm thành lập 2025"
         },
         {
           "number": "99.8%",
-          "label": "Độ Chính Xác Kỹ Thuật"
+          "label": "Độ Chính Xác Kỹ Thuật",
+          "content_status": "placeholder"
         }
       ],
       "cta": {
@@ -133,7 +142,8 @@
           "docs/mockup/home-M-3.0-ve-chung-toi-b.png"
         ]
       },
-      "mockup_compliance": "done — 4 ô số liệu 2x2 (nhãn trên, kẻ ngang, số lớn dưới), ảnh đơn thay gallery, nút viền tròn canh giữa"
+      "mockup_compliance": "done — 4 ô số liệu 2x2 (nhãn trên, kẻ ngang, số lớn dưới), ảnh đơn thay gallery, nút viền tròn canh giữa",
+      "sapo_status": "official — Google Docs \"Về chúng tôi\" (mở được 18/08/2026)"
     },
     {
       "stt": "4.0",

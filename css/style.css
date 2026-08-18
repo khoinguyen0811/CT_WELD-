@@ -3069,8 +3069,6 @@ button {
   color: var(--color-brand-orange);
   margin: 0 0 18px;
 }
-.cv-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px; }
-.cv-list li { font-size: 0.875rem; color: var(--color-text-muted); line-height: 1.65; }
 
 /* --------------------------------------------------------------------------
    9. TRANG ARCHIVE CẤP 1 — tiêu đề canh giữa + intro + grid 3 cột ảnh
@@ -3933,3 +3931,62 @@ body.drawer-open { overflow: hidden; }
   .sol-tab-btn { width: 100%; justify-content: center; }
 }
 
+
+/* --------------------------------------------------------------------------
+   15. BỔ SUNG 18/08/2026 — nội dung chính thức trang Về chúng tôi
+   Google Docs mở được (trước đó 401): 6 giá trị cốt lõi thay vì 5, sứ mệnh
+   dạng gạch đầu dòng, và có thêm mục "Lịch sử hình thành".
+   -------------------------------------------------------------------------- */
+
+/* Tiêu đề mục trong bài viết (1. Lịch sử hình thành...) */
+.article-h2 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-text-heading);
+  margin: 36px 0 18px;
+}
+
+/* Sứ mệnh: 4 gạch đầu dòng thay cho 1 đoạn văn */
+.vm-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.vm-list li {
+  position: relative;
+  padding-left: 26px;
+  font-size: 0.975rem;
+  color: var(--color-text-muted);
+  line-height: 1.75;
+}
+.vm-list li::before {
+  content: '\f00c';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-size: 0.8rem;
+  color: var(--color-brand-orange);
+}
+
+/* Doc có 6 giá trị (mockup weldcom.vn có 5) -> 3 cột x 2 hàng cho cân */
+.core-values-grid.cv-grid-6 { grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.cv-text {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .core-values-grid.cv-grid-6 { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+  .core-values-grid.cv-grid-6 { grid-template-columns: 1fr; }
+  .article-h2 { font-size: 1.25rem; }
+}
