@@ -3744,21 +3744,36 @@ button {
 .mobile-drawer-lang {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   padding: 16px 20px;
   border-top: 1px solid rgba(255, 255, 255, 0.07);
   background: #181B1E;
 }
+.mobile-drawer-lang .flag-btn,
 .mobile-drawer-lang button {
-  background: none;
+  background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: var(--radius-sm);
   padding: 6px 12px;
-  color: #d7dadd;
-  font-size: 0.875rem;
+  font-size: 1.3rem;
+  line-height: 1;
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
 }
-.mobile-drawer-lang button.active { border-color: var(--color-brand-orange); color: var(--color-brand-orange); }
+.mobile-drawer-lang .flag-btn:hover,
+.mobile-drawer-lang button:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: scale(1.08);
+}
+.mobile-drawer-lang .flag-btn.active,
+.mobile-drawer-lang button.active {
+  border-color: var(--color-brand-orange);
+  background: rgba(243, 112, 33, 0.18);
+  box-shadow: 0 0 0 1px var(--color-brand-orange);
+}
 
 body.drawer-open { overflow: hidden; }
 
