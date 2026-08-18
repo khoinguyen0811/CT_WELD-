@@ -3165,8 +3165,8 @@ button {
 .pillar-title {
   font-family: var(--font-main);
   font-size: 20px;
-  font-weight: 700;
-  color: var(--color-text-heading);
+  font-weight: 600;
+  color: #334155;
   margin-bottom: 6px;
 }
 
@@ -4011,8 +4011,8 @@ body.drawer-open { overflow: hidden; }
 .bento-title {
   font-family: var(--font-main);
   font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--color-text-heading);
+  font-weight: 600;
+  color: #334155;
   margin-bottom: 10px;
 }
 
