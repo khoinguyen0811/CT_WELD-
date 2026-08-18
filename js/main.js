@@ -382,13 +382,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }, { passive: false });
   }
 
-  // 12. GLOBAL CREATIVE SCROLL REVEAL & PROGRESSIVE LOAD (ÁP DỤNG TOÀN BỘ CÁC TRANG)
+  // 12. GLOBAL CREATIVE SCROLL REVEAL & PROGRESSIVE LOAD (ÁP DỤNG TOÀN BỘ CÁC TRANG - V2 NỔI BẬT)
   function initGlobalScrollReveal() {
     const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-    const autoSelectors = [
-      '.section-header',
-      '.section-head-row',
+    // Phân loại các nhóm phần tử để gắn hiệu ứng hoạt họa chuyên biệt
+    const cardSelectors = [
       '.prod-card',
       '.product-card',
       '.grid3-card',
@@ -398,24 +397,53 @@ document.addEventListener('DOMContentLoaded', function() {
       '.bento-stage-card',
       '.process-step-card',
       '.sol-card',
-      '.mission-pillar-card',
+      '.mission-pillar-card'
+    ];
+
+    const scaleSelectors = [
       '.stat-card',
-      '.partner-logo',
+      '.sol-metric-card',
       '.connect-card',
       '.contact-form-block',
-      '.contact-address-list li',
+      '.sidebar-widget',
+      '.partner-logo'
+    ];
+
+    const slideLeftSelectors = [
+      '.vm-content-wrap',
       '.article-section p',
       '.article-figure',
-      '.article-form',
-      '.sidebar-widget',
-      '.sol-metric-card',
-      '.cat-pills',
-      '.vm-content-wrap',
+      '.article-form'
+    ];
+
+    const slideRightSelectors = [
       '.vm-media-wrap'
     ];
 
-    const elements = document.querySelectorAll(autoSelectors.join(', '));
+    const headerSelectors = [
+      '.section-header',
+      '.section-head-row',
+      '.cat-pills',
+      '.contact-address-list li'
+    ];
+
+    const allSelectors = [
+      ...cardSelectors,
+      ...scaleSelectors,
+      ...slideLeftSelectors,
+      ...slideRightSelectors,
+      ...headerSelectors
+    ];
+
+    const elements = document.querySelectorAll(allSelectors.join(', '));
     if (!elements.length) return;
+
+    // Gán class hiệu ứng chuyên biệt tương ứng
+    document.querySelectorAll(cardSelectors.join(', ')).forEach(el => el.classList.add('reveal-card-spring'));
+    document.querySelectorAll(scaleSelectors.join(', ')).forEach(el => el.classList.add('reveal-scale'));
+    document.querySelectorAll(slideLeftSelectors.join(', ')).forEach(el => el.classList.add('reveal-slide-left'));
+    document.querySelectorAll(slideRightSelectors.join(', ')).forEach(el => el.classList.add('reveal-slide-right'));
+    document.querySelectorAll(headerSelectors.join(', ')).forEach(el => el.classList.add('reveal-fade-up'));
 
     // Tự động gán stagger index cho các card cùng cấp trong lưới/danh sách
     const parentContainers = document.querySelectorAll('.grid3, .news-grid-3, .projects-track, .prod-track, .mission-pillars-grid, .bento-steps-grid, .sol-metrics-grid, .cat-pills, .contact-address-list');
@@ -439,26 +467,17 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       });
     }, {
-      threshold: 0.1,
-      rootMargin: '0px 0px -40px 0px'
+      threshold: 0.08,
+      rootMargin: '0px 0px -50px 0px'
     });
 
-    elements.forEach(el => {
-      if (!el.classList.contains('reveal-fade-up') && 
-          !el.classList.contains('reveal-scale') && 
-          !el.classList.contains('reveal-slide-left') && 
-          !el.classList.contains('reveal-slide-right') && 
-          !el.hasAttribute('data-reveal')) {
-        el.classList.add('reveal-fade-up');
-      }
-      observer.observe(el);
-    });
+    elements.forEach(el => observer.observe(el));
 
-    // Hiện ngay các phần tử đã ở trong viewport khi vừa tải trang
+    // Kích hoạt ngay các phần tử xuất hiện ở màn hình đầu tiên (above the fold)
     requestAnimationFrame(() => {
       elements.forEach(el => {
         const rect = el.getBoundingClientRect();
-        if (rect.top < window.innerHeight - 20) {
+        if (rect.top < window.innerHeight - 30) {
           el.classList.add('is-revealed');
         }
       });
