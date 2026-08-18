@@ -78,50 +78,50 @@ document.addEventListener('DOMContentLoaded', function() {
     startHeroAutoplay();
   }
 
-  // 2. FEATURED PROJECTS CAROUSEL (3.5 thẻ/khung desktop — mockup home-D-6.0)
-  const projTrack = document.querySelector('.projects-track');
-  const projPrev = document.querySelector('.proj-prev');
-  const projNext = document.querySelector('.proj-next');
-  let projIndex = 0;
+  // 2. CAROUSEL DỰ ÁN — dùng chung cơ chế với carousel sản phẩm (YC#4: hiển thị y hệt)
+  (function initProjCarousel() {
+    const track = document.querySelector('.projects-track');
+    const prev  = document.querySelector('.proj-prev');
+    const next  = document.querySelector('.proj-next');
+    const dots  = document.getElementById('projDots');
+    if (!track || !prev || !next) return;
 
-  if (projTrack && projPrev && projNext) {
-    const projCards = projTrack.querySelectorAll('.proj-card');
-
-    function projPerView() {
-      if (window.innerWidth <= 768) return 1;
-      if (window.innerWidth <= 1024) return 2;
-      return 3;
+    const cards = track.querySelectorAll('.proj-card');
+    if (!cards.length) {                       // chưa có dự án thật -> ẩn điều khiển
+      prev.style.display = next.style.display = 'none';
+      if (dots) dots.style.display = 'none';
+      return;
     }
 
-    function updateProjSlider() {
-      if (!projCards.length) return;
-      const maxIdx = Math.max(0, projCards.length - projPerView());
-      if (projIndex > maxIdx) projIndex = maxIdx;
-      if (projIndex < 0) projIndex = 0;
+    let page = 0;
+    const perView = () => window.innerWidth <= 768 ? 1 : window.innerWidth <= 1024 ? 2 : 3;
+    const pages   = () => Math.max(1, Math.ceil(cards.length / perView()));
 
-      const gap = parseFloat(getComputedStyle(projTrack).gap) || 0;
-      const cardW = projCards[0].getBoundingClientRect().width;
-      projTrack.style.transform = `translateX(-${projIndex * (cardW + gap)}px)`;
-
-      projPrev.disabled = projIndex === 0;
-      projNext.disabled = projIndex === maxIdx;
+    function render() {
+      const n = perView(), max = pages() - 1;
+      page = Math.min(Math.max(page, 0), max);
+      const gap = parseFloat(getComputedStyle(track).gap) || 0;
+      const w = cards[0].getBoundingClientRect().width;
+      track.style.transform = `translateX(-${page * n * (w + gap)}px)`;
+      prev.disabled = page === 0;
+      next.disabled = page === max;
+      if (dots) {
+        dots.innerHTML = '';
+        for (let i = 0; i < pages(); i++) {
+          const b = document.createElement('button');
+          b.setAttribute('aria-label', 'Trang ' + (i + 1));
+          if (i === page) b.classList.add('active');
+          b.addEventListener('click', () => { page = i; render(); });
+          dots.appendChild(b);
+        }
+      }
     }
 
-    projNext.addEventListener('click', () => {
-      const maxIdx = Math.max(0, projCards.length - projPerView());
-      projIndex = projIndex < maxIdx ? projIndex + 1 : 0;
-      updateProjSlider();
-    });
-
-    projPrev.addEventListener('click', () => {
-      const maxIdx = Math.max(0, projCards.length - projPerView());
-      projIndex = projIndex > 0 ? projIndex - 1 : maxIdx;
-      updateProjSlider();
-    });
-
-    window.addEventListener('resize', updateProjSlider);
-    updateProjSlider();
-  }
+    prev.addEventListener('click', () => { page--; render(); });
+    next.addEventListener('click', () => { page++; render(); });
+    window.addEventListener('resize', render);
+    render();
+  })();
 
   // (Đã bỏ) News carousel + About thumbnail gallery:
   // Mục 8.0 trang chủ chuyển sang grid 3 thẻ và mục 3.0 dùng 1 ảnh đơn theo mockup,
@@ -486,5 +486,66 @@ document.addEventListener('DOMContentLoaded', function() {
 
   initGlobalScrollReveal();
 
-});
+  // 12. LOGO NHÀ CUNG CẤP — nếu chưa có file ảnh thì hiện lại tên chữ
+  // (tránh icon ảnh vỡ; thả file vào images/logos/<slug>.png là tự hiện logo)
+  document.querySelectorAll('.partner-logo-img').forEach(img => {
+    const fail = () => img.closest('.partner-logo').classList.add('no-logo');
+    if (img.complete && img.naturalWidth === 0) fail();
+    img.addEventListener('error', fail);
+  });
 
+  // 13. VUỐT CAROUSEL TRÊN MOBILE (YC: "2 con này đang bị lỗi không vuốt được")
+  document.querySelectorAll('.prod-carousel-viewport').forEach(vp => {
+    const prev = vp.parentElement.querySelector('.carousel-prev');
+    const next = vp.parentElement.querySelector('.carousel-next');
+    if (!prev || !next) return;
+
+    let x0 = null, y0 = null, locked = null;
+    const THRESHOLD = 45;
+
+    vp.addEventListener('touchstart', e => {
+      x0 = e.touches[0].clientX; y0 = e.touches[0].clientY; locked = null;
+    }, { passive: true });
+
+    vp.addEventListener('touchmove', e => {
+      if (x0 === null) return;
+      const dx = e.touches[0].clientX - x0;
+      const dy = e.touches[0].clientY - y0;
+      // quyết định một lần: vuốt ngang -> carousel, vuốt dọc -> để trang cuộn
+      if (locked === null) locked = Math.abs(dx) > Math.abs(dy) ? 'x' : 'y';
+    }, { passive: true });
+
+    vp.addEventListener('touchend', e => {
+      if (x0 === null) return;
+      const dx = e.changedTouches[0].clientX - x0;
+      if (locked === 'x' && Math.abs(dx) > THRESHOLD) {
+        (dx < 0 ? next : prev).click();
+      }
+      x0 = y0 = locked = null;
+    }, { passive: true });
+  });
+
+  // 14. DRAWER BỘ LỌC SẢN PHẨM (YC#12)
+  const filterToggle  = document.getElementById('filterToggle');
+  const filterSidebar = document.getElementById('productSidebar');
+  const filterOverlay = document.getElementById('filterOverlay');
+  const filterClose   = document.getElementById('filterClose');
+
+  if (filterToggle && filterSidebar) {
+    const openFilter = () => {
+      filterSidebar.classList.add('open');
+      if (filterOverlay) filterOverlay.classList.add('open');
+      document.body.classList.add('filter-open');
+    };
+    const closeFilter = () => {
+      filterSidebar.classList.remove('open');
+      if (filterOverlay) filterOverlay.classList.remove('open');
+      document.body.classList.remove('filter-open');
+    };
+    filterToggle.addEventListener('click', openFilter);
+    if (filterClose) filterClose.addEventListener('click', closeFilter);
+    if (filterOverlay) filterOverlay.addEventListener('click', closeFilter);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeFilter(); });
+  }
+
+});

@@ -162,10 +162,7 @@
           <div class="dot-item" data-slide="1" title="Slide 2: Dầm H"></div>
           <div class="dot-item" data-slide="2" title="Slide 3: Bảo Dưỡng"></div>
         </div>
-        <div class="slider-arrows">
-          <button class="arrow-btn arrow-prev" aria-label="Previous Slide"><i class="fas fa-arrow-left"></i></button>
-          <button class="arrow-btn arrow-next" aria-label="Next Slide"><i class="fas fa-arrow-right"></i></button>
-        </div>
+        <!-- YC 18/08: bo mui ten banner, chi giu dot + tu dong chuyen slide 8s -->
       </div>
     </div>
   </section>
@@ -216,13 +213,13 @@
             <span class="stat-number">2025</span>
             <span class="stat-label">Năm Thành Lập</span>
           </div>
-          <div class="stat-box">
-            <span class="stat-number">350+</span>
-            <span class="stat-label">Dự Án Bàn Giao</span>
+<div class="stat-box">
+            <span class="stat-number">6+</span>
+            <span class="stat-label">Lĩnh Vực Hoạt Động</span>
           </div>
           <div class="stat-box stat-box-highlight">
-            <span class="stat-number">99.8%</span>
-            <span class="stat-label">Độ Chính Xác Kỹ Thuật</span>
+            <span class="stat-number">6+</span>
+            <span class="stat-label">Đối Tác Công Nghệ Quốc Tế</span>
           </div>
         </div>
 
@@ -338,7 +335,11 @@
               </div>
             </article>
 
-            <article class="prod-card">
+                        <!-- ██ FAKE-DATA [home-products-fake] — 4 san pham AI bia. 2 san pham GOC (CT1020-10, PHJ-0618CT2M) dung dau duoc giu lai.
+                 An bang the TEMPLATE: khong render, anh khong tai, source giu nguyen.
+                 KHOI PHUC: xoa 2 dong the TEMPLATE mo/dong bao quanh. ██ -->
+            <template data-fake="home-products-fake">
+<article class="prod-card">
               <div class="prod-card-thumb">
                 <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80" alt="Robot hàn cộng tác Cobot Estun CO-ARC 350">
               </div>
@@ -393,6 +394,7 @@
                 </ul>
               </div>
             </article>
+            </template>
 
           </div>
         </div>
@@ -412,25 +414,33 @@
   </div>
 
   <!-- 6. FEATURED PROJECTS & EVENTS SECTION -->
+  <!-- 6. DỰ ÁN TIÊU BIỂU (SECTION 6.0)
+       YC 18/08 (tài liệu, trang 4): hiển thị y hệt module "Dòng máy nổi bật" —
+       tiêu đề gạch chân bên trái + nút pill bên phải, mũi tên tròn đè hai bên, dot ở dưới. -->
   <section class="projects-section">
     <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Dự Án Tiêu Biểu & <span class="text-orange">Sự Kiện Khuyến Mại</span></h2>
-        <p class="section-subtitle">Tổng hợp các công trình dây chuyền công nghệ đã bàn giao và những chương trình ưu đãi mới nhất từ CTWELD</p>
+      <div class="section-head-row">
+        <h2 class="section-title-underline">Dự án <span class="text-orange">tiêu biểu</span></h2>
+        <a href="du-an.html" class="btn btn-pill-outline">XEM TẤT CẢ <i class="fas fa-arrow-right"></i></a>
       </div>
 
-      <div class="section-head-row" style="margin-bottom: 24px;">
-        <div class="tab-switcher" role="tablist">
-          <button class="tab-btn active" role="tab" data-tab="du-an">Dự án</button>
-          <button class="tab-btn" role="tab" data-tab="khuyen-mai">Khuyến mại và sự kiện</button>
-        </div>
+      <div class="tab-switcher" role="tablist">
+        <button class="tab-btn active" role="tab" data-tab="du-an">Dự án</button>
+        <button class="tab-btn" role="tab" data-tab="khuyen-mai">Khuyến mại và sự kiện</button>
       </div>
 
       <!-- Tab 1: Dự án -->
       <div class="tab-panel active" data-panel="du-an">
-        <div class="projects-slider-wrapper">
-          <div class="projects-track">
-            <article class="proj-card">
+        <div class="prod-carousel">
+          <button class="carousel-arrow carousel-prev proj-prev" aria-label="Dự án trước"><i class="fas fa-chevron-left"></i></button>
+
+          <div class="prod-carousel-viewport">
+            <div class="projects-track">
+                        <!-- ██ FAKE-DATA [home-projects] — Toan bo la AI bia va NEU DICH DANH thuong hieu co that (Zamil Steel, VinFast, Dai Dung, ATAD, BMB, Hoa Phat, Thaco, Lilama, Tan A Dai Thanh, Seico). CTWELD thanh lap 2025, chua co xac nhan hop tac.
+                 An bang the TEMPLATE: khong render, anh khong tai, source giu nguyen.
+                 KHOI PHUC: xoa 2 dong the TEMPLATE mo/dong bao quanh. ██ -->
+            <template data-fake="home-projects">
+<article class="proj-card">
               <div class="proj-card-thumb">
                 <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=600&q=80" alt="DỰ ÁN ZAMIL STEEL">
               </div>
@@ -483,28 +493,27 @@
               <h3 class="proj-card-title"><a href="du-an-chi-tiet.html">DỰ ÁN THACO</a></h3>
               <p class="proj-card-desc">Tích hợp 04 trạm Robot hàn Estun kết hợp nguồn hàn Megmeet Artsen II, đạt tốc độ hàn 80cm/phút cho khung sườn xe tải.</p>
             </article>
-
+            </template>
+            </div>
           </div>
+
+          <button class="carousel-arrow carousel-next proj-next" aria-label="Dự án sau"><i class="fas fa-chevron-right"></i></button>
         </div>
 
-        <!-- Hàng điều hướng nằm bên dưới list card: Next & Prev ở Start, Xem Tất Cả ở End -->
-        <div class="slider-bottom-actions">
-          <div class="slider-arrows">
-            <button class="arrow-btn proj-prev" aria-label="Dự án trước"><i class="fas fa-chevron-left"></i></button>
-            <button class="arrow-btn proj-next" aria-label="Dự án sau"><i class="fas fa-chevron-right"></i></button>
-          </div>
-          <a href="du-an.html" class="link-arrow">Xem tất cả <i class="fas fa-arrow-right"></i></a>
+        <div class="carousel-dots" id="projDots"></div>
+
+        <div class="empty-note">
+          <i class="fas fa-folder-open"></i>
+          <p>Chưa có dự án nào được đăng. Nội dung sẽ hiển thị khi có dữ liệu thật từ CTWELD.</p>
         </div>
       </div>
 
-      <!-- Tab 2: Khuyến mại và sự kiện -->
       <div class="tab-panel" data-panel="khuyen-mai">
         <div class="tab-empty">
           <i class="fas fa-tags"></i>
           <p>Hiện chưa có chương trình khuyến mại hoặc sự kiện nào đang diễn ra.</p>
           <a href="lien-he.html" class="link-arrow">Liên hệ để nhận thông báo sớm nhất <i class="fas fa-arrow-right"></i></a>
         </div>
-      </div>
     </div>
   </section>
 
@@ -527,27 +536,27 @@
     <div class="marquee-container has-arrows">
       <button class="marquee-arrow marquee-prev" aria-label="Logo trước"><i class="fas fa-chevron-left"></i></button>
       <div class="marquee-viewport">
-        <div class="marquee-content">
-          <div class="partner-logo"><font>FANUC</font></div>
-          <div class="partner-logo"><font>YASKAWA</font></div>
-          <div class="partner-logo"><font>MEGMEET</font></div>
-          <div class="partner-logo"><font>ESTUN</font></div>
-          <div class="partner-logo"><font>AOTAI</font></div>
-          <div class="partner-logo"><font>KEYENCE</font></div>
-          <div class="partner-logo"><font>LINCOLN ELECTRIC</font></div>
-          <div class="partner-logo"><font>HYPERTHERM</font></div>
-          <div class="partner-logo"><font>RAYTOOLS</font></div>
-        </div>
+<div class="marquee-content">
+  <div class="partner-logo"><img src="images/logos/fanuc.png" alt="FANUC" loading="lazy" class="partner-logo-img"><span class="partner-logo-text">FANUC</span></div>
+  <div class="partner-logo"><img src="images/logos/yaskawa.png" alt="YASKAWA" loading="lazy" class="partner-logo-img"><span class="partner-logo-text">YASKAWA</span></div>
+  <div class="partner-logo"><img src="images/logos/megmeet.png" alt="MEGMEET" loading="lazy" class="partner-logo-img"><span class="partner-logo-text">MEGMEET</span></div>
+  <div class="partner-logo"><img src="images/logos/estun.png" alt="ESTUN" loading="lazy" class="partner-logo-img"><span class="partner-logo-text">ESTUN</span></div>
+  <div class="partner-logo"><img src="images/logos/aotai.png" alt="AOTAI" loading="lazy" class="partner-logo-img"><span class="partner-logo-text">AOTAI</span></div>
+  <div class="partner-logo"><img src="images/logos/keyence.png" alt="KEYENCE" loading="lazy" class="partner-logo-img"><span class="partner-logo-text">KEYENCE</span></div>
+  <div class="partner-logo"><img src="images/logos/lincoln-electric.png" alt="LINCOLN ELECTRIC" loading="lazy" class="partner-logo-img"><span class="partner-logo-text">LINCOLN ELECTRIC</span></div>
+  <div class="partner-logo"><img src="images/logos/hypertherm.png" alt="HYPERTHERM" loading="lazy" class="partner-logo-img"><span class="partner-logo-text">HYPERTHERM</span></div>
+  <div class="partner-logo"><img src="images/logos/raytools.png" alt="RAYTOOLS" loading="lazy" class="partner-logo-img"><span class="partner-logo-text">RAYTOOLS</span></div>
+</div>
         <div class="marquee-content" aria-hidden="true">
-          <div class="partner-logo"><font>FANUC</font></div>
-          <div class="partner-logo"><font>YASKAWA</font></div>
-          <div class="partner-logo"><font>MEGMEET</font></div>
-          <div class="partner-logo"><font>ESTUN</font></div>
-          <div class="partner-logo"><font>AOTAI</font></div>
-          <div class="partner-logo"><font>KEYENCE</font></div>
-          <div class="partner-logo"><font>LINCOLN ELECTRIC</font></div>
-          <div class="partner-logo"><font>HYPERTHERM</font></div>
-          <div class="partner-logo"><font>RAYTOOLS</font></div>
+          <div class="partner-logo"><img src="images/logos/fanuc.png" alt="FANUC" loading="lazy" class="partner-logo-img"><span class="partner-logo-text">FANUC</span></div>
+          <div class="partner-logo"><img src="images/logos/yaskawa.png" alt="YASKAWA" loading="lazy" class="partner-logo-img"><span class="partner-logo-text">YASKAWA</span></div>
+          <div class="partner-logo"><img src="images/logos/megmeet.png" alt="MEGMEET" loading="lazy" class="partner-logo-img"><span class="partner-logo-text">MEGMEET</span></div>
+          <div class="partner-logo"><img src="images/logos/estun.png" alt="ESTUN" loading="lazy" class="partner-logo-img"><span class="partner-logo-text">ESTUN</span></div>
+          <div class="partner-logo"><img src="images/logos/aotai.png" alt="AOTAI" loading="lazy" class="partner-logo-img"><span class="partner-logo-text">AOTAI</span></div>
+          <div class="partner-logo"><img src="images/logos/keyence.png" alt="KEYENCE" loading="lazy" class="partner-logo-img"><span class="partner-logo-text">KEYENCE</span></div>
+          <div class="partner-logo"><img src="images/logos/lincoln-electric.png" alt="LINCOLN ELECTRIC" loading="lazy" class="partner-logo-img"><span class="partner-logo-text">LINCOLN ELECTRIC</span></div>
+          <div class="partner-logo"><img src="images/logos/hypertherm.png" alt="HYPERTHERM" loading="lazy" class="partner-logo-img"><span class="partner-logo-text">HYPERTHERM</span></div>
+          <div class="partner-logo"><img src="images/logos/raytools.png" alt="RAYTOOLS" loading="lazy" class="partner-logo-img"><span class="partner-logo-text">RAYTOOLS</span></div>
         </div>
       </div>
       <button class="marquee-arrow marquee-next" aria-label="Logo sau"><i class="fas fa-chevron-right"></i></button>
@@ -570,7 +579,11 @@
       </div>
 
       <div class="news-grid-3">
-        <article class="news-card">
+                <!-- ██ FAKE-DATA [home-news] — Chua co bai viet that nao — toan bo tieu de, ngay, mo ta, tac gia deu la mau.
+             An bang the TEMPLATE: khong render, anh khong tai, source giu nguyen.
+             KHOI PHUC: xoa 2 dong the TEMPLATE mo/dong bao quanh. ██ -->
+        <template data-fake="home-news">
+<article class="news-card">
           <div class="news-thumb">
             <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" alt="Quy trình kiểm soát biến dạng hàn khi hàn dầm H khổ lớn">
           </div>
@@ -602,6 +615,7 @@
             <a href="tin-tuc-chi-tiet.html" class="news-link">Xem chi tiết <i class="fas fa-arrow-right"></i></a>
           </div>
         </article>
+        </template>
 
       </div>
     </div>
@@ -623,6 +637,7 @@
           <div class="footer-logo-box">
             <img src="logoweld.png" alt="CT WELD" class="logo-img">
           </div>
+          <p class="footer-legal-name"><strong>CÔNG TY TNHH DỊCH VỤ KỸ THUẬT VÀ GIẢI PHÁP CƠ KHÍ CTWELD</strong><br><span class="footer-tax">MST: 0111059841</span></p>
           <p class="footer-desc-text">
             Đơn vị tiên phong trong lĩnh vực giải pháp hàn tự động, dây chuyền kết cấu thép, Robot công nghiệp và thiết bị cơ khí chế tạo công nghệ cao.
           </p>
@@ -645,6 +660,7 @@
             <a href="https://www.facebook.com/ctweld.SME/" target="_blank" class="social-circle-btn" title="Facebook"><i class="fab fa-facebook-f"></i></a>
             <a href="https://www.youtube.com/@ctweld_SME" target="_blank" class="social-circle-btn" title="Youtube"><i class="fab fa-youtube"></i></a>
             <a href="https://www.tiktok.com/@ctweld_sme" target="_blank" class="social-circle-btn" title="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.pinterest.com/ctweld_SME/" target="_blank" class="social-circle-btn" title="Pinterest"><i class="fab fa-pinterest-p"></i></a>
           </div>
         </div>
 

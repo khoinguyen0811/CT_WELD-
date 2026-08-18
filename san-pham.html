@@ -151,9 +151,16 @@
   <section style="padding: 60px 0; background: var(--color-bg-light);">
     <div class="container">
 
+      <!-- YC#12: bộ lọc thành nút ghim, bấm mới mở drawer (trước đây bị đẩy xuống chân trang) -->
+      <button class="filter-toggle-btn" id="filterToggle">
+        <i class="fas fa-sliders-h"></i> Bộ lọc sản phẩm &amp; thương hiệu
+      </button>
+      <div class="filter-drawer-overlay" id="filterOverlay"></div>
+
       <div class="product-page-layout">
         <!-- LEFT SIDEBAR WIDGETS -->
-        <aside class="product-sidebar">
+        <aside class="product-sidebar" id="productSidebar">
+          <button class="filter-drawer-close" id="filterClose"><i class="fas fa-times"></i> Đóng bộ lọc</button>
           <!-- Widget 1: Product Categories -->
           <div class="sidebar-widget">
             <h3 class="sidebar-widget-title"><i class="fas fa-th-list" style="color: var(--color-brand-orange);"></i> Danh Mục Sản Phẩm</h3>
@@ -271,7 +278,11 @@
               </div>
             </article>
 
-            <article class="prod-card">
+                        <!-- ██ FAKE-DATA [sanpham-ketcauthep-fake5] — 5 san pham AI bia kem toan bo thong so. 2 san pham GOC (PHJ-0618CT2M, CT1020-10) dung dau nhom duoc GIU LAI.
+                 An bang the TEMPLATE: khong render, anh khong tai, source giu nguyen.
+                 KHOI PHUC: xoa 2 dong the TEMPLATE mo/dong bao quanh. ██ -->
+            <template data-fake="sanpham-ketcauthep-fake5">
+<article class="prod-card">
               <div class="prod-card-thumb"><img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=600&q=80" alt="Máy hàn hồ quang chìm SAW-1250 2 mỏ cổng cán"></div>
               <div class="prod-card-body">
                 <h3 class="prod-card-title"><a href="san-pham-chi-tiet.html">Máy hàn hồ quang chìm SAW-1250 2 mỏ cổng cán</a></h3>
@@ -335,6 +346,7 @@
                 <a href="san-pham-chi-tiet.html" class="btn btn-primary btn-sm">Xem chi tiết</a>
               </div>
             </article>
+            </template>
 
             </div>
           </div>
@@ -342,7 +354,11 @@
           <div class="prod-group">
             <h2 class="prod-group-title">ROBOT CÔNG NGHIỆP</h2>
             <div class="prod-grid-3">
-            <article class="prod-card">
+                        <!-- ██ FAKE-DATA [sanpham-robot-fake4] — Ca 4 san pham deu la AI bia — Excel chi chot TEN danh muc "Robot cong nghiep", khong co san pham cu the.
+                 An bang the TEMPLATE: khong render, anh khong tai, source giu nguyen.
+                 KHOI PHUC: xoa 2 dong the TEMPLATE mo/dong bao quanh. ██ -->
+            <template data-fake="sanpham-robot-fake4">
+<article class="prod-card">
               <div class="prod-card-thumb"><img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80" alt="Robot hàn cộng tác Cobot Estun CO-ARC 350"></div>
               <div class="prod-card-body">
                 <h3 class="prod-card-title"><a href="san-pham-chi-tiet.html">Robot hàn cộng tác Cobot Estun CO-ARC 350</a></h3>
@@ -393,6 +409,7 @@
                 <a href="san-pham-chi-tiet.html" class="btn btn-primary btn-sm">Xem chi tiết</a>
               </div>
             </article>
+            </template>
 
             </div>
           </div>
@@ -444,6 +461,7 @@
           <div class="footer-logo-box">
             <img src="logoweld.png" alt="CT WELD" class="logo-img">
           </div>
+          <p class="footer-legal-name"><strong>CÔNG TY TNHH DỊCH VỤ KỸ THUẬT VÀ GIẢI PHÁP CƠ KHÍ CTWELD</strong><br><span class="footer-tax">MST: 0111059841</span></p>
           <p class="footer-desc-text">
             Đơn vị tiên phong trong lĩnh vực giải pháp hàn tự động, dây chuyền kết cấu thép, Robot công nghiệp và thiết bị cơ khí chế tạo công nghệ cao.
           </p>
@@ -466,6 +484,7 @@
             <a href="https://www.facebook.com/ctweld.SME/" target="_blank" class="social-circle-btn" title="Facebook"><i class="fab fa-facebook-f"></i></a>
             <a href="https://www.youtube.com/@ctweld_SME" target="_blank" class="social-circle-btn" title="Youtube"><i class="fab fa-youtube"></i></a>
             <a href="https://www.tiktok.com/@ctweld_sme" target="_blank" class="social-circle-btn" title="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.pinterest.com/ctweld_SME/" target="_blank" class="social-circle-btn" title="Pinterest"><i class="fab fa-pinterest-p"></i></a>
           </div>
         </div>
 
