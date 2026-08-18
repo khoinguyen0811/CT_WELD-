@@ -1753,6 +1753,18 @@ button {
   line-height: 1.5;
 }
 
+.featured-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.featured-projects-grid .project-card {
+  flex: none;
+  min-width: 0;
+  width: 100%;
+}
+
 /* ==========================================================================
    7. STRATEGIC PARTNERS MARQUEE
    ========================================================================== */
@@ -3844,6 +3856,7 @@ body.drawer-open { overflow: hidden; }
   /* Grid chung 3 -> 2 cột */
   .prod-grid-3,
   .news-grid-3,
+  .featured-projects-grid,
   .grid3 { grid-template-columns: repeat(2, 1fr); }
   .core-values-grid { grid-template-columns: repeat(2, 1fr); }
 
@@ -3929,9 +3942,26 @@ body.drawer-open { overflow: hidden; }
   .category-grid,
   .prod-grid-3,
   .news-grid-3,
+  .featured-projects-grid,
   .grid3,
   .core-values-grid,
-  .form-row-2 { grid-template-columns: 1fr; }
+  .form-row-2 { grid-template-columns: 1fr !important; }
+
+  /* Trên Mobile chỉ hiện 4 thẻ dự án tiêu biểu */
+  .featured-projects-grid > .project-card:nth-child(n+5) {
+    display: none !important;
+  }
+  .featured-projects-grid .proj-thumb {
+    height: 190px;
+  }
+  .featured-projects-grid .proj-body {
+    padding: 18px 16px;
+  }
+  .featured-projects-grid .proj-title {
+    white-space: normal;
+    font-size: 1.05rem;
+    line-height: 1.35;
+  }
 
   /* Sticky Timeline Mobile (Giá trị cốt lõi CTWELD) -> Thu gọn không gian, vuốt chạm mượt mà */
   .history-sticky-section {
