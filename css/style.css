@@ -3927,96 +3927,108 @@ body.drawer-open { overflow: hidden; }
   font-weight: 600;
 }
 
-/* 5-Step Pipeline Flow Diagram (Creative Flat Flow Style) */
+/* 5-Step Bento Grid Process Section (100% Matching Screenshot Design) */
 .pipeline-flow-section {
   padding: 80px 0;
   background: var(--color-bg-white);
 }
 
-.pipeline-flow-grid {
+.pipeline-bento-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
-  position: relative;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
   margin-top: 48px;
 }
 
-.pipeline-flow-step {
-  position: relative;
-  background: var(--color-bg-light);
-  border: none !important;
-  box-shadow: none !important;
-  border-radius: var(--radius-lg);
-  padding: 32px 20px 28px 20px;
-  text-align: left;
-  transition: background var(--transition-fast);
-  overflow: hidden;
+.bento-card {
+  background: #F5F6F8;
+  border-radius: 16px;
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 250px;
+  transition: all var(--transition-fast);
 }
 
-.pipeline-flow-step:hover {
-  background: #F1F5F9;
+.bento-card:hover {
+  background: #EEF0F4;
 }
 
-.step-num-watermark {
-  position: absolute;
-  top: 10px;
-  right: 14px;
-  font-family: var(--font-heading);
-  font-size: 2.5rem;
-  font-weight: 800;
-  color: var(--color-brand-orange);
-  opacity: 0.15;
-  line-height: 1;
-  pointer-events: none;
-  user-select: none;
+.bento-card-w2 {
+  grid-column: span 2;
 }
 
-.step-icon-box {
+.bento-card-w1 {
+  grid-column: span 1;
+}
+
+.bento-icon-circle {
   width: 52px;
   height: 52px;
-  border-radius: 12px;
-  background: var(--color-bg-white);
-  color: var(--color-brand-orange);
+  border-radius: 50%;
+  border: 1.5px solid var(--color-brand-orange);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.35rem;
+  color: var(--color-brand-orange);
+  font-size: 1.3rem;
+  background: #FFFFFF;
+  flex-shrink: 0;
+}
+
+.bento-header-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
   margin-bottom: 20px;
 }
 
-.step-title {
-  font-family: var(--font-heading);
-  font-size: 1.05rem;
+.bento-footer-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Dot Matrix Trail Graphic Pattern */
+.dot-matrix-pattern {
+  flex: 1;
+  height: 28px;
+  background-image: radial-gradient(circle, rgba(243, 112, 33, 0.45) 1.5px, transparent 1.5px);
+  background-size: 10px 10px;
+  mask-image: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 85%);
+  -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 85%);
+}
+
+.dot-matrix-pattern.fade-left {
+  mask-image: linear-gradient(to left, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 85%);
+  -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 85%);
+}
+
+.bento-title {
+  font-family: var(--font-main);
+  font-size: 1.25rem;
   font-weight: 700;
   color: var(--color-text-heading);
   margin-bottom: 10px;
 }
 
-.step-desc {
-  font-size: 0.875rem;
+.bento-desc {
+  font-size: 0.9rem;
   color: var(--color-text-muted);
-  line-height: 1.5;
-}
-
-.step-connector {
-  position: absolute;
-  right: -12px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background: var(--color-bg-white);
-  color: var(--color-brand-orange);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.75rem;
-  z-index: 3;
+  line-height: 1.6;
 }
 
 @media (max-width: 1024px) {
-  .step-connector { display: none; }
+  .pipeline-bento-grid {
+    grid-template-columns: 1fr;
+  }
+  .bento-card-w2, .bento-card-w1 {
+    grid-column: span 1;
+  }
 }
   color: var(--color-text-muted);
   line-height: 1.45;
