@@ -3163,8 +3163,8 @@ button {
 }
 
 .pillar-title {
-  font-family: var(--font-heading);
-  font-size: 0.95rem;
+  font-family: var(--font-main);
+  font-size: 20px;
   font-weight: 700;
   color: var(--color-text-heading);
   margin-bottom: 6px;
